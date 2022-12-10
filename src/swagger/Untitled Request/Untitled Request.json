@@ -1,0 +1,340 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Untitled Request",
+    "description" : "dummy",
+    "version" : "1.0"
+  },
+  "servers" : [ {
+    "url" : "https://reqres.in/api",
+    "x-name" : "Server1"
+  } ],
+  "paths" : {
+    "/unknown" : {
+      "get" : {
+        "tags" : [ "acme-team-gcp-dev" ],
+        "summary" : "Untitled Request",
+        "description" : "dummy",
+        "operationId" : "Untitled Request",
+        "responses" : {
+          "200" : {
+            "description" : "Response for endpoint GET-unknown",
+            "headers" : {
+              "Transfer-Encoding" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Server" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "CF-RAY" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Access-Control-Allow-Origin" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Connection" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Date" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Via" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "CF-Cache-Status" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Etag" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Cache-Control" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "NEL" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Report-To" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Vary" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Age" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "Content-Type" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              },
+              "X-Powered-By" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string",
+                  "exampleSetFlag" : false,
+                  "types" : [ "string" ]
+                }
+              }
+            },
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "required" : [ "data", "page", "per_page", "support", "total", "total_pages" ],
+                  "type" : "object",
+                  "properties" : {
+                    "page" : {
+                      "type" : "integer",
+                      "exampleSetFlag" : false,
+                      "types" : [ "integer" ]
+                    },
+                    "per_page" : {
+                      "type" : "integer",
+                      "exampleSetFlag" : false,
+                      "types" : [ "integer" ]
+                    },
+                    "total" : {
+                      "type" : "integer",
+                      "exampleSetFlag" : false,
+                      "types" : [ "integer" ]
+                    },
+                    "total_pages" : {
+                      "type" : "integer",
+                      "exampleSetFlag" : false,
+                      "types" : [ "integer" ]
+                    },
+                    "data" : {
+                      "type" : "array",
+                      "exampleSetFlag" : false,
+                      "items" : {
+                        "required" : [ "color", "id", "name", "pantone_value", "year" ],
+                        "type" : "object",
+                        "properties" : {
+                          "id" : {
+                            "type" : "integer",
+                            "exampleSetFlag" : false,
+                            "types" : [ "integer" ]
+                          },
+                          "name" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ]
+                          },
+                          "year" : {
+                            "type" : "integer",
+                            "exampleSetFlag" : false,
+                            "types" : [ "integer" ]
+                          },
+                          "color" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ]
+                          },
+                          "pantone_value" : {
+                            "type" : "string",
+                            "exampleSetFlag" : false,
+                            "types" : [ "string" ]
+                          }
+                        },
+                        "exampleSetFlag" : false,
+                        "types" : [ "object" ],
+                        "jsonSchema" : {
+                          "type" : "object",
+                          "properties" : {
+                            "id" : {
+                              "type" : "integer"
+                            },
+                            "name" : {
+                              "type" : "string"
+                            },
+                            "year" : {
+                              "type" : "integer"
+                            },
+                            "color" : {
+                              "type" : "string"
+                            },
+                            "pantone_value" : {
+                              "type" : "string"
+                            }
+                          },
+                          "required" : [ "color", "id", "name", "pantone_value", "year" ]
+                        }
+                      },
+                      "types" : [ "array" ]
+                    },
+                    "support" : {
+                      "required" : [ "text", "url" ],
+                      "type" : "object",
+                      "properties" : {
+                        "url" : {
+                          "type" : "string",
+                          "exampleSetFlag" : false,
+                          "types" : [ "string" ]
+                        },
+                        "text" : {
+                          "type" : "string",
+                          "exampleSetFlag" : false,
+                          "types" : [ "string" ]
+                        }
+                      },
+                      "exampleSetFlag" : false,
+                      "types" : [ "object" ],
+                      "jsonSchema" : {
+                        "type" : "object",
+                        "properties" : {
+                          "url" : {
+                            "type" : "string"
+                          },
+                          "text" : {
+                            "type" : "string"
+                          }
+                        },
+                        "required" : [ "text", "url" ]
+                      }
+                    }
+                  },
+                  "exampleSetFlag" : false,
+                  "types" : [ "object" ],
+                  "jsonSchema" : {
+                    "type" : "object",
+                    "required" : [ "data", "page", "per_page", "support", "total", "total_pages" ],
+                    "properties" : {
+                      "page" : {
+                        "type" : "integer"
+                      },
+                      "per_page" : {
+                        "type" : "integer"
+                      },
+                      "total" : {
+                        "type" : "integer"
+                      },
+                      "total_pages" : {
+                        "type" : "integer"
+                      },
+                      "data" : {
+                        "type" : "array",
+                        "items" : {
+                          "type" : "object",
+                          "properties" : {
+                            "id" : {
+                              "type" : "integer"
+                            },
+                            "name" : {
+                              "type" : "string"
+                            },
+                            "year" : {
+                              "type" : "integer"
+                            },
+                            "color" : {
+                              "type" : "string"
+                            },
+                            "pantone_value" : {
+                              "type" : "string"
+                            }
+                          },
+                          "required" : [ "color", "id", "name", "pantone_value", "year" ]
+                        }
+                      },
+                      "support" : {
+                        "type" : "object",
+                        "properties" : {
+                          "url" : {
+                            "type" : "string"
+                          },
+                          "text" : {
+                            "type" : "string"
+                          }
+                        },
+                        "required" : [ "text", "url" ]
+                      }
+                    }
+                  }
+                },
+                "exampleSetFlag" : false
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : { },
+  "extensions" : {
+    "x-original-swagger-version" : "2.0"
+  },
+  "tags" : [ ],
+  "security" : [ ],
+  "x-mock" : true
+}
