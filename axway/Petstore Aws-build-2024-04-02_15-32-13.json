@@ -1,0 +1,199 @@
+{
+  "id" : "660bd78046091c234204b7cd",
+  "cts" : 1712052096043,
+  "createdUserName" : "Darshan Shivashankar",
+  "modifiedUserName" : "Darshan Shivashankar",
+  "mts" : 1712052096043,
+  "createdBy" : "60367d4038e56d398c70be6f",
+  "modifiedBy" : "60367d4038e56d398c70be6f",
+  "backendAPI" : {
+    "apiId" : "6cd74e8d-45d9-4343-a1df-9ab2f1995b4c",
+    "name" : "Petstore Aws",
+    "description" : "Swagger Documentation for Petstore Aws",
+    "baseURL" : "https://petstore3.swagger.io",
+    "resourcePath" : "/api/v3",
+    "version" : "",
+    "summary" : "",
+    "organization" : "64fcca2b-a6db-42ae-b259-5f7944d9b723",
+    "models" : { },
+    "methods" : [ {
+      "methodId" : "6eb3541b-48ac-4201-85b6-c6244095cd6b",
+      "path" : "/store/order",
+      "verb" : "POST",
+      "baseURL" : "https://petstore3.swagger.io/api/v3/store/order",
+      "name" : "/store/order",
+      "summary" : "/store/order",
+      "description" : "/store/order",
+      "consumes" : [ "*/*" ],
+      "produces" : [ ],
+      "parameters" : [ ],
+      "responseCodes" : [ {
+        "code" : 200,
+        "message" : "OK"
+      } ]
+    }, {
+      "methodId" : "36e220f7-43da-4a85-a495-b350d2beff6d",
+      "path" : "/pet/{id}",
+      "verb" : "GET",
+      "baseURL" : "https://petstore3.swagger.io/api/v3/pet/{id}",
+      "name" : "getPets",
+      "summary" : "get pets",
+      "description" : "get pets",
+      "consumes" : [ ],
+      "produces" : [ "*/*" ],
+      "parameters" : [ {
+        "name" : "id",
+        "paramType" : "path",
+        "type" : "string",
+        "required" : true,
+        "allowMultiple" : false
+      } ],
+      "responseCodes" : [ {
+        "code" : 200,
+        "message" : "OK"
+      } ]
+    } ],
+    "createdOn" : 1712052115307,
+    "createdBy" : "060666e3-fcde-4513-a471-d93b285a1fc7"
+  },
+  "frontendAPI" : {
+    "apiId" : "7cd0bcad-1852-43ba-8d6b-06203138dace",
+    "baseURL" : "https://petstore3.swagger.io",
+    "backendApiId" : "6cd74e8d-45d9-4343-a1df-9ab2f1995b4c",
+    "organizationId" : "64fcca2b-a6db-42ae-b259-5f7944d9b723",
+    "name" : "Petstore Aws",
+    "description" : "Swagger Documentation for Petstore Aws",
+    "version" : "",
+    "path" : "/api/v3",
+    "retired" : false,
+    "expired" : false,
+    "deprecated" : false,
+    "createdOn" : 1712052122166,
+    "createdBy" : "060666e3-fcde-4513-a471-d93b285a1fc7",
+    "retirementDate" : 0,
+    "state" : "published",
+    "tags" : { },
+    "methods" : [ {
+      "summary" : "/store/order",
+      "description" : "/store/order",
+      "name" : "/store/order",
+      "backendApiId" : "6cd74e8d-45d9-4343-a1df-9ab2f1995b4c",
+      "backendMethodId" : "6eb3541b-48ac-4201-85b6-c6244095cd6b",
+      "frontendApiId" : "7cd0bcad-1852-43ba-8d6b-06203138dace",
+      "frontendMethodId" : "6735a507-81c8-4085-8351-cd1cc5ee23eb",
+      "path" : "/store/order",
+      "verb" : "POST"
+    }, {
+      "summary" : "get pets",
+      "description" : "get pets",
+      "name" : "getPets",
+      "backendApiId" : "6cd74e8d-45d9-4343-a1df-9ab2f1995b4c",
+      "backendMethodId" : "36e220f7-43da-4a85-a495-b350d2beff6d",
+      "frontendApiId" : "7cd0bcad-1852-43ba-8d6b-06203138dace",
+      "frontendMethodId" : "47cde793-9124-45fe-b927-8b1935aff084",
+      "path" : "/pet/{id}",
+      "verb" : "GET"
+    } ],
+    "securityProfiles" : [ ],
+    "policies" : [ ],
+    "policyProfile" : { },
+    "certificates" : [ {
+      "name" : "CN=*.swagger.io",
+      "alias" : "CN=*.swagger.io",
+      "inbound" : false,
+      "outbound" : true,
+      "certificateData" : [ {
+        "notValidBefore" : 1703635200000,
+        "inbound" : false,
+        "subject" : "CN=*.swagger.io",
+        "sha1Fingerprint" : "15:3A:F1:BD:D4:AE:FF:0F:E0:8B:FE:E4:10:5B:2B:2F:3A:F9:D8:52",
+        "version" : 3,
+        "md5Fingerprint" : "B6:BD:37:39:62:4C:30:D2:28:5C:46:A1:08:E8:AC:EF",
+        "issuer" : "CN=Amazon RSA 2048 M02, O=Amazon, C=US",
+        "signatureAlgorithm" : "RSA (2048 bits)",
+        "expired" : false,
+        "certBlob" : "MIIFxTCCBK2gAwIBAgIQA82h36RzAKpuokB/rSUAnDANBgkqhkiG9w0BAQsFADA8MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRwwGgYDVQQDExNBbWF6b24gUlNBIDIwNDggTTAyMB4XDTIzMTIyNzAwMDAwMFoXDTI1MDEyNTIzNTk1OVowFzEVMBMGA1UEAwwMKi5zd2FnZ2VyLmlvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArd0npkPLaMVvRCm3d2EPL7GBPXm6DoiqINrb+XqL36tcSALM7oYEuPS9zStucZg17GnnxoHN1UIeuZSNSR73TDXDyJ5vzqwHyXHP66bfXxj6tlHkChzGDYFTrnCS71d+zlWNZN7MRKu5gt5nsbCMiXxMuFY0s7WJayEbqz8B1luwOK3saccy+n7Dnd2P40gsAIRr2j2qBWeQIKW7fZtBuo6tNnX4YE+Nd65c4J6ULBdEVGPZRRgC23NgtO9GXL+ux850AAd2JBXeJTY1Hz5nzlY+8Uy5FYD8qTPcnwY9SO4lq+M64At6aAApNVAeeqQlbne0wU91F9ye4GJaq0cS4QIDAQABo4IC5jCCAuIwHwYDVR0jBBgwFoAUwDFSzVpQw4J8dHHOy+mc+XrrguIwHQYDVR0OBBYEFINnt4C1gISHtTOfdqB5jUAfbpYPMBcGA1UdEQQQMA6CDCouc3dhZ2dlci5pbzATBgNVHSAEDDAKMAgGBmeBDAECATAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMDsGA1UdHwQ0MDIwMKAuoCyGKmh0dHA6Ly9jcmwucjJtMDIuYW1hem9udHJ1c3QuY29tL3IybTAyLmNybDB1BggrBgEFBQcBAQRpMGcwLQYIKwYBBQUHMAGGIWh0dHA6Ly9vY3NwLnIybTAyLmFtYXpvbnRydXN0LmNvbTA2BggrBgEFBQcwAoYqaHR0cDovL2NydC5yMm0wMi5hbWF6b250cnVzdC5jb20vcjJtMDIuY2VyMAwGA1UdEwEB/wQCMAAwggF/BgorBgEEAdZ5AgQCBIIBbwSCAWsBaQB2AE51oydcmhDDOFts1N8/Uusd8OCOG41pwLH6ZLFimjnfAAABjKk5ypsAAAQDAEcwRQIgf/+vE0inVnZSHColwVLzFRt0R0Nnztb+fy8u4nYVWr0CIQCK6TtLm0CE2s3pdBC2mYsES9jJp3VbaW/ssvja3jvXrgB3AH1ZHhLheCp7HGFnfF79+NCHXBSgTpWeuQMv2Q6MLnm4AAABjKk5ypYAAAQDAEgwRgIhAInxRlDESSOlg+teAFkMr83UK1A8MRibtwWVoGBJekgkAiEAqoCmFmtS4nj/LODNriyCQTRsINryqwENo8w7WNKr/eYAdgDm0jFjQHeMwRBBBtdxuc7B0kD2loSG+7qHMh39HjeOUAAAAYypOcrAAAAEAwBHMEUCIEs3AGF3qGL1m9vccgxN+JhboWmsinVim6do8S4Lt7q6AiEAzar7GBDosVbqyiCh+3WvKi9RTZ4q2+pzeNdtI03nsC8wDQYJKoZIhvcNAQELBQADggEBAGncWKSH+67wQOTk+LssZt037DgR8XRP+OiX57qvMX4ug1RgHzRoLZRmeFVAfwWilreeD3SLEnJcI3UEejkKY4EGnmesMH6RXXbOJAr/qJPnQQSRWnh2lzl4t1HbpeZeyxoyd0SkKeFXeWz1E2HRSSr8/n5iizRndM54XTRaICShKJH5cxKiBeDRqU+W/6QCyz0uhS5FVDCQuM83Z/1j9mWdMc0Xx0ImE7IxJZWfbqP4G6bfUADBuUDowL5mjcNCS9PztsMYEBPOYBtaHLVIryFDb/wiyNg7mvCQz7Pg+qeNUfT+GnYklvCithXUHocsAGNlFYWsjtvHE9mekZEtL74=",
+        "outbound" : true,
+        "notValidAfter" : 1737849599000,
+        "name" : "CN=*.swagger.io",
+        "alias" : "CN=*.swagger.io",
+        "notYetValid" : false
+      } ]
+    }, {
+      "name" : "CN=Amazon RSA 2048 M02, O=Amazon, C=US",
+      "alias" : "CN=Amazon RSA 2048 M02, O=Amazon, C=US",
+      "inbound" : false,
+      "outbound" : true,
+      "certificateData" : [ {
+        "notValidBefore" : 1661293530000,
+        "inbound" : false,
+        "subject" : "CN=Amazon RSA 2048 M02, O=Amazon, C=US",
+        "sha1Fingerprint" : "41:4A:20:60:B7:38:C6:35:CC:7F:C2:43:E0:52:61:55:92:83:0C:53",
+        "version" : 3,
+        "md5Fingerprint" : "11:32:62:79:2F:3A:49:1C:D7:C5:F8:B2:3B:DD:54:F0",
+        "issuer" : "CN=Amazon Root CA 1, O=Amazon, C=US",
+        "signatureAlgorithm" : "RSA (2048 bits)",
+        "expired" : false,
+        "certBlob" : "MIIEXjCCA0agAwIBAgITB3MSSkvL1E7HtTvq8ZSELToPoTANBgkqhkiG9w0BAQsFADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24gUm9vdCBDQSAxMB4XDTIyMDgyMzIyMjUzMFoXDTMwMDgyMzIyMjUzMFowPDELMAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEcMBoGA1UEAxMTQW1hem9uIFJTQSAyMDQ4IE0wMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALtDGMZaqHneKei1by6+pUPPLljTB143Si6VpEWPc6mSkFhZb/6qrkZyoHlQLbDYnI2D7hD0sdzEqfnuAjIsuXQLG3A8TvX6V3oFNBFVe8NlLJHvBseKY88saLwufxkZVwk74g4nWlNMXzla9Y5F3wwRHwMVH443xGz6UtGSZSqQ94eFx5X7Tlqt8whi8qCaKdZ5rNak+r9nUThOeClqFd4oXych//Rc7Y0eX1KNWHYSI1Nk31mYgiK3JvH063g+K9tHA63ZeTgKgndlh+WI+zv7i44HepRZjA1FYwYZ9Vv/9UkC5Yz8/yU65fgjaE+wVHM4e/YyC2osrPWE7gJ+dXMCAwEAAaOCAVowggFWMBIGA1UdEwEB/wQIMAYBAf8CAQAwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQUwDFSzVpQw4J8dHHOy+mc+XrrguIwHwYDVR0jBBgwFoAUhBjMhTTsvAyUlC4IWZzHshBOCggwewYIKwYBBQUHAQEEbzBtMC8GCCsGAQUFBzABhiNodHRwOi8vb2NzcC5yb290Y2ExLmFtYXpvbnRydXN0LmNvbTA6BggrBgEFBQcwAoYuaHR0cDovL2NydC5yb290Y2ExLmFtYXpvbnRydXN0LmNvbS9yb290Y2ExLmNlcjA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY3JsLnJvb3RjYTEuYW1hem9udHJ1c3QuY29tL3Jvb3RjYTEuY3JsMBMGA1UdIAQMMAowCAYGZ4EMAQIBMA0GCSqGSIb3DQEBCwUAA4IBAQAtTi6Fs0Azfi+iwm7jrz+CSxHH+uHl7Law3MQSXVtR8RV53PtR6r/6gNpqlzdoZq4FKbADi1v9Bun8RY8D51uedRfjsbeodizeBB8nXmeyD33Ep7VATj4ozcd31YFVfgRhvTSxNrrTlNpWkUk0m3BMPv8sg381HhA6uEYokE5q9uws/3YkKqRiEz3TsaWmJqIRZhMbgAfp7O7FUwFIb7UIspogZSKxPIWJpxiPo3TcBambbVtQOcNRWz5qCQdDslI2yayq0n2TXoHyNCLEH8rpsJRVILFsg0jc7BaFrMnF462+ajSehgj12IidNeRN4zl+EoNaWdpnWndvSpAEkq2P",
+        "outbound" : true,
+        "notValidAfter" : 1913754330000,
+        "name" : "CN=Amazon RSA 2048 M02, O=Amazon, C=US",
+        "alias" : "CN=Amazon RSA 2048 M02, O=Amazon, C=US",
+        "notYetValid" : false
+      } ]
+    }, {
+      "name" : "CN=Amazon Root CA 1, O=Amazon, C=US",
+      "alias" : "CN=Amazon Root CA 1, O=Amazon, C=US",
+      "inbound" : false,
+      "outbound" : true,
+      "certificateData" : [ {
+        "notValidBefore" : 1432555200000,
+        "inbound" : false,
+        "subject" : "CN=Amazon Root CA 1, O=Amazon, C=US",
+        "sha1Fingerprint" : "06:B2:59:27:C4:2A:72:16:31:C1:EF:D9:43:1E:64:8F:A6:2E:1E:39",
+        "version" : 3,
+        "md5Fingerprint" : "E8:65:A2:2A:AE:52:4D:26:86:9A:F0:44:8D:6F:D8:96",
+        "issuer" : "CN=Starfield Services Root Certificate Authority - G2, O=\"Starfield Technologies, Inc.\", L=Scottsdale, ST=Arizona, C=US",
+        "signatureAlgorithm" : "RSA (2048 bits)",
+        "expired" : false,
+        "certBlob" : "MIIEkjCCA3qgAwIBAgITBn+USionzfP6wq4rAfkI7rnExjANBgkqhkiG9w0BAQsFADCBmDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0FyaXpvbmExEzARBgNVBAcTClNjb3R0c2RhbGUxJTAjBgNVBAoTHFN0YXJmaWVsZCBUZWNobm9sb2dpZXMsIEluYy4xOzA5BgNVBAMTMlN0YXJmaWVsZCBTZXJ2aWNlcyBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eSAtIEcyMB4XDTE1MDUyNTEyMDAwMFoXDTM3MTIzMTAxMDAwMFowOTELMAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJvb3QgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ4gHHKeNXjca9HgFB0fW7Y14h29Jlo91ghYPl0hAEvrAIthtOgQ3pOsqTQNroBvo3bSMgHFzZM9O6II8c+6zf1tRn4SWiw3te5djgdYZ6k/oI2peVKVuRF4fn9tBb6dNqcmzU5L/qwIFAGbHrQgLKm+a/sRxmPUDgH3KKHOVj4utWp+UhnMJbulHheb4mjUcAwhmahRWa6VOujw5H5SNz/0egwLX0tdHA114gk957EWW67c4cX8jJGKLhD+rcdqsq08p8kDi1L93FcXmn/6pUCyziKrlA4b9v7LWIbxcceVOF34GfID5yHI9Y/QCB/IIDEgEw+OyQmjgSubJrIqg0CAwEAAaOCATEwggEtMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgGGMB0GA1UdDgQWBBSEGMyFNOy8DJSULghZnMeyEE4KCDAfBgNVHSMEGDAWgBScXwDfqgHXMCs4iKK4bUqc8hGRgzB4BggrBgEFBQcBAQRsMGowLgYIKwYBBQUHMAGGImh0dHA6Ly9vY3NwLnJvb3RnMi5hbWF6b250cnVzdC5jb20wOAYIKwYBBQUHMAKGLGh0dHA6Ly9jcnQucm9vdGcyLmFtYXpvbnRydXN0LmNvbS9yb290ZzIuY2VyMD0GA1UdHwQ2MDQwMqAwoC6GLGh0dHA6Ly9jcmwucm9vdGcyLmFtYXpvbnRydXN0LmNvbS9yb290ZzIuY3JsMBEGA1UdIAQKMAgwBgYEVR0gADANBgkqhkiG9w0BAQsFAAOCAQEAYjdCXLwQtT6LLOkMm2xF4gcAevnFWAu5CIw+7bMlPLVvUOTNNWqnkzSWMiGpSESrnO09tKpzbeR/FoCJbM8oAxiDR3mjEH4wW6w7sGDgd9QIpuEdfF7Au/maeyKdpwAJfqxGF4PcnCZXmTA5YpaP7dreqsXMGz7KQ2hsVxa81Q4gLv7/wmpdLqBKbRRYh5TmOTFffHPLkIhqhBGWJ6bt2YFGpn6jcgAKUj6DiAdjd4lpFw85hdKrCEVN0FE6/V1dN2RMfjCyVSRCnTawXZwXgWHxyvkQAiSr6w10kY17RSlQOYiypok1JR4UakcjMS9cmvqtmg5iUaQqqcT5NJ0hGA==",
+        "outbound" : true,
+        "notValidAfter" : 2145834000000,
+        "name" : "CN=Amazon Root CA 1, O=Amazon, C=US",
+        "alias" : "CN=Amazon Root CA 1, O=Amazon, C=US",
+        "notYetValid" : false
+      } ]
+    }, {
+      "name" : "CN=Starfield Services Root Certificate Authority - G2, O=\"Starfield Technologies, Inc.\", L=Scottsdale, ST=Arizona, C=US",
+      "alias" : "CN=Starfield Services Root Certificate Authority - G2, O=\"Starfield Technologies, Inc.\", L=Scottsdale, ST=Arizona, C=US",
+      "inbound" : false,
+      "outbound" : true,
+      "certificateData" : [ {
+        "notValidBefore" : 1251849600000,
+        "inbound" : false,
+        "subject" : "CN=Starfield Services Root Certificate Authority - G2, O=\"Starfield Technologies, Inc.\", L=Scottsdale, ST=Arizona, C=US",
+        "sha1Fingerprint" : "9E:99:A4:8A:99:60:B1:49:26:BB:7F:3B:02:E2:2D:A2:B0:AB:72:80",
+        "version" : 3,
+        "md5Fingerprint" : "C6:15:09:25:CF:EA:59:41:DD:C7:FF:2A:0A:50:66:92",
+        "issuer" : "OU=Starfield Class 2 Certification Authority, O=\"Starfield Technologies, Inc.\", C=US",
+        "signatureAlgorithm" : "RSA (2048 bits)",
+        "expired" : false,
+        "certBlob" : "MIIEdTCCA12gAwIBAgIJAKcOSkw0grd/MA0GCSqGSIb3DQEBCwUAMGgxCzAJBgNVBAYTAlVTMSUwIwYDVQQKExxTdGFyZmllbGQgVGVjaG5vbG9naWVzLCBJbmMuMTIwMAYDVQQLEylTdGFyZmllbGQgQ2xhc3MgMiBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0wOTA5MDIwMDAwMDBaFw0zNDA2MjgxNzM5MTZaMIGYMQswCQYDVQQGEwJVUzEQMA4GA1UECBMHQXJpem9uYTETMBEGA1UEBxMKU2NvdHRzZGFsZTElMCMGA1UEChMcU3RhcmZpZWxkIFRlY2hub2xvZ2llcywgSW5jLjE7MDkGA1UEAxMyU3RhcmZpZWxkIFNlcnZpY2VzIFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVDDrEKvlO4vW+GZdfjohTsR8/y8+fIBNtKTrID30892t2OGPZNmCom15cAICyL1l/9of5JUOG52kbUpqQ4XHj2C0NTm/2yEnZtvMaVq4rtnQU68/7JuMauh2WLmo7WJSJR1b/JaCTcFOD2oR0FMNnngRoOt+OQFodSk7PQ5E751bWAHDLUu57fa4657wx+UX2wmDPE1kCK4DMNEffud6QZW0CzyyRpqbn3oUYSXxmTqM6bam17jQuug0DuDPfR+uxa40l2ZvOgdFFRjKWcIfeAg5JQ4W2bHO7ZOphQazJ1FTfhy/HIrImzJ9ZVGif/L4qL8RVHHVAYBeFAlU5i38FAgMBAAGjgfAwge0wDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0OBBYEFJxfAN+qAdcwKziIorhtSpzyEZGDMB8GA1UdIwQYMBaAFL9ft9HO3R+G9FtVrNzXEMIOqYjnME8GCCsGAQUFBwEBBEMwQTAcBggrBgEFBQcwAYYQaHR0cDovL28uc3MyLnVzLzAhBggrBgEFBQcwAoYVaHR0cDovL3guc3MyLnVzL3guY2VyMCYGA1UdHwQfMB0wG6AZoBeGFWh0dHA6Ly9zLnNzMi51cy9yLmNybDARBgNVHSAECjAIMAYGBFUdIAAwDQYJKoZIhvcNAQELBQADggEBACMd44pXyn3pF3lM8R5V/cxTbj5HD9/GVfKyBDbtgB9TxF00KGu+x1X8Z+rLP3+QsjPNG1gQggL4+C/1E2DUBc7xgQjB3ad1l08YuW3e95ORCLp+QCztweq7dp4zBncdDQh/U90bZKuCJ/Fp1U1ervShw3WnWEQt8jxwmKy6abaVd38PMV4s/KCHOkdp8Hlf9BRUpJVeEXgSYCfOn8J3/yNTd126/+pZ59vPr5KW7ySaNRB6nJHGDn2Z9j8Z3/VyVOEVqQdZe4O/Ui5GjLIAZHYcSNPYeehuVsyuLAOQ1xk4meTKCRlb/weWsKh/NEnfVqn3sF/tM+2MR7cwA130A4w=",
+        "outbound" : true,
+        "notValidAfter" : 2035129156000,
+        "name" : "CN=Starfield Services Root Certificate Authority - G2, O=\"Starfield Technologies, Inc.\", L=Scottsdale, ST=Arizona, C=US",
+        "alias" : "CN=Starfield Services Root Certificate Authority - G2, O=\"Starfield Technologies, Inc.\", L=Scottsdale, ST=Arizona, C=US",
+        "notYetValid" : false
+      } ]
+    } ]
+  },
+  "enableScmUpload" : false,
+  "connectorName" : "Axway",
+  "connectorId" : "65e6fad88ed1ad1654231af9",
+  "swaggerMetadata" : {
+    "swaggerId" : "33c9bf15a5d7480db74d0a4dc44cbe25",
+    "swaggerName" : "Petstore Aws",
+    "revision" : 1,
+    "version" : "2.0"
+  }
+}
