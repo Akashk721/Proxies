@@ -1,0 +1,210 @@
+{
+  "id" : "660fc8fa6e12a14afe7df59e",
+  "cts" : 1712310522564,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1712310522564,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "backendAPI" : {
+    "apiId" : "35b6f43e-abca-484d-8f5b-5c7b8b221ff5",
+    "name" : "Rate Stream",
+    "description" : "Fetches a FX quote for the given ccyPair at duration (Spot,ON,TN) - Adds the ccyPair spread got from the FX Spread API",
+    "baseURL" : "http://34.121.145.236:9081",
+    "resourcePath" : "/v1/acme",
+    "version" : "",
+    "summary" : "",
+    "organization" : "33a86e9d-8eca-40cd-9d1e-d2dc554b2de3",
+    "models" : {
+      "QuoteRequest" : "{\"type\":\"object\",\"properties\":{\"ccyPair\":{\"type\":\"string\",\"example\":\"EURUSD\"},\"settlementType\":{\"type\":\"string\",\"example\":\"TN\"},\"notional\":{\"type\":\"number\",\"example\":1.0E7}}}",
+      "Quote" : "{\"type\":\"object\",\"properties\":{\"TOM\":{\"type\":\"number\",\"example\":45.67},\"SPOT\":{\"type\":\"number\",\"example\":45.44},\"9M\":{\"type\":\"number\",\"example\":98.34},\"6M\":{\"type\":\"number\",\"example\":95.34},\"1Y\":{\"type\":\"number\",\"example\":103.45},\"3M\":{\"type\":\"number\",\"example\":90.78},\"1M\":{\"type\":\"number\",\"example\":88.9},\"ON\":{\"type\":\"number\",\"example\":23.56}}}",
+      "QuoteSubscriptionRequest" : "{\"type\":\"object\",\"description\":\"\",\"properties\":{\"mode\":{\"type\":\"string\"},\"host\":{\"type\":\"string\"},\"tenor\":{\"type\":\"string\"}}}"
+    },
+    "methods" : [ {
+      "methodId" : "fe689178-c723-4ec5-9c65-dee930f47be5",
+      "path" : "/rates/fx/ccy_list",
+      "verb" : "GET",
+      "baseURL" : "http://34.121.145.236:9081/v1/acme/rates/fx/ccy_list",
+      "name" : "getListOfSupportedCcyPairs",
+      "summary" : "Get List of Supported Currency Pairs",
+      "description" : "Get List of Supported Currency Pairs",
+      "returnType" : "void",
+      "consumes" : [ ],
+      "produces" : [ "application/json" ],
+      "parameters" : [ {
+        "name" : "customer_id",
+        "paramType" : "header",
+        "type" : "string",
+        "required" : false
+      } ],
+      "responseCodes" : [ {
+        "code" : 200,
+        "message" : "OK",
+        "schemaType" : "Void"
+      } ]
+    }, {
+      "methodId" : "f06a97ef-8d20-41bd-9809-55f09bfbd498",
+      "path" : "/rates/fx",
+      "verb" : "POST",
+      "baseURL" : "http://34.121.145.236:9081/v1/acme/rates/fx",
+      "name" : "getQuote",
+      "summary" : "Get a quote for a ccyPair-settlement-notional",
+      "description" : "Get a quote for a ccyPair-settlement-notional",
+      "returnType" : "Quote",
+      "consumes" : [ "application/json" ],
+      "produces" : [ "application/json" ],
+      "parameters" : [ {
+        "name" : "customer_id",
+        "paramType" : "header",
+        "type" : "string",
+        "required" : false
+      } ],
+      "responseCodes" : [ {
+        "code" : 200,
+        "message" : "OK",
+        "schema" : "{\"$ref\":\"#/definitions/Quote\"}",
+        "schemaType" : "Reference"
+      } ]
+    }, {
+      "methodId" : "5838f60b-9c95-4712-8b1b-09093d7425b1",
+      "path" : "/rates/fx/{ccyPair}",
+      "verb" : "POST",
+      "baseURL" : "http://34.121.145.236:9081/v1/acme/rates/fx/{ccyPair}",
+      "name" : "subscribeCcy",
+      "summary" : "subscribe to streamed rates for a specific ccyPair",
+      "description" : "subscribe to streamed rates for a specific ccyPair",
+      "returnType" : "void",
+      "consumes" : [ "application/json" ],
+      "produces" : [ ],
+      "parameters" : [ {
+        "name" : "ccyPair",
+        "paramType" : "path",
+        "type" : "string",
+        "required" : true,
+        "allowMultiple" : false
+      }, {
+        "name" : "ccyPair",
+        "paramType" : "query",
+        "type" : "string",
+        "required" : false
+      }, {
+        "name" : "customer_id",
+        "paramType" : "header",
+        "type" : "string",
+        "required" : false
+      } ],
+      "responseCodes" : [ {
+        "code" : 200,
+        "message" : "OK"
+      }, {
+        "code" : 401,
+        "message" : "Unauthorized"
+      } ]
+    }, {
+      "methodId" : "ccb71c1d-4d19-445a-87db-dd98f5c6a13c",
+      "path" : "/rates/fx/{ccyPair}",
+      "verb" : "DELETE",
+      "baseURL" : "http://34.121.145.236:9081/v1/acme/rates/fx/{ccyPair}",
+      "name" : "Unsubscribe from quote",
+      "summary" : "Unsubscribe from streamed rates for a specific ccyPair",
+      "description" : "Unsubscribe from streamed rates for a specific ccyPair",
+      "returnType" : "void",
+      "consumes" : [ ],
+      "produces" : [ ],
+      "parameters" : [ {
+        "name" : "ccyPair",
+        "paramType" : "path",
+        "type" : "string",
+        "required" : true,
+        "allowMultiple" : false
+      }, {
+        "name" : "customer_id",
+        "paramType" : "header",
+        "type" : "string",
+        "required" : false
+      } ],
+      "responseCodes" : [ {
+        "code" : 200,
+        "message" : "OK"
+      } ]
+    } ],
+    "createdOn" : 1712310543663,
+    "createdBy" : "5097a846-5f0f-4c74-b08b-66d6926f5bf9"
+  },
+  "frontendAPI" : {
+    "apiId" : "e7aaf365-8a9d-4239-9b31-473e78ed9c6f",
+    "baseURL" : "http://34.121.145.236:9081",
+    "backendApiId" : "35b6f43e-abca-484d-8f5b-5c7b8b221ff5",
+    "organizationId" : "33a86e9d-8eca-40cd-9d1e-d2dc554b2de3",
+    "name" : "Rate Stream",
+    "description" : "Fetches a FX quote for the given ccyPair at duration (Spot,ON,TN) - Adds the ccyPair spread got from the FX Spread API",
+    "version" : "",
+    "path" : "/v1/acme",
+    "retired" : false,
+    "expired" : false,
+    "monitorAPI" : true,
+    "queryStringPassThrough" : true,
+    "deprecated" : false,
+    "createdOn" : 1712310546620,
+    "createdBy" : "5097a846-5f0f-4c74-b08b-66d6926f5bf9",
+    "retirementDate" : 0,
+    "state" : "published",
+    "tags" : {
+      "FX" : [ "FX" ]
+    },
+    "methods" : [ {
+      "summary" : "Get List of Supported Currency Pairs",
+      "description" : "Get List of Supported Currency Pairs",
+      "name" : "getListOfSupportedCcyPairs",
+      "backendApiId" : "35b6f43e-abca-484d-8f5b-5c7b8b221ff5",
+      "backendMethodId" : "fe689178-c723-4ec5-9c65-dee930f47be5",
+      "frontendApiId" : "e7aaf365-8a9d-4239-9b31-473e78ed9c6f",
+      "frontendMethodId" : "1aaaf2bc-603e-4210-ac8d-5f63f9501d87",
+      "path" : "/rates/fx/ccy_list",
+      "verb" : "GET"
+    }, {
+      "summary" : "Get a quote for a ccyPair-settlement-notional",
+      "description" : "Get a quote for a ccyPair-settlement-notional",
+      "name" : "getQuote",
+      "backendApiId" : "35b6f43e-abca-484d-8f5b-5c7b8b221ff5",
+      "backendMethodId" : "f06a97ef-8d20-41bd-9809-55f09bfbd498",
+      "frontendApiId" : "e7aaf365-8a9d-4239-9b31-473e78ed9c6f",
+      "frontendMethodId" : "1dcafc3a-46db-4ef1-9acf-16f85914e78d",
+      "path" : "/rates/fx",
+      "verb" : "POST"
+    }, {
+      "summary" : "subscribe to streamed rates for a specific ccyPair",
+      "description" : "subscribe to streamed rates for a specific ccyPair",
+      "name" : "subscribeCcy",
+      "backendApiId" : "35b6f43e-abca-484d-8f5b-5c7b8b221ff5",
+      "backendMethodId" : "5838f60b-9c95-4712-8b1b-09093d7425b1",
+      "frontendApiId" : "e7aaf365-8a9d-4239-9b31-473e78ed9c6f",
+      "frontendMethodId" : "044a0975-6a62-434b-940c-7fcee03e9285",
+      "path" : "/rates/fx/{ccyPair}",
+      "verb" : "POST"
+    }, {
+      "summary" : "Unsubscribe from streamed rates for a specific ccyPair",
+      "description" : "Unsubscribe from streamed rates for a specific ccyPair",
+      "name" : "Unsubscribe from quote",
+      "backendApiId" : "35b6f43e-abca-484d-8f5b-5c7b8b221ff5",
+      "backendMethodId" : "ccb71c1d-4d19-445a-87db-dd98f5c6a13c",
+      "frontendApiId" : "e7aaf365-8a9d-4239-9b31-473e78ed9c6f",
+      "frontendMethodId" : "1a08778d-aae9-4c30-88dc-8d5b718204e0",
+      "path" : "/rates/fx/{ccyPair}",
+      "verb" : "DELETE"
+    } ],
+    "securityProfiles" : [ ],
+    "policies" : [ ],
+    "policyProfile" : { },
+    "certificates" : [ ]
+  },
+  "enableScmUpload" : false,
+  "connectorName" : "qa-axway",
+  "connectorId" : "660e377012252b7d4e41fead",
+  "swaggerMetadata" : {
+    "swaggerId" : "a3af0a5fb1464cd7a6d3bd9209a70fb5",
+    "swaggerName" : "Rate Stream",
+    "revision" : 2,
+    "version" : "2.0"
+  }
+}
