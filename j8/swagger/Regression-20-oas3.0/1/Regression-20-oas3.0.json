@@ -1,0 +1,147 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "Regression-20-oas3.0",
+    "description" : "Swagger Documentation for Regression-20-oas3.0",
+    "version" : "v1.0.0",
+    "license" : {
+      "name" : "License_v1",
+      "url" : "https://design-stage.apiwiz.io/develop/oas2/swagger/80ef35add03543c6894bd9b300af1118/overview"
+    },
+    "contact" : {
+      "name" : "vidya",
+      "url" : "https://design-stage.apiwiz.io/develop/oas2/swagger/6da7613dbe794723be972853fd5ec025/overview",
+      "email" : "vidya.r@apiwiz.com"
+    }
+  },
+  "paths" : {
+    "/mock" : {
+      "summary" : "mock",
+      "x-description" : "mock",
+      "parameters" : [ {
+        "name" : "mock",
+        "required" : false,
+        "style" : "simple",
+        "in" : "header",
+        "schema" : {
+          "description" : "",
+          "type" : "string"
+        }
+      } ],
+      "servers" : [ {
+        "x-name" : "mock",
+        "x-schema" : "https://",
+        "x-hostName" : "mock.apiwiz.io",
+        "url" : "https://mock.apiwiz.io/mock",
+        "x-basePath" : "/mock"
+      } ],
+      "get" : {
+        "operationId" : "mock",
+        "summary" : "mock",
+        "description" : "mock",
+        "responses" : {
+          "200" : {
+            "description" : "mock"
+          }
+        },
+        "parameters" : [ {
+          "name" : "mock",
+          "required" : false,
+          "style" : "simple",
+          "in" : "header",
+          "schema" : {
+            "description" : "",
+            "type" : "string"
+          }
+        } ]
+      }
+    }
+  },
+  "servers" : [ {
+    "x-name" : "mocky",
+    "x-schema" : "https://",
+    "x-hostName" : "mock.apiwiz.io",
+    "url" : "https://mock.apiwiz.io/mock.apiwiz.io",
+    "x-basePath" : "/mock.apiwiz.io"
+  } ],
+  "tags" : [ {
+    "name" : "mock",
+    "description" : "mock"
+  } ],
+  "security" : [ ],
+  "components" : {
+    "schemas" : {
+      "mock" : {
+        "description" : "",
+        "type" : "string"
+      }
+    },
+    "examples" : {
+      "mock" : {
+        "value" : "{\n    \"json\":\"v1\"\n}",
+        "summary" : "mock"
+      }
+    },
+    "headers" : {
+      "mock" : {
+        "example" : "",
+        "schema" : {
+          "description" : "",
+          "type" : "string"
+        }
+      }
+    },
+    "links" : {
+      "mock" : {
+        "operationId" : "mock",
+        "description" : "mock",
+        "requestBody" : "$request.bodymock"
+      }
+    },
+    "parameters" : {
+      "mock" : {
+        "name" : "mock",
+        "required" : false,
+        "style" : "simple",
+        "in" : "header",
+        "schema" : {
+          "description" : "",
+          "type" : "string"
+        }
+      }
+    },
+    "requestBodies" : {
+      "mock" : {
+        "content" : { }
+      }
+    },
+    "responses" : {
+      "200" : {
+        "description" : "mock"
+      }
+    },
+    "securitySchemes" : {
+      "mock" : {
+        "type" : "http",
+        "description" : "",
+        "scheme" : "mock"
+      }
+    }
+  },
+  "x-mock" : true,
+  "x-metadata" : {
+    "metadata" : {
+      "swaggerName" : "ebfc39df2ca64143ac473e89125008ab",
+      "revision" : 1,
+      "documentation" : [ {
+        "title" : "docv2",
+        "summary" : "docv2",
+        "content" : "docv2"
+      } ],
+      "category" : [ {
+        "name" : "Unsorted",
+        "paths" : [ "/mock" ]
+      } ]
+    }
+  }
+}
