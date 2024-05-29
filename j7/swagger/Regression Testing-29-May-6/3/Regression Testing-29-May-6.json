@@ -1,0 +1,69 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Regression Testing-29-May-6",
+    "description" : "Swagger Documentation for Regression Testing-29-May",
+    "version" : "v1.0.0",
+    "termsOfService" : "",
+    "contact" : {
+      "name" : "vidya",
+      "url" : "https://design-stage.apiwiz.io/develop/oas2/swagger/6da7613dbe794723be972853fd5ec025/overview",
+      "email" : "vidya.r@apiwiz.com"
+    }
+  },
+  "paths" : {
+    "/Docv1" : {
+      "parameters" : [ {
+        "name" : "Docv1",
+        "in" : "header",
+        "required" : false,
+        "description" : "",
+        "type" : "string"
+      } ],
+      "x-description" : "Docv1",
+      "get" : {
+        "summary" : "Docv1",
+        "description" : "Docv1",
+        "parameters" : [ ],
+        "operationId" : "Docv1",
+        "responses" : {
+          "200" : {
+            "description" : ""
+          }
+        },
+        "tags" : [ "tagv6" ],
+        "x-targetBasepath" : "/v4"
+      }
+    }
+  },
+  "schemes" : [ "https", "http" ],
+  "x-servers" : [ ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "tags" : [ {
+    "name" : "tagv6",
+    "description" : "tagv1"
+  } ],
+  "basePath" : "/swagger/v10",
+  "host" : "mock.apiwiz.io",
+  "definitions" : { },
+  "securityDefinitions" : { },
+  "parameters" : { },
+  "x-mock" : true,
+  "x-metadata" : {
+    "metadata" : {
+      "swaggerName" : "1fe7a485c78e4381b1add7e57f2bc16f",
+      "revision" : 1,
+      "documentation" : [ {
+        "title" : "Docv1",
+        "summary" : "Docv1",
+        "content" : "Docv1"
+      } ],
+      "category" : [ {
+        "name" : "Unsorted",
+        "paths" : [ "/Docv1" ],
+        "definitions" : [ ]
+      } ]
+    }
+  }
+}
