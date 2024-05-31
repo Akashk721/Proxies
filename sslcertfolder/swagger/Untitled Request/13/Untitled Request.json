@@ -1,0 +1,318 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Untitled Request",
+    "description" : "dummy",
+    "version" : "1.0"
+  },
+  "servers" : [ {
+    "url" : "https://dev-api.apiwiz.io/itorix/v1/design/graphql"
+  } ],
+  "paths" : {
+    "/history" : {
+      "get" : {
+        "tags" : [ "acme-team-gcp-stage" ],
+        "summary" : "Untitled Request",
+        "description" : "dummy",
+        "operationId" : "Untitled Request",
+        "parameters" : [ {
+          "name" : "sec-ch-ua",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\""
+        }, {
+          "name" : "accept",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "application/json, text/plain, */*"
+        }, {
+          "name" : "accept-language",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "en-GB,en-US;q=0.9,en;q=0.8"
+        }, {
+          "name" : "user-agent",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+        }, {
+          "name" : "priority",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "u=1, i"
+        }, {
+          "name" : "pageSize",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "10"
+        }, {
+          "name" : "sec-ch-ua-platform",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "\"macOS\""
+        }, {
+          "name" : "sortbymts",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "desc"
+        }, {
+          "name" : "origin",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "https"
+        }, {
+          "name" : "sec-fetch-site",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "same-site"
+        }, {
+          "name" : "sec-ch-ua-mobile",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "?0"
+        }, {
+          "name" : "interactionid",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "mqbUw0wTUlI67NrD"
+        }, {
+          "name" : "referer",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "https"
+        }, {
+          "name" : "x-apikey",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "XeX0u28Ya1a3CBm5tihMQFteeA6fZTy8avUIsJ0WnNOaEAM90Hcv9G2xo5z5hI4WMyHffxTAbP2LcXK4u6n5Pw=="
+        }, {
+          "name" : "sec-fetch-dest",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "empty"
+        }, {
+          "name" : "sec-fetch-mode",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "cors"
+        }, {
+          "name" : "offset",
+          "in" : "query",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "1"
+        }, {
+          "name" : "jsessionid",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "665870bed3377979153a479e"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Response for endpoint GET-history",
+            "headers" : {
+              "date" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "server" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "expires" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-envoy-upstream-service-time" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "transfer-encoding" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "vary" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-frame-options" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "pragma" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "strict-transport-security" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "access-control-allow-origin" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-content-type-options" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-xss-protection" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "content-type" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "cache-control" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "required" : [ "data", "pagination" ],
+                  "type" : "object",
+                  "properties" : {
+                    "pagination" : {
+                      "required" : [ "offset", "pageSize", "total" ],
+                      "type" : "object",
+                      "properties" : {
+                        "total" : {
+                          "type" : "integer"
+                        },
+                        "offset" : {
+                          "type" : "integer"
+                        },
+                        "pageSize" : {
+                          "type" : "integer"
+                        }
+                      }
+                    },
+                    "data" : {
+                      "type" : "array",
+                      "items" : {
+                        "required" : [ "_id", "createdBy", "createdUserName", "cts", "graphQLId", "modifiedBy", "modifiedUserName", "mts", "name", "revision", "status" ],
+                        "type" : "object",
+                        "properties" : {
+                          "name" : {
+                            "type" : "string"
+                          },
+                          "graphQLId" : {
+                            "type" : "string"
+                          },
+                          "revision" : {
+                            "type" : "integer"
+                          },
+                          "status" : {
+                            "type" : "string"
+                          },
+                          "createdBy" : {
+                            "type" : "string"
+                          },
+                          "cts" : {
+                            "type" : "integer"
+                          },
+                          "createdUserName" : {
+                            "type" : "string"
+                          },
+                          "modifiedBy" : {
+                            "type" : "string"
+                          },
+                          "modifiedUserName" : {
+                            "type" : "string"
+                          },
+                          "mts" : {
+                            "type" : "integer"
+                          },
+                          "_id" : {
+                            "required" : [ "date", "timestamp" ],
+                            "type" : "object",
+                            "properties" : {
+                              "timestamp" : {
+                                "type" : "integer"
+                              },
+                              "date" : {
+                                "type" : "integer"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "example" : "{\"pagination\":{\"total\":22,\"offset\":1,\"pageSize\":10},\"data\":[{\"name\":\"Regression-graphql\",\"graphQLId\":\"5bea8748a1e7466abd578919a00cce24\",\"revision\":2,\"status\":\"Retired\",\"createdBy\":\"6454a1d660f0577244784ac0\",\"cts\":1717060528047,\"createdUserName\":\"vidya.wiz vidya.wiz\",\"modifiedBy\":\"6454a1d660f0577244784ac0\",\"modifiedUserName\":\"vidya.wiz vidya.wiz\",\"mts\":1717143048492,\"_id\":{\"timestamp\":1717060528,\"date\":1717060528000}},{\"name\":\"GraphQL-Converging Repo (1)\",\"graphQLId\":\"39d3a801870348cfaeef62a9b51f0a9a\",\"revision\":3,\"status\":\"Publish\",\"createdBy\":\"6454a1d660f0577244784ac0\",\"cts\":1716276577061,\"createdUserName\":\"vidya.wiz vidya.wiz\",\"modifiedBy\":\"6454a1d660f0577244784ac0\",\"modifiedUserName\":\"vidya.wiz vidya.wiz\",\"mts\":1716276601277,\"_id\":{\"timestamp\":1716276577,\"date\":1716276577000}},{\"name\":\"testing-graphql\",\"graphQLId\":\"b2e6ac9bf0124c3eaf065a38eb45727c\",\"revision\":2,\"status\":\"Draft\",\"createdBy\":\"65a8bb25f536760799fcd4fd\",\"cts\":1711349058810,\"createdUserName\":\"Vinay CN\",\"modifiedBy\":\"65a8bb25f536760799fcd4fd\",\"modifiedUserName\":\"Vinay CN\",\"mts\":1711349058810,\"_id\":{\"timestamp\":1711349058,\"date\":1711349058000}},{\"name\":\"GraphQL-Converging Repo\",\"graphQLId\":\"64d1df4165644f3e81961d27629be9fa\",\"revision\":5,\"status\":\"Draft\",\"createdBy\":\"6454a1d660f0577244784ac0\",\"cts\":1709746714376,\"createdUserName\":\"vidya.wiz vidya.wiz\",\"modifiedBy\":\"6454a1d660f0577244784ac0\",\"modifiedUserName\":\"vidya.wiz vidya.wiz\",\"mts\":1709746714376,\"_id\":{\"timestamp\":1709746714,\"date\":1709746714000}},{\"name\":\"graphql-file-example-schema\",\"graphQLId\":\"8b69c9bc0138441aa7959cc98de28c88\",\"revision\":2,\"status\":\"Draft\",\"createdBy\":\"65a8bb25f536760799fcd4fd\",\"cts\":1709103041293,\"createdUserName\":\"Vinay CN\",\"modifiedBy\":\"65a8bb25f536760799fcd4fd\",\"modifiedUserName\":\"Vinay CN\",\"mts\":1709103041293,\"_id\":{\"timestamp\":1709103041,\"date\":1709103041000}},{\"name\":\"schema\",\"graphQLId\":\"c331fc5fc54f43dd99407d86906b4ede\",\"revision\":7,\"status\":\"Draft\",\"createdBy\":\"60367d4038e56d398c70be6f\",\"cts\":1708507430328,\"createdUserName\":\"Darshan Shivashankar\",\"modifiedBy\":\"60367d4038e56d398c70be6f\",\"modifiedUserName\":\"Darshan Shivashankar\",\"mts\":1708507430328,\"_id\":{\"timestamp\":1708507430,\"date\":1708507430000}},{\"name\":\"Testing date filter\",\"graphQLId\":\"9acdf768e81f488f989fa7e513d55fb0\",\"revision\":8,\"status\":\"Draft\",\"createdBy\":\"6454a1d660f0577244784ac0\",\"cts\":1708506880821,\"createdUserName\":\"vidya.wiz vidya.wiz\",\"modifiedBy\":\"6454a1d660f0577244784ac0\",\"modifiedUserName\":\"vidya.wiz vidya.wiz\",\"mts\":1708506997138,\"_id\":{\"timestamp\":1708506880,\"date\":1708506880000}},{\"name\":\"IP-API\",\"graphQLId\":\"8682ac38501c49089db41d870a822e39\",\"revision\":3,\"status\":\"Draft\",\"createdBy\":\"6454a1d660f0577244784ac0\",\"cts\":1704457287111,\"createdUserName\":\"vidya.wiz vidya.wiz\",\"modifiedBy\":\"6454a1d660f0577244784ac0\",\"modifiedUserName\":\"vidya.wiz vidya.wiz\",\"mts\":1704457287111,\"_id\":{\"timestamp\":1704457287,\"date\":1704457287000}},{\"name\":\"FingerprintJS\",\"graphQLId\":\"cc1a05f65f8e48fa9b0be3820da6a646\",\"revision\":3,\"status\":\"Draft\",\"createdBy\":\"6454a1d660f0577244784ac0\",\"cts\":1704457059360,\"createdUserName\":\"vidya.wiz vidya.wiz\",\"modifiedBy\":\"6454a1d660f0577244784ac0\",\"modifiedUserName\":\"vidya.wiz vidya.wiz\",\"mts\":1704457059360,\"_id\":{\"timestamp\":1704457059,\"date\":1704457059000}},{\"name\":\"WorkspaceManager\",\"graphQLId\":\"b94d666bd68c4647a55cc279099f6b2e\",\"revision\":6,\"status\":\"Draft\",\"createdBy\":\"6454a1d660f0577244784ac0\",\"cts\":1704456772985,\"createdUserName\":\"vidya.wiz vidya.wiz\",\"modifiedBy\":\"6454a1d660f0577244784ac0\",\"modifiedUserName\":\"vidya.wiz vidya.wiz\",\"mts\":1704456772985,\"_id\":{\"timestamp\":1704456772,\"date\":1704456772000}}]}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : { },
+  "x-original-swagger-version" : "2.0"
+}
