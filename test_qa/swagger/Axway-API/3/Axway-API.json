@@ -1,0 +1,79 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Axway-API",
+    "description" : "Swagger Documentation for Axway-API",
+    "version" : "v1.0.0"
+  },
+  "paths" : {
+    "/path1" : {
+      "x-description" : "path1",
+      "get" : {
+        "summary" : "-",
+        "description" : "-",
+        "parameters" : [ ],
+        "operationId" : "operation-v1",
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "$ref" : "#/definitions/Request"
+            }
+          }
+        },
+        "x-monitorin-stats" : {
+          "monitoringId" : 111,
+          "envId" : "222"
+        },
+        "tags" : [ ],
+        "x-targetBasepath" : "/base"
+      }
+    }
+  },
+  "schemes" : [ "https", "http" ],
+  "x-servers" : [ ],
+  "consumes" : [ ],
+  "produces" : [ ],
+  "tags" : [ {
+    "name" : "Axway-tag",
+    "description" : "Axway-tag"
+  } ],
+  "basePath" : "/axway",
+  "host" : "mock.apiwiz.io",
+  "definitions" : {
+    "Request" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "age" : {
+          "type" : "integer"
+        }
+      }
+    }
+  },
+  "securityDefinitions" : { },
+  "parameters" : { },
+  "x-mock" : true,
+  "x-metadata" : {
+    "metadata" : {
+      "swaggerName" : "5f6a98ef717b4169bf8e07cee67385c3",
+      "revision" : 1,
+      "documentation" : [ ],
+      "category" : [ {
+        "name" : "Unsorted",
+        "paths" : [ "/path1" ],
+        "definitions" : [ "Request" ]
+      } ],
+      "models" : [ {
+        "dataDictionaryId" : "659dae522cf64831b169f622",
+        "dataDictionaryRevision" : "Revision 1",
+        "dataDictionary" : "Azure",
+        "modelName" : "Request",
+        "modelId" : "12b995943e4344e2818c38061e15cec8",
+        "revision" : 1
+      } ]
+    }
+  }
+}
