@@ -1,0 +1,63 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "New_swagger_api",
+    "description" : "Swagger Documentation for New_swagger_api",
+    "version" : "v1.0.0"
+  },
+  "paths" : {
+    "/api" : {
+      "parameters" : [ {
+        "name" : "Resource_v4",
+        "in" : "header",
+        "required" : false,
+        "description" : "",
+        "type" : "string"
+      } ],
+      "x-description" : "-",
+      "get" : {
+        "summary" : "-",
+        "description" : "-",
+        "parameters" : [ ],
+        "operationId" : "Resource_v4",
+        "responses" : {
+          "200" : {
+            "description" : ""
+          }
+        },
+        "tags" : [ ],
+        "x-targetBasepath" : "/linting"
+      }
+    }
+  },
+  "schemes" : [ "https", "http" ],
+  "x-servers" : [ ],
+  "consumes" : [ "application/json", "application/xml", "application/x-yaml" ],
+  "produces" : [ "application/json", "application/xml", "application/x-yaml" ],
+  "tags" : [ {
+    "name" : "Resource_v4",
+    "description" : "Resource_v4"
+  } ],
+  "basePath" : "/linting",
+  "host" : "dev-mock.apiwiz.io",
+  "definitions" : { },
+  "securityDefinitions" : { },
+  "parameters" : { },
+  "x-mock" : true,
+  "x-metadata" : {
+    "metadata" : {
+      "swaggerName" : "1ef5815af5e64e94958608fc6f6d665e",
+      "revision" : 1,
+      "documentation" : [ {
+        "title" : "Resource_v4",
+        "summary" : "Resource_v4",
+        "content" : "Resource_v4"
+      } ],
+      "category" : [ {
+        "name" : "Unsorted",
+        "paths" : [ "/api" ],
+        "definitions" : [ ]
+      } ]
+    }
+  }
+}
