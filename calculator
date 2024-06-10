@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<definitions name="CurrencyConverterService"
+             targetNamespace="http://example.com/currency"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="http://example.com/currency"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <types>
+        <xsd:schema targetNamespace="http://example.com/currency">
+            <xsd:element name="convert">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="amount" type="xsd:decimal"/>
+                        <xsd:element name="fromCurrency" type="xsd:string"/>
+                        <xsd:element name="toCurrency" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="convertResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="convertedAmount" type="xsd:decimal"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </types>
+
+    <message name="ConvertRequest">
+        <part name="parameters" element="tns:convert"/>
+    </message>
+    <message name="ConvertResponse">
+        <part name="parameters" element="tns:convertResponse"/>
+    </message>
+
+    <portType name="CurrencyConverterPortType">
+        <operation name="convert">
+            <input message="tns:ConvertRequest"/>
+            <output message="tns:ConvertResponse"/>
+        </operation>
+    </portType>
+
+    <binding name="CurrencyConverterBinding" type="tns:CurrencyConverterPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="convert">
+            <soap:operation soapAction="http://example.com/currency/convert"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="CurrencyConverterService">
+        <port name="CurrencyConverterPort" binding="tns:CurrencyConverterBinding">
+            <soap:address location="http://example.com/currency/service"/>
+        </port>
+    </service>
+</definitions>
