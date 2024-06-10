@@ -1,0 +1,90 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "New_swagger_api",
+    "description" : "Swagger Documentation for New_swagger_api",
+    "version" : "v1.0.0"
+  },
+  "paths" : {
+    "/api" : {
+      "parameters" : [ {
+        "name" : "Resource_v4",
+        "in" : "header",
+        "required" : false,
+        "description" : "",
+        "type" : "string"
+      } ],
+      "x-description" : "-",
+      "get" : {
+        "summary" : "-",
+        "description" : "-",
+        "parameters" : [ ],
+        "operationId" : "Resource_v4",
+        "responses" : {
+          "200" : {
+            "description" : ""
+          }
+        },
+        "tags" : [ ],
+        "x-targetBasepath" : "/linting"
+      }
+    }
+  },
+  "schemes" : [ "https", "http" ],
+  "x-servers" : [ ],
+  "consumes" : [ "application/json", "application/xml", "application/x-yaml" ],
+  "produces" : [ "application/json", "application/xml", "application/x-yaml" ],
+  "tags" : [ {
+    "name" : "Resource_v4",
+    "description" : "Resource_v4"
+  } ],
+  "basePath" : "/linting",
+  "host" : "dev-mock.apiwiz.io",
+  "definitions" : {
+    "API" : {
+      "description" : "",
+      "type" : "string"
+    }
+  },
+  "securityDefinitions" : { },
+  "parameters" : {
+    "Resource_v4" : {
+      "name" : "Resource_v4",
+      "in" : "query",
+      "required" : false,
+      "type" : "string",
+      "x-newAdded" : true
+    }
+  },
+  "x-mock" : true,
+  "x-metadata" : {
+    "metadata" : {
+      "swaggerName" : "1ef5815af5e64e94958608fc6f6d665e",
+      "revision" : 1,
+      "documentation" : [ {
+        "title" : "Resource_v4",
+        "summary" : "Resource_v4",
+        "content" : "Resource_v4"
+      } ],
+      "category" : [ {
+        "name" : "Unsorted",
+        "paths" : [ "/api" ],
+        "definitions" : [ "API" ]
+      } ],
+      "models" : [ {
+        "dataDictionaryId" : "6304d8a40c13085af82090a8",
+        "dataDictionaryRevision" : "Revision 1",
+        "dataDictionary" : "test12",
+        "modelName" : "API",
+        "modelId" : "6304d8a4ab15ceaf97486000",
+        "revision" : 1
+      } ]
+    }
+  },
+  "responses" : {
+    "Resource_v4" : {
+      "description" : "",
+      "x-index" : 1
+    }
+  }
+}
