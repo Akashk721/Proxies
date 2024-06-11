@@ -1,0 +1,339 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Untitled Request",
+    "description" : "dummy",
+    "version" : "1.0"
+  },
+  "servers" : [ {
+    "url" : "https://api.apiwiz.io/itorix/v1/apiwiz-build-api/inspector/api/collection"
+  } ],
+  "paths" : {
+    "/6667e578be1795414ecf259a" : {
+      "get" : {
+        "tags" : [ "acme-team-production" ],
+        "summary" : "Untitled Request",
+        "description" : "dummy",
+        "operationId" : "Untitled Request",
+        "parameters" : [ {
+          "name" : "sec-ch-ua",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\""
+        }, {
+          "name" : "accept",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "application/json, text/plain, */*"
+        }, {
+          "name" : "accept-language",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "en-GB,en-US;q=0.9,en;q=0.8"
+        }, {
+          "name" : "x-apikey",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "hdo8bcDRiQoFHogZsHn27Q2rel5rtkrLdYr3HLmm0WmCnA5ijVV8SQgl294qcGaGZ8MN2kqAHvqDz5EtwTHEhw=="
+        }, {
+          "name" : "user-agent",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+        }, {
+          "name" : "priority",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "u=1, i"
+        }, {
+          "name" : "sec-ch-ua-platform",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "\"macOS\""
+        }, {
+          "name" : "origin",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "https"
+        }, {
+          "name" : "sec-fetch-site",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "same-site"
+        }, {
+          "name" : "sec-ch-ua-mobile",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "?0"
+        }, {
+          "name" : "referer",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "https"
+        }, {
+          "name" : "sec-fetch-dest",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "empty"
+        }, {
+          "name" : "sec-fetch-mode",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "cors"
+        }, {
+          "name" : "interactionid",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "TFjUqCxhu4QK0jEF"
+        }, {
+          "name" : "jsessionid",
+          "in" : "header",
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "6667e3dfb8cfc4512bd1cd33"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Response for endpoint GET-6667e578be1795414ecf259a",
+            "headers" : {
+              "date" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "server" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "expires" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-envoy-upstream-service-time" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "transfer-encoding" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "vary" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-frame-options" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "pragma" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "strict-transport-security" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "access-control-expose-headers" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "access-control-allow-origin" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "access-control-allow-credentials" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-content-type-options" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "x-xss-protection" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "content-type" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "cache-control" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "required" : [ "createdBy", "cts", "favourite", "folders", "id", "mts", "name", "requests" ],
+                  "type" : "object",
+                  "properties" : {
+                    "id" : {
+                      "type" : "string"
+                    },
+                    "name" : {
+                      "type" : "string"
+                    },
+                    "cts" : {
+                      "type" : "integer"
+                    },
+                    "mts" : {
+                      "type" : "integer"
+                    },
+                    "favourite" : {
+                      "type" : "boolean"
+                    },
+                    "createdBy" : {
+                      "type" : "string"
+                    },
+                    "requests" : {
+                      "type" : "array",
+                      "items" : {
+                        "required" : [ "bodyType", "createdBy", "cts", "headers", "id", "mts", "name", "parentCollectionId", "path", "requestUrl", "verb" ],
+                        "type" : "object",
+                        "properties" : {
+                          "id" : {
+                            "type" : "string"
+                          },
+                          "name" : {
+                            "type" : "string"
+                          },
+                          "parentCollectionId" : {
+                            "type" : "string"
+                          },
+                          "mts" : {
+                            "type" : "integer"
+                          },
+                          "cts" : {
+                            "type" : "integer"
+                          },
+                          "verb" : {
+                            "type" : "string"
+                          },
+                          "createdBy" : {
+                            "type" : "string"
+                          },
+                          "requestUrl" : {
+                            "type" : "string"
+                          },
+                          "path" : {
+                            "type" : "array",
+                            "items" : {
+                              "type" : "string"
+                            }
+                          },
+                          "bodyType" : {
+                            "type" : "string"
+                          },
+                          "headers" : {
+                            "type" : "array",
+                            "items" : {
+                              "required" : [ "disabled", "key", "value" ],
+                              "type" : "object",
+                              "properties" : {
+                                "key" : {
+                                  "type" : "string"
+                                },
+                                "value" : {
+                                  "type" : "string"
+                                },
+                                "disabled" : {
+                                  "type" : "boolean"
+                                }
+                              }
+                            }
+                          },
+                          "body" : {
+                            "required" : [ "data", "type" ],
+                            "type" : "object",
+                            "properties" : {
+                              "type" : {
+                                "type" : "string"
+                              },
+                              "data" : {
+                                "type" : "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "folders" : {
+                      "type" : "array",
+                      "items" : {
+                        "type" : "object"
+                      }
+                    }
+                  },
+                  "example" : "{\"id\":\"6667e578be1795414ecf259a\",\"name\":\"API Gateway Headers\",\"cts\":1718084984996,\"mts\":1718084984996,\"favourite\":false,\"createdBy\":\"640594e5ebf5422deb8cc8e7\",\"requests\":[{\"id\":\"6667e579be1795414ecf259b\",\"name\":\"getHeaders\",\"parentCollectionId\":\"6667e578be1795414ecf259a\",\"mts\":1718084985002,\"cts\":1718084985002,\"verb\":\"GET\",\"createdBy\":\"640594e5ebf5422deb8cc8e7\",\"requestUrl\":\"https://gcp-api.apiwiz.io/v1/compliance/scanner/conf-header\",\"path\":[\"https:\",\"\",\"gcp-api.apiwiz.io\",\"v1\",\"compliance\",\"scanner\",\"conf-header\"],\"bodyType\":\"NONE\",\"headers\":[{\"key\":\"jsessionId\",\"value\":\"643f732e38faa37ab7ee12bf\",\"disabled\":false}]},{\"id\":\"6667e579be1795414ecf259c\",\"name\":\"apiGatewayHeaders\",\"parentCollectionId\":\"6667e578be1795414ecf259a\",\"mts\":1718084985013,\"cts\":1718084985013,\"verb\":\"PUT\",\"createdBy\":\"640594e5ebf5422deb8cc8e7\",\"requestUrl\":\"https://gcp-api.apiwiz.io/v1/compliance/scanner/conf-header\",\"path\":[\"https:\",\"\",\"gcp-api.apiwiz.io\",\"v1\",\"compliance\",\"scanner\",\"conf-header\"],\"body\":{\"type\":\"json\",\"data\":\"{\\n  \\\"headers\\\": [\\n    \\\"User-Agent\\\",\\n    \\\"Content-Type\\\",\\n    \\\"Content-Length\\\",\\n    \\\"origin\\\",\\n    \\\"connection\\\",\\n    \\\"Accept-Language\\\",\\n    \\\"Accept-Encoding\\\",\\n    \\\"Accept\\\",\\n    \\\"referer\\\",\\n    \\\"X-B3-ParentSpanId\\\",\\n    \\\"X-B3-SpanId\\\",\\n    \\\"X-B3-TraceId\\\",\\n    \\\"X-B3-Sampled\\\",\\n    \\\"host\\\",\\n    \\\"Accept\\\",\\n    \\\"Accept-Encoding\\\",\\n    \\\"Cache-Control\\\",\\n    \\\"correlationId\\\",\\n    \\\"Host\\\",\\n    \\\"Postman-Token\\\",\\n    \\\"User-Agent\\\",\\n    \\\"X-Forwarded-For\\\",\\n    \\\"X-Forwarded-Port\\\",\\n    \\\"X-Forwarded-Proto\\\"\\n  ]\\n}\"},\"bodyType\":\"RAW\",\"headers\":[{\"key\":\"jsessionId\",\"value\":\"643f732e38faa37ab7ee12bf\",\"disabled\":false}]}],\"folders\":[]}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : { },
+  "x-original-swagger-version" : "2.0"
+}
