@@ -3,7 +3,7 @@
   "cts" : 1720175830525,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1720176199451,
+  "mts" : 1720176673299,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "6687ccd61559af4fb399940e",
@@ -11,8 +11,8 @@
   "name" : "New Workflow 125",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/test/builder/1",
+  "pathArray" : [ "test", "builder", "1" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "divakar v",
@@ -137,7 +137,7 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     }
   },
   "statusHistory" : [ {
@@ -161,7 +161,13 @@
     "timeStamp" : 1720176197540,
     "modifiedBy" : "divakar v",
     "totalNodes" : 4
+  }, {
+    "commitId" : "88c0616177b28d15415604fa664c75a92e214f95",
+    "timeStamp" : 1720176199451,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 4
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
