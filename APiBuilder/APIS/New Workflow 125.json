@@ -3,7 +3,7 @@
   "cts" : 1720175830525,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1720176673299,
+  "mts" : 1720176882137,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "6687ccd61559af4fb399940e",
@@ -126,9 +126,10 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"hello\":\"world\"\n}",
+          "type" : "json"
         }
       }
     },
@@ -164,6 +165,11 @@
   }, {
     "commitId" : "88c0616177b28d15415604fa664c75a92e214f95",
     "timeStamp" : 1720176199451,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "495b713ef626114c91a06cffc6defb5dc5f74cd3",
+    "timeStamp" : 1720176673299,
     "modifiedBy" : "divakar v",
     "totalNodes" : 4
   } ],
