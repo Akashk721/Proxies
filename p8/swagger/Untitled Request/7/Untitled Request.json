@@ -1,0 +1,116 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Untitled Request",
+    "description" : "dummy",
+    "version" : "1.0"
+  },
+  "servers" : [ {
+    "url" : "https://postman-echo.com/v4"
+  } ],
+  "paths" : {
+    "/gets" : {
+      "get" : {
+        "tags" : [ "acme-team-production" ],
+        "summary" : "Untitled Request",
+        "description" : "dummy",
+        "operationId" : "Untitled Request",
+        "responses" : {
+          "200" : {
+            "description" : "Response for endpoint GET-get",
+            "headers" : {
+              "set-cookie" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Server" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "ETag" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Connection" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Content-Length" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Date" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Content-Type" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "required" : [ "args", "headers", "url" ],
+                  "type" : "object",
+                  "properties" : {
+                    "args" : {
+                      "type" : "object"
+                    },
+                    "headers" : {
+                      "required" : [ "accept", "host", "user-agent", "x-amzn-trace-id", "x-forwarded-port", "x-forwarded-proto", "x-request-start" ],
+                      "type" : "object",
+                      "properties" : {
+                        "host" : {
+                          "type" : "string"
+                        },
+                        "x-request-start" : {
+                          "type" : "string"
+                        },
+                        "x-forwarded-proto" : {
+                          "type" : "string"
+                        },
+                        "x-forwarded-port" : {
+                          "type" : "string"
+                        },
+                        "x-amzn-trace-id" : {
+                          "type" : "string"
+                        },
+                        "accept" : {
+                          "type" : "string"
+                        },
+                        "user-agent" : {
+                          "type" : "string"
+                        }
+                      }
+                    },
+                    "url" : {
+                      "type" : "string"
+                    }
+                  },
+                  "example" : "{\n  \"args\": {},\n  \"headers\": {\n    \"host\": \"postman-echo.com\",\n    \"x-request-start\": \"t=1720274045.612\",\n    \"x-forwarded-proto\": \"https\",\n    \"x-forwarded-port\": \"443\",\n    \"x-amzn-trace-id\": \"Root=1-66894c7d-2d7f25a35727eb7565f03502\",\n    \"accept\": \"*/*\",\n    \"user-agent\": \"Java/17.0.11\"\n  },\n  \"url\": \"https://postman-echo.com/get\"\n}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : { },
+  "x-original-swagger-version" : "2.0"
+}
