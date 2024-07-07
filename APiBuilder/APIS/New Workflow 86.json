@@ -1,0 +1,62 @@
+{
+  "id" : "66543a3512a3bb55bc4e8b22",
+  "cts" : 1716795956317,
+  "createdUserName" : "Vinay CN",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1720338134282,
+  "createdBy" : "65a8bb25f536760799fcd4fd",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66543a3412a3bb55bc4e8b21",
+  "revision" : 1,
+  "name" : "New Workflow 86",
+  "description" : "updated",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/adsf",
+  "pathArray" : [ "adsf" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "0d5e4451-0bff-480a-9707-0494cc926e80"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "0d5e4451-0bff-480a-9707-0494cc926e80" : {
+      "vertexId" : "0d5e4451-0bff-480a-9707-0494cc926e80",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1716795956317,
+    "lastModifiedBy" : "Vinay CN",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "52c0653320f5193665d03f2446d3c94ed4e367ce",
+    "timeStamp" : 1716795956317,
+    "modifiedBy" : "Vinay CN",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
