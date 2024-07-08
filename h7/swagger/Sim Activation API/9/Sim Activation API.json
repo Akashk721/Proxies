@@ -15,6 +15,8 @@
     "url" : "https://staging.api.example.com/v1/sim",
     "description" : "Staging server",
     "x-name" : "Server2"
+  }, {
+    "url" : "https://dog.ceo/api/breeds/list"
   } ],
   "paths" : {
     "/v1/sim-activation/activate" : {
@@ -113,6 +115,796 @@
         "description" : "gfgfg",
         "summary" : "bcbc",
         "operationId" : "fhgfhg"
+      }
+    },
+    "/all" : {
+      "get" : {
+        "summary" : "https:__dog.ceo:443_api_breeds_list_all",
+        "description" : "https:__dog.ceo:443_api_breeds_list_all",
+        "operationId" : "https:__dog.ceo:443_api_breeds_list_all",
+        "responses" : {
+          "200" : {
+            "description" : "Response for endpoint GET-all",
+            "headers" : {
+              "X-Cache" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "CF-RAY" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Server" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Access-Control-Allow-Origin" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Connection" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Date" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Via" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Accept-Ranges" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "CF-Cache-Status" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "NEL" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Cache-Control" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Report-To" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "X-Cache-Age" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Vary" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "alt-svc" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "X-Cache-Hits" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Age" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "X-Powered-By" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              },
+              "Content-Type" : {
+                "description" : "response header",
+                "schema" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "required" : [ "message", "status" ],
+                  "type" : "object",
+                  "properties" : {
+                    "message" : {
+                      "required" : [ "affenpinscher", "african", "airedale", "akita", "appenzeller", "australian", "bakharwal", "basenji", "beagle", "bluetick", "borzoi", "bouvier", "boxer", "brabancon", "briard", "buhund", "bulldog", "bullterrier", "cattledog", "cavapoo", "chihuahua", "chippiparai", "chow", "clumber", "cockapoo", "collie", "coonhound", "corgi", "cotondetulear", "dachshund", "dalmatian", "dane", "danish", "deerhound", "dhole", "dingo", "doberman", "elkhound", "entlebucher", "eskimo", "finnish", "frise", "gaddi", "germanshepherd", "greyhound", "groenendael", "havanese", "hound", "husky", "keeshond", "kelpie", "kombai", "komondor", "kuvasz", "labradoodle", "labrador", "leonberg", "lhasa", "malamute", "malinois", "maltese", "mastiff", "mexicanhairless", "mix", "mountain", "mudhol", "newfoundland", "otterhound", "ovcharka", "papillon", "pariah", "pekinese", "pembroke", "pinscher", "pitbull", "pointer", "pomeranian", "poodle", "pug", "puggle", "pyrenees", "rajapalayam", "redbone", "retriever", "ridgeback", "rottweiler", "saluki", "samoyed", "schipperke", "schnauzer", "segugio", "setter", "sharpei", "sheepdog", "shiba", "shihtzu", "spaniel", "spitz", "springer", "stbernard", "terrier", "tervuren", "vizsla", "waterdog", "weimaraner", "whippet", "wolfhound" ],
+                      "type" : "object",
+                      "properties" : {
+                        "affenpinscher" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "african" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "airedale" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "akita" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "appenzeller" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "australian" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "bakharwal" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "basenji" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "beagle" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "bluetick" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "borzoi" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "bouvier" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "boxer" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "brabancon" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "briard" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "buhund" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "bulldog" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "bullterrier" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "cattledog" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "cavapoo" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "chihuahua" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "chippiparai" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "chow" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "clumber" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "cockapoo" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "collie" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "coonhound" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "corgi" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "cotondetulear" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "dachshund" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "dalmatian" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "dane" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "danish" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "deerhound" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "dhole" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "dingo" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "doberman" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "elkhound" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "entlebucher" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "eskimo" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "finnish" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "frise" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "gaddi" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "germanshepherd" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "greyhound" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "groenendael" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "havanese" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "hound" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "husky" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "keeshond" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "kelpie" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "kombai" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "komondor" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "kuvasz" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "labradoodle" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "labrador" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "leonberg" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "lhasa" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "malamute" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "malinois" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "maltese" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "mastiff" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "mexicanhairless" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "mix" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "mountain" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "mudhol" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "newfoundland" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "otterhound" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "ovcharka" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "papillon" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "pariah" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "pekinese" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "pembroke" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "pinscher" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "pitbull" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "pointer" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "pomeranian" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "poodle" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "pug" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "puggle" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "pyrenees" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "rajapalayam" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "redbone" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "retriever" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "ridgeback" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "rottweiler" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "saluki" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "samoyed" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "schipperke" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "schnauzer" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "segugio" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "setter" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "sharpei" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "sheepdog" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "shiba" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "shihtzu" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "spaniel" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "spitz" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "springer" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "stbernard" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "terrier" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "tervuren" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "vizsla" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "waterdog" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        },
+                        "weimaraner" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "whippet" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "object"
+                          }
+                        },
+                        "wolfhound" : {
+                          "type" : "array",
+                          "items" : {
+                            "type" : "string"
+                          }
+                        }
+                      }
+                    },
+                    "status" : {
+                      "type" : "string"
+                    }
+                  },
+                  "example" : "{\"message\":{\"affenpinscher\":[],\"african\":[],\"airedale\":[],\"akita\":[],\"appenzeller\":[],\"australian\":[\"kelpie\",\"shepherd\"],\"bakharwal\":[\"indian\"],\"basenji\":[],\"beagle\":[],\"bluetick\":[],\"borzoi\":[],\"bouvier\":[],\"boxer\":[],\"brabancon\":[],\"briard\":[],\"buhund\":[\"norwegian\"],\"bulldog\":[\"boston\",\"english\",\"french\"],\"bullterrier\":[\"staffordshire\"],\"cattledog\":[\"australian\"],\"cavapoo\":[],\"chihuahua\":[],\"chippiparai\":[\"indian\"],\"chow\":[],\"clumber\":[],\"cockapoo\":[],\"collie\":[\"border\"],\"coonhound\":[],\"corgi\":[\"cardigan\"],\"cotondetulear\":[],\"dachshund\":[],\"dalmatian\":[],\"dane\":[\"great\"],\"danish\":[\"swedish\"],\"deerhound\":[\"scottish\"],\"dhole\":[],\"dingo\":[],\"doberman\":[],\"elkhound\":[\"norwegian\"],\"entlebucher\":[],\"eskimo\":[],\"finnish\":[\"lapphund\"],\"frise\":[\"bichon\"],\"gaddi\":[\"indian\"],\"germanshepherd\":[],\"greyhound\":[\"indian\",\"italian\"],\"groenendael\":[],\"havanese\":[],\"hound\":[\"afghan\",\"basset\",\"blood\",\"english\",\"ibizan\",\"plott\",\"walker\"],\"husky\":[],\"keeshond\":[],\"kelpie\":[],\"kombai\":[],\"komondor\":[],\"kuvasz\":[],\"labradoodle\":[],\"labrador\":[],\"leonberg\":[],\"lhasa\":[],\"malamute\":[],\"malinois\":[],\"maltese\":[],\"mastiff\":[\"bull\",\"english\",\"indian\",\"tibetan\"],\"mexicanhairless\":[],\"mix\":[],\"mountain\":[\"bernese\",\"swiss\"],\"mudhol\":[\"indian\"],\"newfoundland\":[],\"otterhound\":[],\"ovcharka\":[\"caucasian\"],\"papillon\":[],\"pariah\":[\"indian\"],\"pekinese\":[],\"pembroke\":[],\"pinscher\":[\"miniature\"],\"pitbull\":[],\"pointer\":[\"german\",\"germanlonghair\"],\"pomeranian\":[],\"poodle\":[\"medium\",\"miniature\",\"standard\",\"toy\"],\"pug\":[],\"puggle\":[],\"pyrenees\":[],\"rajapalayam\":[\"indian\"],\"redbone\":[],\"retriever\":[\"chesapeake\",\"curly\",\"flatcoated\",\"golden\"],\"ridgeback\":[\"rhodesian\"],\"rottweiler\":[],\"saluki\":[],\"samoyed\":[],\"schipperke\":[],\"schnauzer\":[\"giant\",\"miniature\"],\"segugio\":[\"italian\"],\"setter\":[\"english\",\"gordon\",\"irish\"],\"sharpei\":[],\"sheepdog\":[\"english\",\"indian\",\"shetland\"],\"shiba\":[],\"shihtzu\":[],\"spaniel\":[\"blenheim\",\"brittany\",\"cocker\",\"irish\",\"japanese\",\"sussex\",\"welsh\"],\"spitz\":[\"indian\",\"japanese\"],\"springer\":[\"english\"],\"stbernard\":[],\"terrier\":[\"american\",\"australian\",\"bedlington\",\"border\",\"cairn\",\"dandie\",\"fox\",\"irish\",\"kerryblue\",\"lakeland\",\"norfolk\",\"norwich\",\"patterdale\",\"russell\",\"scottish\",\"sealyham\",\"silky\",\"tibetan\",\"toy\",\"welsh\",\"westhighland\",\"wheaten\",\"yorkshire\"],\"tervuren\":[],\"vizsla\":[],\"waterdog\":[\"spanish\"],\"weimaraner\":[],\"whippet\":[],\"wolfhound\":[\"irish\"]},\"status\":\"success\"}"
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
