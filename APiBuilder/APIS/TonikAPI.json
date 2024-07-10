@@ -3,7 +3,7 @@
   "cts" : 1720603764874,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720607128630,
+  "mts" : 1720607389748,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668e547482612c0edf77b769",
@@ -19,9 +19,66 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "3ac40ae3-9910-407e-aa7d-732a811763d3"
+  }, {
+    "source" : "3ac40ae3-9910-407e-aa7d-732a811763d3",
     "target" : "5a9c7cdd-7568-48a4-a42b-b358c21d1c62"
   } ],
   "vertexHashMap" : {
+    "3ac40ae3-9910-407e-aa7d-732a811763d3" : {
+      "vertexId" : "3ac40ae3-9910-407e-aa7d-732a811763d3",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "oauth2-service",
+      "target" : {
+        "name" : "oauth2-service",
+        "description" : "oauth2-service",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "devapi.tonikbank.com",
+          "path" : "/oauth/accesstoken",
+          "headerParams" : [ {
+            "name" : "Authorisation",
+            "value" : "Basic {{{token}}}"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ {
+            "name" : "grant_type",
+            "reference" : "body",
+            "value" : "client_credentials",
+            "active" : true,
+            "source" : "urlEncoding",
+            "hide" : false
+          } ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "auth_response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -63,6 +120,11 @@
   }, {
     "commitId" : "af72e751e211647b701fa09878adf737b6b5c3db",
     "timeStamp" : 1720604457507,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "9b049bad8336b49b25791b1e94c5856846f9cfa8",
+    "timeStamp" : 1720607128630,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
