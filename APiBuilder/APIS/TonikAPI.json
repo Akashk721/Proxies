@@ -1,0 +1,69 @@
+{
+  "id" : "668e547782612c0edf77b76a",
+  "cts" : 1720603764874,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1720604457507,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "668e547482612c0edf77b769",
+  "revision" : 1,
+  "name" : "TonikAPI",
+  "description" : "TonikAPI",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "5a9c7cdd-7568-48a4-a42b-b358c21d1c62"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "668e55d16ac8cd776864dfe8",
+        "reference" : "headers",
+        "value" : "Jsessionid",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false
+      } ],
+      "imported" : true
+    },
+    "5a9c7cdd-7568-48a4-a42b-b358c21d1c62" : {
+      "vertexId" : "5a9c7cdd-7568-48a4-a42b-b358c21d1c62",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720603764874,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "9b59767f93cb68a00b41fa3b2487706b95817d38",
+    "timeStamp" : 1720603764874,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
