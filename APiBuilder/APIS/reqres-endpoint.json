@@ -1,0 +1,117 @@
+{
+  "id" : "668e663882612c0edf77c1c9",
+  "cts" : 1720608311501,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1720608559069,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "668e663782612c0edf77c1c8",
+  "revision" : 1,
+  "name" : "reqres-endpoint",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/req/sample",
+  "pathArray" : [ "req", "sample" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "f60f2057-1fec-4b72-a9e0-9a68c79d9412"
+  }, {
+    "source" : "f60f2057-1fec-4b72-a9e0-9a68c79d9412",
+    "target" : "c8b5d7d5-5869-446a-8ff4-a074c7a4800d"
+  } ],
+  "vertexHashMap" : {
+    "f60f2057-1fec-4b72-a9e0-9a68c79d9412" : {
+      "vertexId" : "f60f2057-1fec-4b72-a9e0-9a68c79d9412",
+      "vertexType" : "TARGET",
+      "name" : "sample-endpoint",
+      "target" : {
+        "name" : "sample-endpoint",
+        "description" : "sample-endpoint",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ {
+            "name" : "page",
+            "value" : "2"
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"page\": {\n      \"type\": \"integer\"\n    },\n    \"per_page\": {\n      \"type\": \"integer\"\n    },\n    \"total\": {\n      \"type\": \"integer\"\n    },\n    \"total_pages\": {\n      \"type\": \"integer\"\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"id\": {\n            \"type\": \"integer\"\n          },\n          \"email\": {\n            \"type\": \"string\",\n            \"format\": \"email\"\n          },\n          \"first_name\": {\n            \"type\": \"string\"\n          },\n          \"last_name\": {\n            \"type\": \"string\"\n          },\n          \"avatar\": {\n            \"type\": \"string\",\n            \"format\": \"uri\"\n          }\n        }\n      }\n    },\n    \"support\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"url\": {\n          \"type\": \"string\",\n          \"format\": \"uri\"\n        },\n        \"text\": {\n          \"type\": \"string\"\n        }\n      }\n    }\n  }\n}"
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "{{{response}}}",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "c8b5d7d5-5869-446a-8ff4-a074c7a4800d" : {
+      "vertexId" : "c8b5d7d5-5869-446a-8ff4-a074c7a4800d",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720608311501,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "57b430a0b8684940867efe1e01982c3bdaf0711a",
+    "timeStamp" : 1720608311501,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "20d8ac31e2cb1ac8c28a408fb9a3e531ab77a734",
+    "timeStamp" : 1720608523397,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
