@@ -3,7 +3,7 @@
   "cts" : 1720603764874,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720609108435,
+  "mts" : 1720609620059,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668e547482612c0edf77b769",
@@ -12,8 +12,8 @@
   "description" : "TonikAPI",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/test",
+  "pathArray" : [ "test" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -176,6 +176,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1720609514862,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "lk"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720609129125,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sdf"
+  }, {
+    "status" : "Draft",
     "cts" : 1720603764874,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
@@ -210,7 +220,13 @@
     "timeStamp" : 1720608998463,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "006f7ae23e7fe10922c8b09056ae3768b3b600eb",
+    "timeStamp" : 1720609108435,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
