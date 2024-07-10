@@ -3,7 +3,7 @@
   "cts" : 1720603764874,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720608088321,
+  "mts" : 1720608998463,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668e547482612c0edf77b769",
@@ -21,10 +21,70 @@
     "source" : "v1",
     "target" : "3ac40ae3-9910-407e-aa7d-732a811763d3"
   }, {
-    "source" : "3ac40ae3-9910-407e-aa7d-732a811763d3",
+    "source" : "2a23a882-de46-4e56-9f52-728299a0b1a9",
     "target" : "5a9c7cdd-7568-48a4-a42b-b358c21d1c62"
+  }, {
+    "source" : "3ac40ae3-9910-407e-aa7d-732a811763d3",
+    "target" : "2a23a882-de46-4e56-9f52-728299a0b1a9"
   } ],
   "vertexHashMap" : {
+    "2a23a882-de46-4e56-9f52-728299a0b1a9" : {
+      "vertexId" : "2a23a882-de46-4e56-9f52-728299a0b1a9",
+      "vertexType" : "TARGET",
+      "name" : "genrateHmac",
+      "target" : {
+        "name" : "genrateHmac",
+        "description" : "genrateHmac",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dev-api.tonikbank.com",
+          "path" : "/hmac/v1/hmac-token",
+          "headerParams" : [ {
+            "name" : "clientinfo",
+            "value" : "deviceos=Ios11&&devicename=tangy&&appversion=1.0&&deviceid=e07371f67ffa46f5b2232c5f8d1256cdYh6AQ0yB&&ip=192.168.0.10&&geoloc=1.280894:103.849252&&channelid=MB&&userId=539c315ba1e8491c980050bb524e147b"
+          }, {
+            "name" : "tonikusertoken",
+            "value" : "eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiJQd0xIWlExZ2xMcEFBb2JlTXhSaUlwSlNOcXdHQVEwUkk2UGhQTjVPbUtRVm4vVjl2UEhCWkxtNlNXczdiYk9vb2hxUXQ2dFFOOXlLSFBzZ3lsT0Qwdz09IiwiY2hhbm5lbElkIjoiQkF0cFNkYzBWSnlXelZENmRRNmFPUEdNQTBoMW5hZHY3YmJsb1pnL0ZsMD0iLCJzdWIiOiJQd0xIWlExZ2xMcEFBb2JlTXhSaUlwSlNOcXdHQVEwUkk2UGhQTjVPbUtRVm4vVjl2UEhCWkxtNlNXczdiYk9vb2hxUXQ2dFFOOXlLSFBzZ3lsT0Qwdz09IiwiaWF0IjoxNjg5NjU2MDIwLCJleHAiOjE2ODk2NTk2MjB9.eqQKXpqy-zYuN3pVUkKziONRIKW6sPKQquWEwFhe060qnBwTOhIXQtjL-wGZSvY6vohOMiXhSh2PIp1wJ6DSuA"
+          }, {
+            "name" : "Authorization",
+            "value" : "Bearer {{{access_token}}}"
+          } ],
+          "queryParams" : [ {
+            "name" : "stashType",
+            "value" : "G"
+          } ],
+          "body" : {
+            "data" : "{\n    \"payload\": {\n        \"savingAccountNo\": \"60810141850006\",\n        \"intialStashAmt\": \"1000.00\",\n        \"stashTargetAmt\": \"10000.00\",\n        \"stashTargetDate\": \"22 Dec 2023\",\n        \"stashName\": \"Performance Stash\",\n        \"image\": \"aGVsbG8=\",\n        \"stashType\": \"G\",\n        \"isTnAndConditionAccepted\": \"Y\"\n    },\n    \"uri\": \"/v0/stash\",\n    \"verb\": \"POST\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "{{{auth_response}}}",
+            "reference" : "body",
+            "value" : "api_response",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "3ac40ae3-9910-407e-aa7d-732a811763d3" : {
       "vertexId" : "3ac40ae3-9910-407e-aa7d-732a811763d3",
       "vertexType" : "AUTHENTICATION",
@@ -137,6 +197,11 @@
   }, {
     "commitId" : "27105316714d2b76732998ec1bfa133149d9e840",
     "timeStamp" : 1720607389748,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "71a38361692e5d3285dc7c52b8dd985498d79144",
+    "timeStamp" : 1720608088321,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
