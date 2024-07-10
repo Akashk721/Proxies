@@ -3,7 +3,7 @@
   "cts" : 1720603764874,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720607389748,
+  "mts" : 1720608088321,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668e547482612c0edf77b769",
@@ -39,8 +39,14 @@
           "host" : "devapi.tonikbank.com",
           "path" : "/oauth/accesstoken",
           "headerParams" : [ {
-            "name" : "Authorisation",
+            "name" : "Authorization",
             "value" : "Basic {{{token}}}"
+          }, {
+            "name" : "clientinfo",
+            "value" : "deviceos=Ios11&&devicename=tangy&&appversion=1.0&&deviceid=e07371f67ffa46f5b2232c5f8d1256cdYh6AQ0yB&&ip=192.168.0.10&&geoloc=1.280894:103.849252&&channelid=MB&&userId=539c315ba1e8491c980050bb524e147b"
+          }, {
+            "name" : "tonikusertoken",
+            "value" : "eyJhbGciOiJIUzUxMiJ9.eyJ1c2VySWQiOiJQd0xIWlExZ2xMcEFBb2JlTXhSaUlwSlNOcXdHQVEwUkk2UGhQTjVPbUtRVm4vVjl2UEhCWkxtNlNXczdiYk9vb2hxUXQ2dFFOOXlLSFBzZ3lsT0Qwdz09IiwiY2hhbm5lbElkIjoiQkF0cFNkYzBWSnlXelZENmRRNmFPUEdNQTBoMW5hZHY3YmJsb1pnL0ZsMD0iLCJzdWIiOiJQd0xIWlExZ2xMcEFBb2JlTXhSaUlwSlNOcXdHQVEwUkk2UGhQTjVPbUtRVm4vVjl2UEhCWkxtNlNXczdiYk9vb2hxUXQ2dFFOOXlLSFBzZ3lsT0Qwdz09IiwiaWF0IjoxNjg5NjU2MDIwLCJleHAiOjE2ODk2NTk2MjB9.eqQKXpqy-zYuN3pVUkKziONRIKW6sPKQquWEwFhe060qnBwTOhIXQtjL-wGZSvY6vohOMiXhSh2PIp1wJ6DSuA"
           } ],
           "queryParams" : [ ],
           "body" : {
@@ -51,7 +57,7 @@
             "name" : "grant_type",
             "reference" : "body",
             "value" : "client_credentials",
-            "active" : true,
+            "active" : false,
             "source" : "urlEncoding",
             "hide" : false
           } ]
@@ -65,7 +71,8 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
-          } ]
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"tonikusertoken\": {\n      \"type\": \"string\"\n    },\n    \"status\": {\n      \"type\": \"string\"\n    },\n    \"expires_in\": {\n      \"type\": \"integer\"\n    },\n    \"issued_at\": {\n      \"type\": \"string\",\n      \"format\": \"utc-millisec\"\n    },\n    \"token_type\": {\n      \"type\": \"string\"\n    },\n    \"access_token\": {\n      \"type\": \"string\"\n    }\n  }\n}"
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -127,6 +134,11 @@
     "timeStamp" : 1720607128630,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "27105316714d2b76732998ec1bfa133149d9e840",
+    "timeStamp" : 1720607389748,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
