@@ -3,7 +3,7 @@
   "cts" : 1720603764874,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720612824709,
+  "mts" : 1720612983406,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668e547482612c0edf77b769",
@@ -12,8 +12,8 @@
   "description" : "TonikAPI",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/api/v1/test",
-  "pathArray" : [ "api", "v1", "test" ],
+  "path" : "/oauth/accesstoken",
+  "pathArray" : [ "oauth", "accesstoken" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -176,6 +176,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1720612944994,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "dsd"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720612831953,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sdsfd"
+  }, {
+    "status" : "Draft",
     "cts" : 1720612799810,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
     "description" : "sdfsd"
@@ -238,6 +248,11 @@
   }, {
     "commitId" : "9ee4a75960d4d3b59342e53eaecea2f5b756b2b6",
     "timeStamp" : 1720609620059,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "97b96b1c70d6889228323937d448145d81755301",
+    "timeStamp" : 1720612824709,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
