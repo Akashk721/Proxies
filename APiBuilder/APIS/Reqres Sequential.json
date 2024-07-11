@@ -3,7 +3,7 @@
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720664336303,
+  "mts" : 1720664454573,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
@@ -21,6 +21,9 @@
     "target" : "5e28cd58-606c-4de5-8217-6fe033552b5f"
   }, {
     "source" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
+    "target" : "c9569f7b-974d-437b-b025-ae7cda90acbb"
+  }, {
+    "source" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
     "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
   }, {
     "source" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
@@ -128,6 +131,50 @@
       "requestVariables" : [ ],
       "imported" : false
     },
+    "c9569f7b-974d-437b-b025-ae7cda90acbb" : {
+      "vertexId" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
+      "vertexType" : "TARGET",
+      "name" : "getSingleResource",
+      "target" : {
+        "name" : "getSingleResource",
+        "description" : "getSingleResource",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : " /api/unknown/2",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "resource",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "63658e6d-42fc-492e-a382-c1e27844eaf8" : {
       "vertexId" : "63658e6d-42fc-492e-a382-c1e27844eaf8",
       "vertexType" : "STOP",
@@ -208,6 +255,11 @@
   }, {
     "commitId" : "dbd5f8a11b21ed725b9ad38ade18aa398b73ead8",
     "timeStamp" : 1720664319098,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "f95a1833a9b54a43709c3be280ad4e0dab1f0422",
+    "timeStamp" : 1720664336303,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
