@@ -1,10 +1,11 @@
 {
+  "id" : "668ea5e467f7200ed2423edb",
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
-  "modifiedUserName" : "Akash K",
-  "mts" : 1720624611606,
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1720664067413,
   "createdBy" : "65fbd46b48c1692499a70741",
-  "modifiedBy" : "65fbd46b48c1692499a70741",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
   "revision" : 1,
   "name" : "Reqres Sequential",
@@ -14,12 +15,62 @@
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "Akash K",
+  "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "9e14661d-0898-4e65-8895-cc733596486d",
     "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
+  }, {
+    "source" : "v1",
+    "target" : "9e14661d-0898-4e65-8895-cc733596486d"
   } ],
   "vertexHashMap" : {
+    "9e14661d-0898-4e65-8895-cc733596486d" : {
+      "vertexId" : "9e14661d-0898-4e65-8895-cc733596486d",
+      "vertexType" : "TARGET",
+      "name" : "List Users",
+      "target" : {
+        "name" : "List Users",
+        "description" : "List Users",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ {
+            "name" : "page",
+            "value" : "2"
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -45,6 +96,12 @@
     "cts" : 1720624611606,
     "lastModifiedBy" : "Akash K",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "9202c3e2aef551bc0c21a57d6ec3a60723a1d9f6",
+    "timeStamp" : 1720624611606,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
