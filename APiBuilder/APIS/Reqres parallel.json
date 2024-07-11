@@ -3,7 +3,7 @@
   "cts" : 1720666630020,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720666836431,
+  "mts" : 1720666953879,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668f4a0667f7200ed24241ab",
@@ -19,6 +19,9 @@
   "edgeSet" : [ {
     "source" : "v1",
     "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "abab6f1f-de85-4475-904a-e5dd8b823378"
   }, {
     "source" : "v1",
     "target" : "9384cf09-62a9-432c-97ec-11dd756fd023"
@@ -126,6 +129,50 @@
       },
       "imported" : false
     },
+    "abab6f1f-de85-4475-904a-e5dd8b823378" : {
+      "vertexId" : "abab6f1f-de85-4475-904a-e5dd8b823378",
+      "vertexType" : "TARGET",
+      "name" : "createUser",
+      "target" : {
+        "name" : "createUser",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}\n",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -160,6 +207,11 @@
     "timeStamp" : 1720666772143,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "676d936ff57b8abeaa7c8c4a400f96bb9168539d",
+    "timeStamp" : 1720666836431,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
