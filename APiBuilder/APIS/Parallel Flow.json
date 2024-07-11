@@ -1,0 +1,389 @@
+{
+  "id" : "668f8b5d67f7200ed2425b66",
+  "cts" : 1720683355865,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "Akash K",
+  "mts" : 1720697396044,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "65fbd46b48c1692499a70741",
+  "proxyId" : "668f8b5b67f7200ed2425b65",
+  "revision" : 1,
+  "name" : "Parallel Flow",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/reqres/parallel",
+  "pathArray" : [ "reqres", "parallel" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akash K",
+  "edgeSet" : [ {
+    "source" : "ad22d2e7-7b80-4745-9137-25f85bce0751",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "c85d75d4-4b4d-43ee-9fdc-d209e852d712"
+  }, {
+    "source" : "v1",
+    "target" : "abab6f1f-de85-4475-904a-e5dd8b823378"
+  }, {
+    "source" : "c85d75d4-4b4d-43ee-9fdc-d209e852d712",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "da322d07-6482-4dc3-b43b-f104adf2030c"
+  }, {
+    "source" : "abab6f1f-de85-4475-904a-e5dd8b823378",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "da322d07-6482-4dc3-b43b-f104adf2030c",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "9384cf09-62a9-432c-97ec-11dd756fd023"
+  }, {
+    "source" : "v1",
+    "target" : "ad22d2e7-7b80-4745-9137-25f85bce0751"
+  }, {
+    "source" : "9384cf09-62a9-432c-97ec-11dd756fd023",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7"
+  } ],
+  "vertexHashMap" : {
+    "ad22d2e7-7b80-4745-9137-25f85bce0751" : {
+      "vertexId" : "ad22d2e7-7b80-4745-9137-25f85bce0751",
+      "vertexType" : "TARGET",
+      "name" : "Get 5",
+      "target" : {
+        "name" : "Get 5",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"pistol\"\n}\n",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "token",
+            "reference" : "body",
+            "value" : "$.token",
+            "active" : false,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f" : {
+      "vertexId" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"Rahul Bhaiyya\":\"Vinay Bhaiyya\",\n    \"response\":{{{response}}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7" : {
+      "vertexId" : "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7",
+      "vertexType" : "TARGET",
+      "name" : "Get 6",
+      "target" : {
+        "name" : "Get 6",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "9384cf09-62a9-432c-97ec-11dd756fd023" : {
+      "vertexId" : "9384cf09-62a9-432c-97ec-11dd756fd023",
+      "vertexType" : "TARGET",
+      "name" : "Get 4",
+      "target" : {
+        "name" : "Get 4",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : false,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "da322d07-6482-4dc3-b43b-f104adf2030c" : {
+      "vertexId" : "da322d07-6482-4dc3-b43b-f104adf2030c",
+      "vertexType" : "TARGET",
+      "name" : "Get 3",
+      "target" : {
+        "name" : "Get 3",
+        "description" : "getUser",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : false,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "abab6f1f-de85-4475-904a-e5dd8b823378" : {
+      "vertexId" : "abab6f1f-de85-4475-904a-e5dd8b823378",
+      "vertexType" : "TARGET",
+      "name" : "Get 2",
+      "target" : {
+        "name" : "Get 2",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}\n",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : false,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "c85d75d4-4b4d-43ee-9fdc-d209e852d712" : {
+      "vertexId" : "c85d75d4-4b4d-43ee-9fdc-d209e852d712",
+      "vertexType" : "TARGET",
+      "name" : "Get 1",
+      "target" : {
+        "name" : "Get 1",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"cityslicka\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720683355865,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "63d0b64789a027211933cc0624938539cfefb07f",
+    "timeStamp" : 1720683355865,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "e2a4b7c0e0df245424510866fce8ed01723f489d",
+    "timeStamp" : 1720697245603,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "9c16b8047e1f27eb78afeec1039b6fe1aa40bc61",
+    "timeStamp" : 1720697265996,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "101fd005ff3d49cfc6ff6c0a9ce5bc9f5ddd8755",
+    "timeStamp" : 1720697280497,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "b93c87d1e95a703d0ce806b4b8cdde8cc8f17f1e",
+    "timeStamp" : 1720697298778,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "ea06abacd4a62a6f116d021c921e310c427d43ff",
+    "timeStamp" : 1720697323317,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "ec09045b33d3e85ea069346fbbe5946923cf48bc",
+    "timeStamp" : 1720697356320,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "fe61b1919b5b7f5bd00287f1a6fc83dd7b625c96",
+    "timeStamp" : 1720697382739,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
