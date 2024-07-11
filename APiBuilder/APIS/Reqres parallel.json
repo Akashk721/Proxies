@@ -3,7 +3,7 @@
   "cts" : 1720666630020,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720667306642,
+  "mts" : 1720667488362,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668f4a0667f7200ed24241ab",
@@ -17,11 +17,20 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "ad22d2e7-7b80-4745-9137-25f85bce0751",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
     "source" : "v1",
     "target" : "ad22d2e7-7b80-4745-9137-25f85bce0751"
   }, {
+    "source" : "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
     "source" : "v1",
     "target" : "c85d75d4-4b4d-43ee-9fdc-d209e852d712"
+  }, {
+    "source" : "9384cf09-62a9-432c-97ec-11dd756fd023",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
   }, {
     "source" : "v1",
     "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
@@ -29,8 +38,14 @@
     "source" : "v1",
     "target" : "abab6f1f-de85-4475-904a-e5dd8b823378"
   }, {
+    "source" : "c85d75d4-4b4d-43ee-9fdc-d209e852d712",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
     "source" : "v1",
     "target" : "da322d07-6482-4dc3-b43b-f104adf2030c"
+  }, {
+    "source" : "da322d07-6482-4dc3-b43b-f104adf2030c",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
   }, {
     "source" : "v1",
     "target" : "9384cf09-62a9-432c-97ec-11dd756fd023"
@@ -89,9 +104,10 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"i ran succesfully\":\"success\",\n    \"token\":{{{token}}},\n    \"users\":{{{response}}}\n}",
+          "type" : "json"
         }
       }
     },
@@ -368,6 +384,11 @@
     "timeStamp" : 1720667143202,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 7
+  }, {
+    "commitId" : "29877618cc4b24b2db176e0c34a7a0c39de6ed52",
+    "timeStamp" : 1720667306642,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
   } ],
   "enableTracing" : false,
   "environmentName" : "",
