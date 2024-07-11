@@ -3,7 +3,7 @@
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720664210950,
+  "mts" : 1720664319098,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
@@ -20,11 +20,14 @@
     "source" : "9e14661d-0898-4e65-8895-cc733596486d",
     "target" : "5e28cd58-606c-4de5-8217-6fe033552b5f"
   }, {
-    "source" : "v1",
-    "target" : "9e14661d-0898-4e65-8895-cc733596486d"
+    "source" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
+    "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
   }, {
     "source" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
-    "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
+    "target" : "2b3267e4-7831-4ee9-9fcc-d61e62111909"
+  }, {
+    "source" : "v1",
+    "target" : "9e14661d-0898-4e65-8895-cc733596486d"
   } ],
   "vertexHashMap" : {
     "9e14661d-0898-4e65-8895-cc733596486d" : {
@@ -55,6 +58,50 @@
           "statusCode" : 0,
           "variables" : [ {
             "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "2b3267e4-7831-4ee9-9fcc-d61e62111909" : {
+      "vertexId" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
+      "vertexType" : "TARGET",
+      "name" : "listResource",
+      "target" : {
+        "name" : "listResource",
+        "description" : "listResource",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres",
+          "path" : "/api/unknown",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "resources",
             "reference" : "body",
             "value" : "$",
             "active" : true,
@@ -153,6 +200,11 @@
     "timeStamp" : 1720664067413,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "ac6d6d374b85e4393053123e4c74dc03ce16d081",
+    "timeStamp" : 1720664210950,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
