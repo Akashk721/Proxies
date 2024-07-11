@@ -1,0 +1,61 @@
+{
+  "id" : "668f706e67f7200ed2424ad7",
+  "cts" : 1720676460863,
+  "createdUserName" : "Akash K",
+  "modifiedUserName" : "Akash K",
+  "mts" : 1720676491775,
+  "createdBy" : "65fbd46b48c1692499a70741",
+  "modifiedBy" : "65fbd46b48c1692499a70741",
+  "proxyId" : "668f706c67f7200ed2424ad6",
+  "revision" : 1,
+  "name" : "dasgjjdabs",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akash K",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "f3ab636e-d386-4ea4-b838-29fafb4230a5"
+  } ],
+  "vertexHashMap" : {
+    "f3ab636e-d386-4ea4-b838-29fafb4230a5" : {
+      "vertexId" : "f3ab636e-d386-4ea4-b838-29fafb4230a5",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720676460863,
+    "lastModifiedBy" : "Akash K",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "f5ffd6a3bfae79a28ec0c36bafe3abf23fef0091",
+    "timeStamp" : 1720676460863,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
