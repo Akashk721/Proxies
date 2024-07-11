@@ -1,0 +1,61 @@
+{
+  "id" : "668fc6b29008bc4f9ef5f4d7",
+  "cts" : 1720698545177,
+  "createdUserName" : "Akash K",
+  "modifiedUserName" : "Akash K",
+  "mts" : 1720698578523,
+  "createdBy" : "65fbd46b48c1692499a70741",
+  "modifiedBy" : "65fbd46b48c1692499a70741",
+  "proxyId" : "668fc6b19008bc4f9ef5f4d6",
+  "revision" : 1,
+  "name" : "Demo Parallel Flow",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/load/test/parallel",
+  "pathArray" : [ "load", "test", "parallel" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akash K",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "42283c97-70b0-4550-a065-1bcb88250cbc"
+  } ],
+  "vertexHashMap" : {
+    "42283c97-70b0-4550-a065-1bcb88250cbc" : {
+      "vertexId" : "42283c97-70b0-4550-a065-1bcb88250cbc",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720698545177,
+    "lastModifiedBy" : "Akash K",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "ca6a603dc339757d0e4a66526c9bf2623e2982a6",
+    "timeStamp" : 1720698545177,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
