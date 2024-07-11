@@ -1,8 +1,9 @@
 {
+  "id" : "668f89d267f7200ed2425993",
   "cts" : 1720682961097,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720682961097,
+  "mts" : 1720683042600,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f89d167f7200ed2425992",
@@ -10,8 +11,8 @@
   "name" : "Reqres Sequential-07-11-2024 07:29:21",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/reqres/sequential",
-  "pathArray" : [ "reqres", "sequential" ],
+  "path" : "/load/test/seq",
+  "pathArray" : [ "load", "test", "seq" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Akash K",
@@ -329,6 +330,12 @@
     "cts" : 1720682961097,
     "lastModifiedBy" : "Akash K",
     "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "076f73941e8f0108998a4f20baaa0416c50e5277",
+    "timeStamp" : 1720682961097,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
   } ],
   "enableTracing" : true,
   "environmentName" : "",
