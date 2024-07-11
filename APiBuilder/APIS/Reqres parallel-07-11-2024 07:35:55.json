@@ -1,10 +1,11 @@
 {
+  "id" : "668f8b5d67f7200ed2425b66",
   "cts" : 1720683355865,
   "createdUserName" : "vidya.wiz vidya.wiz",
-  "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720683355865,
+  "modifiedUserName" : "Akash K",
+  "mts" : 1720697245603,
   "createdBy" : "6454a1d660f0577244784ac0",
-  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f8b5b67f7200ed2425b65",
   "revision" : 1,
   "name" : "Reqres parallel-07-11-2024 07:35:55",
@@ -14,7 +15,7 @@
   "pathArray" : [ "reqres", "parallel" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "vidya.wiz vidya.wiz",
+  "lockedBy" : "Akash K",
   "edgeSet" : [ {
     "source" : "ad22d2e7-7b80-4745-9137-25f85bce0751",
     "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
@@ -298,15 +299,15 @@
     "c85d75d4-4b4d-43ee-9fdc-d209e852d712" : {
       "vertexId" : "c85d75d4-4b4d-43ee-9fdc-d209e852d712",
       "vertexType" : "TARGET",
-      "name" : "loginSucess",
+      "name" : "Get 1",
       "target" : {
-        "name" : "loginSucess",
+        "name" : "Get 1",
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "GET",
-          "scheme" : "https",
-          "host" : "reqres.in",
-          "path" : "/api/login",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
@@ -318,14 +319,7 @@
         },
         "response" : {
           "statusCode" : 0,
-          "variables" : [ {
-            "name" : "token",
-            "reference" : "body",
-            "value" : "$.token",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
+          "variables" : [ ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -345,6 +339,12 @@
     "cts" : 1720683355865,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "63d0b64789a027211933cc0624938539cfefb07f",
+    "timeStamp" : 1720683355865,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
   } ],
   "enableTracing" : false,
   "environmentName" : "",
