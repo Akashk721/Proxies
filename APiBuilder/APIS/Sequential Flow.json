@@ -3,7 +3,7 @@
   "cts" : 1720682961097,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720683304309,
+  "mts" : 1720683314753,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f89d167f7200ed2425992",
@@ -244,9 +244,10 @@
     "5e28cd58-606c-4de5-8217-6fe033552b5f" : {
       "vertexId" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
       "vertexType" : "TARGET",
-      "name" : "getUserDetails",
+      "name" : "Add User 2",
       "target" : {
-        "name" : "getUserDetails",
+        "name" : "Add User 2",
+        "description" : "Add User 2",
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "POST",
@@ -410,6 +411,11 @@
   }, {
     "commitId" : "52df434c62fa061ef2c289de2dea909bffcfa0e5",
     "timeStamp" : 1720683294354,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "b986d9f7bf18c3089c07cf1955e34c1bea02454f",
+    "timeStamp" : 1720683304309,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
