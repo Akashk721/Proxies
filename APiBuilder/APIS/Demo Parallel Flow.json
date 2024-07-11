@@ -3,7 +3,7 @@
   "cts" : 1720698545177,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720698736679,
+  "mts" : 1720698760615,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668fc6b19008bc4f9ef5f4d6",
@@ -22,6 +22,9 @@
   }, {
     "source" : "c1332867-9332-4187-af59-c32ef8ea1a31",
     "target" : "42283c97-70b0-4550-a065-1bcb88250cbc"
+  }, {
+    "source" : "v1",
+    "target" : "480db1e8-a16e-42d8-b97a-774486c05740"
   }, {
     "source" : "v1",
     "target" : "6ec079bc-89ce-45fe-b272-60d2c08889ef"
@@ -97,6 +100,42 @@
         "request" : {
           "apiMethod" : "GET",
           "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "480db1e8-a16e-42d8-b97a-774486c05740" : {
+      "vertexId" : "480db1e8-a16e-42d8-b97a-774486c05740",
+      "vertexType" : "TARGET",
+      "name" : "Get 5",
+      "target" : {
+        "name" : "Get 5",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
           "host" : "34.67.57.107:9000",
           "path" : "/api/get",
           "headerParams" : [ ],
@@ -234,6 +273,11 @@
     "timeStamp" : 1720698706740,
     "modifiedBy" : "Akash K",
     "totalNodes" : 5
+  }, {
+    "commitId" : "cffdd67f100e5ba1e87dfb008c4956837602f82d",
+    "timeStamp" : 1720698736679,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 6
   } ],
   "enableTracing" : false,
   "environmentName" : "",
