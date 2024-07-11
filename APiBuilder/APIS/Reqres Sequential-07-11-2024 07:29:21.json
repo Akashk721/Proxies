@@ -3,7 +3,7 @@
   "cts" : 1720682961097,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720683250280,
+  "mts" : 1720683278215,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f89d167f7200ed2425992",
@@ -315,12 +315,13 @@
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "reqres.in",
-          "path" : "/api/register",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/add",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -329,9 +330,9 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
-            "name" : "token",
+            "name" : "response",
             "reference" : "body",
-            "value" : "$.token",
+            "value" : "$",
             "active" : true,
             "source" : "raw",
             "hide" : false
@@ -394,6 +395,11 @@
   }, {
     "commitId" : "ce06d7d94c17a1632fbdc3478d9d29ba1a3683b3",
     "timeStamp" : 1720683222174,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "794febecec6601e64e770c11d430bbb2aeb05fa0",
+    "timeStamp" : 1720683250280,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
