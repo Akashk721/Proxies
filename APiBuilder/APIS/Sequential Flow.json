@@ -3,7 +3,7 @@
   "cts" : 1720682961097,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720683903173,
+  "mts" : 1720683908914,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f89d167f7200ed2425992",
@@ -96,7 +96,7 @@
         "description" : "Get User 5",
         "apiType" : "RESTAPI",
         "request" : {
-          "apiMethod" : "POST",
+          "apiMethod" : "GET",
           "scheme" : "http",
           "host" : "34.67.57.107:9000",
           "path" : "/api/get",
@@ -546,6 +546,11 @@
   }, {
     "commitId" : "ee6b414f3ad2fdcaa37461fe979ff4dc53e6ca2a",
     "timeStamp" : 1720683887716,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "69634a0936b24987e46f1973888020456a535ff0",
+    "timeStamp" : 1720683903173,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
