@@ -3,7 +3,7 @@
   "cts" : 1720682961097,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720683138676,
+  "mts" : 1720683158052,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f89d167f7200ed2425992",
@@ -247,7 +247,7 @@
         "name" : "getUserDetails",
         "apiType" : "RESTAPI",
         "request" : {
-          "apiMethod" : "GET",
+          "apiMethod" : "POST",
           "scheme" : "http",
           "host" : "34.67.57.107:9000",
           "path" : "/api/add",
@@ -263,6 +263,27 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
             "name" : "response",
             "reference" : "body",
             "value" : "$",
@@ -346,6 +367,11 @@
   }, {
     "commitId" : "8e649463c8946d3a7d0d665e0680fcac85337837",
     "timeStamp" : 1720683111549,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "c73a022a5ad469d045b0666607164da6a310cd7e",
+    "timeStamp" : 1720683138676,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
