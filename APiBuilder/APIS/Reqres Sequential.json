@@ -3,7 +3,7 @@
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720665072858,
+  "mts" : 1720665139924,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
@@ -11,8 +11,8 @@
   "name" : "Reqres Sequential",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/reqres/sequential",
+  "pathArray" : [ "reqres", "sequential" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -179,7 +179,7 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     },
     "c9569f7b-974d-437b-b025-ae7cda90acbb" : {
       "vertexId" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
@@ -376,8 +376,13 @@
     "timeStamp" : 1720664833995,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 8
+  }, {
+    "commitId" : "5b0f0ade5b12d4caea8c283cf34e09502a5f24fa",
+    "timeStamp" : 1720665072858,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
   } ],
-  "enableTracing" : false,
+  "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
   "deleted" : false,
