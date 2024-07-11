@@ -1,0 +1,354 @@
+{
+  "cts" : 1720683355865,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1720683355865,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "668f8b5b67f7200ed2425b65",
+  "revision" : 1,
+  "name" : "Reqres parallel-07-11-2024 07:35:55",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/reqres/parallel",
+  "pathArray" : [ "reqres", "parallel" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "ad22d2e7-7b80-4745-9137-25f85bce0751",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "c85d75d4-4b4d-43ee-9fdc-d209e852d712"
+  }, {
+    "source" : "v1",
+    "target" : "abab6f1f-de85-4475-904a-e5dd8b823378"
+  }, {
+    "source" : "c85d75d4-4b4d-43ee-9fdc-d209e852d712",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "da322d07-6482-4dc3-b43b-f104adf2030c"
+  }, {
+    "source" : "abab6f1f-de85-4475-904a-e5dd8b823378",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "da322d07-6482-4dc3-b43b-f104adf2030c",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "9384cf09-62a9-432c-97ec-11dd756fd023"
+  }, {
+    "source" : "v1",
+    "target" : "ad22d2e7-7b80-4745-9137-25f85bce0751"
+  }, {
+    "source" : "9384cf09-62a9-432c-97ec-11dd756fd023",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
+  }, {
+    "source" : "v1",
+    "target" : "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7"
+  } ],
+  "vertexHashMap" : {
+    "ad22d2e7-7b80-4745-9137-25f85bce0751" : {
+      "vertexId" : "ad22d2e7-7b80-4745-9137-25f85bce0751",
+      "vertexType" : "TARGET",
+      "name" : "loginAndGetToken",
+      "target" : {
+        "name" : "loginAndGetToken",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/register",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"pistol\"\n}\n",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "token",
+            "reference" : "body",
+            "value" : "$.token",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f" : {
+      "vertexId" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"i ran succesfully\":\"success\",\n    \"token\":{{{token}}},\n    \"users\":{{{response}}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7" : {
+      "vertexId" : "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7",
+      "vertexType" : "TARGET",
+      "name" : "getResources",
+      "target" : {
+        "name" : "getResources",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/unknown",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "resources",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "9384cf09-62a9-432c-97ec-11dd756fd023" : {
+      "vertexId" : "9384cf09-62a9-432c-97ec-11dd756fd023",
+      "vertexType" : "TARGET",
+      "name" : "getUsers",
+      "target" : {
+        "name" : "getUsers",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "da322d07-6482-4dc3-b43b-f104adf2030c" : {
+      "vertexId" : "da322d07-6482-4dc3-b43b-f104adf2030c",
+      "vertexType" : "TARGET",
+      "name" : "getUsers",
+      "target" : {
+        "name" : "getUsers",
+        "description" : "getUser",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "abab6f1f-de85-4475-904a-e5dd8b823378" : {
+      "vertexId" : "abab6f1f-de85-4475-904a-e5dd8b823378",
+      "vertexType" : "TARGET",
+      "name" : "createUser",
+      "target" : {
+        "name" : "createUser",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}\n",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "c85d75d4-4b4d-43ee-9fdc-d209e852d712" : {
+      "vertexId" : "c85d75d4-4b4d-43ee-9fdc-d209e852d712",
+      "vertexType" : "TARGET",
+      "name" : "loginSucess",
+      "target" : {
+        "name" : "loginSucess",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/login",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"cityslicka\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "token",
+            "reference" : "body",
+            "value" : "$.token",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720683355865,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
