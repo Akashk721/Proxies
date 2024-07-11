@@ -3,7 +3,7 @@
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720664067413,
+  "mts" : 1720664210950,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
@@ -18,10 +18,13 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "9e14661d-0898-4e65-8895-cc733596486d",
-    "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
+    "target" : "5e28cd58-606c-4de5-8217-6fe033552b5f"
   }, {
     "source" : "v1",
     "target" : "9e14661d-0898-4e65-8895-cc733596486d"
+  }, {
+    "source" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
+    "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
   } ],
   "vertexHashMap" : {
     "9e14661d-0898-4e65-8895-cc733596486d" : {
@@ -89,6 +92,49 @@
           "type" : "JSON"
         }
       }
+    },
+    "5e28cd58-606c-4de5-8217-6fe033552b5f" : {
+      "vertexId" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
+      "vertexType" : "TARGET",
+      "name" : "getUserDetails",
+      "target" : {
+        "name" : "getUserDetails",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users/2",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "userDetails",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -102,6 +148,11 @@
     "timeStamp" : 1720624611606,
     "modifiedBy" : "Akash K",
     "totalNodes" : 2
+  }, {
+    "commitId" : "42ca43bca0b3536fc12545ca1c8d54759e8a9a89",
+    "timeStamp" : 1720664067413,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
