@@ -3,7 +3,7 @@
   "cts" : 1720682961097,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720683596357,
+  "mts" : 1720683845959,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f89d167f7200ed2425992",
@@ -48,17 +48,17 @@
         "description" : "Add User 1",
         "apiType" : "RESTAPI",
         "request" : {
-          "apiMethod" : "POST",
+          "apiMethod" : "GET",
           "scheme" : "http",
           "host" : "34.67.57.107:9000",
-          "path" : "/api/add",
+          "path" : "/api/get",
           "headerParams" : [ {
             "name" : "Content-Type",
             "value" : "application/json"
           } ],
           "queryParams" : [ ],
           "body" : {
-            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "data" : "",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -374,6 +374,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1720683819167,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "D"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720683605034,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "A"
+  }, {
+    "status" : "Draft",
     "cts" : 1720683480191,
     "lastModifiedBy" : "65fbd46b48c1692499a70741",
     "description" : "d"
@@ -506,6 +516,11 @@
   }, {
     "commitId" : "0f2cd9926786a960cf057dfaf9e116e11bd16ba0",
     "timeStamp" : 1720683572886,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "d622182904ff3850b2e288ea6676e592cb5f6341",
+    "timeStamp" : 1720683596357,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
