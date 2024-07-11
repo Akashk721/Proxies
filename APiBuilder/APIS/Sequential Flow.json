@@ -3,7 +3,7 @@
   "cts" : 1720682961097,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720683364040,
+  "mts" : 1720683520450,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f89d167f7200ed2425992",
@@ -52,11 +52,11 @@
           "scheme" : "http",
           "host" : "34.67.57.107:9000",
           "path" : "/api/add",
-          "headerParams" : [ ],
-          "queryParams" : [ {
-            "name" : "page",
-            "value" : "2"
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
           } ],
+          "queryParams" : [ ],
           "body" : {
             "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
             "type" : "json"
@@ -356,6 +356,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1720683480191,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720683385400,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "Approved"
+  }, {
+    "status" : "Draft",
     "cts" : 1720682961097,
     "lastModifiedBy" : "Akash K",
     "description" : "Duplicated proxy"
@@ -445,7 +455,13 @@
     "timeStamp" : 1720683342977,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
+  }, {
+    "commitId" : "2e3fb92780e9f7c416072058f217215c14689074",
+    "timeStamp" : 1720683364040,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
