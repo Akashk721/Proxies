@@ -3,7 +3,7 @@
   "cts" : 1720698545177,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720698835176,
+  "mts" : 1720699213286,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668fc6b19008bc4f9ef5f4d6",
@@ -60,7 +60,7 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "headers" : {
           "Content-Type" : "application/json"
         },
@@ -151,7 +151,7 @@
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "GET",
-          "scheme" : "https",
+          "scheme" : "http",
           "host" : "34.67.57.107:9000",
           "path" : "/api/get",
           "headerParams" : [ ],
@@ -164,7 +164,14 @@
         },
         "response" : {
           "statusCode" : 0,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -303,6 +310,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1720699152355,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "Dra"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720698847337,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "A"
+  }, {
+    "status" : "Draft",
     "cts" : 1720698545177,
     "lastModifiedBy" : "Akash K",
     "description" : "Created new proxy"
@@ -347,7 +364,13 @@
     "timeStamp" : 1720698791052,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
+  }, {
+    "commitId" : "97f6e855dce831c310ed9a9e8b14b4b381f76b5a",
+    "timeStamp" : 1720698835176,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
