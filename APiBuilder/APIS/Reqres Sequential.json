@@ -3,7 +3,7 @@
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720665139924,
+  "mts" : 1720665973303,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
@@ -13,7 +13,7 @@
   "apiMethod" : "GET",
   "path" : "/reqres/sequential",
   "pathArray" : [ "reqres", "sequential" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -249,7 +249,7 @@
           "apiMethod" : "GET",
           "scheme" : "https",
           "host" : "reqres.in",
-          "path" : "/api/users/2",
+          "path" : "/api/users/{id}",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
@@ -261,6 +261,13 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
             "name" : "userDetails",
             "reference" : "body",
             "value" : "$",
@@ -270,9 +277,9 @@
           } ]
         },
         "timeout" : 0,
-        "continueOnError" : false,
+        "continueOnError" : true,
         "errorResponse" : {
-          "statusCode" : 0,
+          "statusCode" : 200,
           "body" : {
             "data" : "",
             "type" : "json"
@@ -326,6 +333,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1720665565815,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "r"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720665412745,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "a"
+  }, {
     "status" : "Draft",
     "cts" : 1720624611606,
     "lastModifiedBy" : "Akash K",
@@ -381,7 +398,13 @@
     "timeStamp" : 1720665072858,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 8
+  }, {
+    "commitId" : "305f1a905b61b3d47adebc2f9fd0e1e92547effc",
+    "timeStamp" : 1720665139924,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
