@@ -1,0 +1,416 @@
+{
+  "id" : "668f89d267f7200ed2425993",
+  "cts" : 1720682961097,
+  "createdUserName" : "Akash K",
+  "modifiedUserName" : "Akash K",
+  "mts" : 1720683294354,
+  "createdBy" : "65fbd46b48c1692499a70741",
+  "modifiedBy" : "65fbd46b48c1692499a70741",
+  "proxyId" : "668f89d167f7200ed2425992",
+  "revision" : 1,
+  "name" : "Sequential Flow",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/load/test/seq",
+  "pathArray" : [ "load", "test", "seq" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akash K",
+  "edgeSet" : [ {
+    "source" : "9e14661d-0898-4e65-8895-cc733596486d",
+    "target" : "5e28cd58-606c-4de5-8217-6fe033552b5f"
+  }, {
+    "source" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
+    "target" : "c9569f7b-974d-437b-b025-ae7cda90acbb"
+  }, {
+    "source" : "f3b5526a-514e-48cb-bc30-24dc287385be",
+    "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
+  }, {
+    "source" : "d207baea-8829-4b54-bd17-a641775f2921",
+    "target" : "f3b5526a-514e-48cb-bc30-24dc287385be"
+  }, {
+    "source" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
+    "target" : "d207baea-8829-4b54-bd17-a641775f2921"
+  }, {
+    "source" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
+    "target" : "2b3267e4-7831-4ee9-9fcc-d61e62111909"
+  }, {
+    "source" : "v1",
+    "target" : "9e14661d-0898-4e65-8895-cc733596486d"
+  } ],
+  "vertexHashMap" : {
+    "9e14661d-0898-4e65-8895-cc733596486d" : {
+      "vertexId" : "9e14661d-0898-4e65-8895-cc733596486d",
+      "vertexType" : "TARGET",
+      "name" : "List Users",
+      "target" : {
+        "name" : "List Users",
+        "description" : "List Users",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/add",
+          "headerParams" : [ ],
+          "queryParams" : [ {
+            "name" : "page",
+            "value" : "2"
+          } ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "d207baea-8829-4b54-bd17-a641775f2921" : {
+      "vertexId" : "d207baea-8829-4b54-bd17-a641775f2921",
+      "vertexType" : "TARGET",
+      "name" : "updateUser",
+      "target" : {
+        "name" : "updateUser",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/add",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "2b3267e4-7831-4ee9-9fcc-d61e62111909" : {
+      "vertexId" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
+      "vertexType" : "TARGET",
+      "name" : "listResource",
+      "target" : {
+        "name" : "listResource",
+        "description" : "listResource",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/add",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "c9569f7b-974d-437b-b025-ae7cda90acbb" : {
+      "vertexId" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
+      "vertexType" : "TARGET",
+      "name" : "getSingleResource",
+      "target" : {
+        "name" : "getSingleResource",
+        "description" : "getSingleResource",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/add",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "63658e6d-42fc-492e-a382-c1e27844eaf8" : {
+      "vertexId" : "63658e6d-42fc-492e-a382-c1e27844eaf8",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"token\":{{{token}}},\n    \"users\":{{{users}}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "5e28cd58-606c-4de5-8217-6fe033552b5f" : {
+      "vertexId" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
+      "vertexType" : "TARGET",
+      "name" : "getUserDetails",
+      "target" : {
+        "name" : "getUserDetails",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/add",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "f3b5526a-514e-48cb-bc30-24dc287385be" : {
+      "vertexId" : "f3b5526a-514e-48cb-bc30-24dc287385be",
+      "vertexType" : "TARGET",
+      "name" : "getToken",
+      "target" : {
+        "name" : "getToken",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/add",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720682961097,
+    "lastModifiedBy" : "Akash K",
+    "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "076f73941e8f0108998a4f20baaa0416c50e5277",
+    "timeStamp" : 1720682961097,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "a3466179e2ab63abc8fb38f2fb80eca6dce5a3a7",
+    "timeStamp" : 1720683042600,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "8e649463c8946d3a7d0d665e0680fcac85337837",
+    "timeStamp" : 1720683111549,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "c73a022a5ad469d045b0666607164da6a310cd7e",
+    "timeStamp" : 1720683138676,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "e69a2ea75f35b64d22dcc2bb662cbd376b67d403",
+    "timeStamp" : 1720683158052,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "a2aac8294b92a17e7e2f1e7fe5f7009e8a15d7fb",
+    "timeStamp" : 1720683187023,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "c5fe1c8e47a47a57b67e63e2c783294d84b04007",
+    "timeStamp" : 1720683215169,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "ce06d7d94c17a1632fbdc3478d9d29ba1a3683b3",
+    "timeStamp" : 1720683222174,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "794febecec6601e64e770c11d430bbb2aeb05fa0",
+    "timeStamp" : 1720683250280,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "8f971433e476ad0bd101165e065278ab56123e57",
+    "timeStamp" : 1720683278215,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  } ],
+  "enableTracing" : true,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
