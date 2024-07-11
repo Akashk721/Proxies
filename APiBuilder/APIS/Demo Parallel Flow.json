@@ -3,7 +3,7 @@
   "cts" : 1720698545177,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720698760615,
+  "mts" : 1720698791052,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668fc6b19008bc4f9ef5f4d6",
@@ -25,6 +25,9 @@
   }, {
     "source" : "v1",
     "target" : "480db1e8-a16e-42d8-b97a-774486c05740"
+  }, {
+    "source" : "v1",
+    "target" : "7771107e-4669-41b7-b7cc-20aabf9bb0d6"
   }, {
     "source" : "v1",
     "target" : "6ec079bc-89ce-45fe-b272-60d2c08889ef"
@@ -240,6 +243,49 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "7771107e-4669-41b7-b7cc-20aabf9bb0d6" : {
+      "vertexId" : "7771107e-4669-41b7-b7cc-20aabf9bb0d6",
+      "vertexType" : "TARGET",
+      "name" : "Get 6",
+      "target" : {
+        "name" : "Get 6",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -278,6 +324,11 @@
     "timeStamp" : 1720698736679,
     "modifiedBy" : "Akash K",
     "totalNodes" : 6
+  }, {
+    "commitId" : "61d200f76c49873e68b479d1bbfc23d3ad01d220",
+    "timeStamp" : 1720698760615,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 7
   } ],
   "enableTracing" : false,
   "environmentName" : "",
