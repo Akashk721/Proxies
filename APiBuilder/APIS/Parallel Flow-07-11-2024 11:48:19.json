@@ -1,8 +1,9 @@
 {
+  "id" : "668fc6859008bc4f9ef5f4c3",
   "cts" : 1720698499681,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720698499681,
+  "mts" : 1720698530409,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668fc6839008bc4f9ef5f4c2",
@@ -331,6 +332,12 @@
     "cts" : 1720698499681,
     "lastModifiedBy" : "Akash K",
     "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "582dee0706e6e4360d6e8d632353df64d53b0e8e",
+    "timeStamp" : 1720698499681,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
   } ],
   "enableTracing" : false,
   "environmentName" : "",
