@@ -3,7 +3,7 @@
   "cts" : 1720666630020,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720666953879,
+  "mts" : 1720667054773,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668f4a0667f7200ed24241ab",
@@ -18,6 +18,9 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "ad22d2e7-7b80-4745-9137-25f85bce0751"
+  }, {
+    "source" : "v1",
     "target" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f"
   }, {
     "source" : "v1",
@@ -30,6 +33,50 @@
     "target" : "0b5079f0-24b5-46ab-ac8f-3e131bc7b9b7"
   } ],
   "vertexHashMap" : {
+    "ad22d2e7-7b80-4745-9137-25f85bce0751" : {
+      "vertexId" : "ad22d2e7-7b80-4745-9137-25f85bce0751",
+      "vertexType" : "TARGET",
+      "name" : "loginAndGetToken",
+      "target" : {
+        "name" : "loginAndGetToken",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/register",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"pistol\"\n}\n",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "token",
+            "reference" : "body",
+            "value" : "$token",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f" : {
       "vertexId" : "ad8eb600-5e40-4a6b-9cf2-cf76758a3f3f",
       "vertexType" : "STOP",
@@ -212,6 +259,11 @@
     "timeStamp" : 1720666836431,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "77ff8b33891d834676c1e5d1b498c8f915b363cf",
+    "timeStamp" : 1720666953879,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
   } ],
   "enableTracing" : false,
   "environmentName" : "",
