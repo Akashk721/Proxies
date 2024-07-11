@@ -3,7 +3,7 @@
   "cts" : 1720666630020,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720666667534,
+  "mts" : 1720666679912,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668f4a0667f7200ed24241ab",
@@ -11,8 +11,8 @@
   "name" : "Reqres parallel",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/reqres/parallel",
+  "pathArray" : [ "reqres", "parallel" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -50,6 +50,11 @@
   "changeLogs" : [ {
     "commitId" : "da9877103be2d34723d0597383f52f38f43e3ea0",
     "timeStamp" : 1720666630020,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "05768d7cce13ebc3e6fded4e4e2d7ffbc4710a91",
+    "timeStamp" : 1720666667534,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
