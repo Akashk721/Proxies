@@ -1,0 +1,338 @@
+{
+  "cts" : 1720682961097,
+  "createdUserName" : "Akash K",
+  "modifiedUserName" : "Akash K",
+  "mts" : 1720682961097,
+  "createdBy" : "65fbd46b48c1692499a70741",
+  "modifiedBy" : "65fbd46b48c1692499a70741",
+  "proxyId" : "668f89d167f7200ed2425992",
+  "revision" : 1,
+  "name" : "Reqres Sequential-07-11-2024 07:29:21",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/reqres/sequential",
+  "pathArray" : [ "reqres", "sequential" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akash K",
+  "edgeSet" : [ {
+    "source" : "9e14661d-0898-4e65-8895-cc733596486d",
+    "target" : "5e28cd58-606c-4de5-8217-6fe033552b5f"
+  }, {
+    "source" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
+    "target" : "c9569f7b-974d-437b-b025-ae7cda90acbb"
+  }, {
+    "source" : "f3b5526a-514e-48cb-bc30-24dc287385be",
+    "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
+  }, {
+    "source" : "d207baea-8829-4b54-bd17-a641775f2921",
+    "target" : "f3b5526a-514e-48cb-bc30-24dc287385be"
+  }, {
+    "source" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
+    "target" : "d207baea-8829-4b54-bd17-a641775f2921"
+  }, {
+    "source" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
+    "target" : "2b3267e4-7831-4ee9-9fcc-d61e62111909"
+  }, {
+    "source" : "v1",
+    "target" : "9e14661d-0898-4e65-8895-cc733596486d"
+  } ],
+  "vertexHashMap" : {
+    "9e14661d-0898-4e65-8895-cc733596486d" : {
+      "vertexId" : "9e14661d-0898-4e65-8895-cc733596486d",
+      "vertexType" : "TARGET",
+      "name" : "List Users",
+      "target" : {
+        "name" : "List Users",
+        "description" : "List Users",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ {
+            "name" : "page",
+            "value" : "2"
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "d207baea-8829-4b54-bd17-a641775f2921" : {
+      "vertexId" : "d207baea-8829-4b54-bd17-a641775f2921",
+      "vertexType" : "TARGET",
+      "name" : "updateUser",
+      "target" : {
+        "name" : "updateUser",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "PUT",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users/2",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "modifiedCountAndTime",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "2b3267e4-7831-4ee9-9fcc-d61e62111909" : {
+      "vertexId" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
+      "vertexType" : "TARGET",
+      "name" : "listResource",
+      "target" : {
+        "name" : "listResource",
+        "description" : "listResource",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/unknown",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "c9569f7b-974d-437b-b025-ae7cda90acbb" : {
+      "vertexId" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
+      "vertexType" : "TARGET",
+      "name" : "getSingleResource",
+      "target" : {
+        "name" : "getSingleResource",
+        "description" : "getSingleResource",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/unknown/2",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "63658e6d-42fc-492e-a382-c1e27844eaf8" : {
+      "vertexId" : "63658e6d-42fc-492e-a382-c1e27844eaf8",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"token\":{{{token}}},\n    \"users\":{{{users}}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "5e28cd58-606c-4de5-8217-6fe033552b5f" : {
+      "vertexId" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
+      "vertexType" : "TARGET",
+      "name" : "getUserDetails",
+      "target" : {
+        "name" : "getUserDetails",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "api/users/2",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "users",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "f3b5526a-514e-48cb-bc30-24dc287385be" : {
+      "vertexId" : "f3b5526a-514e-48cb-bc30-24dc287385be",
+      "vertexType" : "TARGET",
+      "name" : "getToken",
+      "target" : {
+        "name" : "getToken",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/register",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "token",
+            "reference" : "body",
+            "value" : "$.token",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720682961097,
+    "lastModifiedBy" : "Akash K",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : true,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
