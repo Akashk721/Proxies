@@ -3,7 +3,7 @@
   "cts" : 1720683355865,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720697280497,
+  "mts" : 1720697298778,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f8b5b67f7200ed2425b65",
@@ -161,15 +161,15 @@
     "9384cf09-62a9-432c-97ec-11dd756fd023" : {
       "vertexId" : "9384cf09-62a9-432c-97ec-11dd756fd023",
       "vertexType" : "TARGET",
-      "name" : "getUsers",
+      "name" : "Get 4",
       "target" : {
-        "name" : "getUsers",
+        "name" : "Get 4",
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "GET",
-          "scheme" : "https",
-          "host" : "reqres.in",
-          "path" : "/api/users",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
@@ -184,7 +184,7 @@
             "name" : "users",
             "reference" : "body",
             "value" : "$",
-            "active" : true,
+            "active" : false,
             "source" : "raw",
             "hide" : false
           } ]
@@ -353,6 +353,11 @@
   }, {
     "commitId" : "9c16b8047e1f27eb78afeec1039b6fe1aa40bc61",
     "timeStamp" : 1720697265996,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "101fd005ff3d49cfc6ff6c0a9ce5bc9f5ddd8755",
+    "timeStamp" : 1720697280497,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
