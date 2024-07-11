@@ -3,7 +3,7 @@
   "cts" : 1720682961097,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720683943200,
+  "mts" : 1720692051349,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f89d167f7200ed2425992",
@@ -66,14 +66,7 @@
         },
         "response" : {
           "statusCode" : 0,
-          "variables" : [ {
-            "name" : "response",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
+          "variables" : [ ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -374,6 +367,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1720692036454,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "Draft"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720683957174,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "A"
+  }, {
+    "status" : "Draft",
     "cts" : 1720683819167,
     "lastModifiedBy" : "65fbd46b48c1692499a70741",
     "description" : "D"
@@ -571,6 +574,11 @@
   }, {
     "commitId" : "d584c2a1bb198425ec4214d35cf0a24b52e1e498",
     "timeStamp" : 1720683935926,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "90cb40729f73f5323224c7e5c7f7c45abd82caf1",
+    "timeStamp" : 1720683943200,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
