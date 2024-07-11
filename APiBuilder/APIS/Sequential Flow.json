@@ -3,7 +3,7 @@
   "cts" : 1720682961097,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720692071281,
+  "mts" : 1720692094149,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f89d167f7200ed2425992",
@@ -155,14 +155,7 @@
         },
         "response" : {
           "statusCode" : 0,
-          "variables" : [ {
-            "name" : "response",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
+          "variables" : [ ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -556,6 +549,11 @@
   }, {
     "commitId" : "d2f50c96afe450a2fd41775f6ddf5d002c75971e",
     "timeStamp" : 1720692051349,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "3dec0996a50baed2125953b166138f2af3b91bfb",
+    "timeStamp" : 1720692071281,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
