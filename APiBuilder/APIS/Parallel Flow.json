@@ -3,7 +3,7 @@
   "cts" : 1720683355865,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "Akash K",
-  "mts" : 1720697396044,
+  "mts" : 1720697455191,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "668f8b5b67f7200ed2425b65",
@@ -11,8 +11,8 @@
   "name" : "Parallel Flow",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/reqres/parallel",
-  "pathArray" : [ "reqres", "parallel" ],
+  "path" : "/load/test/par",
+  "pathArray" : [ "load", "test", "par" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Akash K",
@@ -336,6 +336,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1720697438160,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720697418455,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "Approved"
+  }, {
+    "status" : "Draft",
     "cts" : 1720683355865,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Duplicated proxy"
@@ -378,6 +388,11 @@
   }, {
     "commitId" : "fe61b1919b5b7f5bd00287f1a6fc83dd7b625c96",
     "timeStamp" : 1720697382739,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "5b8177e964bb8329a7b60d5a20d6aa55362344e2",
+    "timeStamp" : 1720697396044,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
