@@ -3,7 +3,7 @@
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720664624642,
+  "mts" : 1720664648207,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
@@ -91,7 +91,7 @@
         "name" : "updateUser",
         "apiType" : "RESTAPI",
         "request" : {
-          "apiMethod" : "POST",
+          "apiMethod" : "PUT",
           "scheme" : "https",
           "host" : "reqres.in",
           "path" : "/api/users/2",
@@ -314,6 +314,11 @@
     "timeStamp" : 1720664454573,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
+  }, {
+    "commitId" : "e79c64a6b0017add4df2f5c126b4e32e5cca2886",
+    "timeStamp" : 1720664624642,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
   } ],
   "enableTracing" : false,
   "environmentName" : "",
