@@ -3,7 +3,7 @@
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720665973303,
+  "mts" : 1720666195571,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
@@ -249,7 +249,7 @@
           "apiMethod" : "GET",
           "scheme" : "https",
           "host" : "reqres.in",
-          "path" : "/api/users/{id}",
+          "path" : "api/users/2",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
@@ -334,6 +334,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1720666163257,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720665992050,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Review",
     "cts" : 1720665565815,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
     "description" : "r"
@@ -401,6 +411,11 @@
   }, {
     "commitId" : "305f1a905b61b3d47adebc2f9fd0e1e92547effc",
     "timeStamp" : 1720665139924,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "1f04787039ba00fe31d098d6e6954cbd7734ccaa",
+    "timeStamp" : 1720665973303,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 8
   } ],
