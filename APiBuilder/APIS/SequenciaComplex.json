@@ -3,7 +3,7 @@
   "cts" : 1720762644252,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720785552660,
+  "mts" : 1720785628817,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6690c114ebab18771e3e5821",
@@ -160,9 +160,9 @@
       "loopData" : {
         "listVariableSource" : "GetUser6",
         "variables" : [ {
-          "name" : "id",
+          "name" : "userId",
           "reference" : "body",
-          "value" : "userId",
+          "value" : "id",
           "active" : true,
           "hide" : false
         } ],
@@ -762,6 +762,11 @@
   }, {
     "commitId" : "87b649f2b56b6beb47f47d8aa2d1d205133ac6eb",
     "timeStamp" : 1720785533680,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "bd4d762ed5f2c2d1c08e38069d079462201944f4",
+    "timeStamp" : 1720785552660,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 12
   } ],
