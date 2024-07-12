@@ -3,7 +3,7 @@
   "cts" : 1720762644252,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720778909245,
+  "mts" : 1720778946857,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6690c114ebab18771e3e5821",
@@ -28,6 +28,9 @@
   }, {
     "source" : "3032a8d2-8985-4988-8894-377a2c1f34b4",
     "target" : "f3b5526a-514e-48cb-bc30-24dc287385be"
+  }, {
+    "source" : "3032a8d2-8985-4988-8894-377a2c1f34b4",
+    "target" : "0beac575-46de-400f-ac4e-38a1d961f886"
   }, {
     "source" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
     "target" : "d207baea-8829-4b54-bd17-a641775f2921"
@@ -133,6 +136,19 @@
         }
       },
       "imported" : false
+    },
+    "0beac575-46de-400f-ac4e-38a1d961f886" : {
+      "vertexId" : "0beac575-46de-400f-ac4e-38a1d961f886",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"i could not get the response you were expecting\"\n}",
+          "type" : "json"
+        }
+      }
     },
     "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e" : {
       "vertexId" : "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e",
@@ -317,7 +333,8 @@
         "condition" : "else-if",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "0beac575-46de-400f-ac4e-38a1d961f886" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -508,6 +525,11 @@
   }, {
     "commitId" : "f2c743270d2e6e66a2667bf52870fd37c17307c4",
     "timeStamp" : 1720778788630,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "0f6ff7b1ee2f3a11f54147d785b18575c63a5c51",
+    "timeStamp" : 1720778909245,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 11
   } ],
