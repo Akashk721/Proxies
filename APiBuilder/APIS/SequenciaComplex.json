@@ -3,7 +3,7 @@
   "cts" : 1720762644252,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720780414960,
+  "mts" : 1720780716320,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6690c114ebab18771e3e5821",
@@ -438,18 +438,18 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
+            "name" : "GetUser6",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "hide" : true
+          }, {
             "name" : "response",
             "reference" : "body",
             "value" : "$",
             "active" : true,
             "source" : "raw",
             "hide" : false
-          }, {
-            "name" : "GetUser6",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"id\": {\n        \"type\": \"integer\"\n      },\n      \"name\": {\n        \"type\": \"string\"\n      },\n      \"email\": {\n        \"type\": \"string\",\n        \"format\": \"email\"\n      }\n    }\n  }\n}"
         },
@@ -467,6 +467,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1720780609131,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "fr"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720780422737,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
     "status" : "Review",
     "cts" : 1720780282635,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -575,6 +585,11 @@
   }, {
     "commitId" : "ed40fa5f3a5c005856023c14f306b18dd0225376",
     "timeStamp" : 1720779825893,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 13
+  }, {
+    "commitId" : "d3d37ffb915523ed265638ea33b57c0332c78280",
+    "timeStamp" : 1720780414960,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 13
   } ],
