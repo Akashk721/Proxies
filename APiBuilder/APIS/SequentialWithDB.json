@@ -3,7 +3,7 @@
   "cts" : 1720762644252,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720775519867,
+  "mts" : 1720778258664,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6690c114ebab18771e3e5821",
@@ -130,12 +130,19 @@
       "name" : "For Loop",
       "loopData" : {
         "listVariableSource" : "GetUser6",
-        "variables" : [ ],
+        "variables" : [ {
+          "name" : "$.id",
+          "reference" : "body",
+          "value" : "userId",
+          "active" : true,
+          "hide" : false
+        } ],
         "listType" : "json",
         "loopList" : [ ],
         "listName" : "",
-        "startingVertex" : [ ],
-        "listVariableVertexId" : "f3b5526a-514e-48cb-bc30-24dc287385be"
+        "startingVertex" : [ "6e01a52a-f0ce-4201-8fbb-1d206eb8f406" ],
+        "listVariableVertexId" : "f3b5526a-514e-48cb-bc30-24dc287385be",
+        "loopVertexes" : [ "6e01a52a-f0ce-4201-8fbb-1d206eb8f406" ]
       },
       "imported" : false
     },
@@ -228,6 +235,50 @@
       },
       "imported" : false
     },
+    "6e01a52a-f0ce-4201-8fbb-1d206eb8f406" : {
+      "vertexId" : "6e01a52a-f0ce-4201-8fbb-1d206eb8f406",
+      "vertexType" : "TARGET",
+      "name" : "getUserDetails",
+      "target" : {
+        "name" : "getUserDetails",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get/{{userId}}",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "userDetails",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "parentVertex" : "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e",
+      "imported" : false
+    },
     "63658e6d-42fc-492e-a382-c1e27844eaf8" : {
       "vertexId" : "63658e6d-42fc-492e-a382-c1e27844eaf8",
       "vertexType" : "STOP",
@@ -239,7 +290,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"response\":{{{response}}}\n}",
+          "data" : "{\n    \"userDetails\":{{{userDetails}}}\n\n}",
           "type" : "json"
         }
       }
@@ -360,6 +411,11 @@
   }, {
     "commitId" : "016af98fae6eb5fa74aef5191a4e1e6e1dd11039",
     "timeStamp" : 1720774502120,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
+  }, {
+    "commitId" : "62f98e6b085dc1af414fd808eed4837c04ec0319",
+    "timeStamp" : 1720775519867,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 9
   } ],
