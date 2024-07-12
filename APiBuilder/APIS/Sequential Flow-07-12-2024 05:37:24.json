@@ -1,8 +1,9 @@
 {
+  "id" : "6690c118ebab18771e3e5822",
   "cts" : 1720762644252,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720762644252,
+  "mts" : 1720774473881,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6690c114ebab18771e3e5821",
@@ -22,20 +23,23 @@
     "source" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
     "target" : "c9569f7b-974d-437b-b025-ae7cda90acbb"
   }, {
-    "source" : "f3b5526a-514e-48cb-bc30-24dc287385be",
-    "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
-  }, {
     "source" : "d207baea-8829-4b54-bd17-a641775f2921",
     "target" : "f3b5526a-514e-48cb-bc30-24dc287385be"
   }, {
     "source" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
     "target" : "d207baea-8829-4b54-bd17-a641775f2921"
   }, {
+    "source" : "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e",
+    "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
+  }, {
     "source" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
     "target" : "2b3267e4-7831-4ee9-9fcc-d61e62111909"
   }, {
     "source" : "v1",
     "target" : "9e14661d-0898-4e65-8895-cc733596486d"
+  }, {
+    "source" : "f3b5526a-514e-48cb-bc30-24dc287385be",
+    "target" : "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e"
   } ],
   "vertexHashMap" : {
     "9e14661d-0898-4e65-8895-cc733596486d" : {
@@ -117,6 +121,21 @@
             "type" : "json"
           }
         }
+      },
+      "imported" : false
+    },
+    "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e" : {
+      "vertexId" : "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "",
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ ],
+        "listVariableVertexId" : ""
       },
       "imported" : false
     },
@@ -300,7 +319,8 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
-          } ]
+          } ],
+          "responseSchema" : "{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"id\": {\n        \"type\": \"integer\"\n      },\n      \"name\": {\n        \"type\": \"string\"\n      },\n      \"email\": {\n        \"type\": \"string\",\n        \"format\": \"email\"\n      }\n    }\n  }\n}"
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -320,6 +340,12 @@
     "cts" : 1720762644252,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "ef8b62bbec119f7f05b17f8f9432b6feb659e95d",
+    "timeStamp" : 1720762644252,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
   } ],
   "enableTracing" : true,
   "environmentName" : "",
