@@ -1,0 +1,321 @@
+{
+  "cts" : 1720762308197,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1720762308197,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "6690bfc4ebab18771e3e573a",
+  "revision" : 1,
+  "name" : "Demo Parallel Flow-07-12-2024 05:31:48",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/load/test/parallel",
+  "pathArray" : [ "load", "test", "parallel" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "da278b0f-35bd-43ad-8324-a1128144655e"
+  }, {
+    "source" : "480db1e8-a16e-42d8-b97a-774486c05740",
+    "target" : "42283c97-70b0-4550-a065-1bcb88250cbc"
+  }, {
+    "source" : "6ec079bc-89ce-45fe-b272-60d2c08889ef",
+    "target" : "42283c97-70b0-4550-a065-1bcb88250cbc"
+  }, {
+    "source" : "c1332867-9332-4187-af59-c32ef8ea1a31",
+    "target" : "42283c97-70b0-4550-a065-1bcb88250cbc"
+  }, {
+    "source" : "v1",
+    "target" : "480db1e8-a16e-42d8-b97a-774486c05740"
+  }, {
+    "source" : "7771107e-4669-41b7-b7cc-20aabf9bb0d6",
+    "target" : "42283c97-70b0-4550-a065-1bcb88250cbc"
+  }, {
+    "source" : "v1",
+    "target" : "7771107e-4669-41b7-b7cc-20aabf9bb0d6"
+  }, {
+    "source" : "v1",
+    "target" : "6ec079bc-89ce-45fe-b272-60d2c08889ef"
+  }, {
+    "source" : "8a8957aa-2571-4e97-b8d0-9f2a3dfc1aaf",
+    "target" : "42283c97-70b0-4550-a065-1bcb88250cbc"
+  }, {
+    "source" : "da278b0f-35bd-43ad-8324-a1128144655e",
+    "target" : "42283c97-70b0-4550-a065-1bcb88250cbc"
+  }, {
+    "source" : "v1",
+    "target" : "c1332867-9332-4187-af59-c32ef8ea1a31"
+  }, {
+    "source" : "v1",
+    "target" : "8a8957aa-2571-4e97-b8d0-9f2a3dfc1aaf"
+  } ],
+  "vertexHashMap" : {
+    "42283c97-70b0-4550-a065-1bcb88250cbc" : {
+      "vertexId" : "42283c97-70b0-4550-a065-1bcb88250cbc",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"response\":{{{response}}}\n}",
+          "type" : "JSON"
+        }
+      }
+    },
+    "8a8957aa-2571-4e97-b8d0-9f2a3dfc1aaf" : {
+      "vertexId" : "8a8957aa-2571-4e97-b8d0-9f2a3dfc1aaf",
+      "vertexType" : "TARGET",
+      "name" : "Get 3",
+      "target" : {
+        "name" : "Get 3",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "6ec079bc-89ce-45fe-b272-60d2c08889ef" : {
+      "vertexId" : "6ec079bc-89ce-45fe-b272-60d2c08889ef",
+      "vertexType" : "TARGET",
+      "name" : "Get 4",
+      "target" : {
+        "name" : "Get 4",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "480db1e8-a16e-42d8-b97a-774486c05740" : {
+      "vertexId" : "480db1e8-a16e-42d8-b97a-774486c05740",
+      "vertexType" : "TARGET",
+      "name" : "Get 5",
+      "target" : {
+        "name" : "Get 5",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "c1332867-9332-4187-af59-c32ef8ea1a31" : {
+      "vertexId" : "c1332867-9332-4187-af59-c32ef8ea1a31",
+      "vertexType" : "TARGET",
+      "name" : "Get 1",
+      "target" : {
+        "name" : "Get 1",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "da278b0f-35bd-43ad-8324-a1128144655e" : {
+      "vertexId" : "da278b0f-35bd-43ad-8324-a1128144655e",
+      "vertexType" : "TARGET",
+      "name" : "Get 2",
+      "target" : {
+        "name" : "Get 2",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "7771107e-4669-41b7-b7cc-20aabf9bb0d6" : {
+      "vertexId" : "7771107e-4669-41b7-b7cc-20aabf9bb0d6",
+      "vertexType" : "TARGET",
+      "name" : "Get 6",
+      "target" : {
+        "name" : "Get 6",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720762308197,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
