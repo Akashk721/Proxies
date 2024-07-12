@@ -3,7 +3,7 @@
   "cts" : 1720762644252,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720778788630,
+  "mts" : 1720778909245,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6690c114ebab18771e3e5821",
@@ -296,7 +296,21 @@
       "conditionalFlow" : [ {
         "condition" : "if",
         "assertion" : {
-          "continueOnError" : false
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "PRESENT",
+            "key" : "res",
+            "value" : "",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
         },
         "flowVertexes" : [ "f3b5526a-514e-48cb-bc30-24dc287385be" ]
       }, {
@@ -491,6 +505,11 @@
     "timeStamp" : 1720778736656,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
+  }, {
+    "commitId" : "f2c743270d2e6e66a2667bf52870fd37c17307c4",
+    "timeStamp" : 1720778788630,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
   } ],
   "enableTracing" : true,
   "environmentName" : "",
