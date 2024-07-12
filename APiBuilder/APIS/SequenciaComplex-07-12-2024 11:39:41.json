@@ -1,0 +1,476 @@
+{
+  "cts" : 1720784381785,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1720784381785,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "669115fd3211b0160450beec",
+  "revision" : 1,
+  "name" : "SequenciaComplex-07-12-2024 11:39:41",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/load/test/seq/complex",
+  "pathArray" : [ "load", "test", "seq", "complex" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "9e14661d-0898-4e65-8895-cc733596486d",
+    "target" : "5e28cd58-606c-4de5-8217-6fe033552b5f"
+  }, {
+    "source" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
+    "target" : "c9569f7b-974d-437b-b025-ae7cda90acbb"
+  }, {
+    "source" : "d207baea-8829-4b54-bd17-a641775f2921",
+    "target" : "3032a8d2-8985-4988-8894-377a2c1f34b4"
+  }, {
+    "source" : "3032a8d2-8985-4988-8894-377a2c1f34b4",
+    "target" : "5e65e933-f24e-4af7-bf71-3b7acbc48127"
+  }, {
+    "source" : "3032a8d2-8985-4988-8894-377a2c1f34b4",
+    "target" : "f3b5526a-514e-48cb-bc30-24dc287385be"
+  }, {
+    "source" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
+    "target" : "d207baea-8829-4b54-bd17-a641775f2921"
+  }, {
+    "source" : "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e",
+    "target" : "63658e6d-42fc-492e-a382-c1e27844eaf8"
+  }, {
+    "source" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
+    "target" : "2b3267e4-7831-4ee9-9fcc-d61e62111909"
+  }, {
+    "source" : "v1",
+    "target" : "9e14661d-0898-4e65-8895-cc733596486d"
+  }, {
+    "source" : "f3b5526a-514e-48cb-bc30-24dc287385be",
+    "target" : "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e"
+  } ],
+  "vertexHashMap" : {
+    "9e14661d-0898-4e65-8895-cc733596486d" : {
+      "vertexId" : "9e14661d-0898-4e65-8895-cc733596486d",
+      "vertexType" : "TARGET",
+      "name" : "Get User 1",
+      "target" : {
+        "name" : "Get User 1",
+        "description" : "Get User 1",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "d207baea-8829-4b54-bd17-a641775f2921" : {
+      "vertexId" : "d207baea-8829-4b54-bd17-a641775f2921",
+      "vertexType" : "TARGET",
+      "name" : "Get User 5",
+      "target" : {
+        "name" : "Get User 5",
+        "description" : "Get User 5",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "res",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "5e65e933-f24e-4af7-bf71-3b7acbc48127" : {
+      "vertexId" : "5e65e933-f24e-4af7-bf71-3b7acbc48127",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"i am in else block\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e" : {
+      "vertexId" : "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "GetUser6",
+        "variables" : [ {
+          "name" : "$.id",
+          "reference" : "body",
+          "value" : "userId",
+          "active" : true,
+          "hide" : false
+        } ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ "6e01a52a-f0ce-4201-8fbb-1d206eb8f406" ],
+        "listVariableVertexId" : "f3b5526a-514e-48cb-bc30-24dc287385be",
+        "loopVertexes" : [ "6e01a52a-f0ce-4201-8fbb-1d206eb8f406" ]
+      },
+      "imported" : false
+    },
+    "2b3267e4-7831-4ee9-9fcc-d61e62111909" : {
+      "vertexId" : "2b3267e4-7831-4ee9-9fcc-d61e62111909",
+      "vertexType" : "TARGET",
+      "name" : "Get User 3",
+      "target" : {
+        "name" : "Get User 3",
+        "description" : "Get User 3",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "queryParam",
+        "reference" : "query-params",
+        "value" : "type",
+        "active" : true,
+        "source" : "query-params",
+        "hide" : false
+      } ],
+      "imported" : true
+    },
+    "c9569f7b-974d-437b-b025-ae7cda90acbb" : {
+      "vertexId" : "c9569f7b-974d-437b-b025-ae7cda90acbb",
+      "vertexType" : "TARGET",
+      "name" : "Get User 4",
+      "target" : {
+        "name" : "Get User 4",
+        "description" : "Get User 4",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "6e01a52a-f0ce-4201-8fbb-1d206eb8f406" : {
+      "vertexId" : "6e01a52a-f0ce-4201-8fbb-1d206eb8f406",
+      "vertexType" : "TARGET",
+      "name" : "getUserDetails",
+      "target" : {
+        "name" : "getUserDetails",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get/{{userId}}",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "parentVertex" : "ab06cfe2-3028-4c73-83ba-4eda8d24ba4e",
+      "imported" : false
+    },
+    "3032a8d2-8985-4988-8894-377a2c1f34b4" : {
+      "vertexId" : "3032a8d2-8985-4988-8894-377a2c1f34b4",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "PRESENT",
+            "key" : "variables.queryParam",
+            "value" : "",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "f3b5526a-514e-48cb-bc30-24dc287385be" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "expression" : "",
+          "placeHolders" : [ ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "5e65e933-f24e-4af7-bf71-3b7acbc48127" ]
+      } ],
+      "imported" : false
+    },
+    "5e28cd58-606c-4de5-8217-6fe033552b5f" : {
+      "vertexId" : "5e28cd58-606c-4de5-8217-6fe033552b5f",
+      "vertexType" : "TARGET",
+      "name" : "Get User 2",
+      "target" : {
+        "name" : "Get User 2",
+        "description" : "Get User 2",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "63658e6d-42fc-492e-a382-c1e27844eaf8" : {
+      "vertexId" : "63658e6d-42fc-492e-a382-c1e27844eaf8",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"res\":{{{response}}}\n\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "f3b5526a-514e-48cb-bc30-24dc287385be" : {
+      "vertexId" : "f3b5526a-514e-48cb-bc30-24dc287385be",
+      "vertexType" : "TARGET",
+      "name" : "Get User 6",
+      "target" : {
+        "name" : "Get User 6",
+        "description" : "Get User 6",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/get",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"id\": 4,\n    \"name\": \"David\",\n    \"email\": \"david@example.com\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "GetUser6",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "hide" : true
+          }, {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ],
+          "responseSchema" : "{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"id\": {\n        \"type\": \"integer\"\n      },\n      \"name\": {\n        \"type\": \"string\"\n      },\n      \"email\": {\n        \"type\": \"string\",\n        \"format\": \"email\"\n      }\n    }\n  }\n}"
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1720784381785,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : true,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
