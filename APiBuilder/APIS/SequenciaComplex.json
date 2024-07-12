@@ -3,7 +3,7 @@
   "cts" : 1720762644252,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720779825893,
+  "mts" : 1720780414960,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6690c114ebab18771e3e5821",
@@ -162,14 +162,7 @@
         },
         "response" : {
           "statusCode" : 200,
-          "variables" : [ {
-            "name" : "userDetails",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
+          "variables" : [ ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -412,7 +405,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"userDetails\":{{{userDetails}}}\n\n}",
+          "data" : "{\n    \"res\":{{{response}}}\n\n}",
           "type" : "json"
         }
       }
@@ -474,6 +467,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1720780282635,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "c"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720780113343,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
     "status" : "Review",
     "cts" : 1720778683173,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -569,7 +572,13 @@
     "timeStamp" : 1720779557153,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 12
+  }, {
+    "commitId" : "ed40fa5f3a5c005856023c14f306b18dd0225376",
+    "timeStamp" : 1720779825893,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 13
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
