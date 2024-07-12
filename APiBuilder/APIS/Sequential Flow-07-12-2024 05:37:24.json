@@ -3,7 +3,7 @@
   "cts" : 1720762644252,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720774473881,
+  "mts" : 1720774502120,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6690c114ebab18771e3e5821",
@@ -129,13 +129,13 @@
       "vertexType" : "LOOP",
       "name" : "For Loop",
       "loopData" : {
-        "listVariableSource" : "",
+        "listVariableSource" : "GetUser6",
         "variables" : [ ],
         "listType" : "json",
         "loopList" : [ ],
         "listName" : "",
         "startingVertex" : [ ],
-        "listVariableVertexId" : ""
+        "listVariableVertexId" : "f3b5526a-514e-48cb-bc30-24dc287385be"
       },
       "imported" : false
     },
@@ -319,6 +319,12 @@
             "active" : true,
             "source" : "raw",
             "hide" : false
+          }, {
+            "name" : "GetUser6",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "hide" : true
           } ],
           "responseSchema" : "{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"id\": {\n        \"type\": \"integer\"\n      },\n      \"name\": {\n        \"type\": \"string\"\n      },\n      \"email\": {\n        \"type\": \"string\",\n        \"format\": \"email\"\n      }\n    }\n  }\n}"
         },
@@ -346,6 +352,11 @@
     "timeStamp" : 1720762644252,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 8
+  }, {
+    "commitId" : "0af5f8b573a8683ad4f9b458465f3af5e7cb2850",
+    "timeStamp" : 1720774473881,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
   } ],
   "enableTracing" : true,
   "environmentName" : "",
