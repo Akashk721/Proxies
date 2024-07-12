@@ -3,7 +3,7 @@
   "cts" : 1720762644252,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720781230258,
+  "mts" : 1720781331364,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6690c114ebab18771e3e5821",
@@ -364,9 +364,9 @@
         "assertion" : {
           "expression" : " ({0})",
           "placeHolders" : [ {
-            "rule" : "PRESENT",
+            "rule" : "NOT_EQUAL_TO",
             "key" : "res",
-            "value" : "",
+            "value" : "null",
             "valueDataType" : "STRING"
           } ],
           "continueOnError" : false,
@@ -610,6 +610,11 @@
   }, {
     "commitId" : "0f5d8234e4089716f4001ee69f95d78e0c556a69",
     "timeStamp" : 1720781212872,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 13
+  }, {
+    "commitId" : "b48c6358b7ab582f86c68935a1b6cb1744d624f8",
+    "timeStamp" : 1720781230258,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 13
   } ],
