@@ -3,7 +3,7 @@
   "cts" : 1720338346192,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1720766324979,
+  "mts" : 1720939532316,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668a47aaa1082c5c10f975ed",
@@ -18,10 +18,13 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "2c5891fb-0a44-4d22-a162-fe29206babe9",
-    "target" : "dbfcc6a4-c327-4cf8-a391-e4cd431b7b4e"
+    "target" : "d72162f6-1ef6-43d2-b6ab-030012c75143"
   }, {
     "source" : "v1",
     "target" : "2c5891fb-0a44-4d22-a162-fe29206babe9"
+  }, {
+    "source" : "d72162f6-1ef6-43d2-b6ab-030012c75143",
+    "target" : "dbfcc6a4-c327-4cf8-a391-e4cd431b7b4e"
   } ],
   "vertexHashMap" : {
     "2c5891fb-0a44-4d22-a162-fe29206babe9" : {
@@ -36,6 +39,21 @@
         "connectorName" : "mongo-connector",
         "tenantName" : "acme-team-gcp-stage",
         "collectionName" : "ApiBuilder.Proxy.Deployed.List"
+      },
+      "imported" : false
+    },
+    "d72162f6-1ef6-43d2-b6ab-030012c75143" : {
+      "vertexId" : "d72162f6-1ef6-43d2-b6ab-030012c75143",
+      "vertexType" : "DATABASE",
+      "name" : "postgres",
+      "databaseData" : {
+        "connectorId" : "6505b41d7d8e165896d5d048",
+        "databaseType" : "POSTGRESQL",
+        "query" : "SELECT * from department;",
+        "variableName" : "postgresvar",
+        "connectorName" : "postgresql username & password",
+        "schemaName" : "humanresources",
+        "tableName" : "department"
       },
       "imported" : false
     },
@@ -88,6 +106,11 @@
   }, {
     "commitId" : "c84b95fd5e950e760eacb8fd4600e9f4c6f8afcd",
     "timeStamp" : 1720693995464,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "877f94ab79152b35887c960702c7fe2599c173d1",
+    "timeStamp" : 1720766324979,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
