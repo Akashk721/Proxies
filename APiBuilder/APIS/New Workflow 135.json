@@ -1,11 +1,11 @@
 {
-  "cts" : 1721021099815,
-  "createdUserName" : "vidya.wiz vidya.wiz",
-  "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721021099815,
-  "createdBy" : "6454a1d660f0577244784ac0",
-  "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6694b2ab07911d6ca3d81dee",
+  "cts" : 1721021979419,
+  "createdUserName" : "Akash K",
+  "modifiedUserName" : "Akash K",
+  "mts" : 1721021979419,
+  "createdBy" : "65fbd46b48c1692499a70741",
+  "modifiedBy" : "65fbd46b48c1692499a70741",
+  "proxyId" : "6694b61b51f4f86c4d46212e",
   "revision" : 1,
   "name" : "New Workflow 135",
   "apiType" : "RESTAPI",
@@ -14,14 +14,14 @@
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "vidya.wiz vidya.wiz",
+  "lockedBy" : "Akash K",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "9b70d249-a5f3-4740-8dd8-96e6c3802210"
+    "target" : "42ca2b0f-a0a1-4160-95e0-0b195514553a"
   } ],
   "vertexHashMap" : {
-    "9b70d249-a5f3-4740-8dd8-96e6c3802210" : {
-      "vertexId" : "9b70d249-a5f3-4740-8dd8-96e6c3802210",
+    "42ca2b0f-a0a1-4160-95e0-0b195514553a" : {
+      "vertexId" : "42ca2b0f-a0a1-4160-95e0-0b195514553a",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -42,8 +42,8 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1721021099815,
-    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "cts" : 1721021979419,
+    "lastModifiedBy" : "Akash K",
     "description" : "Created new proxy"
   } ],
   "enableTracing" : false,
