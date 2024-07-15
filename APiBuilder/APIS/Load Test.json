@@ -3,7 +3,7 @@
   "cts" : 1721021979419,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1721022160480,
+  "mts" : 1721022311787,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "6694b61b51f4f86c4d46212e",
@@ -33,9 +33,10 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"response\":{{{response}}}\n}",
+          "type" : "json"
         }
       }
     },
@@ -128,6 +129,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1721022280438,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "de"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721022174799,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "ap"
+  }, {
+    "status" : "Draft",
     "cts" : 1721021979419,
     "lastModifiedBy" : "Akash K",
     "description" : "Created new proxy"
@@ -152,7 +163,13 @@
     "timeStamp" : 1721022120095,
     "modifiedBy" : "Akash K",
     "totalNodes" : 3
+  }, {
+    "commitId" : "506bfdc72ca4494ab498411644b338918221a99b",
+    "timeStamp" : 1721022160480,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 4
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
