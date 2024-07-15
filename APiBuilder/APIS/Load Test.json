@@ -3,7 +3,7 @@
   "cts" : 1721021979419,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "Akash K",
-  "mts" : 1721022036627,
+  "mts" : 1721022120095,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "65fbd46b48c1692499a70741",
   "proxyId" : "6694b61b51f4f86c4d46212e",
@@ -18,6 +18,9 @@
   "lockedBy" : "Akash K",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "192c05dc-00ae-4c86-a809-9d0d65f63c9d"
+  }, {
+    "source" : "192c05dc-00ae-4c86-a809-9d0d65f63c9d",
     "target" : "42ca2b0f-a0a1-4160-95e0-0b195514553a"
   } ],
   "vertexHashMap" : {
@@ -32,6 +35,42 @@
           "type" : "JSON"
         }
       }
+    },
+    "192c05dc-00ae-4c86-a809-9d0d65f63c9d" : {
+      "vertexId" : "192c05dc-00ae-4c86-a809-9d0d65f63c9d",
+      "vertexType" : "TARGET",
+      "name" : "Get Users 1",
+      "target" : {
+        "name" : "Get Users 1",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -55,6 +94,11 @@
   }, {
     "commitId" : "56ff5fd88ddd130442256639dd0b04f5ed78cf21",
     "timeStamp" : 1721022028907,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "d36fe88a419e2507e1cff9adfb03433ecda18eb5",
+    "timeStamp" : 1721022036627,
     "modifiedBy" : "Akash K",
     "totalNodes" : 2
   } ],
