@@ -1,0 +1,61 @@
+{
+  "id" : "6694b62151f4f86c4d462131",
+  "cts" : 1721021979419,
+  "createdUserName" : "Akash K",
+  "modifiedUserName" : "Akash K",
+  "mts" : 1721022028907,
+  "createdBy" : "65fbd46b48c1692499a70741",
+  "modifiedBy" : "65fbd46b48c1692499a70741",
+  "proxyId" : "6694b61b51f4f86c4d46212e",
+  "revision" : 1,
+  "name" : "Load Test",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/abc/efg",
+  "pathArray" : [ "abc", "efg" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akash K",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "42ca2b0f-a0a1-4160-95e0-0b195514553a"
+  } ],
+  "vertexHashMap" : {
+    "42ca2b0f-a0a1-4160-95e0-0b195514553a" : {
+      "vertexId" : "42ca2b0f-a0a1-4160-95e0-0b195514553a",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1721021979419,
+    "lastModifiedBy" : "Akash K",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "61202d76650985e084861169ce447139e7eabef3",
+    "timeStamp" : 1721021979419,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
