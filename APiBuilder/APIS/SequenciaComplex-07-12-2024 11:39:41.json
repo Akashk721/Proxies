@@ -3,7 +3,7 @@
   "cts" : 1720784381785,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721032593168,
+  "mts" : 1721038210709,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669115fd3211b0160450beec",
@@ -11,9 +11,9 @@
   "name" : "SequenciaComplex-07-12-2024 11:39:41",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/load/test/seq/complex",
-  "pathArray" : [ "load", "test", "seq", "complex" ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/load/test/seq/complex/chinmayee",
+  "pathArray" : [ "load", "test", "seq", "complex", "chinmayee" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -528,6 +528,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1721038127472,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "oio"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721037975918,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "jjh"
+  }, {
     "status" : "Draft",
     "cts" : 1720784381785,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -556,6 +566,11 @@
   }, {
     "commitId" : "141b857ff0b42950ffc1aab2e97e3ffb88d2647d",
     "timeStamp" : 1720784529156,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 14
+  }, {
+    "commitId" : "0704431caa3f076c479d7916846c390c24b6cd09",
+    "timeStamp" : 1721032593168,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 14
   } ],
