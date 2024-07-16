@@ -3,7 +3,7 @@
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721115327313,
+  "mts" : 1721115412400,
   "createdBy" : "65fbd46b48c1692499a70741",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
@@ -289,6 +289,7 @@
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
+            "data" : "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"pistol\"\n}\n",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -297,6 +298,20 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
+            "name" : "token",
+            "reference" : "body",
+            "value" : "$.token",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "token",
+            "reference" : "body",
+            "value" : "$.token",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
             "name" : "token",
             "reference" : "body",
             "value" : "$.token",
@@ -487,6 +502,11 @@
   }, {
     "commitId" : "2334eebf28d38ce3057bd9b9e5cb4ca181fde63f",
     "timeStamp" : 1721115307762,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "2eba698d7db5f0d423a29cc381f07cf9c4bdb5c2",
+    "timeStamp" : 1721115327313,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 8
   } ],
