@@ -2,10 +2,10 @@
   "id" : "668ea5e467f7200ed2423edb",
   "cts" : 1720624611606,
   "createdUserName" : "Akash K",
-  "modifiedUserName" : "Akash K",
-  "mts" : 1720677729544,
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1721115307762,
   "createdBy" : "65fbd46b48c1692499a70741",
-  "modifiedBy" : "65fbd46b48c1692499a70741",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "668ea5e367f7200ed2423eda",
   "revision" : 1,
   "name" : "Reqres Sequential",
@@ -15,7 +15,7 @@
   "pathArray" : [ "reqres", "sequential" ],
   "revisionStatus" : "REVIEW",
   "locked" : true,
-  "lockedBy" : "Akash K",
+  "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "9e14661d-0898-4e65-8895-cc733596486d",
     "target" : "5e28cd58-606c-4de5-8217-6fe033552b5f"
@@ -327,6 +327,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1721115285390,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "f"
+  }, {
+    "status" : "Approved",
+    "cts" : 1720677773149,
+    "lastModifiedBy" : "65fbd46b48c1692499a70741",
+    "description" : "Approved"
+  }, {
+    "status" : "Review",
     "cts" : 1720674054808,
     "lastModifiedBy" : "65fbd46b48c1692499a70741",
     "description" : "ju"
@@ -474,6 +484,11 @@
   }, {
     "commitId" : "22f3e195197d47a95b92cd543265549b9fe37a92",
     "timeStamp" : 1720677715175,
+    "modifiedBy" : "Akash K",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "0797b66219f76e807ad6f7c1adb469beb54d3c71",
+    "timeStamp" : 1720677729544,
     "modifiedBy" : "Akash K",
     "totalNodes" : 8
   } ],
