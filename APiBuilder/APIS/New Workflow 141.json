@@ -1,8 +1,9 @@
 {
+  "id" : "6698b7fc23e96354b2f740c7",
   "cts" : 1721284603628,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721284603628,
+  "mts" : 1721284621319,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6698b7fb23e96354b2f740c6",
@@ -10,8 +11,8 @@
   "name" : "New Workflow 141",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/sf",
+  "pathArray" : [ "sf" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -25,7 +26,7 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     },
     "3c43364b-c7a8-424b-aab5-a3f65528a400" : {
       "vertexId" : "3c43364b-c7a8-424b-aab5-a3f65528a400",
@@ -45,6 +46,12 @@
     "cts" : 1721284603628,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "3e80b631f78a241360569bdb79c94ef5dab647d0",
+    "timeStamp" : 1721284603628,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
