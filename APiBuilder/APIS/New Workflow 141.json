@@ -1,15 +1,13 @@
 {
-  "id" : "6698b67b23e96354b2f73f6e",
-  "cts" : 1721284218056,
+  "cts" : 1721284603628,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721284372716,
+  "mts" : 1721284603628,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
-  "proxyId" : "6698b67a23e96354b2f73f69",
+  "proxyId" : "6698b7fb23e96354b2f740c6",
   "revision" : 1,
   "name" : "New Workflow 141",
-  "description" : "editd",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
   "path" : "/",
@@ -19,11 +17,18 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "6a05a3c2-ba16-4bb2-a06e-64fd09dbbe3b"
+    "target" : "3c43364b-c7a8-424b-aab5-a3f65528a400"
   } ],
   "vertexHashMap" : {
-    "6a05a3c2-ba16-4bb2-a06e-64fd09dbbe3b" : {
-      "vertexId" : "6a05a3c2-ba16-4bb2-a06e-64fd09dbbe3b",
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    },
+    "3c43364b-c7a8-424b-aab5-a3f65528a400" : {
+      "vertexId" : "3c43364b-c7a8-424b-aab5-a3f65528a400",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -33,26 +38,13 @@
           "type" : "JSON"
         }
       }
-    },
-    "v1" : {
-      "vertexId" : "v1",
-      "vertexType" : "START",
-      "name" : "Start",
-      "requestVariables" : [ ],
-      "imported" : true
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1721284218056,
+    "cts" : 1721284603628,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
-  } ],
-  "changeLogs" : [ {
-    "commitId" : "e0fa515ba559c16fe736d0985472147ac9e195bf",
-    "timeStamp" : 1721284218056,
-    "modifiedBy" : "vidya.wiz vidya.wiz",
-    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
