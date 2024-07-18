@@ -1,8 +1,9 @@
 {
+  "id" : "669890d152b3314c77832f51",
   "cts" : 1721274571513,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721274571513,
+  "mts" : 1721279194928,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669890cb52b3314c77832f2d",
@@ -16,10 +17,28 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "b24906de-3ec0-433c-ac11-0a26f0318467",
     "target" : "c3e8c38f-dd71-4a8d-9762-9beafc04c64b"
+  }, {
+    "source" : "v1",
+    "target" : "b24906de-3ec0-433c-ac11-0a26f0318467"
   } ],
   "vertexHashMap" : {
+    "b24906de-3ec0-433c-ac11-0a26f0318467" : {
+      "vertexId" : "b24906de-3ec0-433c-ac11-0a26f0318467",
+      "vertexType" : "DATABASE",
+      "name" : "onlypostgres",
+      "databaseData" : {
+        "connectorId" : "669791e5f7fc9f553a6a99ea",
+        "databaseType" : "POSTGRESQL",
+        "query" : "SELECT * FROM my_schema.my_table;",
+        "variableName" : "onlypostgres",
+        "connectorName" : "psql-builder-test",
+        "schemaName" : "my_schema",
+        "tableName" : "my_table"
+      },
+      "imported" : false
+    },
     "c3e8c38f-dd71-4a8d-9762-9beafc04c64b" : {
       "vertexId" : "c3e8c38f-dd71-4a8d-9762-9beafc04c64b",
       "vertexType" : "STOP",
@@ -46,9 +65,15 @@
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
   } ],
+  "changeLogs" : [ {
+    "commitId" : "ad1ad38b9896b8a7c556da39880ffdd2ad4844cf",
+    "timeStamp" : 1721274571513,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
