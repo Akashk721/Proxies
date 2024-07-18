@@ -3,14 +3,14 @@
   "cts" : 1721284603628,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721284621319,
+  "mts" : 1721284717561,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6698b7fb23e96354b2f740c6",
   "revision" : 1,
   "name" : "New Workflow 141",
-  "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiType" : "GRAPHQL",
+  "apiMethod" : "POST",
   "path" : "/sf",
   "pathArray" : [ "sf" ],
   "revisionStatus" : "DRAFT",
@@ -50,6 +50,11 @@
   "changeLogs" : [ {
     "commitId" : "3e80b631f78a241360569bdb79c94ef5dab647d0",
     "timeStamp" : 1721284603628,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "d143bdd874b324a817bb712a8d318550e529d01e",
+    "timeStamp" : 1721284621319,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
