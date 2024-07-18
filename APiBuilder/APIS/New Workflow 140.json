@@ -1,8 +1,9 @@
 {
+  "id" : "6698b05b23e96354b2f73991",
   "cts" : 1721282650327,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721282650327,
+  "mts" : 1721282766368,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6698b05a23e96354b2f7398c",
@@ -17,6 +18,9 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "d50986b5-734a-4a62-a7f4-0a432ea21e4a"
+  }, {
+    "source" : "d50986b5-734a-4a62-a7f4-0a432ea21e4a",
     "target" : "ce770624-6689-4e55-9c6f-ba09e4fb3549"
   } ],
   "vertexHashMap" : {
@@ -32,6 +36,21 @@
         }
       }
     },
+    "d50986b5-734a-4a62-a7f4-0a432ea21e4a" : {
+      "vertexId" : "d50986b5-734a-4a62-a7f4-0a432ea21e4a",
+      "vertexType" : "DATABASE",
+      "name" : "ad",
+      "databaseData" : {
+        "connectorId" : "6698af9023e96354b2f7388e",
+        "databaseType" : "POSTGRESQL",
+        "query" : "SELECT * FROM my_schema.my_table;",
+        "variableName" : "ads",
+        "connectorName" : "new-builder-test-psql",
+        "schemaName" : "my_schema",
+        "tableName" : "my_table"
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -45,6 +64,12 @@
     "cts" : 1721282650327,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "c8039c39ffa24605a8e1e12a862b5608ddb36e2b",
+    "timeStamp" : 1721282650327,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
