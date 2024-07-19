@@ -3,7 +3,7 @@
   "cts" : 1721368022202,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721381946132,
+  "mts" : 1721381958379,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6699fdd67dfd134d56d87091",
@@ -123,13 +123,14 @@
         "name" : "post-2",
         "apiType" : "RESTAPI",
         "request" : {
-          "apiMethod" : "GET",
+          "apiMethod" : "POST",
           "scheme" : "https",
           "host" : "34.67.57.107:9000",
           "path" : "/api/add",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
+            "data" : "{\n    \"id\":10,\n    \"name\":\"jhon\",\n    \"emial\":\"jhon@apiwiz.com\"\n}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -185,6 +186,11 @@
     "timeStamp" : 1721381835769,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "4748f07db297b6dbdd13bd06d1586cb72ed1da9b",
+    "timeStamp" : 1721381946132,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
   } ],
   "enableTracing" : false,
   "environmentName" : "",
