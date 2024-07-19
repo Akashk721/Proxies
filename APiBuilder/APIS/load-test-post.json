@@ -3,7 +3,7 @@
   "cts" : 1721368022202,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721382197436,
+  "mts" : 1721382209353,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6699fdd67dfd134d56d87091",
@@ -217,6 +217,7 @@
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
+            "data" : "{\n    \"id\":10,\n    \"name\":\"jhon\",\n    \"emial\":\"jhon@apiwiz.com\"\n}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -290,6 +291,11 @@
     "timeStamp" : 1721382162014,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
+  }, {
+    "commitId" : "d4f9d29dcd14c4c49d90b965f2b344199b8f1719",
+    "timeStamp" : 1721382197436,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
   } ],
   "enableTracing" : false,
   "environmentName" : "",
