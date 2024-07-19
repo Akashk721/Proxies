@@ -3,7 +3,7 @@
   "cts" : 1721368022202,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721381958379,
+  "mts" : 1721382000267,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6699fdd67dfd134d56d87091",
@@ -17,17 +17,20 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "c19b3192-a510-46c2-8960-bf3fc934f340",
+    "target" : "815e4484-eb2b-47a8-a6b0-bffb1f1ef085"
+  }, {
     "source" : "c1dfb820-0cf9-4496-bc00-64c2398e6a44",
     "target" : "c18a93a5-b919-4f87-8128-5d4167575980"
   }, {
     "source" : "c18a93a5-b919-4f87-8128-5d4167575980",
     "target" : "ac6add0a-f17f-45a5-8a37-279d9dec580d"
   }, {
-    "source" : "ac6add0a-f17f-45a5-8a37-279d9dec580d",
-    "target" : "815e4484-eb2b-47a8-a6b0-bffb1f1ef085"
-  }, {
     "source" : "v1",
     "target" : "c1dfb820-0cf9-4496-bc00-64c2398e6a44"
+  }, {
+    "source" : "ac6add0a-f17f-45a5-8a37-279d9dec580d",
+    "target" : "c19b3192-a510-46c2-8960-bf3fc934f340"
   } ],
   "vertexHashMap" : {
     "c1dfb820-0cf9-4496-bc00-64c2398e6a44" : {
@@ -91,6 +94,43 @@
           "scheme" : "http",
           "host" : "34.67.57.107:9000",
           "path" : "/api/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "c19b3192-a510-46c2-8960-bf3fc934f340" : {
+      "vertexId" : "c19b3192-a510-46c2-8960-bf3fc934f340",
+      "vertexType" : "TARGET",
+      "name" : "get -2",
+      "target" : {
+        "name" : "get -2",
+        "description" : "get -2",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "as",
+          "path" : "/asd",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
@@ -189,6 +229,11 @@
   }, {
     "commitId" : "4748f07db297b6dbdd13bd06d1586cb72ed1da9b",
     "timeStamp" : 1721381946132,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "0d5e69e2d4f223940f90c2a60b0453e6220cd93d",
+    "timeStamp" : 1721381958379,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
