@@ -1,0 +1,202 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "OPA Workspace API",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://dev-api.apiwiz.io/itorix/v1/opa",
+    "x-name" : "Server1"
+  } ],
+  "paths" : {
+    "/payload" : {
+      "post" : {
+        "summary" : "Store app payload",
+        "operationId" : "storeAppPayload",
+        "requestBody" : {
+          "required" : true,
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/AppPayload"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Successful response"
+          }
+        },
+        "security" : [ {
+          "jsessionid" : [ ]
+        } ]
+      },
+      "get" : {
+        "summary" : "Get all app payloads",
+        "operationId" : "getAllAppPayloads",
+        "responses" : {
+          "200" : {
+            "description" : "Successful response"
+          }
+        },
+        "security" : [ {
+          "jsessionid" : [ ]
+        } ]
+      }
+    },
+    "/payload/{appName}" : {
+      "get" : {
+        "summary" : "Get app payload",
+        "operationId" : "getAppPayload",
+        "parameters" : [ {
+          "name" : "appName",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response"
+          }
+        },
+        "security" : [ {
+          "jsessionid" : [ ]
+        } ]
+      },
+      "put" : {
+        "summary" : "Update app payload",
+        "operationId" : "updateAppPayload",
+        "parameters" : [ {
+          "name" : "appName",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "required" : true,
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/AppPayload"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Successful response"
+          }
+        },
+        "security" : [ {
+          "jsessionid" : [ ]
+        } ]
+      }
+    },
+    "/policy/{appName}" : {
+      "post" : {
+        "summary" : "Register Policy",
+        "operationId" : "registerPolicy",
+        "parameters" : [ {
+          "name" : "appName",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful response"
+          }
+        },
+        "security" : [ {
+          "jsessionid" : [ ]
+        } ]
+      }
+    },
+    "/data" : {
+      "get" : {
+        "summary" : "Get OPA Data",
+        "operationId" : "getOpaData",
+        "responses" : {
+          "200" : {
+            "description" : "Successful response"
+          }
+        },
+        "security" : [ {
+          "jsessionid" : [ ]
+        } ]
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "AppPayload" : {
+        "type" : "object",
+        "properties" : {
+          "appName" : {
+            "type" : "string"
+          },
+          "endpoints" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/Endpoint"
+            }
+          }
+        }
+      },
+      "Endpoint" : {
+        "type" : "object",
+        "properties" : {
+          "path" : {
+            "type" : "string"
+          },
+          "method" : {
+            "type" : "string"
+          },
+          "isSecure" : {
+            "type" : "boolean"
+          },
+          "roles" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "authorities" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes" : {
+      "jsessionid" : {
+        "type" : "apiKey",
+        "name" : "jsessionid",
+        "in" : "header"
+      }
+    }
+  },
+  "tags" : [ ],
+  "security" : [ ],
+  "x-mock" : true,
+  "x-metadata" : {
+    "metadata" : {
+      "swaggerName" : "f4004e4bc2f64a2c944fb2a340484655",
+      "revision" : 1,
+      "documentation" : [ ],
+      "category" : [ {
+        "name" : "Unsorted",
+        "paths" : [ "/payload", "/payload/{appName}", "/policy/{appName}", "/data" ]
+      } ]
+    }
+  }
+}
