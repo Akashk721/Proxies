@@ -3,7 +3,7 @@
   "cts" : 1721368022202,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721381835769,
+  "mts" : 1721381946132,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6699fdd67dfd134d56d87091",
@@ -17,11 +17,14 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "c18a93a5-b919-4f87-8128-5d4167575980",
-    "target" : "815e4484-eb2b-47a8-a6b0-bffb1f1ef085"
-  }, {
     "source" : "c1dfb820-0cf9-4496-bc00-64c2398e6a44",
     "target" : "c18a93a5-b919-4f87-8128-5d4167575980"
+  }, {
+    "source" : "c18a93a5-b919-4f87-8128-5d4167575980",
+    "target" : "ac6add0a-f17f-45a5-8a37-279d9dec580d"
+  }, {
+    "source" : "ac6add0a-f17f-45a5-8a37-279d9dec580d",
+    "target" : "815e4484-eb2b-47a8-a6b0-bffb1f1ef085"
   }, {
     "source" : "v1",
     "target" : "c1dfb820-0cf9-4496-bc00-64c2398e6a44"
@@ -112,6 +115,42 @@
       },
       "imported" : false
     },
+    "ac6add0a-f17f-45a5-8a37-279d9dec580d" : {
+      "vertexId" : "ac6add0a-f17f-45a5-8a37-279d9dec580d",
+      "vertexType" : "TARGET",
+      "name" : "post-2",
+      "target" : {
+        "name" : "post-2",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "34.67.57.107:9000",
+          "path" : "/api/add",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -141,6 +180,11 @@
     "timeStamp" : 1721381781159,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "961edbf6c866e54146628ca70c58e7a2b0719b1a",
+    "timeStamp" : 1721381835769,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
