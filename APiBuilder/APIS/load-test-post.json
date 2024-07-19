@@ -3,7 +3,7 @@
   "cts" : 1721368022202,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721382156716,
+  "mts" : 1721382162014,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "6699fdd67dfd134d56d87091",
@@ -128,7 +128,7 @@
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "GET",
-          "scheme" : "https",
+          "scheme" : "http",
           "host" : "34.67.57.107:9000",
           "path" : "/api/get",
           "headerParams" : [ ],
@@ -239,6 +239,11 @@
   }, {
     "commitId" : "08726ff7496a53dce8a8959f12c785daaf995436",
     "timeStamp" : 1721382000267,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "490a7a365d7086add6be5f3e513fc3249b5b10d8",
+    "timeStamp" : 1721382156716,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
   } ],
