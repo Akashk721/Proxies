@@ -1,0 +1,129 @@
+{
+  "id" : "669d4eb5a085383a566bac45",
+  "cts" : 1721585332561,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1721585490809,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "669d4eb4a085383a566bac44",
+  "revision" : 1,
+  "name" : "psql-test",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/test-mongo",
+  "pathArray" : [ "test-mongo" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437"
+  }, {
+    "source" : "77426a2c-81c1-49d1-b3b0-58fc66e75c2b",
+    "target" : "9a423c3c-fdce-4307-a781-c080fd2c7173"
+  }, {
+    "source" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437",
+    "target" : "77426a2c-81c1-49d1-b3b0-58fc66e75c2b"
+  } ],
+  "vertexHashMap" : {
+    "3128d2dd-2b2b-4b4e-8e3a-234c867e9437" : {
+      "vertexId" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437",
+      "vertexType" : "TARGET",
+      "name" : "get-User-1",
+      "target" : {
+        "name" : "get-User-1",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "https://reqres.in/",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ {
+            "name" : "page",
+            "value" : "2"
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "res",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "9a423c3c-fdce-4307-a781-c080fd2c7173" : {
+      "vertexId" : "9a423c3c-fdce-4307-a781-c080fd2c7173",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "77426a2c-81c1-49d1-b3b0-58fc66e75c2b" : {
+      "vertexId" : "77426a2c-81c1-49d1-b3b0-58fc66e75c2b",
+      "vertexType" : "DATABASE",
+      "name" : "mongo",
+      "databaseData" : {
+        "connectorId" : "669381afc6a309636942bf3e",
+        "databaseType" : "MONGODB",
+        "query" : "{\"databaseName\":\"local\",\"collection\":\"startup_log\",\"undefined\":\"{ find: 'startup_log', filter: {}, projection: { \\\"_id\\\": 1, \\\"hostname\\\": 1, \\\"startTime\\\": 1, \\\"buildinfo.version\\\": 1 } }\\n\",\"operation\":\"insert\",\"filter\":{\"buildinfo.version\":\"7.0.8\"},\"projection\":{\"_id\":1},\"limit\":\"100\",\"skip\":\"0\"}",
+        "variableName" : "mongo",
+        "connectorName" : "Varun-mongo",
+        "tenantName" : "local",
+        "collectionName" : "startup_log"
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1721585332561,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "bb83d12e31a3b9fc05a2d709ad56c017d7a30a2c",
+    "timeStamp" : 1721585332561,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
