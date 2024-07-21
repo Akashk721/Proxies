@@ -3,7 +3,7 @@
   "cts" : 1721585332561,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721585490809,
+  "mts" : 1721585842837,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669d4eb4a085383a566bac44",
@@ -96,12 +96,12 @@
     "77426a2c-81c1-49d1-b3b0-58fc66e75c2b" : {
       "vertexId" : "77426a2c-81c1-49d1-b3b0-58fc66e75c2b",
       "vertexType" : "DATABASE",
-      "name" : "mongo",
+      "name" : "psql",
       "databaseData" : {
         "connectorId" : "669381afc6a309636942bf3e",
         "databaseType" : "MONGODB",
         "query" : "{\"databaseName\":\"local\",\"collection\":\"startup_log\",\"undefined\":\"{ find: 'startup_log', filter: {}, projection: { \\\"_id\\\": 1, \\\"hostname\\\": 1, \\\"startTime\\\": 1, \\\"buildinfo.version\\\": 1 } }\\n\",\"operation\":\"insert\",\"filter\":{\"buildinfo.version\":\"7.0.8\"},\"projection\":{\"_id\":1},\"limit\":\"100\",\"skip\":\"0\"}",
-        "variableName" : "mongo",
+        "variableName" : "psql",
         "connectorName" : "Varun-mongo",
         "tenantName" : "local",
         "collectionName" : "startup_log"
@@ -118,6 +118,11 @@
   "changeLogs" : [ {
     "commitId" : "bb83d12e31a3b9fc05a2d709ad56c017d7a30a2c",
     "timeStamp" : 1721585332561,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "9dca7f266051fe9b1bee7592c1be7aabd828d78e",
+    "timeStamp" : 1721585490809,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
