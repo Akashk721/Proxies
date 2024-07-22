@@ -3,7 +3,7 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721648703047,
+  "mts" : 1721648757709,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -33,11 +33,14 @@
     "source" : "50e3fb93-dc84-4be3-9cf4-e83cf542c544",
     "target" : "f43d51da-d44d-4869-8b24-4b685a9840e8"
   }, {
+    "source" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9",
+    "target" : "a29de6cb-9a4d-4c98-b629-2627aeec5a9c"
+  }, {
+    "source" : "a29de6cb-9a4d-4c98-b629-2627aeec5a9c",
+    "target" : "e5367693-6c5e-43b9-9e80-c5110deab653"
+  }, {
     "source" : "50e3fb93-dc84-4be3-9cf4-e83cf542c544",
     "target" : "80ebacd9-47b6-49b3-aea5-735ced9731e6"
-  }, {
-    "source" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9",
-    "target" : "e5367693-6c5e-43b9-9e80-c5110deab653"
   } ],
   "vertexHashMap" : {
     "54d127e9-c036-41c7-9af7-91be58ca6a76" : {
@@ -215,6 +218,43 @@
       },
       "imported" : false
     },
+    "a29de6cb-9a4d-4c98-b629-2627aeec5a9c" : {
+      "vertexId" : "a29de6cb-9a4d-4c98-b629-2627aeec5a9c",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "userId",
+            "value" : "123",
+            "valueDataType" : "INTEGER"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "e5367693-6c5e-43b9-9e80-c5110deab653" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
+    },
     "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9" : {
       "vertexId" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9",
       "vertexType" : "AUTHENTICATION",
@@ -325,6 +365,11 @@
   "changeLogs" : [ {
     "commitId" : "7bd54b6d536ba859b904b1572d06a832d95e0d86",
     "timeStamp" : 1721648663208,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "785542c5686c05a6d2a5840a76636343a1e48954",
+    "timeStamp" : 1721648703047,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 8
   } ],
