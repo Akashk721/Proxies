@@ -1,8 +1,9 @@
 {
+  "id" : "669e0e03f777b0051a37767b",
   "cts" : 1721634305506,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721634305506,
+  "mts" : 1721634710688,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e0e01f777b0051a377676",
@@ -16,10 +17,28 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "eff28ef5-42b8-4db6-bb12-bbda42d06f15",
     "target" : "68fdf974-b684-49bf-b35b-caedddb2ce71"
+  }, {
+    "source" : "v1",
+    "target" : "eff28ef5-42b8-4db6-bb12-bbda42d06f15"
   } ],
   "vertexHashMap" : {
+    "eff28ef5-42b8-4db6-bb12-bbda42d06f15" : {
+      "vertexId" : "eff28ef5-42b8-4db6-bb12-bbda42d06f15",
+      "vertexType" : "DATABASE",
+      "name" : "test",
+      "databaseData" : {
+        "connectorId" : "6672bd4e37a6df0c1590a185",
+        "databaseType" : "MONGODB",
+        "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"find\",\"filter\":{\"status\":\"TESTED\"}}",
+        "variableName" : "test",
+        "connectorName" : "mongo-connector",
+        "tenantName" : "acme-team-gcp-stage",
+        "collectionName" : "ApiBuilder.Proxy.Deployed.List"
+      },
+      "imported" : false
+    },
     "68fdf974-b684-49bf-b35b-caedddb2ce71" : {
       "vertexId" : "68fdf974-b684-49bf-b35b-caedddb2ce71",
       "vertexType" : "STOP",
@@ -45,6 +64,12 @@
     "cts" : 1721634305506,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "9576c6095a5a76a7ea62472311363170f4a898b5",
+    "timeStamp" : 1721634305506,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
