@@ -3,7 +3,7 @@
   "cts" : 1721585332561,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721625997415,
+  "mts" : 1721626014092,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669d4eb4a085383a566bac44",
@@ -11,8 +11,8 @@
   "name" : "psql-test",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/test-mongo",
-  "pathArray" : [ "test-mongo" ],
+  "path" : "/test-psql",
+  "pathArray" : [ "test-psql" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -144,6 +144,11 @@
   }, {
     "commitId" : "9e9fda77f0bd8aed5e6ace878401fd56bdff68ff",
     "timeStamp" : 1721625864500,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "901fcd09b9cc7f619fd1c33738fa810d27098538",
+    "timeStamp" : 1721625997415,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
