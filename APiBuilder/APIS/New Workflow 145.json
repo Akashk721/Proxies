@@ -3,7 +3,7 @@
   "cts" : 1721452948556,
   "createdUserName" : "Adeeb Tahir",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721619352298,
+  "mts" : 1721626442542,
   "createdBy" : "63cf749921c7bb55c7368954",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669b4994a085383a566b8a00",
@@ -44,7 +44,7 @@
         "connectorId" : "6672bd4e37a6df0c1590a185",
         "databaseType" : "MONGODB",
         "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"find\",\"filter\":{\"status\":\"TESTED\"}}",
-        "variableName" : "test",
+        "variableName" : "testtest",
         "connectorName" : "mongo-connector",
         "tenantName" : "acme-team-gcp-stage",
         "collectionName" : "ApiBuilder.Proxy.Deployed.List"
@@ -70,6 +70,11 @@
     "timeStamp" : 1721452948556,
     "modifiedBy" : "Adeeb Tahir",
     "totalNodes" : 2
+  }, {
+    "commitId" : "2bd31f6b3b55d7c9cb85bb4ab70c0d978b59e3cf",
+    "timeStamp" : 1721619352298,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
