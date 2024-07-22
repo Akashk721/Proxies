@@ -1,0 +1,336 @@
+{
+  "id" : "669e4618f2496f2465096dda",
+  "cts" : 1721648663208,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1721648703047,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "669e4617f2496f2465096dd9",
+  "revision" : 1,
+  "name" : "Get country details updated",
+  "description" : "Get Country Details",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/country-details",
+  "pathArray" : [ "country-details" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "f43d51da-d44d-4869-8b24-4b685a9840e8",
+    "target" : "54d127e9-c036-41c7-9af7-91be58ca6a76"
+  }, {
+    "source" : "v1",
+    "target" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9"
+  }, {
+    "source" : "50e3fb93-dc84-4be3-9cf4-e83cf542c544",
+    "target" : "a73a8ef9-1488-4d54-9808-b8e309dfa807"
+  }, {
+    "source" : "e5367693-6c5e-43b9-9e80-c5110deab653",
+    "target" : "50e3fb93-dc84-4be3-9cf4-e83cf542c544"
+  }, {
+    "source" : "50e3fb93-dc84-4be3-9cf4-e83cf542c544",
+    "target" : "f43d51da-d44d-4869-8b24-4b685a9840e8"
+  }, {
+    "source" : "50e3fb93-dc84-4be3-9cf4-e83cf542c544",
+    "target" : "80ebacd9-47b6-49b3-aea5-735ced9731e6"
+  }, {
+    "source" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9",
+    "target" : "e5367693-6c5e-43b9-9e80-c5110deab653"
+  } ],
+  "vertexHashMap" : {
+    "54d127e9-c036-41c7-9af7-91be58ca6a76" : {
+      "vertexId" : "54d127e9-c036-41c7-9af7-91be58ca6a76",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{graphqlResponse}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "e5367693-6c5e-43b9-9e80-c5110deab653" : {
+      "vertexId" : "e5367693-6c5e-43b9-9e80-c5110deab653",
+      "vertexType" : "TARGET",
+      "name" : "check Graph approval",
+      "target" : {
+        "name" : "check Graph approval",
+        "description" : "check Graph approval",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9999",
+          "path" : "/graphql-auth",
+          "headerParams" : [ {
+            "name" : "userid",
+            "value" : "{{userId}}"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "graphAuthResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "a73a8ef9-1488-4d54-9808-b8e309dfa807" : {
+      "vertexId" : "a73a8ef9-1488-4d54-9808-b8e309dfa807",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 500,
+        "headers" : {
+          "condition" : "else"
+        },
+        "body" : {
+          "data" : "\"Request failed. Flow reached else block.\"",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "user",
+        "reference" : "headers",
+        "value" : "userid",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false
+      }, {
+        "name" : "requestBody",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    },
+    "80ebacd9-47b6-49b3-aea5-735ced9731e6" : {
+      "vertexId" : "80ebacd9-47b6-49b3-aea5-735ced9731e6",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 400,
+        "headers" : {
+          "condition" : "elseif"
+        },
+        "body" : {
+          "data" : "{\n    \"error\" : \"Unauthorised fields.\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "f43d51da-d44d-4869-8b24-4b685a9840e8" : {
+      "vertexId" : "f43d51da-d44d-4869-8b24-4b685a9840e8",
+      "vertexType" : "TARGET",
+      "name" : "Countries graphql",
+      "target" : {
+        "name" : "Countries graphql",
+        "description" : "Countries graphql",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "countries.trevorblades.com",
+          "path" : "/graphql",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "graphqlResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9" : {
+      "vertexId" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "Authenticate user",
+      "target" : {
+        "name" : "Authenticate user",
+        "description" : "Authenticate user",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9999",
+          "path" : "/user-login",
+          "headerParams" : [ ],
+          "queryParams" : [ {
+            "name" : "userId",
+            "value" : "{{user}}"
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "userId",
+            "reference" : "body",
+            "value" : "userId",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "50e3fb93-dc84-4be3-9cf4-e83cf542c544" : {
+      "vertexId" : "50e3fb93-dc84-4be3-9cf4-e83cf542c544",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "userPermitted",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "f43d51da-d44d-4869-8b24-4b685a9840e8" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "ABSENT",
+            "key" : "userPermitted",
+            "value" : "",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "80ebacd9-47b6-49b3-aea5-735ced9731e6" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "a73a8ef9-1488-4d54-9808-b8e309dfa807" ]
+      } ],
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1721648663208,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "7bd54b6d536ba859b904b1572d06a832d95e0d86",
+    "timeStamp" : 1721648663208,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
