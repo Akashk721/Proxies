@@ -3,7 +3,7 @@
   "cts" : 1721452948556,
   "createdUserName" : "Adeeb Tahir",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721626442542,
+  "mts" : 1721627551661,
   "createdBy" : "63cf749921c7bb55c7368954",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669b4994a085383a566b8a00",
@@ -11,9 +11,9 @@
   "name" : "New Workflow 145",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/mong",
+  "pathArray" : [ "mong" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -56,10 +56,20 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1721627538384,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721627497499,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1721452948556,
     "lastModifiedBy" : "Adeeb Tahir",
@@ -75,7 +85,13 @@
     "timeStamp" : 1721619352298,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "cd42a9d4b3b704cbdbefb98c406286e4c861ff19",
+    "timeStamp" : 1721626442542,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
