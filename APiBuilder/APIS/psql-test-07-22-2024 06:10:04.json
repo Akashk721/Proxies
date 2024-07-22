@@ -3,7 +3,7 @@
   "cts" : 1721628604899,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721628961484,
+  "mts" : 1721629007473,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669df7bca085383a566bbd72",
@@ -11,9 +11,9 @@
   "name" : "psql-test-07-22-2024 06:10:04",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/test-psql",
-  "pathArray" : [ "test-psql" ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/test-psql1",
+  "pathArray" : [ "test-psql1" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -111,6 +111,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1721628992840,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721628976640,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
     "status" : "Draft",
     "cts" : 1721628604899,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -124,6 +134,11 @@
   }, {
     "commitId" : "23b7116855a7aa178f14a501a7d8cd1983f5438b",
     "timeStamp" : 1721628953583,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "31eea86494453985f50640ab9672172f6b541979",
+    "timeStamp" : 1721628961484,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
