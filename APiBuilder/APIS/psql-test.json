@@ -3,7 +3,7 @@
   "cts" : 1721585332561,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721624468467,
+  "mts" : 1721625864500,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669d4eb4a085383a566bac44",
@@ -17,20 +17,14 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad",
+    "target" : "9a423c3c-fdce-4307-a781-c080fd2c7173"
+  }, {
     "source" : "v1",
     "target" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437"
   }, {
-    "source" : "77426a2c-81c1-49d1-b3b0-58fc66e75c2b",
-    "target" : "9a423c3c-fdce-4307-a781-c080fd2c7173"
-  }, {
     "source" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437",
     "target" : "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad"
-  }, {
-    "source" : "225cde47-aa85-44be-973f-3baef853d8b0",
-    "target" : "77426a2c-81c1-49d1-b3b0-58fc66e75c2b"
-  }, {
-    "source" : "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad",
-    "target" : "225cde47-aa85-44be-973f-3baef853d8b0"
   } ],
   "vertexHashMap" : {
     "3128d2dd-2b2b-4b4e-8e3a-234c867e9437" : {
@@ -107,42 +101,12 @@
         }
       }
     },
-    "225cde47-aa85-44be-973f-3baef853d8b0" : {
-      "vertexId" : "225cde47-aa85-44be-973f-3baef853d8b0",
-      "vertexType" : "DATABASE",
-      "name" : "psql",
-      "databaseData" : {
-        "connectorId" : "6662d5b22458cd6c6f0e9f2e",
-        "databaseType" : "POSTGRESQL",
-        "query" : "SELECT * ",
-        "variableName" : "psql",
-        "connectorName" : "postgress-june",
-        "schemaName" : "stage_data",
-        "tableName" : "test_main"
-      },
-      "imported" : false
-    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
-    },
-    "77426a2c-81c1-49d1-b3b0-58fc66e75c2b" : {
-      "vertexId" : "77426a2c-81c1-49d1-b3b0-58fc66e75c2b",
-      "vertexType" : "DATABASE",
-      "name" : "psql",
-      "databaseData" : {
-        "connectorId" : "669381afc6a309636942bf3e",
-        "databaseType" : "MONGODB",
-        "query" : "{\"databaseName\":\"local\",\"collection\":\"startup_log\",\"undefined\":\"{ find: 'startup_log', filter: {}, projection: { \\\"_id\\\": 1, \\\"hostname\\\": 1, \\\"startTime\\\": 1, \\\"buildinfo.version\\\": 1 } }\\n\",\"operation\":\"insert\",\"filter\":{\"buildinfo.version\":\"7.0.8\"},\"projection\":{\"_id\":1},\"limit\":\"100\",\"skip\":\"0\"}",
-        "variableName" : "psql",
-        "connectorName" : "Varun-mongo",
-        "tenantName" : "local",
-        "collectionName" : "startup_log"
-      },
-      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -171,6 +135,11 @@
     "timeStamp" : 1721624264736,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
+  }, {
+    "commitId" : "aaf8592eaf9290558ac054e23deab72e68d7bba2",
+    "timeStamp" : 1721624468467,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
   } ],
   "enableTracing" : false,
   "environmentName" : "",
