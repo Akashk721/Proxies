@@ -3,7 +3,7 @@
   "cts" : 1721585332561,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721585842837,
+  "mts" : 1721624264736,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669d4eb4a085383a566bac44",
@@ -24,6 +24,9 @@
     "target" : "9a423c3c-fdce-4307-a781-c080fd2c7173"
   }, {
     "source" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437",
+    "target" : "225cde47-aa85-44be-973f-3baef853d8b0"
+  }, {
+    "source" : "225cde47-aa85-44be-973f-3baef853d8b0",
     "target" : "77426a2c-81c1-49d1-b3b0-58fc66e75c2b"
   } ],
   "vertexHashMap" : {
@@ -86,6 +89,21 @@
         }
       }
     },
+    "225cde47-aa85-44be-973f-3baef853d8b0" : {
+      "vertexId" : "225cde47-aa85-44be-973f-3baef853d8b0",
+      "vertexType" : "DATABASE",
+      "name" : "psql",
+      "databaseData" : {
+        "connectorId" : "6662d5b22458cd6c6f0e9f2e",
+        "databaseType" : "POSTGRESQL",
+        "query" : "SELECT * ",
+        "variableName" : "psql",
+        "connectorName" : "postgress-june",
+        "schemaName" : "stage_data",
+        "tableName" : "test_main"
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -123,6 +141,11 @@
   }, {
     "commitId" : "9dca7f266051fe9b1bee7592c1be7aabd828d78e",
     "timeStamp" : 1721585490809,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "47d92d99357bcbff5e088116a157cae36fac7576",
+    "timeStamp" : 1721585842837,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
