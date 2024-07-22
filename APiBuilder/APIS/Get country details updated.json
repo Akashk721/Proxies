@@ -3,7 +3,7 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721649501478,
+  "mts" : 1721649541417,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -26,6 +26,9 @@
   }, {
     "source" : "10fd04f8-6942-46dc-b5fa-250f2b693558",
     "target" : "c1604fbc-62ab-4f1c-a243-f89a85eb8adc"
+  }, {
+    "source" : "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171",
+    "target" : "63b74a10-9833-4f16-a326-286e905b3a64"
   }, {
     "source" : "v1",
     "target" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9"
@@ -103,6 +106,22 @@
         }
       },
       "imported" : false
+    },
+    "63b74a10-9833-4f16-a326-286e905b3a64" : {
+      "vertexId" : "63b74a10-9833-4f16-a326-286e905b3a64",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{graphqlResponse}}}",
+          "type" : "json"
+        }
+      }
     },
     "10fd04f8-6942-46dc-b5fa-250f2b693558" : {
       "vertexId" : "10fd04f8-6942-46dc-b5fa-250f2b693558",
@@ -404,6 +423,11 @@
     "timeStamp" : 1721649301662,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 7
+  }, {
+    "commitId" : "a0794e29dc88148f1d59dfab94798733b2bba7f2",
+    "timeStamp" : 1721649501478,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
   } ],
   "enableTracing" : false,
   "environmentName" : "",
