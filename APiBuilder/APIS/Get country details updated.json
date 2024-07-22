@@ -3,7 +3,7 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721649301662,
+  "mts" : 1721649501478,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -21,8 +21,8 @@
     "source" : "a29de6cb-9a4d-4c98-b629-2627aeec5a9c",
     "target" : "10fd04f8-6942-46dc-b5fa-250f2b693558"
   }, {
-    "source" : "4ae22a80-918f-47ac-a73c-b14e17fb3c47",
-    "target" : "f43d51da-d44d-4869-8b24-4b685a9840e8"
+    "source" : "dace936c-37f0-4a75-83e1-ce076060ca5a",
+    "target" : "264e41f2-a4af-4ab5-9341-77500923fe97"
   }, {
     "source" : "10fd04f8-6942-46dc-b5fa-250f2b693558",
     "target" : "c1604fbc-62ab-4f1c-a243-f89a85eb8adc"
@@ -30,16 +30,80 @@
     "source" : "v1",
     "target" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9"
   }, {
-    "source" : "dace936c-37f0-4a75-83e1-ce076060ca5a",
-    "target" : "4ae22a80-918f-47ac-a73c-b14e17fb3c47"
-  }, {
     "source" : "a29de6cb-9a4d-4c98-b629-2627aeec5a9c",
     "target" : "dace936c-37f0-4a75-83e1-ce076060ca5a"
   }, {
     "source" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9",
     "target" : "a29de6cb-9a4d-4c98-b629-2627aeec5a9c"
+  }, {
+    "source" : "264e41f2-a4af-4ab5-9341-77500923fe97",
+    "target" : "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171"
   } ],
   "vertexHashMap" : {
+    "264e41f2-a4af-4ab5-9341-77500923fe97" : {
+      "vertexId" : "264e41f2-a4af-4ab5-9341-77500923fe97",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
+    },
+    "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171" : {
+      "vertexId" : "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171",
+      "vertexType" : "TARGET",
+      "name" : "Countries graphql",
+      "target" : {
+        "name" : "Countries graphql",
+        "description" : "Countries graphql",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "countries.trevorblades.com",
+          "path" : "/graphql",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "graphqlResponse",
+            "value" : "$",
+            "active" : true,
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "10fd04f8-6942-46dc-b5fa-250f2b693558" : {
       "vertexId" : "10fd04f8-6942-46dc-b5fa-250f2b693558",
       "vertexType" : "DATABASE",
@@ -67,24 +131,6 @@
           "type" : "json"
         }
       }
-    },
-    "4ae22a80-918f-47ac-a73c-b14e17fb3c47" : {
-      "vertexId" : "4ae22a80-918f-47ac-a73c-b14e17fb3c47",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "f43d51da-d44d-4869-8b24-4b685a9840e8" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        }
-      } ],
-      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -353,6 +399,11 @@
     "timeStamp" : 1721649137266,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 12
+  }, {
+    "commitId" : "a73dafbf124210b27c83e1b0837c2fba0a954d24",
+    "timeStamp" : 1721649301662,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
   } ],
   "enableTracing" : false,
   "environmentName" : "",
