@@ -1,8 +1,9 @@
 {
+  "id" : "669df7bea085383a566bbd73",
   "cts" : 1721628604899,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721628604899,
+  "mts" : 1721628953583,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669df7bca085383a566bbd72",
@@ -16,14 +17,14 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad",
-    "target" : "9a423c3c-fdce-4307-a781-c080fd2c7173"
-  }, {
     "source" : "v1",
     "target" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437"
   }, {
+    "source" : "37700664-61cf-4765-acd3-800e93670d7d",
+    "target" : "9a423c3c-fdce-4307-a781-c080fd2c7173"
+  }, {
     "source" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437",
-    "target" : "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad"
+    "target" : "37700664-61cf-4765-acd3-800e93670d7d"
   } ],
   "vertexHashMap" : {
     "3128d2dd-2b2b-4b4e-8e3a-234c867e9437" : {
@@ -73,21 +74,6 @@
       },
       "imported" : false
     },
-    "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad" : {
-      "vertexId" : "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad",
-      "vertexType" : "DATABASE",
-      "name" : "psql working",
-      "databaseData" : {
-        "connectorId" : "6662d5b22458cd6c6f0e9f2e",
-        "databaseType" : "POSTGRESQL",
-        "query" : "SELECT * FROM stage_data.test_main ",
-        "variableName" : "resp",
-        "connectorName" : "postgress-june",
-        "schemaName" : "stage_data",
-        "tableName" : "test_main"
-      },
-      "imported" : false
-    },
     "9a423c3c-fdce-4307-a781-c080fd2c7173" : {
       "vertexId" : "9a423c3c-fdce-4307-a781-c080fd2c7173",
       "vertexType" : "STOP",
@@ -107,6 +93,21 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "37700664-61cf-4765-acd3-800e93670d7d" : {
+      "vertexId" : "37700664-61cf-4765-acd3-800e93670d7d",
+      "vertexType" : "DATABASE",
+      "name" : "psql",
+      "databaseData" : {
+        "connectorId" : "6698af9023e96354b2f7388e",
+        "databaseType" : "POSTGRESQL",
+        "query" : "SELECT * FROM public.example_table",
+        "variableName" : "psql",
+        "connectorName" : "new-builder-test-psql",
+        "schemaName" : "public",
+        "tableName" : "example_table"
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -114,6 +115,12 @@
     "cts" : 1721628604899,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "10e7ea7c348f9e66fab3b877c85f0c0a72d0ce1d",
+    "timeStamp" : 1721628604899,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
