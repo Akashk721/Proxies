@@ -3,7 +3,7 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721648934863,
+  "mts" : 1721648960056,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -399,10 +399,11 @@
           "apiMethod" : "POST",
           "scheme" : "http",
           "host" : "34.67.57.107:9999",
-          "path" : "/",
+          "path" : "/graphql-auth",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
+            "data" : "{{{requestBody}}}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -410,7 +411,21 @@
         },
         "response" : {
           "statusCode" : 0,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "graphAuthResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -456,6 +471,11 @@
     "timeStamp" : 1721648883942,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 11
+  }, {
+    "commitId" : "f299dd5a1341aa17913b61cb9f3db2317afa8aac",
+    "timeStamp" : 1721648934863,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
   } ],
   "enableTracing" : false,
   "environmentName" : "",
