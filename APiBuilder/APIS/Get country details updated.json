@@ -3,7 +3,7 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721648960056,
+  "mts" : 1721649007621,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -400,7 +400,10 @@
           "scheme" : "http",
           "host" : "34.67.57.107:9999",
           "path" : "/graphql-auth",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "userid",
+            "value" : "{{userId}}"
+          } ],
           "queryParams" : [ ],
           "body" : {
             "data" : "{{{requestBody}}}",
@@ -412,6 +415,62 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "graphAuthResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "graphAuthResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "graphAuthResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "graphAuthResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
             "name" : "userPermitted",
             "reference" : "body",
             "value" : "allowed",
@@ -474,6 +533,11 @@
   }, {
     "commitId" : "f299dd5a1341aa17913b61cb9f3db2317afa8aac",
     "timeStamp" : 1721648934863,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "3983eee57184c2f2ebea4547a1195a2b15220ac0",
+    "timeStamp" : 1721648960056,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 12
   } ],
