@@ -3,7 +3,7 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721648883942,
+  "mts" : 1721648934863,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -29,6 +29,9 @@
   }, {
     "source" : "v1",
     "target" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9"
+  }, {
+    "source" : "a29de6cb-9a4d-4c98-b629-2627aeec5a9c",
+    "target" : "dace936c-37f0-4a75-83e1-ce076060ca5a"
   }, {
     "source" : "50e3fb93-dc84-4be3-9cf4-e83cf542c544",
     "target" : "a73a8ef9-1488-4d54-9808-b8e309dfa807"
@@ -280,7 +283,8 @@
         "condition" : "else",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "dace936c-37f0-4a75-83e1-ce076060ca5a" ]
       } ],
       "imported" : false
     },
@@ -383,6 +387,42 @@
         "flowVertexes" : [ "a73a8ef9-1488-4d54-9808-b8e309dfa807" ]
       } ],
       "imported" : false
+    },
+    "dace936c-37f0-4a75-83e1-ce076060ca5a" : {
+      "vertexId" : "dace936c-37f0-4a75-83e1-ce076060ca5a",
+      "vertexType" : "TARGET",
+      "name" : "check Graph approval",
+      "target" : {
+        "name" : "check Graph approval",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "34.67.57.107:9999",
+          "path" : "/",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -411,6 +451,11 @@
     "timeStamp" : 1721648854564,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
+  }, {
+    "commitId" : "fe82573ca5b8f03e6b86485bb042d25c548743a2",
+    "timeStamp" : 1721648883942,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
   } ],
   "enableTracing" : false,
   "environmentName" : "",
