@@ -1,0 +1,123 @@
+{
+  "cts" : 1721628604899,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1721628604899,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "669df7bca085383a566bbd72",
+  "revision" : 1,
+  "name" : "psql-test-07-22-2024 06:10:04",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/test-psql",
+  "pathArray" : [ "test-psql" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad",
+    "target" : "9a423c3c-fdce-4307-a781-c080fd2c7173"
+  }, {
+    "source" : "v1",
+    "target" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437"
+  }, {
+    "source" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437",
+    "target" : "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad"
+  } ],
+  "vertexHashMap" : {
+    "3128d2dd-2b2b-4b4e-8e3a-234c867e9437" : {
+      "vertexId" : "3128d2dd-2b2b-4b4e-8e3a-234c867e9437",
+      "vertexType" : "TARGET",
+      "name" : "get-User-1",
+      "target" : {
+        "name" : "get-User-1",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "reqres.in/",
+          "path" : "/api/users",
+          "headerParams" : [ ],
+          "queryParams" : [ {
+            "name" : "page",
+            "value" : "2"
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "res",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad" : {
+      "vertexId" : "7c0e9fae-8c61-4139-878e-bb9bfe7c20ad",
+      "vertexType" : "DATABASE",
+      "name" : "psql working",
+      "databaseData" : {
+        "connectorId" : "6662d5b22458cd6c6f0e9f2e",
+        "databaseType" : "POSTGRESQL",
+        "query" : "SELECT * FROM stage_data.test_main ",
+        "variableName" : "resp",
+        "connectorName" : "postgress-june",
+        "schemaName" : "stage_data",
+        "tableName" : "test_main"
+      },
+      "imported" : false
+    },
+    "9a423c3c-fdce-4307-a781-c080fd2c7173" : {
+      "vertexId" : "9a423c3c-fdce-4307-a781-c080fd2c7173",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{{{resp}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1721628604899,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
