@@ -1,0 +1,115 @@
+{
+  "id" : "669b499aa085383a566b8a01",
+  "cts" : 1721452948556,
+  "createdUserName" : "Adeeb Tahir",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1721633468240,
+  "createdBy" : "63cf749921c7bb55c7368954",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "669b4994a085383a566b8a00",
+  "revision" : 1,
+  "name" : "mongo-test-nihal",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/mong",
+  "pathArray" : [ "mong" ],
+  "revisionStatus" : "REVIEW",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "3fefb726-6769-4450-97b8-ca7cce86d845",
+    "target" : "55db610f-db5e-43a4-83f5-f848c0584fab"
+  }, {
+    "source" : "v1",
+    "target" : "3fefb726-6769-4450-97b8-ca7cce86d845"
+  } ],
+  "vertexHashMap" : {
+    "55db610f-db5e-43a4-83f5-f848c0584fab" : {
+      "vertexId" : "55db610f-db5e-43a4-83f5-f848c0584fab",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "3fefb726-6769-4450-97b8-ca7cce86d845" : {
+      "vertexId" : "3fefb726-6769-4450-97b8-ca7cce86d845",
+      "vertexType" : "DATABASE",
+      "name" : "mongodb",
+      "databaseData" : {
+        "connectorId" : "6672bd4e37a6df0c1590a185",
+        "databaseType" : "MONGODB",
+        "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"find\",\"filter\":{\"status\":\"TESTED\"}}",
+        "variableName" : "testtest",
+        "connectorName" : "mongo-connector",
+        "tenantName" : "acme-team-gcp-stage",
+        "collectionName" : "ApiBuilder.Proxy.Deployed.List"
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1721633447583,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "a"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721627560718,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Review",
+    "cts" : 1721627538384,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721627497499,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Draft",
+    "cts" : 1721452948556,
+    "lastModifiedBy" : "Adeeb Tahir",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "893b48f56767c2842e686de7d578da84ec17f794",
+    "timeStamp" : 1721452948556,
+    "modifiedBy" : "Adeeb Tahir",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "2bd31f6b3b55d7c9cb85bb4ab70c0d978b59e3cf",
+    "timeStamp" : 1721619352298,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "cd42a9d4b3b704cbdbefb98c406286e4c861ff19",
+    "timeStamp" : 1721626442542,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "f49722841980f1c0ce6af4cee5bb6410c1a28037",
+    "timeStamp" : 1721627551661,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
