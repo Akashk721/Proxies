@@ -3,7 +3,7 @@
   "cts" : 1721452948556,
   "createdUserName" : "Adeeb Tahir",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721633922748,
+  "mts" : 1721634636997,
   "createdBy" : "63cf749921c7bb55c7368954",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669b4994a085383a566b8a00",
@@ -30,9 +30,10 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 200,
         "body" : {
-          "type" : "JSON"
+          "data" : "{{{testtest}}}",
+          "type" : "json"
         }
       }
     },
@@ -60,6 +61,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1721634612481,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721634511204,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "s"
+  }, {
     "status" : "Review",
     "cts" : 1721633447583,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -108,6 +119,11 @@
   }, {
     "commitId" : "ef69a2efe0695da165c10717ccc1345e90388fca",
     "timeStamp" : 1721633468240,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "f9706e5a7ab2cc2dad86d65b010a956d60f17e51",
+    "timeStamp" : 1721633922748,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
