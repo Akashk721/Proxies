@@ -3,7 +3,7 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721649128346,
+  "mts" : 1721649137266,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -405,7 +405,7 @@
             "value" : "{{userId}}"
           }, {
             "name" : "Content-Type",
-            "value" : "applicat"
+            "value" : "application/json"
           } ],
           "queryParams" : [ ],
           "body" : {
@@ -418,6 +418,20 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
+            "name" : "graphAuthResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          }, {
             "name" : "graphAuthResponse",
             "reference" : "body",
             "value" : "$",
@@ -528,6 +542,11 @@
   }, {
     "commitId" : "b04b20ab88cb53eafd84bf0c6a952acbd1cfd86b",
     "timeStamp" : 1721649104846,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "33dafffb4162b36a696fc84325e428bf20f3fbd9",
+    "timeStamp" : 1721649128346,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 12
   } ],
