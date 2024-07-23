@@ -3,7 +3,7 @@
   "cts" : 1721737895478,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721740716159,
+  "mts" : 1721751482496,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669fa2a749aefd0005a7c4c2",
@@ -31,7 +31,7 @@
       "databaseData" : {
         "connectorId" : "6672bd4e37a6df0c1590a185",
         "databaseType" : "MONGODB",
-        "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"find\",\"filter\":{\"apiMethod\":\"POST\"},\"pipelines\":null,\"projection\":{\"apiType\":1}}",
+        "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"aggregate\",\"filter\":{\"apiMethod\":\"POST\"},\"pipelines\":[{\"$match\":{\"apiMethod\":\"POST\"}}],\"projection\":{\"apiType\":1}}",
         "variableName" : "mongoResponse",
         "connectorName" : "mongo-connector",
         "tenantName" : "acme-team-gcp-stage",
@@ -78,6 +78,11 @@
   }, {
     "commitId" : "fbddafedafab137cf635effa18d03e373d28e634",
     "timeStamp" : 1721739209414,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "ee5f0e80a67531f7e839ab99790d9a37ff21f203",
+    "timeStamp" : 1721740716159,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
