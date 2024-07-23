@@ -3,7 +3,7 @@
   "cts" : 1721727206933,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721728194942,
+  "mts" : 1721734320440,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669f78e6f2496f2465099e28",
@@ -18,6 +18,12 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "51f76a35-7737-4743-8fbe-3b5f5e323f9a",
+    "target" : "d0602a7c-83f7-456b-8ea1-248c897a3b6f"
+  }, {
+    "source" : "d0602a7c-83f7-456b-8ea1-248c897a3b6f",
+    "target" : "46838e10-08d0-47f6-9c3a-e1ca8f01d5f0"
+  }, {
     "source" : "99452f64-b78e-4b8e-87e1-90f34d305802",
     "target" : "b14f840a-b946-42f9-9e63-58e27957e248"
   }, {
@@ -26,9 +32,6 @@
   }, {
     "source" : "v1",
     "target" : "99452f64-b78e-4b8e-87e1-90f34d305802"
-  }, {
-    "source" : "51f76a35-7737-4743-8fbe-3b5f5e323f9a",
-    "target" : "46838e10-08d0-47f6-9c3a-e1ca8f01d5f0"
   } ],
   "vertexHashMap" : {
     "b14f840a-b946-42f9-9e63-58e27957e248" : {
@@ -72,6 +75,21 @@
         "connectorName" : "mongo-connector",
         "tenantName" : "acme-team-gcp-stage",
         "collectionName" : "ApiBuilder.Proxy.Deployed.List"
+      },
+      "imported" : false
+    },
+    "d0602a7c-83f7-456b-8ea1-248c897a3b6f" : {
+      "vertexId" : "d0602a7c-83f7-456b-8ea1-248c897a3b6f",
+      "vertexType" : "DATABASE",
+      "name" : "oracleDB",
+      "databaseData" : {
+        "connectorId" : "668e6bd182612c0edf77c58d",
+        "databaseType" : "ORACLEDB",
+        "query" : "SELECT * from employees",
+        "variableName" : "oracleResponse",
+        "connectorName" : "Varun-oracle",
+        "schemaName" : "SYS",
+        "tableName" : "EMPLOYEES"
       },
       "imported" : false
     },
@@ -124,6 +142,11 @@
   }, {
     "commitId" : "e8414f7ac6305fe990d1343d0286d56eac2815c0",
     "timeStamp" : 1721728192006,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "78b0ecb6cb16801a559bbd8b7578505cd598502c",
+    "timeStamp" : 1721728194942,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
   } ],
