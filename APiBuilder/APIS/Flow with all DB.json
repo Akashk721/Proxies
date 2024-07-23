@@ -3,7 +3,7 @@
   "cts" : 1721727206933,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721736042789,
+  "mts" : 1721737360484,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669f78e6f2496f2465099e28",
@@ -125,6 +125,9 @@
       "imported" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
         "body" : {
           "data" : "{\n    \"mongoDBResponse\":{{{mongoResponse}}},\n    \"--------------------------------------------------\",\n    \"postgresSql\":{{{psqlResponse}}},\n    \"---------------------------------------------------\",\n    \"mySQLResponse\":{{{mySqlResponse}}},\n    \"---------------------------------------------------\",\n    \"oracleResponse\":{{{oracleResponse}}},\n    \"----------------------------------------------------\",\n    \"azureResponse\":{{{azureResponse}}}\n}",
           "type" : "json"
@@ -133,6 +136,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1721737311881,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721736053148,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "ed"
+  }, {
     "status" : "Review",
     "cts" : 1721736024788,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -206,6 +219,11 @@
   }, {
     "commitId" : "c76fa4cddcce1e66af9f6f8cf2f3c587ca8f8e9e",
     "timeStamp" : 1721735737960,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
+  }, {
+    "commitId" : "d5fb4a786c0363b36169ad937bdc095857f35821",
+    "timeStamp" : 1721736042789,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 7
   } ],
