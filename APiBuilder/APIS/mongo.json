@@ -3,7 +3,7 @@
   "cts" : 1721737895478,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721751482496,
+  "mts" : 1721751594216,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669fa2a749aefd0005a7c4c2",
@@ -21,6 +21,9 @@
     "target" : "b8da11ed-c6fa-4b52-bb4c-4fbd1ce0f45e"
   }, {
     "source" : "b8da11ed-c6fa-4b52-bb4c-4fbd1ce0f45e",
+    "target" : "1e398f7b-f411-465c-8f7d-5410995a0172"
+  }, {
+    "source" : "1e398f7b-f411-465c-8f7d-5410995a0172",
     "target" : "9538656a-ea8d-4dfe-9e94-4e434da942a2"
   } ],
   "vertexHashMap" : {
@@ -33,6 +36,20 @@
         "databaseType" : "MONGODB",
         "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"aggregate\",\"filter\":{\"apiMethod\":\"POST\"},\"pipelines\":[{\"$match\":{\"apiMethod\":\"POST\"}}],\"projection\":{\"apiType\":1}}",
         "variableName" : "mongoResponse",
+        "connectorName" : "mongo-connector",
+        "tenantName" : "acme-team-gcp-stage",
+        "collectionName" : "ApiBuilder.Proxy.Deployed.List"
+      },
+      "imported" : false
+    },
+    "1e398f7b-f411-465c-8f7d-5410995a0172" : {
+      "vertexId" : "1e398f7b-f411-465c-8f7d-5410995a0172",
+      "vertexType" : "DATABASE",
+      "name" : "insert-mongo",
+      "databaseData" : {
+        "connectorId" : "6672bd4e37a6df0c1590a185",
+        "databaseType" : "MONGODB",
+        "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"insert\",\"documents\":[{\"proxyId\":\"65e5bc284542803103d4176a\",\"revisionId\":\"65e5bc284542803103d4176b\",\"revision\":1,\"name\":\"graph proxy tryout 2\",\"description\":\"graph proxy tryout 2\",\"path\":\"/graph-expose/tryout2\",\"pathArray\":[\"graph-expose\",\"tryout2\"],\"apiMethod\":\"POST\",\"apiType\":\"GRAPHQL\",\"edgeSet\":[{\"source\":\"v1\",\"target\":\"v2\"},{\"source\":\"v2\",\"target\":\"v3\"}],\"vertexHashMap\":{\"v1\":{\"vertexId\":\"v1\",\"vertexType\":\"START\",\"name\":\"proxy\",\"requestVariables\":[{\"name\":\"query\",\"reference\":\"body\",\"value\":\"$\"}]},\"v2\":{\"vertexId\":\"v2\",\"vertexType\":\"TARGET\",\"name\":\"Graphql target\",\"target\":{\"name\":\"Graphql request\",\"description\":\"this a Graphql request\",\"apiType\":\"GRAPHQL\",\"request\":{\"apiMethod\":\"POST\",\"scheme\":\"https\",\"host\":\"graphql.anilist.co\",\"headerParams\":[{\"name\":\"accept\",\"description\":\"accept\",\"value\":\"*/*\"},{\"name\":\"Content-Type\",\"description\":\"Content-Type\",\"value\":\"application/json\"}],\"body\":{\"data\":\"{{{query}}}\",\"type\":\"json\"},\"path\":\"/\"},\"response\":{\"statusCode\":0,\"variables\":[{\"name\":\"graphResponse\",\"reference\":\"body\",\"value\":\"$\"}]},\"timeout\":0,\"continueOnError\":false,\"targetSlug\":\"Page\"}},\"v3\":{\"vertexId\":\"v3\",\"vertexType\":\"STOP\",\"name\":\"response\",\"proxyResponse\":{\"statusCode\":202,\"headers\":{\"time\":\"1708526031457\",\"x-agent\":\"apibuiler\",\"Content-Type\":\"application/json\"},\"body\":{\"data\":\"{{{graphResponse}}} \",\"type\":\"json\"}}}},\"cts\":{\"$numberLong\":\"1709554840442\"},\"createdUserName\":\"Darshan Shivashankar\",\"modifiedUserName\":\"Darshan Shivashankar\",\"mts\":{\"$numberLong\":\"1709554728066\"},\"createdBy\":\"60367d4038e56d398c70be6f\",\"modifiedBy\":\"60367d4038e56d398c70be6f\",\"_class\":\"com.itorix.apiwiz.builder.api.common.model.proxy.ProxyExecutable\"}]}",
         "connectorName" : "mongo-connector",
         "tenantName" : "acme-team-gcp-stage",
         "collectionName" : "ApiBuilder.Proxy.Deployed.List"
@@ -83,6 +100,11 @@
   }, {
     "commitId" : "ee5f0e80a67531f7e839ab99790d9a37ff21f203",
     "timeStamp" : 1721740716159,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "255eb3b26a9c9a5425b889a871c542abe0117293",
+    "timeStamp" : 1721751482496,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
