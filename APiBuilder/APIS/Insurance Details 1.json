@@ -3,7 +3,7 @@
   "cts" : 1721824783433,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721830402450,
+  "mts" : 1721830421272,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a0f60f62d32f15adeffaa9",
@@ -27,14 +27,11 @@
     "source" : "10fd04f8-6942-46dc-b5fa-250f2b693558",
     "target" : "c1604fbc-62ab-4f1c-a243-f89a85eb8adc"
   }, {
-    "source" : "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171",
-    "target" : "63b74a10-9833-4f16-a326-286e905b3a64"
-  }, {
     "source" : "264e41f2-a4af-4ab5-9341-77500923fe97",
     "target" : "733e8e4a-ffb8-47a3-92d7-367a7213acfe"
   }, {
     "source" : "733e8e4a-ffb8-47a3-92d7-367a7213acfe",
-    "target" : "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171"
+    "target" : "63b74a10-9833-4f16-a326-286e905b3a64"
   }, {
     "source" : "v1",
     "target" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9"
@@ -80,52 +77,6 @@
         },
         "flowVertexes" : [ "d4f8dd3c-a326-4b3e-87c8-5c8a1a034052" ]
       } ],
-      "imported" : false
-    },
-    "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171" : {
-      "vertexId" : "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171",
-      "vertexType" : "TARGET",
-      "name" : "Countries graphql",
-      "target" : {
-        "name" : "Countries graphql",
-        "description" : "Countries graphql",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "GET",
-          "scheme" : "https",
-          "host" : "countries.trevorblades.com",
-          "path" : "/graphql",
-          "headerParams" : [ {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{{{requestBody}}}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 0,
-          "variables" : [ {
-            "name" : "graphqlResponse",
-            "value" : "$",
-            "active" : true,
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 0,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
       "imported" : false
     },
     "63b74a10-9833-4f16-a326-286e905b3a64" : {
@@ -463,6 +414,11 @@
     "timeStamp" : 1721830068048,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
+  }, {
+    "commitId" : "76c5de15e24356cd4d973c876e808b6c87575b8b",
+    "timeStamp" : 1721830402450,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
   } ],
   "enableTracing" : false,
   "environmentName" : "New Env",
