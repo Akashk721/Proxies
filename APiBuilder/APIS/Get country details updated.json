@@ -3,7 +3,7 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721824624866,
+  "mts" : 1721824668319,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -189,8 +189,11 @@
       "imported" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
         "body" : {
-          "data" : "{\n    \"Data\":{{{dbRes}}}\n}",
+          "data" : "{\n    \"AzureDataBaseResponse\":{{{azureDbResponse}}}\n}",
           "type" : "json"
         }
       }
@@ -538,6 +541,11 @@
   }, {
     "commitId" : "e8df3e16f1d023db5681634d564fcecf16ed9155",
     "timeStamp" : 1721719460410,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "37767a79ec4908f0110d14477e7ec01abd785bbc",
+    "timeStamp" : 1721824624866,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 11
   } ],
