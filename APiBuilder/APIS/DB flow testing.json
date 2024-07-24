@@ -3,7 +3,7 @@
   "cts" : 1721822024529,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721836818615,
+  "mts" : 1721836829005,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a0eb4862d32f15adeff468",
@@ -17,14 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "a5235f66-6613-4338-bcea-26b2c7a835d2",
-    "target" : "1c33277a-12a0-46d0-ab7b-42862360a204"
-  }, {
-    "source" : "a155c11a-d154-49c2-95a1-5ddba86b337b",
+    "source" : "1c33277a-12a0-46d0-ab7b-42862360a204",
     "target" : "47e16d3a-b823-4e82-a3d1-e90c71acb16d"
   }, {
-    "source" : "1c33277a-12a0-46d0-ab7b-42862360a204",
-    "target" : "a155c11a-d154-49c2-95a1-5ddba86b337b"
+    "source" : "a5235f66-6613-4338-bcea-26b2c7a835d2",
+    "target" : "1c33277a-12a0-46d0-ab7b-42862360a204"
   }, {
     "source" : "v1",
     "target" : "a5235f66-6613-4338-bcea-26b2c7a835d2"
@@ -42,21 +39,6 @@
         "databaseType" : "MONGODB",
         "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"aggregate\",\"pipelines\":[{\"$match\":{\"apiMethod\":\"POST\"}}]}",
         "variableName" : "mongo",
-        "connectorName" : "mongo-connector",
-        "tenantName" : "acme-team-gcp-stage",
-        "collectionName" : "ApiBuilder.Proxy.Deployed.List"
-      },
-      "imported" : false
-    },
-    "a155c11a-d154-49c2-95a1-5ddba86b337b" : {
-      "vertexId" : "a155c11a-d154-49c2-95a1-5ddba86b337b",
-      "vertexType" : "DATABASE",
-      "name" : "testing",
-      "databaseData" : {
-        "connectorId" : "6672bd4e37a6df0c1590a185",
-        "databaseType" : "MONGODB",
-        "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"find\",\"pipelines\":{\"working\":true},\"sort\":{\"field\":-1},\"filter\":{\"status\":\"TESTED\"}}",
-        "variableName" : "test",
         "connectorName" : "mongo-connector",
         "tenantName" : "acme-team-gcp-stage",
         "collectionName" : "ApiBuilder.Proxy.Deployed.List"
@@ -149,6 +131,11 @@
     "timeStamp" : 1721836757331,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
+  }, {
+    "commitId" : "eb8d1650eba84844aff07fa59ff5c3d51c30af0a",
+    "timeStamp" : 1721836818615,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
   } ],
   "enableTracing" : false,
   "environmentName" : "",
