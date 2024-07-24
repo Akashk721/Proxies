@@ -1,8 +1,9 @@
 {
+  "id" : "66a0f61162d32f15adeffaaa",
   "cts" : 1721824783433,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721824783433,
+  "mts" : 1721830037610,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a0f60f62d32f15adeffaa9",
@@ -295,7 +296,7 @@
         "request" : {
           "apiMethod" : "POST",
           "scheme" : "http",
-          "host" : "34.67.57.107:9999",
+          "host" : "104.198.151.110:9999",
           "path" : "/graphql-auth",
           "headerParams" : [ {
             "name" : "userid",
@@ -390,6 +391,12 @@
     "cts" : 1721824783433,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "c25b56688dfe4b44e9860f2b0713e37bdba3657d",
+    "timeStamp" : 1721824783433,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
   } ],
   "enableTracing" : false,
   "environmentName" : "New Env",
