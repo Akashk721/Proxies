@@ -3,7 +3,7 @@
   "cts" : 1721824783433,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721830421272,
+  "mts" : 1721830494759,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a0f60f62d32f15adeffaa9",
@@ -189,6 +189,20 @@
         "name" : "requestBody",
         "reference" : "body",
         "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      }, {
+        "name" : "requestQuery",
+        "reference" : "body",
+        "value" : "query",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      }, {
+        "name" : "requestVariables",
+        "reference" : "body",
+        "value" : "variables",
         "active" : true,
         "source" : "raw",
         "hide" : false
@@ -419,6 +433,11 @@
     "timeStamp" : 1721830402450,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 11
+  }, {
+    "commitId" : "b11c69c022fa21ee32282ed45c655c9718214010",
+    "timeStamp" : 1721830421272,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
   } ],
   "enableTracing" : false,
   "environmentName" : "New Env",
