@@ -3,7 +3,7 @@
   "cts" : 1721635319627,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721635831614,
+  "mts" : 1721787440809,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e11f7f2496f2465094fb8",
@@ -18,6 +18,9 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "41cd9408-aaa7-4882-8ca8-58998391910e"
+  }, {
+    "source" : "41cd9408-aaa7-4882-8ca8-58998391910e",
     "target" : "7ac4f959-72e6-4c3a-bd1f-dbd4a4ba9a6b"
   } ],
   "vertexHashMap" : {
@@ -39,6 +42,21 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "41cd9408-aaa7-4882-8ca8-58998391910e" : {
+      "vertexId" : "41cd9408-aaa7-4882-8ca8-58998391910e",
+      "vertexType" : "DATABASE",
+      "name" : "azuresql",
+      "databaseData" : {
+        "connectorId" : "669e58c1f2496f24650978a4",
+        "databaseType" : "AZURESQL",
+        "query" : "SELECT * from SalesLT.ProductCategory",
+        "variableName" : "azuresql",
+        "connectorName" : "azure-builder-test",
+        "schemaName" : "SalesLT",
+        "tableName" : "ProductCategory"
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -50,6 +68,11 @@
   "changeLogs" : [ {
     "commitId" : "65190e248c2a7720f9366c7e7608c4a59952f3f4",
     "timeStamp" : 1721635319627,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "db2159e29f489add1e67faf671c30a18c0ff5399",
+    "timeStamp" : 1721635831614,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
