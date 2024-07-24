@@ -3,7 +3,7 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721719460410,
+  "mts" : 1721824624866,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -172,13 +172,13 @@
       "vertexType" : "DATABASE",
       "name" : "db",
       "databaseData" : {
-        "connectorId" : "6662d5b22458cd6c6f0e9f2e",
-        "databaseType" : "POSTGRESQL",
-        "query" : "SELECT * FROM stage_data.test_main",
-        "variableName" : "dbRes",
-        "connectorName" : "postgress-june",
-        "schemaName" : "stage_data",
-        "tableName" : "test_main"
+        "connectorId" : "669e58c1f2496f24650978a4",
+        "databaseType" : "AZURESQL",
+        "query" : "SELECT TOP 10 * FROM dbo.InsurancePolicies",
+        "variableName" : "azureDbResponse",
+        "connectorName" : "azure-builder-test",
+        "schemaName" : "dbo",
+        "tableName" : "InsurancePolicies"
       },
       "imported" : false
     },
@@ -533,6 +533,11 @@
   }, {
     "commitId" : "5e326f06e9b2e99ed3590ea94a701eb91b2eee48",
     "timeStamp" : 1721719360927,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "e8df3e16f1d023db5681634d564fcecf16ed9155",
+    "timeStamp" : 1721719460410,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 11
   } ],
