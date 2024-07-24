@@ -3,7 +3,7 @@
   "cts" : 1721824783433,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721830494759,
+  "mts" : 1721830839106,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a0f60f62d32f15adeffaa9",
@@ -404,6 +404,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1721830828914,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721830505035,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "a"
+  }, {
+    "status" : "Draft",
     "cts" : 1721824783433,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Duplicated proxy"
@@ -438,7 +448,13 @@
     "timeStamp" : 1721830421272,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
+  }, {
+    "commitId" : "2cdf90ade41eee507447a66c13ded47509597aa4",
+    "timeStamp" : 1721830494759,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "New Env",
   "environmentId" : "664c49736e06f55048f6e04b",
