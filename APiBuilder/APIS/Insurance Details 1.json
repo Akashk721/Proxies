@@ -3,7 +3,7 @@
   "cts" : 1721824783433,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721830879111,
+  "mts" : 1721831498256,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a0f60f62d32f15adeffaa9",
@@ -136,7 +136,7 @@
         "apiType" : "GRAPHQL",
         "request" : {
           "apiMethod" : "POST",
-          "scheme" : "https",
+          "scheme" : "http",
           "host" : "34.67.57.107:9898",
           "path" : "/graphql",
           "headerParams" : [ {
@@ -423,6 +423,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1721831436127,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721831109627,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "a"
+  }, {
+    "status" : "Draft",
     "cts" : 1721830828914,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
     "description" : "d"
@@ -475,6 +485,11 @@
   }, {
     "commitId" : "bd2bc87ebc7f53a77aaebbcb67e0d2f1ac1f0088",
     "timeStamp" : 1721830839106,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "8f77370dfc30e8ffb097fd90d72657b59a24e3e2",
+    "timeStamp" : 1721830879111,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
