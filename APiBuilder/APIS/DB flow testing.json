@@ -3,7 +3,7 @@
   "cts" : 1721822024529,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721836829005,
+  "mts" : 1721836921890,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a0eb4862d32f15adeff468",
@@ -20,13 +20,16 @@
     "source" : "1c33277a-12a0-46d0-ab7b-42862360a204",
     "target" : "47e16d3a-b823-4e82-a3d1-e90c71acb16d"
   }, {
+    "source" : "47e16d3a-b823-4e82-a3d1-e90c71acb16d",
+    "target" : "249b1773-d8e3-4ffa-994b-b3ad88bcb163"
+  }, {
     "source" : "a5235f66-6613-4338-bcea-26b2c7a835d2",
     "target" : "1c33277a-12a0-46d0-ab7b-42862360a204"
   }, {
     "source" : "v1",
     "target" : "a5235f66-6613-4338-bcea-26b2c7a835d2"
   }, {
-    "source" : "47e16d3a-b823-4e82-a3d1-e90c71acb16d",
+    "source" : "249b1773-d8e3-4ffa-994b-b3ad88bcb163",
     "target" : "d5f4224b-08b6-4ab7-b116-cfb6d29bc631"
   } ],
   "vertexHashMap" : {
@@ -76,6 +79,21 @@
         "connectorName" : "mongo-connector",
         "tenantName" : "acme-team-gcp-stage",
         "collectionName" : "ApiBuilder.Proxy.Deployed.List"
+      },
+      "imported" : false
+    },
+    "249b1773-d8e3-4ffa-994b-b3ad88bcb163" : {
+      "vertexId" : "249b1773-d8e3-4ffa-994b-b3ad88bcb163",
+      "vertexType" : "DATABASE",
+      "name" : "postgresDB",
+      "databaseData" : {
+        "connectorId" : "6698af9023e96354b2f7388e",
+        "databaseType" : "POSTGRESQL",
+        "query" : "SELECT * from my_schema.my_table",
+        "variableName" : "postgres",
+        "connectorName" : "new-builder-test-psql",
+        "schemaName" : "my_schema",
+        "tableName" : "my_table"
       },
       "imported" : false
     },
@@ -136,6 +154,11 @@
     "timeStamp" : 1721836818615,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
+  }, {
+    "commitId" : "c97d018b5b58cb6a3a865d24361af0f6739bd141",
+    "timeStamp" : 1721836829005,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
   } ],
   "enableTracing" : false,
   "environmentName" : "",
