@@ -3,7 +3,7 @@
   "cts" : 1721635319627,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721816337329,
+  "mts" : 1721838324157,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e11f7f2496f2465094fb8",
@@ -21,6 +21,9 @@
     "target" : "41cd9408-aaa7-4882-8ca8-58998391910e"
   }, {
     "source" : "18e7bb59-4377-4e92-8f52-dff6f8058231",
+    "target" : "0c8a7b2f-d861-4578-af54-1ec8f7b0ff85"
+  }, {
+    "source" : "0c8a7b2f-d861-4578-af54-1ec8f7b0ff85",
     "target" : "7ac4f959-72e6-4c3a-bd1f-dbd4a4ba9a6b"
   }, {
     "source" : "41cd9408-aaa7-4882-8ca8-58998391910e",
@@ -38,6 +41,21 @@
           "type" : "JSON"
         }
       }
+    },
+    "0c8a7b2f-d861-4578-af54-1ec8f7b0ff85" : {
+      "vertexId" : "0c8a7b2f-d861-4578-af54-1ec8f7b0ff85",
+      "vertexType" : "DATABASE",
+      "name" : "asdf",
+      "databaseData" : {
+        "connectorId" : "6672bd4e37a6df0c1590a185",
+        "databaseType" : "MONGODB",
+        "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"find\",\"sort\":{\"fiel\":-1}}",
+        "variableName" : "asdf",
+        "connectorName" : "mongo-connector",
+        "tenantName" : "acme-team-gcp-stage",
+        "collectionName" : "ApiBuilder.Proxy.Deployed.List"
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -98,6 +116,11 @@
     "timeStamp" : 1721787440809,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "4f6eee14fb0c3f98566f27cfb4415c3aafac34b3",
+    "timeStamp" : 1721816337329,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
