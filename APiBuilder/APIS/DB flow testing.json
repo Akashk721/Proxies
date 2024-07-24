@@ -3,7 +3,7 @@
   "cts" : 1721822024529,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721822375256,
+  "mts" : 1721822693917,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a0eb4862d32f15adeff468",
@@ -17,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "a5235f66-6613-4338-bcea-26b2c7a835d2",
+    "source" : "1c33277a-12a0-46d0-ab7b-42862360a204",
     "target" : "d5f4224b-08b6-4ab7-b116-cfb6d29bc631"
+  }, {
+    "source" : "a5235f66-6613-4338-bcea-26b2c7a835d2",
+    "target" : "1c33277a-12a0-46d0-ab7b-42862360a204"
   }, {
     "source" : "v1",
     "target" : "a5235f66-6613-4338-bcea-26b2c7a835d2"
@@ -57,6 +60,21 @@
         "collectionName" : "ApiBuilder.Proxy.Deployed.List"
       },
       "imported" : false
+    },
+    "1c33277a-12a0-46d0-ab7b-42862360a204" : {
+      "vertexId" : "1c33277a-12a0-46d0-ab7b-42862360a204",
+      "vertexType" : "DATABASE",
+      "name" : "AzureSql DB",
+      "databaseData" : {
+        "connectorId" : "669e58c1f2496f24650978a4",
+        "databaseType" : "AZURESQL",
+        "query" : "SELECT * from dbo.InsuranceData",
+        "variableName" : "azuresql",
+        "connectorName" : "azure-builder-test",
+        "schemaName" : "dbo",
+        "tableName" : "InsuranceData"
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -75,6 +93,11 @@
     "timeStamp" : 1721822047786,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "3c02bf155520b1a0e0b6299d05e84b89aa814430",
+    "timeStamp" : 1721822375256,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
