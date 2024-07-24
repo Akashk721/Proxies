@@ -3,7 +3,7 @@
   "cts" : 1721822024529,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721822693917,
+  "mts" : 1721836623641,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a0eb4862d32f15adeff468",
@@ -17,16 +17,34 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "1c33277a-12a0-46d0-ab7b-42862360a204",
-    "target" : "d5f4224b-08b6-4ab7-b116-cfb6d29bc631"
-  }, {
     "source" : "a5235f66-6613-4338-bcea-26b2c7a835d2",
     "target" : "1c33277a-12a0-46d0-ab7b-42862360a204"
+  }, {
+    "source" : "1c33277a-12a0-46d0-ab7b-42862360a204",
+    "target" : "a155c11a-d154-49c2-95a1-5ddba86b337b"
+  }, {
+    "source" : "a155c11a-d154-49c2-95a1-5ddba86b337b",
+    "target" : "d5f4224b-08b6-4ab7-b116-cfb6d29bc631"
   }, {
     "source" : "v1",
     "target" : "a5235f66-6613-4338-bcea-26b2c7a835d2"
   } ],
   "vertexHashMap" : {
+    "a155c11a-d154-49c2-95a1-5ddba86b337b" : {
+      "vertexId" : "a155c11a-d154-49c2-95a1-5ddba86b337b",
+      "vertexType" : "DATABASE",
+      "name" : "testing",
+      "databaseData" : {
+        "connectorId" : "6672bd4e37a6df0c1590a185",
+        "databaseType" : "MONGODB",
+        "query" : "{\"databaseName\":\"acme-team-gcp-stage\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"operation\":\"aggregate\",\"pipelines\":{\"working\":true}}",
+        "variableName" : "test",
+        "connectorName" : "mongo-connector",
+        "tenantName" : "acme-team-gcp-stage",
+        "collectionName" : "ApiBuilder.Proxy.Deployed.List"
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -98,6 +116,11 @@
     "timeStamp" : 1721822375256,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "9ef3f573d1b92d8818aa252f9f569e5cee6d28cb",
+    "timeStamp" : 1721822693917,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
