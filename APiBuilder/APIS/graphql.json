@@ -1,0 +1,61 @@
+{
+  "id" : "66a2053424328558c0e8f355",
+  "cts" : 1721894194802,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1721894231074,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66a2053224328558c0e8f354",
+  "revision" : 1,
+  "name" : "graphql",
+  "apiType" : "GRAPHQL",
+  "apiMethod" : "POST",
+  "path" : "/graph",
+  "pathArray" : [ "graph" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "113114a2-0613-4326-a0a5-ef2210eb56d9"
+  } ],
+  "vertexHashMap" : {
+    "113114a2-0613-4326-a0a5-ef2210eb56d9" : {
+      "vertexId" : "113114a2-0613-4326-a0a5-ef2210eb56d9",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1721894194802,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "340f9ec80ab0ffa8718ff384c13c30a66d96538d",
+    "timeStamp" : 1721894194802,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
