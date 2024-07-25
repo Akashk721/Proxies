@@ -3,7 +3,7 @@
   "cts" : 1721894194802,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721894504309,
+  "mts" : 1721897944608,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a2053224328558c0e8f354",
@@ -41,6 +41,7 @@
       "vertexType" : "AUTHENTICATION",
       "name" : "asdfasdf",
       "target" : {
+        "targetSlug" : [ "sdf", "asdf" ],
         "name" : "asdfasdf",
         "description" : "asdf",
         "apiType" : "RESTAPI",
@@ -97,6 +98,11 @@
     "timeStamp" : 1721894231074,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "d4c8e4e9f0533f7d4c23c4aa4fb946f4e8fe9b1b",
+    "timeStamp" : 1721894504309,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
