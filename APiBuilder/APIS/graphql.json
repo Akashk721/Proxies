@@ -3,7 +3,7 @@
   "cts" : 1721894194802,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721894231074,
+  "mts" : 1721894504309,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a2053224328558c0e8f354",
@@ -18,6 +18,9 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "5d26f1c7-e9ff-4328-9455-dbe93de18a98"
+  }, {
+    "source" : "5d26f1c7-e9ff-4328-9455-dbe93de18a98",
     "target" : "113114a2-0613-4326-a0a5-ef2210eb56d9"
   } ],
   "vertexHashMap" : {
@@ -32,6 +35,43 @@
           "type" : "JSON"
         }
       }
+    },
+    "5d26f1c7-e9ff-4328-9455-dbe93de18a98" : {
+      "vertexId" : "5d26f1c7-e9ff-4328-9455-dbe93de18a98",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "asdfasdf",
+      "target" : {
+        "name" : "asdfasdf",
+        "description" : "asdf",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "asdfasdf",
+          "path" : "/asdf",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -50,6 +90,11 @@
   "changeLogs" : [ {
     "commitId" : "340f9ec80ab0ffa8718ff384c13c30a66d96538d",
     "timeStamp" : 1721894194802,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "91d2e2c36ad013ce90e5d567659351c27401bc43",
+    "timeStamp" : 1721894231074,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
