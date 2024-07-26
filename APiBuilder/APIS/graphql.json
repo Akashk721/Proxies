@@ -3,7 +3,7 @@
   "cts" : 1721894194802,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721988822126,
+  "mts" : 1721988866907,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a2053224328558c0e8f354",
@@ -78,7 +78,7 @@
       "databaseData" : {
         "connectorId" : "66a36e6b24328558c0e93089",
         "databaseType" : "MONGODB",
-        "query" : "{\"databaseName\":\"config\",\"collection\":\"system.sessions\",\"operation\":\"insert\",\"documents\":[{\"name\":\"insert-test-host\",\"host\":\"insert-testing.itorix.com\",\"port\":80}]}",
+        "query" : "{\"databaseName\":\"config\",\"collection\":\"system.sessions\",\"operation\":\"aggregate\"}",
         "variableName" : "Mongodb",
         "connectorName" : "Varun-docker-mongo",
         "tenantName" : "config",
@@ -156,6 +156,11 @@
     "timeStamp" : 1721898622713,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "deebb418ef9024e158df433bfc1917bf03815924",
+    "timeStamp" : 1721988822126,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
