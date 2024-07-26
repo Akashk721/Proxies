@@ -3,7 +3,7 @@
   "cts" : 1721894194802,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721898622713,
+  "mts" : 1721988822126,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a2053224328558c0e8f354",
@@ -17,11 +17,14 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "a18dfd51-9bf6-4295-97f2-b8b7a82f94bd",
-    "target" : "113114a2-0613-4326-a0a5-ef2210eb56d9"
-  }, {
     "source" : "v1",
     "target" : "a18dfd51-9bf6-4295-97f2-b8b7a82f94bd"
+  }, {
+    "source" : "a18dfd51-9bf6-4295-97f2-b8b7a82f94bd",
+    "target" : "9108c8d8-bdd7-45d2-9ad4-720648438e0e"
+  }, {
+    "source" : "9108c8d8-bdd7-45d2-9ad4-720648438e0e",
+    "target" : "113114a2-0613-4326-a0a5-ef2210eb56d9"
   } ],
   "vertexHashMap" : {
     "a18dfd51-9bf6-4295-97f2-b8b7a82f94bd" : {
@@ -68,6 +71,21 @@
       },
       "imported" : false
     },
+    "9108c8d8-bdd7-45d2-9ad4-720648438e0e" : {
+      "vertexId" : "9108c8d8-bdd7-45d2-9ad4-720648438e0e",
+      "vertexType" : "DATABASE",
+      "name" : "Mongodb",
+      "databaseData" : {
+        "connectorId" : "66a36e6b24328558c0e93089",
+        "databaseType" : "MONGODB",
+        "query" : "{\"databaseName\":\"config\",\"collection\":\"system.sessions\",\"operation\":\"insert\",\"documents\":[{\"name\":\"insert-test-host\",\"host\":\"insert-testing.itorix.com\",\"port\":80}]}",
+        "variableName" : "Mongodb",
+        "connectorName" : "Varun-docker-mongo",
+        "tenantName" : "config",
+        "collectionName" : "system.sessions"
+      },
+      "imported" : false
+    },
     "113114a2-0613-4326-a0a5-ef2210eb56d9" : {
       "vertexId" : "113114a2-0613-4326-a0a5-ef2210eb56d9",
       "vertexType" : "STOP",
@@ -93,6 +111,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1721988492017,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "-"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721898635295,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1721894194802,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -123,7 +151,13 @@
     "timeStamp" : 1721898597892,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "b34f07e8619274bdd9b8f3aeffe6ebc69d220b2f",
+    "timeStamp" : 1721898622713,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
