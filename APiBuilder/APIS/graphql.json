@@ -3,7 +3,7 @@
   "cts" : 1721894194802,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722405008071,
+  "mts" : 1722407182352,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a2053224328558c0e8f354",
@@ -29,7 +29,7 @@
       "vertexType" : "TARGET",
       "name" : "Targetgraphql",
       "target" : {
-        "targetSlug" : [ "exampleQuery" ],
+        "targetSlug" : [ "capsule" ],
         "name" : "Targetgraphql",
         "description" : "Targetgraphql",
         "apiType" : "RESTAPI",
@@ -101,6 +101,16 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1722407161362,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1722405031279,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "j"
+  }, {
+    "status" : "Draft",
     "cts" : 1721988492017,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
     "description" : "-"
@@ -165,6 +175,11 @@
     "timeStamp" : 1722404994415,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "e3deb3fae30e2a98127033ff23e15e93e7b52538",
+    "timeStamp" : 1722405008071,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
