@@ -1,8 +1,9 @@
 {
+  "id" : "66a9dce28b0f2713393c6448",
   "cts" : 1722408161491,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722408161491,
+  "mts" : 1722419985102,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
@@ -24,10 +25,13 @@
     "target" : "264e41f2-a4af-4ab5-9341-77500923fe97"
   }, {
     "source" : "10fd04f8-6942-46dc-b5fa-250f2b693558",
-    "target" : "c1604fbc-62ab-4f1c-a243-f89a85eb8adc"
+    "target" : "d1100231-df9e-413c-9eb1-8daba5dc7eaa"
   }, {
     "source" : "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171",
     "target" : "63b74a10-9833-4f16-a326-286e905b3a64"
+  }, {
+    "source" : "d1100231-df9e-413c-9eb1-8daba5dc7eaa",
+    "target" : "c1604fbc-62ab-4f1c-a243-f89a85eb8adc"
   }, {
     "source" : "v1",
     "target" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9"
@@ -170,6 +174,21 @@
           "type" : "json"
         }
       }
+    },
+    "d1100231-df9e-413c-9eb1-8daba5dc7eaa" : {
+      "vertexId" : "d1100231-df9e-413c-9eb1-8daba5dc7eaa",
+      "vertexType" : "DATABASE",
+      "name" : "F",
+      "databaseData" : {
+        "connectorId" : "66a36e6b24328558c0e93089",
+        "databaseType" : "MONGODB",
+        "query" : "{\"databaseName\":\"admin\",\"collection\":\"system.version\",\"operation\":\"insert\"}",
+        "variableName" : "f",
+        "connectorName" : "Varun-docker-mongo",
+        "tenantName" : "admin",
+        "collectionName" : "system.version"
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -385,6 +404,18 @@
       "imported" : false
     }
   },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1722408161491,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy revision"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "3b6f219f51f40d178eb4e2ac5b1650b39dd9fc26",
+    "timeStamp" : 1722408161491,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  } ],
   "enableTracing" : false,
   "environmentName" : "New Env",
   "environmentId" : "664c49736e06f55048f6e04b",
