@@ -3,17 +3,17 @@
   "cts" : 1722070726780,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722407571921,
+  "mts" : 1722407760613,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a4b6c624328558c0e93f43",
   "revision" : 1,
   "name" : "sanity-check-run",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/sanity-check-run",
   "pathArray" : [ "sanity-check-run" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -99,6 +99,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1722407737590,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sd"
+  }, {
+    "status" : "Approved",
+    "cts" : 1722407578862,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1722407556223,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -142,6 +152,11 @@
   }, {
     "commitId" : "d0a724ca3635c69e911dbcfe236a102d5e1e8c07",
     "timeStamp" : 1722407490964,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "168fb6a1225c56d0a993849d2758fb374f7ac0b1",
+    "timeStamp" : 1722407571921,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
