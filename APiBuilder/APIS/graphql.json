@@ -3,7 +3,7 @@
   "cts" : 1721894194802,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722404940196,
+  "mts" : 1722404994415,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a2053224328558c0e8f354",
@@ -57,7 +57,14 @@
         },
         "response" : {
           "statusCode" : 0,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "fullPayload",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -164,6 +171,11 @@
   }, {
     "commitId" : "168812c7fd67dfee000919a6d780abff1ca6228c",
     "timeStamp" : 1721988866907,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "a27403862a5b6b8aadcb54a57a1fbd437efb8fda",
+    "timeStamp" : 1722404940196,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
