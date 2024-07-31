@@ -3,7 +3,7 @@
   "cts" : 1722420786573,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722421123679,
+  "mts" : 1722423726247,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66aa0e328b0f2713393c8881",
@@ -17,8 +17,17 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "c90890b0-cc38-4672-ad78-4df6b2a99dc1",
     "target" : "ea0f8844-5068-4e0a-9064-f54bd73f0d42"
+  }, {
+    "source" : "a7b386d5-ec9c-4872-8479-9d8c5bccaf88",
+    "target" : "ea0f8844-5068-4e0a-9064-f54bd73f0d42"
+  }, {
+    "source" : "v1",
+    "target" : "c90890b0-cc38-4672-ad78-4df6b2a99dc1"
+  }, {
+    "source" : "v1",
+    "target" : "a7b386d5-ec9c-4872-8479-9d8c5bccaf88"
   } ],
   "vertexHashMap" : {
     "ea0f8844-5068-4e0a-9064-f54bd73f0d42" : {
@@ -33,6 +42,54 @@
         }
       }
     },
+    "c90890b0-cc38-4672-ad78-4df6b2a99dc1" : {
+      "vertexId" : "c90890b0-cc38-4672-ad78-4df6b2a99dc1",
+      "vertexType" : "TARGET",
+      "name" : "Insurance Graphql",
+      "target" : {
+        "name" : "Insurance Graphql",
+        "description" : "Insurance Graphql",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9898",
+          "path" : "/graphql",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "insurancePayload",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -46,6 +103,54 @@
         "hide" : false
       } ],
       "imported" : true
+    },
+    "a7b386d5-ec9c-4872-8479-9d8c5bccaf88" : {
+      "vertexId" : "a7b386d5-ec9c-4872-8479-9d8c5bccaf88",
+      "vertexType" : "TARGET",
+      "name" : "space x",
+      "target" : {
+        "name" : "space x",
+        "description" : "space x",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "spacex-production.up.railway.app",
+          "path" : "/",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "spacex",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -57,6 +162,11 @@
   "changeLogs" : [ {
     "commitId" : "33a40069c35058ff12e3028d8c67d11bd2fc7924",
     "timeStamp" : 1722420786573,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "fb10131a38ea44450a4581e92e6207ee2caaaf2d",
+    "timeStamp" : 1722421123679,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
