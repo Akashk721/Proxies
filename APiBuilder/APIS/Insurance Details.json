@@ -1,20 +1,20 @@
 {
-  "id" : "66a9dce28b0f2713393c6448",
-  "cts" : 1722408161491,
+  "id" : "669e4618f2496f2465096dda",
+  "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722419985102,
+  "mts" : 1722507401307,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
-  "revision" : 2,
+  "revision" : 1,
   "name" : "Insurance Details",
   "description" : "Get Insurance Details",
-  "apiType" : "RESTAPI",
+  "apiType" : "GRAPHQL",
   "apiMethod" : "POST",
   "path" : "/insurance-details",
   "pathArray" : [ "insurance-details" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -25,13 +25,10 @@
     "target" : "264e41f2-a4af-4ab5-9341-77500923fe97"
   }, {
     "source" : "10fd04f8-6942-46dc-b5fa-250f2b693558",
-    "target" : "d1100231-df9e-413c-9eb1-8daba5dc7eaa"
+    "target" : "c1604fbc-62ab-4f1c-a243-f89a85eb8adc"
   }, {
     "source" : "aea0fdd5-6d51-49a8-b7ec-ee7ceb04e171",
     "target" : "63b74a10-9833-4f16-a326-286e905b3a64"
-  }, {
-    "source" : "d1100231-df9e-413c-9eb1-8daba5dc7eaa",
-    "target" : "c1604fbc-62ab-4f1c-a243-f89a85eb8adc"
   }, {
     "source" : "v1",
     "target" : "2a5285c6-86fe-4c00-95e4-b8f3726c2fa9"
@@ -175,21 +172,6 @@
         }
       }
     },
-    "d1100231-df9e-413c-9eb1-8daba5dc7eaa" : {
-      "vertexId" : "d1100231-df9e-413c-9eb1-8daba5dc7eaa",
-      "vertexType" : "DATABASE",
-      "name" : "F",
-      "databaseData" : {
-        "connectorId" : "66a36e6b24328558c0e93089",
-        "databaseType" : "MONGODB",
-        "query" : "{\"databaseName\":\"admin\",\"collection\":\"system.version\",\"operation\":\"insert\"}",
-        "variableName" : "f",
-        "connectorName" : "Varun-docker-mongo",
-        "tenantName" : "admin",
-        "collectionName" : "system.version"
-      },
-      "imported" : false
-    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -235,6 +217,11 @@
           }
         },
         "flowVertexes" : [ "10fd04f8-6942-46dc-b5fa-250f2b693558" ]
+      }, {
+        "condition" : "else-if",
+        "assertion" : {
+          "continueOnError" : false
+        }
       }, {
         "condition" : "else",
         "assertion" : {
@@ -405,17 +392,158 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1721649837588,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721649745054,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "dd"
+  }, {
     "status" : "Draft",
-    "cts" : 1722408161491,
+    "cts" : 1721648663208,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
-    "description" : "Created new proxy revision"
+    "description" : "Duplicated proxy"
   } ],
   "changeLogs" : [ {
-    "commitId" : "3b6f219f51f40d178eb4e2ac5b1650b39dd9fc26",
-    "timeStamp" : 1722408161491,
+    "commitId" : "7bd54b6d536ba859b904b1572d06a832d95e0d86",
+    "timeStamp" : 1721648663208,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "785542c5686c05a6d2a5840a76636343a1e48954",
+    "timeStamp" : 1721648703047,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "2b0ea28ec51ee8ad04d4d24eca9f2a189faa3dbb",
+    "timeStamp" : 1721648757709,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
+  }, {
+    "commitId" : "fa6ecc4d36173bc8263a4626f1fd2fc0403384e6",
+    "timeStamp" : 1721648854564,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "fe82573ca5b8f03e6b86485bb042d25c548743a2",
+    "timeStamp" : 1721648883942,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "f299dd5a1341aa17913b61cb9f3db2317afa8aac",
+    "timeStamp" : 1721648934863,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "3983eee57184c2f2ebea4547a1195a2b15220ac0",
+    "timeStamp" : 1721648960056,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "6ed99b6616ce2e5710ae082a57515fcad80370d5",
+    "timeStamp" : 1721649007621,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "d7749a7dd86dd512214f478905895bca1a587528",
+    "timeStamp" : 1721649065782,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "b04b20ab88cb53eafd84bf0c6a952acbd1cfd86b",
+    "timeStamp" : 1721649104846,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "33dafffb4162b36a696fc84325e428bf20f3fbd9",
+    "timeStamp" : 1721649128346,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "fb31fa8ca46d2c32c9cf9dcf9960a9a980f244f9",
+    "timeStamp" : 1721649137266,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "a73dafbf124210b27c83e1b0837c2fba0a954d24",
+    "timeStamp" : 1721649301662,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
+  }, {
+    "commitId" : "a0794e29dc88148f1d59dfab94798733b2bba7f2",
+    "timeStamp" : 1721649501478,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "95fca9ecef58b5a46985d7496bc8d7a9eeb3c899",
+    "timeStamp" : 1721649541417,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
+  }, {
+    "commitId" : "5a9682fd37372ed77e0441cf8a2b61beb851ad3c",
+    "timeStamp" : 1721649581381,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "99cca8cbecd9db24fd263585f4aa7e03decbdc25",
+    "timeStamp" : 1721649644008,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "4a580238962fee29b21e7d2bb009fdd7e0a3eba6",
+    "timeStamp" : 1721649694838,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "343796b9ff61c9d16b6a848921d819d3c15a8dc1",
+    "timeStamp" : 1721649724750,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "0e930db6a95aab3a34c828d27f51d00b29414f0a",
+    "timeStamp" : 1721649964192,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "f0518a286e7d97af89a77394b32fe9254d4aadd3",
+    "timeStamp" : 1721652629447,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "5e326f06e9b2e99ed3590ea94a701eb91b2eee48",
+    "timeStamp" : 1721719360927,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "e8df3e16f1d023db5681634d564fcecf16ed9155",
+    "timeStamp" : 1721719460410,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "37767a79ec4908f0110d14477e7ec01abd785bbc",
+    "timeStamp" : 1721824624866,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "5bb3851a9c16adad6ac31c51b0ca7a9afeaf5589",
+    "timeStamp" : 1721824668319,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "46da58b7fceee96456641e5f8a3d382720a76011",
+    "timeStamp" : 1721824693037,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "fee13de5df5cd6e89ce33d4fa2af4d13e6461b56",
+    "timeStamp" : 1721824751478,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "New Env",
   "environmentId" : "664c49736e06f55048f6e04b",
