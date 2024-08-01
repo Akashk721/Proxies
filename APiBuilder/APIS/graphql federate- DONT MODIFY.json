@@ -3,7 +3,7 @@
   "cts" : 1722420786573,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722490557906,
+  "mts" : 1722535486404,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66aa0e328b0f2713393c8881",
@@ -51,7 +51,7 @@
       "vertexType" : "TARGET",
       "name" : "Insurance Graphql",
       "target" : {
-        "targetSlug" : [ "asdf" ],
+        "targetSlug" : [ ],
         "name" : "Insurance Graphql",
         "description" : "Insurance Graphql",
         "apiType" : "GRAPHQL",
@@ -213,6 +213,11 @@
   }, {
     "commitId" : "fc19ca1bde0f84c39afee4ce73bf49ac1df3c12b",
     "timeStamp" : 1722490466147,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "ed34966254dc49d37b5212e077b90bf88a0b4e30",
+    "timeStamp" : 1722490557906,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
