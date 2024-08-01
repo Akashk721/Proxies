@@ -3,7 +3,7 @@
   "cts" : 1722420786573,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722535780256,
+  "mts" : 1722535825321,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66aa0e328b0f2713393c8881",
@@ -51,7 +51,7 @@
       "vertexType" : "TARGET",
       "name" : "Insurance Graphql",
       "target" : {
-        "targetSlug" : [ ],
+        "targetSlug" : [ "getAllVehicleInsurance", "getAllHealthInsurance" ],
         "name" : "Insurance Graphql",
         "description" : "Insurance Graphql",
         "apiType" : "GRAPHQL",
@@ -114,7 +114,7 @@
       "vertexType" : "TARGET",
       "name" : "Consumer Graphql",
       "target" : {
-        "targetSlug" : [ ],
+        "targetSlug" : [ "getAllConsumers" ],
         "name" : "Consumer Graphql",
         "description" : "Consumer Graphql",
         "apiType" : "GRAPHQL",
@@ -233,6 +233,11 @@
   }, {
     "commitId" : "fa659fc350ce4279139bf1917136bf1f74ed5467",
     "timeStamp" : 1722535675072,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "bed0c2291e8496d693f9e5a86af4e8582072b5b5",
+    "timeStamp" : 1722535780256,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
