@@ -3,7 +3,7 @@
   "cts" : 1722420786573,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722490466147,
+  "mts" : 1722490557906,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66aa0e328b0f2713393c8881",
@@ -114,6 +114,7 @@
       "vertexType" : "TARGET",
       "name" : "space x",
       "target" : {
+        "targetSlug" : [ "test" ],
         "name" : "space x",
         "description" : "space x",
         "apiType" : "GRAPHQL",
@@ -207,6 +208,11 @@
   }, {
     "commitId" : "4b7bc1d6d05c1cef5dc5c5f6651e20beb49e7ab6",
     "timeStamp" : 1722490244916,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "fc19ca1bde0f84c39afee4ce73bf49ac1df3c12b",
+    "timeStamp" : 1722490466147,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
