@@ -3,14 +3,14 @@
   "cts" : 1721648663208,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722507401307,
+  "mts" : 1722507585339,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e4617f2496f2465096dd9",
   "revision" : 1,
   "name" : "Insurance Details",
   "description" : "Get Insurance Details",
-  "apiType" : "GRAPHQL",
+  "apiType" : "RESTAPI",
   "apiMethod" : "POST",
   "path" : "/insurance-details",
   "pathArray" : [ "insurance-details" ],
@@ -540,6 +540,11 @@
   }, {
     "commitId" : "fee13de5df5cd6e89ce33d4fa2af4d13e6461b56",
     "timeStamp" : 1721824751478,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "ae26ce0fdb86f6e2e0fa47e33a670716c573776b",
+    "timeStamp" : 1722507401307,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
