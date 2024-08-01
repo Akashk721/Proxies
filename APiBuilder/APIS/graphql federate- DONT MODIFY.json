@@ -3,7 +3,7 @@
   "cts" : 1722420786573,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722535486404,
+  "mts" : 1722535622014,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66aa0e328b0f2713393c8881",
@@ -112,17 +112,17 @@
     "a7b386d5-ec9c-4872-8479-9d8c5bccaf88" : {
       "vertexId" : "a7b386d5-ec9c-4872-8479-9d8c5bccaf88",
       "vertexType" : "TARGET",
-      "name" : "space x",
+      "name" : "Consumer Graphql",
       "target" : {
-        "targetSlug" : [ "test" ],
-        "name" : "space x",
-        "description" : "space x",
+        "targetSlug" : [ ],
+        "name" : "Consumer Graphql",
+        "description" : "Consumer Graphql",
         "apiType" : "GRAPHQL",
         "request" : {
           "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "spacex-production.up.railway.app",
-          "path" : "/",
+          "scheme" : "http",
+          "host" : "104.198.151.110:8888",
+          "path" : "/graphql",
           "headerParams" : [ {
             "name" : "content-type",
             "value" : "application/json"
@@ -138,7 +138,7 @@
         "response" : {
           "statusCode" : 0,
           "variables" : [ {
-            "name" : "spacex",
+            "name" : "consumers",
             "reference" : "body",
             "value" : "$",
             "active" : true,
@@ -218,6 +218,11 @@
   }, {
     "commitId" : "ed34966254dc49d37b5212e077b90bf88a0b4e30",
     "timeStamp" : 1722490557906,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "e45ba810fa31c520e8ee1b0919ad3a6a3d2f4434",
+    "timeStamp" : 1722535486404,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
   } ],
