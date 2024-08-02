@@ -3,7 +3,7 @@
   "cts" : 1722576718326,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722593951182,
+  "mts" : 1722593985990,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66ac6f4e4503f8596e1e1b48",
@@ -21,7 +21,7 @@
     "source" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3",
     "target" : "31005148-2f2f-41d6-b7e9-ae4ff24757b9"
   }, {
-    "source" : "31005148-2f2f-41d6-b7e9-ae4ff24757b9",
+    "source" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
     "target" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4"
   }, {
     "source" : "v1",
@@ -32,6 +32,9 @@
   }, {
     "source" : "97115131-ba45-4612-947c-806ccdc8fc1f",
     "target" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3"
+  }, {
+    "source" : "31005148-2f2f-41d6-b7e9-ae4ff24757b9",
+    "target" : "865b0fe0-d965-40f3-b5ed-adb24253363b"
   } ],
   "vertexHashMap" : {
     "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3" : {
@@ -231,6 +234,38 @@
         }
       },
       "imported" : false
+    },
+    "865b0fe0-d965-40f3-b5ed-adb24253363b" : {
+      "vertexId" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "userPermitted",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "f3d10a81-a68f-4166-9c11-8e3eb0533ec4" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -264,6 +299,11 @@
     "timeStamp" : 1722593632869,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 5
+  }, {
+    "commitId" : "554d82f99d59e0acc2d129fac9e09f7cb0c2f0c7",
+    "timeStamp" : 1722593951182,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
   } ],
   "enableTracing" : false,
   "environmentName" : "",
