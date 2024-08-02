@@ -3,7 +3,7 @@
   "cts" : 1722597197048,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722597675292,
+  "mts" : 1722597928063,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66acbf4df8fe7a555bd11d62",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/insurance-data",
   "pathArray" : [ "insurance-data" ],
-  "revisionStatus" : "REVIEW",
+  "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -148,7 +148,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"data\":\n        {{{policyData}}},\n        {{{customerData}}}\n}",
+          "data" : "{\n    \"data\":\n        {{{policyData}}}\n        {{{customerData}}}\n}",
           "type" : "json"
         }
       }
@@ -480,6 +480,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1722597917786,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1722597683949,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "approved"
+  }, {
     "status" : "Review",
     "cts" : 1722597660102,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
@@ -543,6 +553,11 @@
   }, {
     "commitId" : "3c83193bc1abcf7a001ae14058b1297eb49e57dd",
     "timeStamp" : 1722597611704,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "714ab24b60d3c45aecb503ac6b7e4adaa10bf3f4",
+    "timeStamp" : 1722597675292,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 12
   } ],
