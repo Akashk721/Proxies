@@ -3,7 +3,7 @@
   "cts" : 1722576718326,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722595504642,
+  "mts" : 1722595560977,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66ac6f4e4503f8596e1e1b48",
@@ -87,6 +87,7 @@
       "vertexType" : "TARGET",
       "name" : "Customer Graphql",
       "target" : {
+        "targetSlug" : [ "getAllConsumers" ],
         "name" : "Customer Graphql",
         "description" : "Customer Graphql",
         "apiType" : "GRAPHQL",
@@ -484,6 +485,11 @@
   }, {
     "commitId" : "9946bd9ebaea83f1f6269075d86ab864a9c13222",
     "timeStamp" : 1722594637980,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
+  }, {
+    "commitId" : "4ddf5d79f986e42fe9564101cb6529593aec74fa",
+    "timeStamp" : 1722595504642,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 10
   } ],
