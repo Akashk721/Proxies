@@ -3,7 +3,7 @@
   "cts" : 1722576718326,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722593490021,
+  "mts" : 1722593632869,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66ac6f4e4503f8596e1e1b48",
@@ -23,6 +23,9 @@
   }, {
     "source" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3",
     "target" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4"
+  }, {
+    "source" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3",
+    "target" : "e3181f2d-05db-466d-9c32-9c3b002aa61b"
   }, {
     "source" : "97115131-ba45-4612-947c-806ccdc8fc1f",
     "target" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3"
@@ -56,7 +59,8 @@
         "condition" : "else",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "e3181f2d-05db-466d-9c32-9c3b002aa61b" ]
       } ],
       "imported" : false
     },
@@ -69,6 +73,22 @@
         "statusCode" : 0,
         "body" : {
           "type" : "JSON"
+        }
+      }
+    },
+    "e3181f2d-05db-466d-9c32-9c3b002aa61b" : {
+      "vertexId" : "e3181f2d-05db-466d-9c32-9c3b002aa61b",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 401,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"errorCode\":\"AUTH-401\",\n    \"message\":\"Unauthorized User\",\n    \"description\":\"User attempted to access API for which they lack proper permissions.\"\n}",
+          "type" : "json"
         }
       }
     },
@@ -180,6 +200,11 @@
     "timeStamp" : 1722593468471,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "9a90a6d61a59c84f7e3a1b0c8ca338074a08ed6b",
+    "timeStamp" : 1722593490021,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
