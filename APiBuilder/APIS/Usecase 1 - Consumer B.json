@@ -3,7 +3,7 @@
   "cts" : 1721989249272,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722603178555,
+  "mts" : 1722603220487,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a37881b7f74312d853e334",
@@ -12,8 +12,8 @@
   "description" : "Usecase 1 - Consumer B",
   "apiType" : "GRAPHQL",
   "apiMethod" : "POST",
-  "path" : "/policy-data",
-  "pathArray" : [ "policy-data" ],
+  "path" : "/consumer-data",
+  "pathArray" : [ "consumer-data" ],
   "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -30,11 +30,11 @@
     "source" : "v1",
     "target" : "9033a3aa-305b-48a8-9dc0-c5fca399a56f"
   }, {
-    "source" : "7c1b31dc-f52b-48c9-afc3-3ade23b37226",
-    "target" : "f57e093e-ee7d-4959-b49c-1a3e19c96210"
-  }, {
     "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
     "target" : "0d01ddb7-e620-40cf-92f3-3817cbc38ccb"
+  }, {
+    "source" : "7c1b31dc-f52b-48c9-afc3-3ade23b37226",
+    "target" : "f57e093e-ee7d-4959-b49c-1a3e19c96210"
   }, {
     "source" : "f57e093e-ee7d-4959-b49c-1a3e19c96210",
     "target" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab"
@@ -332,6 +332,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1722603197965,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "f"
+  }, {
+    "status" : "Approved",
+    "cts" : 1722603185255,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "approved"
+  }, {
+    "status" : "Review",
     "cts" : 1722602137337,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
     "description" : "d"
@@ -479,6 +489,11 @@
   }, {
     "commitId" : "05a5d883ff51c6344e92dec8e1233928fc8519d4",
     "timeStamp" : 1722603175225,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
+  }, {
+    "commitId" : "dfeed96d1cb2e1b96e41081637c4e1e141605b65",
+    "timeStamp" : 1722603178555,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 9
   } ],
