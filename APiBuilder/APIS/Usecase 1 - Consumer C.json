@@ -3,7 +3,7 @@
   "cts" : 1721989249272,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722601672650,
+  "mts" : 1722601767772,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a37881b7f74312d853e334",
@@ -21,17 +21,14 @@
     "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
     "target" : "b130320a-a63d-4986-af15-b5daf57cca27"
   }, {
-    "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
+    "source" : "0d01ddb7-e620-40cf-92f3-3817cbc38ccb",
     "target" : "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6"
-  }, {
-    "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
-    "target" : "009c51c6-11ca-4d2f-9b90-a158c7dba124"
   }, {
     "source" : "v1",
     "target" : "f57e093e-ee7d-4959-b49c-1a3e19c96210"
   }, {
-    "source" : "009c51c6-11ca-4d2f-9b90-a158c7dba124",
-    "target" : "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6"
+    "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
+    "target" : "0d01ddb7-e620-40cf-92f3-3817cbc38ccb"
   }, {
     "source" : "f57e093e-ee7d-4959-b49c-1a3e19c96210",
     "target" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab"
@@ -53,14 +50,15 @@
         }
       }
     },
-    "009c51c6-11ca-4d2f-9b90-a158c7dba124" : {
-      "vertexId" : "009c51c6-11ca-4d2f-9b90-a158c7dba124",
+    "0d01ddb7-e620-40cf-92f3-3817cbc38ccb" : {
+      "vertexId" : "0d01ddb7-e620-40cf-92f3-3817cbc38ccb",
       "vertexType" : "TARGET",
       "name" : "Policy Graphql",
       "target" : {
+        "targetSlug" : [ "getAllHealthInsurance" ],
         "name" : "Policy Graphql",
         "description" : "Policy Graphql",
-        "apiType" : "RESTAPI",
+        "apiType" : "GRAPHQL",
         "request" : {
           "apiMethod" : "POST",
           "scheme" : "http",
@@ -72,7 +70,7 @@
           } ],
           "queryParams" : [ ],
           "body" : {
-            "data" : "{{{requestBody}}}",
+            "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -140,7 +138,7 @@
             }
           }
         },
-        "flowVertexes" : [ "009c51c6-11ca-4d2f-9b90-a158c7dba124", "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6" ]
+        "flowVertexes" : [ "0d01ddb7-e620-40cf-92f3-3817cbc38ccb", "0d01ddb7-e620-40cf-92f3-3817cbc38ccb" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -292,6 +290,11 @@
   }, {
     "commitId" : "bdddd54b7c5a6953fa99b03925eb9bfffe337b5f",
     "timeStamp" : 1722601663026,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "d2b949ba76b634b438515ffbdd4c3ed47b91d2f8",
+    "timeStamp" : 1722601672650,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
   } ],
