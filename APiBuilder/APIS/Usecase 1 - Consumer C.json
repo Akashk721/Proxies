@@ -3,14 +3,14 @@
   "cts" : 1721989249272,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722601663026,
+  "mts" : 1722601672650,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a37881b7f74312d853e334",
   "revision" : 1,
   "name" : "Usecase 1 - Consumer C",
   "description" : "Usecase 1 - Consumer C",
-  "apiType" : "RESTAPI",
+  "apiType" : "GRAPHQL",
   "apiMethod" : "POST",
   "path" : "/insurance-data",
   "pathArray" : [ "insurance-data" ],
@@ -287,6 +287,11 @@
   "changeLogs" : [ {
     "commitId" : "bd0b56add9b454ac0a4209ac70ddf724d9caebc5",
     "timeStamp" : 1722601634834,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "bdddd54b7c5a6953fa99b03925eb9bfffe337b5f",
+    "timeStamp" : 1722601663026,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
   } ],
