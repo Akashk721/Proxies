@@ -3,7 +3,7 @@
   "cts" : 1722602045526,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722602324881,
+  "mts" : 1722602344000,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66acd23df8fe7a555bd1281e",
@@ -18,11 +18,14 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "9f742318-dd8d-4b88-b34a-2a8a909e5357",
+    "target" : "f5fee305-dac4-4832-a095-b80e4c14aebb"
+  }, {
     "source" : "v1",
     "target" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369"
   }, {
     "source" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369",
-    "target" : "f5fee305-dac4-4832-a095-b80e4c14aebb"
+    "target" : "9f742318-dd8d-4b88-b34a-2a8a909e5357"
   } ],
   "vertexHashMap" : {
     "f5fee305-dac4-4832-a095-b80e4c14aebb" : {
@@ -57,6 +60,38 @@
         "hide" : false
       } ],
       "imported" : true
+    },
+    "9f742318-dd8d-4b88-b34a-2a8a909e5357" : {
+      "vertexId" : "9f742318-dd8d-4b88-b34a-2a8a909e5357",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "userPermitted",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "f5fee305-dac4-4832-a095-b80e4c14aebb" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
     },
     "13d82177-0aa9-4d2b-8ef8-702f1bfa9369" : {
       "vertexId" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369",
@@ -127,6 +162,11 @@
     "timeStamp" : 1722602209050,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "b3dada5ef48a1759d471b0dfa4f6c7b7e262c790",
+    "timeStamp" : 1722602324881,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
