@@ -3,7 +3,7 @@
   "cts" : 1722576718326,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722593468471,
+  "mts" : 1722593490021,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66ac6f4e4503f8596e1e1b48",
@@ -21,10 +21,45 @@
     "source" : "v1",
     "target" : "97115131-ba45-4612-947c-806ccdc8fc1f"
   }, {
-    "source" : "97115131-ba45-4612-947c-806ccdc8fc1f",
+    "source" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3",
     "target" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4"
+  }, {
+    "source" : "97115131-ba45-4612-947c-806ccdc8fc1f",
+    "target" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3"
   } ],
   "vertexHashMap" : {
+    "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3" : {
+      "vertexId" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "apiAccess",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "f3d10a81-a68f-4166-9c11-8e3eb0533ec4" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
+    },
     "f3d10a81-a68f-4166-9c11-8e3eb0533ec4" : {
       "vertexId" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4",
       "vertexType" : "STOP",
@@ -138,6 +173,11 @@
   }, {
     "commitId" : "0f2d3960d1de10dd0a28e5aff20f033ad47919f7",
     "timeStamp" : 1722593459396,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "f6709c114484a1fa1dbd43d735dbf202f0c24569",
+    "timeStamp" : 1722593468471,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
