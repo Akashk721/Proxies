@@ -3,7 +3,7 @@
   "cts" : 1721989249272,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722601767772,
+  "mts" : 1722601804301,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a37881b7f74312d853e334",
@@ -12,8 +12,8 @@
   "description" : "Usecase 1 - Consumer C",
   "apiType" : "GRAPHQL",
   "apiMethod" : "POST",
-  "path" : "/insurance-data",
-  "pathArray" : [ "insurance-data" ],
+  "path" : "/policy-data",
+  "pathArray" : [ "policy-data" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
@@ -295,6 +295,11 @@
   }, {
     "commitId" : "d2b949ba76b634b438515ffbdd4c3ed47b91d2f8",
     "timeStamp" : 1722601672650,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "e109ed98a5c549761e333b86aa158ec9559613c9",
+    "timeStamp" : 1722601767772,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
   } ],
