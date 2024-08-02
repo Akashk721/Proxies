@@ -3,7 +3,7 @@
   "cts" : 1722602045526,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722602209050,
+  "mts" : 1722602324881,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66acd23df8fe7a555bd1281e",
@@ -19,6 +19,9 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369"
+  }, {
+    "source" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369",
     "target" : "f5fee305-dac4-4832-a095-b80e4c14aebb"
   } ],
   "vertexHashMap" : {
@@ -54,6 +57,58 @@
         "hide" : false
       } ],
       "imported" : true
+    },
+    "13d82177-0aa9-4d2b-8ef8-702f1bfa9369" : {
+      "vertexId" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369",
+      "vertexType" : "TARGET",
+      "name" : "Query Access Check",
+      "target" : {
+        "targetSlug" : [ ],
+        "name" : "Query Access Check",
+        "description" : "Query Access Check",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9999",
+          "path" : "/graphql-auth",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          }, {
+            "name" : "userid",
+            "value" : "{{userId}}"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -65,6 +120,11 @@
   "changeLogs" : [ {
     "commitId" : "c4534aea4af4728c4ffa06aa3ac817059cacd125",
     "timeStamp" : 1722602045526,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "b8821d0b339888101e6e6d776dd75ae2540da3d5",
+    "timeStamp" : 1722602209050,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
