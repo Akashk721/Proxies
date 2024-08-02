@@ -3,7 +3,7 @@
   "cts" : 1722576718326,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722594024023,
+  "mts" : 1722594243345,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66ac6f4e4503f8596e1e1b48",
@@ -21,9 +21,6 @@
     "source" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3",
     "target" : "31005148-2f2f-41d6-b7e9-ae4ff24757b9"
   }, {
-    "source" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
-    "target" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4"
-  }, {
     "source" : "v1",
     "target" : "97115131-ba45-4612-947c-806ccdc8fc1f"
   }, {
@@ -38,6 +35,12 @@
   }, {
     "source" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
     "target" : "619b62c9-2e0a-413f-9d6c-99967212b693"
+  }, {
+    "source" : "c93bc105-5947-4c57-920b-e377c577f0f9",
+    "target" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4"
+  }, {
+    "source" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
+    "target" : "c93bc105-5947-4c57-920b-e377c577f0f9"
   } ],
   "vertexHashMap" : {
     "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3" : {
@@ -100,6 +103,52 @@
           "type" : "json"
         }
       }
+    },
+    "c93bc105-5947-4c57-920b-e377c577f0f9" : {
+      "vertexId" : "c93bc105-5947-4c57-920b-e377c577f0f9",
+      "vertexType" : "TARGET",
+      "name" : "Policy Graphql",
+      "target" : {
+        "targetSlug" : [ "getAllVehicleInsurance", "getAllHealthInsurance", "getAllConsumers" ],
+        "name" : "Policy Graphql",
+        "description" : "Policy Graphql",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9898",
+          "path" : "/graphql",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "policyData",
+            "reference" : "body",
+            "value" : "data",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -261,7 +310,7 @@
             }
           }
         },
-        "flowVertexes" : [ "f3d10a81-a68f-4166-9c11-8e3eb0533ec4" ]
+        "flowVertexes" : [ "c93bc105-5947-4c57-920b-e377c577f0f9" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -332,6 +381,11 @@
   }, {
     "commitId" : "9e30320037244f80dac9118188e6251362379f6a",
     "timeStamp" : 1722594016407,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 8
+  }, {
+    "commitId" : "36e3b479320487687ac4cef081bf6d33564eb644",
+    "timeStamp" : 1722594024023,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 8
   } ],
