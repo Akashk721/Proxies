@@ -3,7 +3,7 @@
   "cts" : 1722597197048,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722597352953,
+  "mts" : 1722597466760,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66acbf4df8fe7a555bd11d62",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/insurance-data",
   "pathArray" : [ "insurance-data" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -211,7 +211,7 @@
       "vertexType" : "TARGET",
       "name" : "Policy Graphql",
       "target" : {
-        "targetSlug" : [ "getAllHealthInsurance", "getAllConsumers" ],
+        "targetSlug" : [ "getAllHealthInsurance" ],
         "name" : "Policy Graphql",
         "description" : "Policy Graphql",
         "apiType" : "GRAPHQL",
@@ -480,6 +480,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1722597437418,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "r"
+  }, {
+    "status" : "Approved",
+    "cts" : 1722597361952,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "approved"
+  }, {
     "status" : "Draft",
     "cts" : 1722597197048,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -500,7 +510,13 @@
     "timeStamp" : 1722597333310,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 12
+  }, {
+    "commitId" : "878a94dfcf7a7f1989258da1f9bc070fb0300f02",
+    "timeStamp" : 1722597352953,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
