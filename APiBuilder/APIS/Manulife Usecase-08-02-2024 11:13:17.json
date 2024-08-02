@@ -1,0 +1,412 @@
+{
+  "cts" : 1722597197048,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1722597197048,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66acbf4df8fe7a555bd11d62",
+  "revision" : 1,
+  "name" : "Manulife Usecase-08-02-2024 11:13:17",
+  "description" : "Manulife Usecase",
+  "apiType" : "GRAPHQL",
+  "apiMethod" : "POST",
+  "path" : "/fetch-insurance-data",
+  "pathArray" : [ "fetch-insurance-data" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3",
+    "target" : "31005148-2f2f-41d6-b7e9-ae4ff24757b9"
+  }, {
+    "source" : "v1",
+    "target" : "97115131-ba45-4612-947c-806ccdc8fc1f"
+  }, {
+    "source" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3",
+    "target" : "e3181f2d-05db-466d-9c32-9c3b002aa61b"
+  }, {
+    "source" : "97115131-ba45-4612-947c-806ccdc8fc1f",
+    "target" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3"
+  }, {
+    "source" : "31005148-2f2f-41d6-b7e9-ae4ff24757b9",
+    "target" : "865b0fe0-d965-40f3-b5ed-adb24253363b"
+  }, {
+    "source" : "4cba66b1-93cf-413e-8c52-4445312df85c",
+    "target" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4"
+  }, {
+    "source" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
+    "target" : "619b62c9-2e0a-413f-9d6c-99967212b693"
+  }, {
+    "source" : "c93bc105-5947-4c57-920b-e377c577f0f9",
+    "target" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4"
+  }, {
+    "source" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
+    "target" : "c93bc105-5947-4c57-920b-e377c577f0f9"
+  }, {
+    "source" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
+    "target" : "4cba66b1-93cf-413e-8c52-4445312df85c"
+  } ],
+  "vertexHashMap" : {
+    "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3" : {
+      "vertexId" : "7a8e7ae9-5f6e-4c8f-83ad-a948319035f3",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "apiAccess",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "31005148-2f2f-41d6-b7e9-ae4ff24757b9" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "e3181f2d-05db-466d-9c32-9c3b002aa61b" ]
+      } ],
+      "imported" : false
+    },
+    "4cba66b1-93cf-413e-8c52-4445312df85c" : {
+      "vertexId" : "4cba66b1-93cf-413e-8c52-4445312df85c",
+      "vertexType" : "TARGET",
+      "name" : "Customer Graphql",
+      "target" : {
+        "targetSlug" : [ "getAllConsumers" ],
+        "name" : "Customer Graphql",
+        "description" : "Customer Graphql",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:8888",
+          "path" : "/graphql",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "customerData",
+            "reference" : "body",
+            "value" : "data",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "f3d10a81-a68f-4166-9c11-8e3eb0533ec4" : {
+      "vertexId" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 201,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"data\":{\n        \"policyData\": {{{policyData}}},\n        \"customerData\": {{{customerData}}}\n    }\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "e3181f2d-05db-466d-9c32-9c3b002aa61b" : {
+      "vertexId" : "e3181f2d-05db-466d-9c32-9c3b002aa61b",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 401,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"errorCode\":\"AUTH-401\",\n    \"message\":\"Unauthorized User\",\n    \"description\":\"User attempted to access API for which they lack proper permissions.\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "c93bc105-5947-4c57-920b-e377c577f0f9" : {
+      "vertexId" : "c93bc105-5947-4c57-920b-e377c577f0f9",
+      "vertexType" : "TARGET",
+      "name" : "Policy Graphql",
+      "target" : {
+        "targetSlug" : [ "getAllHealthInsurance", "getAllConsumers" ],
+        "name" : "Policy Graphql",
+        "description" : "Policy Graphql",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9898",
+          "path" : "/graphql",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "policyData",
+            "reference" : "body",
+            "value" : "data",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "userId",
+        "reference" : "headers",
+        "value" : "userid",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false
+      }, {
+        "name" : "requestBody",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      }, {
+        "name" : "requestVariables",
+        "reference" : "body",
+        "value" : "variables",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      }, {
+        "name" : "requestQuery",
+        "reference" : "body",
+        "value" : "query",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    },
+    "31005148-2f2f-41d6-b7e9-ae4ff24757b9" : {
+      "vertexId" : "31005148-2f2f-41d6-b7e9-ae4ff24757b9",
+      "vertexType" : "TARGET",
+      "name" : "Query Access Check",
+      "target" : {
+        "name" : "Query Access Check",
+        "description" : "Query Access Check",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9999",
+          "path" : "/graphql-auth",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          }, {
+            "name" : "userid",
+            "value" : "{{userId}}"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "97115131-ba45-4612-947c-806ccdc8fc1f" : {
+      "vertexId" : "97115131-ba45-4612-947c-806ccdc8fc1f",
+      "vertexType" : "TARGET",
+      "name" : "API Access check",
+      "target" : {
+        "name" : "API Access check",
+        "description" : "API Access check",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9999",
+          "path" : "/api-auth",
+          "headerParams" : [ {
+            "name" : "userid",
+            "value" : "{{userId}}"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "apiAccess",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "865b0fe0-d965-40f3-b5ed-adb24253363b" : {
+      "vertexId" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "userPermitted",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "c93bc105-5947-4c57-920b-e377c577f0f9", "4cba66b1-93cf-413e-8c52-4445312df85c" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "619b62c9-2e0a-413f-9d6c-99967212b693" ]
+      } ],
+      "imported" : false
+    },
+    "619b62c9-2e0a-413f-9d6c-99967212b693" : {
+      "vertexId" : "619b62c9-2e0a-413f-9d6c-99967212b693",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 401,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"errorCode\":\"GraphQL-401\",\n    \"message\":\"Unauthorized\",\n    \"description\":\"User attempted to access data fields for which they lack proper permissions\"\n}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1722597197048,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
