@@ -3,7 +3,7 @@
   "cts" : 1722602045526,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722602344000,
+  "mts" : 1722602371603,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66acd23df8fe7a555bd1281e",
@@ -24,10 +24,29 @@
     "source" : "v1",
     "target" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369"
   }, {
+    "source" : "9f742318-dd8d-4b88-b34a-2a8a909e5357",
+    "target" : "d0d91383-4196-4f56-98fb-2b818cb3207a"
+  }, {
     "source" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369",
     "target" : "9f742318-dd8d-4b88-b34a-2a8a909e5357"
   } ],
   "vertexHashMap" : {
+    "d0d91383-4196-4f56-98fb-2b818cb3207a" : {
+      "vertexId" : "d0d91383-4196-4f56-98fb-2b818cb3207a",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 401,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"errorCode\":\"GraphQL-401\",\n    \"message\":\"Unauthorized\",\n    \"description\":\"User attempted to access data fields for which they lack proper permissions\"\n}",
+          "type" : "json"
+        }
+      }
+    },
     "f5fee305-dac4-4832-a095-b80e4c14aebb" : {
       "vertexId" : "f5fee305-dac4-4832-a095-b80e4c14aebb",
       "vertexType" : "STOP",
@@ -89,7 +108,8 @@
         "condition" : "else",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "d0d91383-4196-4f56-98fb-2b818cb3207a" ]
       } ],
       "imported" : false
     },
@@ -167,6 +187,11 @@
     "timeStamp" : 1722602324881,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "24f3478422b4983063bc4b2e6a9b2af89b3836a6",
+    "timeStamp" : 1722602344000,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
