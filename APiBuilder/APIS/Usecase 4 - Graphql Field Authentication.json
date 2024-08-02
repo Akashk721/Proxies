@@ -1,0 +1,307 @@
+{
+  "id" : "66a37881b7f74312d853e335",
+  "cts" : 1721989249272,
+  "createdUserName" : "Charles Livington",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1722601634834,
+  "createdBy" : "63761a7c2702eb379fb286e1",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66a37881b7f74312d853e334",
+  "revision" : 1,
+  "name" : "Usecase 4 - Graphql Field Authentication",
+  "description" : "Usecase 4 - Graphql Field Authentication - Fetch Insurance Data",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/insurance-data",
+  "pathArray" : [ "insurance-data" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
+    "target" : "b130320a-a63d-4986-af15-b5daf57cca27"
+  }, {
+    "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
+    "target" : "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6"
+  }, {
+    "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
+    "target" : "009c51c6-11ca-4d2f-9b90-a158c7dba124"
+  }, {
+    "source" : "v1",
+    "target" : "f57e093e-ee7d-4959-b49c-1a3e19c96210"
+  }, {
+    "source" : "009c51c6-11ca-4d2f-9b90-a158c7dba124",
+    "target" : "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6"
+  }, {
+    "source" : "f57e093e-ee7d-4959-b49c-1a3e19c96210",
+    "target" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab"
+  } ],
+  "vertexHashMap" : {
+    "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6" : {
+      "vertexId" : "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{graphqlResponse}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "009c51c6-11ca-4d2f-9b90-a158c7dba124" : {
+      "vertexId" : "009c51c6-11ca-4d2f-9b90-a158c7dba124",
+      "vertexType" : "TARGET",
+      "name" : "Policy Graphql",
+      "target" : {
+        "name" : "Policy Graphql",
+        "description" : "Policy Graphql",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9898",
+          "path" : "/graphql",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "policyData",
+            "reference" : "body",
+            "value" : "data",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "b130320a-a63d-4986-af15-b5daf57cca27" : {
+      "vertexId" : "b130320a-a63d-4986-af15-b5daf57cca27",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 401,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"errorCode\":\"GraphQL-401\",\n    \"message\":\"Unauthorized\",\n    \"description\":\"User attempted to access data fields for which they lack proper permissions\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab" : {
+      "vertexId" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "userPermitted",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "009c51c6-11ca-4d2f-9b90-a158c7dba124", "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "b130320a-a63d-4986-af15-b5daf57cca27" ]
+      } ],
+      "imported" : false
+    },
+    "f57e093e-ee7d-4959-b49c-1a3e19c96210" : {
+      "vertexId" : "f57e093e-ee7d-4959-b49c-1a3e19c96210",
+      "vertexType" : "TARGET",
+      "name" : "Graph approval",
+      "target" : {
+        "name" : "Graph approval",
+        "description" : "Graph approval",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9999",
+          "path" : "/graphql-auth",
+          "headerParams" : [ {
+            "name" : "userid",
+            "value" : "{{userId}}"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "userPermitted",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "userId",
+        "reference" : "headers",
+        "value" : "userid",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false
+      }, {
+        "name" : "requestBody",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      }, {
+        "name" : "requestVariables",
+        "reference" : "body",
+        "value" : "variables",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      }, {
+        "name" : "requestQuery",
+        "reference" : "body",
+        "value" : "query",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1722420672966,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "dew"
+  }, {
+    "status" : "Approved",
+    "cts" : 1722420652162,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "vc"
+  }, {
+    "status" : "Approved",
+    "cts" : 1722254229836,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "a"
+  }, {
+    "status" : "Draft",
+    "cts" : 1722254147338,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721997363823,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "a"
+  }, {
+    "status" : "Draft",
+    "cts" : 1721997288111,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721989987390,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "a"
+  }, {
+    "status" : "Review",
+    "cts" : 1721989972892,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "r"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721989903752,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "a"
+  }, {
+    "status" : "Draft",
+    "cts" : 1721989867497,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1721989697202,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "approved"
+  }, {
+    "status" : "Draft",
+    "cts" : 1721989249272,
+    "lastModifiedBy" : "Charles Livington",
+    "description" : "Created new proxy"
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
