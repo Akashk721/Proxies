@@ -3,7 +3,7 @@
   "cts" : 1722602045526,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722602371603,
+  "mts" : 1722602429010,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66acd23df8fe7a555bd1281e",
@@ -19,7 +19,7 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "9f742318-dd8d-4b88-b34a-2a8a909e5357",
-    "target" : "f5fee305-dac4-4832-a095-b80e4c14aebb"
+    "target" : "663c26f7-0911-48af-8290-be3441183747"
   }, {
     "source" : "v1",
     "target" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369"
@@ -29,6 +29,9 @@
   }, {
     "source" : "13d82177-0aa9-4d2b-8ef8-702f1bfa9369",
     "target" : "9f742318-dd8d-4b88-b34a-2a8a909e5357"
+  }, {
+    "source" : "663c26f7-0911-48af-8290-be3441183747",
+    "target" : "f5fee305-dac4-4832-a095-b80e4c14aebb"
   } ],
   "vertexHashMap" : {
     "d0d91383-4196-4f56-98fb-2b818cb3207a" : {
@@ -58,6 +61,52 @@
           "type" : "JSON"
         }
       }
+    },
+    "663c26f7-0911-48af-8290-be3441183747" : {
+      "vertexId" : "663c26f7-0911-48af-8290-be3441183747",
+      "vertexType" : "TARGET",
+      "name" : "Policy Graphql",
+      "target" : {
+        "targetSlug" : [ "getAllHealthInsurance" ],
+        "name" : "Policy Graphql",
+        "description" : "Policy Graphql",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9898",
+          "path" : "/graphql",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "policyData",
+            "reference" : "body",
+            "value" : "data",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -103,7 +152,7 @@
             }
           }
         },
-        "flowVertexes" : [ "f5fee305-dac4-4832-a095-b80e4c14aebb" ]
+        "flowVertexes" : [ "663c26f7-0911-48af-8290-be3441183747" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -192,6 +241,11 @@
     "timeStamp" : 1722602344000,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "a4c61b7f54a9cfc966dfb85133d6dea5ce95135c",
+    "timeStamp" : 1722602371603,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 5
   } ],
   "enableTracing" : false,
   "environmentName" : "",
