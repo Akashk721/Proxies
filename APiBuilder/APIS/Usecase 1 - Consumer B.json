@@ -3,7 +3,7 @@
   "cts" : 1721989249272,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722603148323,
+  "mts" : 1722603158276,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a37881b7f74312d853e334",
@@ -303,7 +303,21 @@
       "conditionalFlow" : [ {
         "condition" : "if",
         "assertion" : {
-          "continueOnError" : false
+          "expression" : " ({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "apiAccess",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
         },
         "flowVertexes" : [ "f57e093e-ee7d-4959-b49c-1a3e19c96210" ]
       }, {
@@ -452,6 +466,11 @@
     "timeStamp" : 1722603011302,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 7
+  }, {
+    "commitId" : "ddc3951f8262c67e5041c09370172db71c0ea604",
+    "timeStamp" : 1722603148323,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 9
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
