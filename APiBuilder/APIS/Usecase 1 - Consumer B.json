@@ -3,7 +3,7 @@
   "cts" : 1721989249272,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722603011302,
+  "mts" : 1722603148323,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a37881b7f74312d853e334",
@@ -24,8 +24,14 @@
     "source" : "0d01ddb7-e620-40cf-92f3-3817cbc38ccb",
     "target" : "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6"
   }, {
+    "source" : "7c1b31dc-f52b-48c9-afc3-3ade23b37226",
+    "target" : "58d16150-9bbb-4d37-80e9-df0801f49326"
+  }, {
     "source" : "v1",
     "target" : "9033a3aa-305b-48a8-9dc0-c5fca399a56f"
+  }, {
+    "source" : "7c1b31dc-f52b-48c9-afc3-3ade23b37226",
+    "target" : "f57e093e-ee7d-4959-b49c-1a3e19c96210"
   }, {
     "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
     "target" : "0d01ddb7-e620-40cf-92f3-3817cbc38ccb"
@@ -34,7 +40,7 @@
     "target" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab"
   }, {
     "source" : "9033a3aa-305b-48a8-9dc0-c5fca399a56f",
-    "target" : "f57e093e-ee7d-4959-b49c-1a3e19c96210"
+    "target" : "7c1b31dc-f52b-48c9-afc3-3ade23b37226"
   } ],
   "vertexHashMap" : {
     "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6" : {
@@ -114,6 +120,22 @@
         },
         "body" : {
           "data" : "{\n    \"errorCode\":\"GraphQL-401\",\n    \"message\":\"Unauthorized\",\n    \"description\":\"User attempted to access data fields for which they lack proper permissions\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "58d16150-9bbb-4d37-80e9-df0801f49326" : {
+      "vertexId" : "58d16150-9bbb-4d37-80e9-df0801f49326",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 401,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"errorCode\":\"AUTH-401\",\n    \"message\":\"Unauthorized User\",\n    \"description\":\"User attempted to access API for which they lack proper permissions.\"\n}",
           "type" : "json"
         }
       }
@@ -273,6 +295,25 @@
         "hide" : false
       } ],
       "imported" : true
+    },
+    "7c1b31dc-f52b-48c9-afc3-3ade23b37226" : {
+      "vertexId" : "7c1b31dc-f52b-48c9-afc3-3ade23b37226",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "f57e093e-ee7d-4959-b49c-1a3e19c96210" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "58d16150-9bbb-4d37-80e9-df0801f49326" ]
+      } ],
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -406,6 +447,11 @@
     "timeStamp" : 1722602910729,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
+  }, {
+    "commitId" : "cea3b13021793089d321c2608ea91400062e8a66",
+    "timeStamp" : 1722603011302,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 7
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
