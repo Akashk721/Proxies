@@ -1,0 +1,72 @@
+{
+  "id" : "66a4b6b024328558c0e93f2c",
+  "cts" : 1722070703120,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1722593999949,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66a4b6af24328558c0e93f2b",
+  "revision" : 1,
+  "name" : "errorREponse",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/unatutho",
+  "pathArray" : [ "unatutho" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "1b6f4039-7db2-43b5-ad53-2517e203637d"
+  } ],
+  "vertexHashMap" : {
+    "1b6f4039-7db2-43b5-ad53-2517e203637d" : {
+      "vertexId" : "1b6f4039-7db2-43b5-ad53-2517e203637d",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 401,
+        "body" : {
+          "data" : "{\n    \"unadsf\": \"sdfsdf\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1722070703120,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "7dbda6d515d3201a935fb1474fc63f928ff3b8d3",
+    "timeStamp" : 1722070703120,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "ac368cdf674a21ded15d00c493e3a91d3f9335dc",
+    "timeStamp" : 1722593483975,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "73bfb59b9a93e779a69d8414e7e38c5ce3703df3",
+    "timeStamp" : 1722593988615,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "Testing Environment",
+  "environmentId" : "6649be954224264ab5415b0b",
+  "deleted" : false,
+  "deployed" : false
+}
