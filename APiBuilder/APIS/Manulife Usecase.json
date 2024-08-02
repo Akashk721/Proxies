@@ -3,7 +3,7 @@
   "cts" : 1722576718326,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722594337347,
+  "mts" : 1722594474347,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66ac6f4e4503f8596e1e1b48",
@@ -32,6 +32,9 @@
   }, {
     "source" : "31005148-2f2f-41d6-b7e9-ae4ff24757b9",
     "target" : "865b0fe0-d965-40f3-b5ed-adb24253363b"
+  }, {
+    "source" : "4cba66b1-93cf-413e-8c52-4445312df85c",
+    "target" : "f3d10a81-a68f-4166-9c11-8e3eb0533ec4"
   }, {
     "source" : "865b0fe0-d965-40f3-b5ed-adb24253363b",
     "target" : "619b62c9-2e0a-413f-9d6c-99967212b693"
@@ -133,9 +136,13 @@
       "name" : "Stop",
       "imported" : false,
       "proxyResponse" : {
-        "statusCode" : 0,
+        "statusCode" : 201,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"data\":{\n        \"policyData\": {{{policyData}}},\n        \"customerData\": {{{customerData}}}\n    }\n}",
+          "type" : "json"
         }
       }
     },
@@ -444,6 +451,11 @@
     "timeStamp" : 1722594243345,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 9
+  }, {
+    "commitId" : "81f59eb914fa7dd27382ce293d6c36a4b9711962",
+    "timeStamp" : 1722594337347,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
   } ],
   "enableTracing" : false,
   "environmentName" : "",
