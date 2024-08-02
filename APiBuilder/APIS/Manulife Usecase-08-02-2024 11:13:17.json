@@ -3,7 +3,7 @@
   "cts" : 1722597197048,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722597466760,
+  "mts" : 1722597611704,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66acbf4df8fe7a555bd11d62",
@@ -148,7 +148,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"data\":{\n        \"policyData\": {{{policyData}}},\n        \"customerData\": {{{customerData}}}\n    }\n}",
+          "data" : "{\n    \"data\":{\n        {{{policyData}}},\n        {{{customerData}}}\n    }\n}",
           "type" : "json"
         }
       }
@@ -481,6 +481,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1722597577731,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "r"
+  }, {
+    "status" : "Approved",
+    "cts" : 1722597474749,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "approved"
+  }, {
+    "status" : "Review",
     "cts" : 1722597437418,
     "lastModifiedBy" : "6454a1d660f0577244784ac0",
     "description" : "r"
@@ -513,6 +523,11 @@
   }, {
     "commitId" : "878a94dfcf7a7f1989258da1f9bc070fb0300f02",
     "timeStamp" : 1722597352953,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 12
+  }, {
+    "commitId" : "a2856b8f73a86c0368e9e1259a7e9879a461a639",
+    "timeStamp" : 1722597466760,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 12
   } ],
