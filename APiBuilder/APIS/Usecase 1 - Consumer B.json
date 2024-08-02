@@ -3,7 +3,7 @@
   "cts" : 1721989249272,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722602910729,
+  "mts" : 1722603011302,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66a37881b7f74312d853e334",
@@ -25,13 +25,16 @@
     "target" : "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6"
   }, {
     "source" : "v1",
-    "target" : "f57e093e-ee7d-4959-b49c-1a3e19c96210"
+    "target" : "9033a3aa-305b-48a8-9dc0-c5fca399a56f"
   }, {
     "source" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab",
     "target" : "0d01ddb7-e620-40cf-92f3-3817cbc38ccb"
   }, {
     "source" : "f57e093e-ee7d-4959-b49c-1a3e19c96210",
     "target" : "4476d706-a6e3-4fa7-8bdf-ec79bd1ecdab"
+  }, {
+    "source" : "9033a3aa-305b-48a8-9dc0-c5fca399a56f",
+    "target" : "f57e093e-ee7d-4959-b49c-1a3e19c96210"
   } ],
   "vertexHashMap" : {
     "f0c710bd-9f9c-4c1a-86d5-0f8a05c404c6" : {
@@ -146,6 +149,57 @@
         },
         "flowVertexes" : [ "b130320a-a63d-4986-af15-b5daf57cca27" ]
       } ],
+      "imported" : false
+    },
+    "9033a3aa-305b-48a8-9dc0-c5fca399a56f" : {
+      "vertexId" : "9033a3aa-305b-48a8-9dc0-c5fca399a56f",
+      "vertexType" : "TARGET",
+      "name" : "API Access check",
+      "target" : {
+        "name" : "API Access check",
+        "description" : "API Access check",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "104.198.151.110:9999",
+          "path" : "/api-auth",
+          "headerParams" : [ {
+            "name" : "userid",
+            "value" : "{{userId}}"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{requestBody}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "apiAccess",
+            "reference" : "body",
+            "value" : "allowed",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
       "imported" : false
     },
     "f57e093e-ee7d-4959-b49c-1a3e19c96210" : {
@@ -345,6 +399,11 @@
   }, {
     "commitId" : "aaa94fe5c9e657b412fca44623a8087c8fb57846",
     "timeStamp" : 1722602205379,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
+  }, {
+    "commitId" : "5d66d7c4ae7b92da95601fec76c36ff9cc389b70",
+    "timeStamp" : 1722602910729,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
   } ],
