@@ -3,7 +3,7 @@
   "cts" : 1722602045526,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722602464873,
+  "mts" : 1722602645919,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66acd23df8fe7a555bd1281e",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/policy-data",
   "pathArray" : [ "policy-data" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -80,7 +80,10 @@
           "scheme" : "http",
           "host" : "104.198.151.110:9898",
           "path" : "/graphql",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
           "queryParams" : [ ],
           "body" : {
             "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
@@ -220,6 +223,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1722602628205,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "f"
+  }, {
+    "status" : "Approved",
+    "cts" : 1722602472233,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "approved"
+  }, {
     "status" : "Draft",
     "cts" : 1722602045526,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -255,7 +268,13 @@
     "timeStamp" : 1722602429010,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 6
+  }, {
+    "commitId" : "c268c4f4c33e6b89a9581eb12ff9197dd2efbd5c",
+    "timeStamp" : 1722602464873,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 6
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
