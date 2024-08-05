@@ -1,8 +1,9 @@
 {
+  "id" : "66acd82ff8fe7a555bd12c90",
   "cts" : 1722603565783,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1722603565783,
+  "mts" : 1722854469013,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66acd82df8fe7a555bd12c8f",
@@ -11,7 +12,7 @@
   "description" : "Manulife Usecase",
   "apiType" : "GRAPHQL",
   "apiMethod" : "POST",
-  "path" : "/fetch-insurance-data",
+  "path" : "fetch-insurance-data",
   "pathArray" : [ "fetch-insurance-data" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
@@ -403,6 +404,12 @@
     "cts" : 1722603565783,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "966d5290ef04d1d6665d737c2ede6cd6d96d4e24",
+    "timeStamp" : 1722603565783,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 10
   } ],
   "enableTracing" : false,
   "environmentName" : "",
