@@ -1,0 +1,160 @@
+{
+  "id" : "66b4aebf4e23a04f02829f2a",
+  "cts" : 1723117247967,
+  "mts" : 1723117247967,
+  "createdBy" : "divakar v",
+  "modifiedBy" : "divakar v",
+  "kongAdminHost" : "http://3.110.150.170:9001/",
+  "runtime" : "madhusudhan-test",
+  "workspace" : "default",
+  "swaggerId" : "66b472a2cf7abb0eec0d6b94",
+  "serviceName" : "area",
+  "revision" : 1,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Area",
+  "serviceId" : "b470bc68-a967-4e05-884a-2eca3cd92495",
+  "service" : {
+    "serviceName" : "area",
+    "protocol" : "https",
+    "host" : "mock.apiwiz.io",
+    "hosts" : [ "mock.apiwiz.io" ],
+    "basePath" : "/api/v1/Area",
+    "basePaths" : [ "/api/v1/Area" ],
+    "port" : 80,
+    "ports" : [ -1 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    }
+  },
+  "routes" : [ {
+    "routeId" : "7f152127-41fe-466e-a0a6-0dd117195c44",
+    "routeName" : "states-get",
+    "service" : {
+      "id" : "b470bc68-a967-4e05-884a-2eca3cd92495"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET", "OPTIONS" ],
+    "paths" : [ "/states" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "name" : "madhusudhan-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "http://3.110.150.170:9001/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false
+    }
+  }, {
+    "routeId" : "7ea21b6d-af80-4039-a859-b2aa5884eef6",
+    "routeName" : "code-get",
+    "service" : {
+      "id" : "b470bc68-a967-4e05-884a-2eca3cd92495"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET", "OPTIONS" ],
+    "paths" : [ "/{code}" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "name" : "madhusudhan-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "http://3.110.150.170:9001/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false
+    }
+  }, {
+    "routeId" : "e021e72c-0963-4744-9ab6-8ec6020e05e5",
+    "routeName" : "code-put",
+    "service" : {
+      "id" : "b470bc68-a967-4e05-884a-2eca3cd92495"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "PUT", "OPTIONS" ],
+    "paths" : [ "/{code}" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "name" : "madhusudhan-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "http://3.110.150.170:9001/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false
+    }
+  }, {
+    "routeId" : "945a3a18-7843-493b-bf79-5bd2042ea356",
+    "routeName" : "search-get",
+    "service" : {
+      "id" : "b470bc68-a967-4e05-884a-2eca3cd92495"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET", "OPTIONS" ],
+    "paths" : [ "/search" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "name" : "madhusudhan-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "http://3.110.150.170:9001/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false
+    }
+  } ],
+  "plugins" : [ {
+    "pluginName" : "apiwiz-compliance-kong",
+    "enabled" : true,
+    "workspaceName" : "",
+    "serviceName" : "area",
+    "configs" : {
+      "key" : "XeX0u28Ya1a3CBm5tihMQFteeA6fZTy8avUIsJ0WnNOaEAM90Hcv9G2xo5z5hI4WMyHffxTAbP2LcXK4u6n5Pw==",
+      "target" : "https://dev-api/cpmpliance/api",
+      "workspaceId" : "stage-data"
+    }
+  }, {
+    "pluginName" : "acl",
+    "enabled" : true,
+    "workspaceName" : "",
+    "routeName" : "states-get",
+    "configs" : { }
+  }, {
+    "pluginName" : "oauth2",
+    "enabled" : true,
+    "workspaceName" : "",
+    "routeName" : "states-get",
+    "configs" : { }
+  } ]
+}
