@@ -3,7 +3,7 @@
   "cts" : 1723116165708,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1723116283536,
+  "mts" : 1723116559240,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66b4aa85c45ce854c8f211ec",
@@ -19,6 +19,9 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "dd73458f-3ea3-46a7-8673-33bc5f9d1664"
+  }, {
+    "source" : "dd73458f-3ea3-46a7-8673-33bc5f9d1664",
     "target" : "d158f940-9675-49d9-a903-eda17979f7a8"
   } ],
   "vertexHashMap" : {
@@ -33,6 +36,52 @@
           "type" : "JSON"
         }
       }
+    },
+    "dd73458f-3ea3-46a7-8673-33bc5f9d1664" : {
+      "vertexId" : "dd73458f-3ea3-46a7-8673-33bc5f9d1664",
+      "vertexType" : "TARGET",
+      "name" : "Countries graphql",
+      "target" : {
+        "targetSlug" : [ "countries" ],
+        "name" : "Countries graphql",
+        "description" : "Countries graphql",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "countries.trevorblades.com",
+          "path" : "/graphql",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "requestResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -65,6 +114,11 @@
   "changeLogs" : [ {
     "commitId" : "38ec1071cc650b90234a6c3337dbe8c934657a68",
     "timeStamp" : 1723116165708,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "9a0de660e08c2adc2e933b9cdebe3fed1e52dd9b",
+    "timeStamp" : 1723116283536,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
