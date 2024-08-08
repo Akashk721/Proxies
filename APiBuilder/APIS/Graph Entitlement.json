@@ -1,0 +1,76 @@
+{
+  "id" : "66b4aa8bc45ce854c8f211ed",
+  "cts" : 1723116165708,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1723116283536,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66b4aa85c45ce854c8f211ec",
+  "revision" : 1,
+  "name" : "Graph Entitlement",
+  "description" : "Graph Entitlement",
+  "apiType" : "GRAPHQL",
+  "apiMethod" : "POST",
+  "path" : "/entitlement",
+  "pathArray" : [ "entitlement" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "d158f940-9675-49d9-a903-eda17979f7a8"
+  } ],
+  "vertexHashMap" : {
+    "d158f940-9675-49d9-a903-eda17979f7a8" : {
+      "vertexId" : "d158f940-9675-49d9-a903-eda17979f7a8",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "userId",
+        "reference" : "headers",
+        "value" : "userid",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false
+      }, {
+        "name" : "requestBody",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1723116165708,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "38ec1071cc650b90234a6c3337dbe8c934657a68",
+    "timeStamp" : 1723116165708,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
