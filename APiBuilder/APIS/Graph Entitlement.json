@@ -3,7 +3,7 @@
   "cts" : 1723116165708,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1723116559240,
+  "mts" : 1723185930799,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66b4aa85c45ce854c8f211ec",
@@ -51,7 +51,10 @@
           "scheme" : "https",
           "host" : "countries.trevorblades.com",
           "path" : "/graphql",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
           "queryParams" : [ ],
           "body" : {
             "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
@@ -107,6 +110,26 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1723185894363,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1723118214671,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "approved"
+  }, {
+    "status" : "Draft",
+    "cts" : 1723117815406,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "v"
+  }, {
+    "status" : "Approved",
+    "cts" : 1723116581935,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "approved"
+  }, {
+    "status" : "Draft",
     "cts" : 1723116165708,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
@@ -121,7 +144,13 @@
     "timeStamp" : 1723116283536,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "196572f70e0ac9e56723044752cd15caa7cad6b0",
+    "timeStamp" : 1723116559240,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
