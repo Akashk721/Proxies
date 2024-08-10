@@ -1,8 +1,9 @@
 {
+  "id" : "669e1077f2496f2465094ea9",
   "cts" : 1721634934418,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1721634934418,
+  "mts" : 1723259848134,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "669e1076f2496f2465094ea2",
@@ -16,8 +17,14 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "4e5d09da-8fd1-46e2-9a61-d16da3f06723",
     "target" : "e2e14956-f8ed-4c51-8a7d-9cd0e4f56753"
+  }, {
+    "source" : "v1",
+    "target" : "6efee332-db2e-4c50-b2e1-2a3cab9dd14f"
+  }, {
+    "source" : "6efee332-db2e-4c50-b2e1-2a3cab9dd14f",
+    "target" : "4e5d09da-8fd1-46e2-9a61-d16da3f06723"
   } ],
   "vertexHashMap" : {
     "v1" : {
@@ -38,6 +45,67 @@
           "type" : "JSON"
         }
       }
+    },
+    "6efee332-db2e-4c50-b2e1-2a3cab9dd14f" : {
+      "vertexId" : "6efee332-db2e-4c50-b2e1-2a3cab9dd14f",
+      "vertexType" : "TARGET",
+      "name" : "adsf",
+      "target" : {
+        "name" : "adsf",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "asdf",
+          "path" : "/asdf",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 0,
+          "variables" : [ {
+            "name" : "qssdf",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "4e5d09da-8fd1-46e2-9a61-d16da3f06723" : {
+      "vertexId" : "4e5d09da-8fd1-46e2-9a61-d16da3f06723",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "",
+        "placeHolders" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -45,6 +113,12 @@
     "cts" : 1721634934418,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "cd046804bdfc9908c62702c6bfbdc93a81ee8ba7",
+    "timeStamp" : 1721634934418,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
