@@ -3,7 +3,7 @@
   "cts" : 1723910830385,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1723913131443,
+  "mts" : 1723913147655,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66c0caae2fba972582ca131a",
@@ -41,11 +41,16 @@
       "vertexType" : "ASSERTION",
       "name" : "Assertion",
       "assertion" : {
-        "expression" : "",
-        "placeHolders" : [ ],
+        "expression" : " ({0})",
+        "placeHolders" : [ {
+          "rule" : "EQUAL_TO",
+          "key" : "requestBody",
+          "value" : "$",
+          "valueDataType" : "STRING"
+        } ],
         "continueOnError" : false,
         "errorResponse" : {
-          "statusCode" : 0,
+          "statusCode" : 500,
           "body" : {
             "data" : "",
             "type" : "json"
@@ -85,6 +90,11 @@
     "timeStamp" : 1723910830385,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "dce96092e717381e3239916a1171ca1082555401",
+    "timeStamp" : 1723913131443,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
