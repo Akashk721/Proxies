@@ -1,8 +1,9 @@
 {
+  "id" : "66c0cab42fba972582ca131d",
   "cts" : 1723910830385,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1723910830385,
+  "mts" : 1723913131443,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66c0caae2fba972582ca131a",
@@ -16,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "9aa3374a-5f89-4d29-a9bd-1d09c8b28c95",
     "target" : "e8965d1c-c3b9-4d26-9512-31292b59e88b"
+  }, {
+    "source" : "v1",
+    "target" : "9aa3374a-5f89-4d29-a9bd-1d09c8b28c95"
   } ],
   "vertexHashMap" : {
     "e8965d1c-c3b9-4d26-9512-31292b59e88b" : {
@@ -32,19 +36,55 @@
         }
       }
     },
+    "9aa3374a-5f89-4d29-a9bd-1d09c8b28c95" : {
+      "vertexId" : "9aa3374a-5f89-4d29-a9bd-1d09c8b28c95",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "",
+        "placeHolders" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 0,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
-      "imported" : false
+      "requestVariables" : [ {
+        "name" : "requestBody",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1723912255366,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Draft",
     "cts" : 1723910830385,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "ada229e8c8268476f274b6ace490d1e8276741c8",
+    "timeStamp" : 1723910830385,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
