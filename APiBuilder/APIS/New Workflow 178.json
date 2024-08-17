@@ -3,7 +3,7 @@
   "cts" : 1723811143282,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1723862705986,
+  "mts" : 1723866906171,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66bf45470a338b2d1e39d499",
@@ -48,9 +48,9 @@
         "serverUrl" : "",
         "packagePath" : "",
         "token" : "",
-        "inputData" : "",
+        "inputData" : "{'consumerId': 'updatedvalues', {{{requestBody}}}}",
         "continueOnError" : false,
-        "graphqlAuthorization" : false,
+        "graphqlAuthorization" : true,
         "errorResponse" : {
           "statusCode" : 0,
           "body" : {
@@ -72,6 +72,12 @@
         "active" : true,
         "source" : "raw",
         "hide" : false
+      }, {
+        "name" : "requestQuery",
+        "reference" : "raw",
+        "value" : "$",
+        "active" : true,
+        "hide" : true
       } ],
       "imported" : true
     }
@@ -92,6 +98,11 @@
     "timeStamp" : 1723861077214,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "88970328a8314e3720f2d453d81f547df92d54fe",
+    "timeStamp" : 1723862705986,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
