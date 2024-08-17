@@ -3,7 +3,7 @@
   "cts" : 1723811143282,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1723868146297,
+  "mts" : 1723868168790,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66bf45470a338b2d1e39d499",
@@ -49,15 +49,15 @@
         "packagePath" : "",
         "token" : "",
         "inputData" : "{\n    \"sdf\": \"sdf\"\n}",
-        "continueOnError" : false,
+        "continueOnError" : true,
         "graphqlAuthorization" : false,
         "errorResponse" : {
-          "statusCode" : 0,
+          "statusCode" : 400,
           "headers" : {
             "sdf" : "sdf"
           },
           "body" : {
-            "data" : "{\n    \"lkjdf\": \"sdf\"\n}",
+            "data" : "{\n    \"failed\": \"failed\"\n}",
             "type" : "json"
           }
         }
@@ -123,6 +123,11 @@
   }, {
     "commitId" : "943679f8b2556a0e5df7b6d502a8fbf87bc409d3",
     "timeStamp" : 1723868063375,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "03f74b29cd2745eb8ab90552bce54b4139ba47ed",
+    "timeStamp" : 1723868146297,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
