@@ -1,0 +1,200 @@
+{
+  "id" : "66bf454d0a338b2d1e39d49a",
+  "cts" : 1723811143282,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1723914011563,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "66bf45470a338b2d1e39d499",
+  "revision" : 1,
+  "name" : "EntitlementDevTest - 1",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/entitlementDevTest",
+  "pathArray" : [ "entitlementDevTest" ],
+  "revisionStatus" : "REVIEW",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "78fe34af-91b2-4291-8287-7be94325b714"
+  }, {
+    "source" : "78fe34af-91b2-4291-8287-7be94325b714",
+    "target" : "6cb51505-044d-4fb4-9fb7-afe85e452175"
+  } ],
+  "vertexHashMap" : {
+    "6cb51505-044d-4fb4-9fb7-afe85e452175" : {
+      "vertexId" : "6cb51505-044d-4fb4-9fb7-afe85e452175",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"allOk\": true\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "78fe34af-91b2-4291-8287-7be94325b714" : {
+      "vertexId" : "78fe34af-91b2-4291-8287-7be94325b714",
+      "vertexType" : "ENTITLEMENT",
+      "name" : "dsf",
+      "entitlementData" : {
+        "connectorId" : "66b9bc931caefc3090ac168f",
+        "connectorName" : "wrapper-opa",
+        "policyId" : "66b9bd541caefc3090ac16ce",
+        "policyName" : "graph auth",
+        "serverUrl" : "https://opa-connector.apiwiz.io",
+        "packagePath" : "/apiwiz/builder_agent",
+        "inputData" : "{\n    \"sdf\": \"sdf\"\n}",
+        "continueOnError" : true,
+        "graphqlAuthorization" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "headers" : {
+            "sdf" : "sdf"
+          },
+          "body" : {
+            "data" : "{\n    \"failed\": \"failed\"\n}",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "requestQuery",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1723913006123,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1723912949682,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Review",
+    "cts" : 1723912922468,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1723912911779,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Review",
+    "cts" : 1723912622547,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1723912606305,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "sdf"
+  }, {
+    "status" : "Review",
+    "cts" : 1723912488762,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1723912453318,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Review",
+    "cts" : 1723912426041,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Approved",
+    "cts" : 1723868187880,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "test"
+  }, {
+    "status" : "Draft",
+    "cts" : 1723811143282,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "2400f2e0fd6b27a1d8f40b942a8c3e3fe0865fb5",
+    "timeStamp" : 1723811143282,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "11daa003505b4f91ac0d75a8bb2d60e74c50a28e",
+    "timeStamp" : 1723861077214,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "88970328a8314e3720f2d453d81f547df92d54fe",
+    "timeStamp" : 1723862705986,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "205eab3e58f732a033a6379ecd41d6643efd4d6e",
+    "timeStamp" : 1723866906171,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "14b86e3552586d47babf37181130d38cfe392f5a",
+    "timeStamp" : 1723867321580,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "c8c7eae50b263f57416020fdb1b9ffeceb33af27",
+    "timeStamp" : 1723867382720,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "6f84e42f62b6c6e5c1a3ffa16ec11fe57e136714",
+    "timeStamp" : 1723867400437,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "943679f8b2556a0e5df7b6d502a8fbf87bc409d3",
+    "timeStamp" : 1723868063375,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "03f74b29cd2745eb8ab90552bce54b4139ba47ed",
+    "timeStamp" : 1723868146297,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "06318c02d275eac67ca693b03cc711dbd90ab8b2",
+    "timeStamp" : 1723868168790,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "3db3cfb7b50ec891d568a1c4eb16c9b6e52ddb38",
+    "timeStamp" : 1723868181244,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
