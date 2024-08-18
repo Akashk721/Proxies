@@ -3,12 +3,13 @@
   "cts" : 1723811143282,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1723914011563,
+  "mts" : 1723952535711,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66bf45470a338b2d1e39d499",
   "revision" : 1,
   "name" : "EntitlementDevTest - 1",
+  "description" : "test description",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
   "path" : "/entitlementDevTest",
@@ -188,6 +189,11 @@
   }, {
     "commitId" : "3db3cfb7b50ec891d568a1c4eb16c9b6e52ddb38",
     "timeStamp" : 1723868181244,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "6feb99d668d9476f7a7b8c3d17636e53d9e32007",
+    "timeStamp" : 1723914011563,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
