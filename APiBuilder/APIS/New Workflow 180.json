@@ -1,8 +1,9 @@
 {
+  "id" : "66c2e06e12c8be122c87c27b",
   "cts" : 1724047465101,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1724047465101,
+  "mts" : 1724047693697,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66c2e06912c8be122c87c27a",
@@ -17,9 +18,49 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c"
+  }, {
+    "source" : "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c",
     "target" : "f9bb2eec-e7f7-4c20-aeda-677f9e4844a4"
   } ],
   "vertexHashMap" : {
+    "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c" : {
+      "vertexId" : "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c",
+      "vertexType" : "TARGET",
+      "name" : "hqwiusdk",
+      "target" : {
+        "name" : "hqwiusdk",
+        "description" : "qwkjehdkwqde",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "abcd.com",
+          "path" : "/v1/vasdas",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -45,6 +86,12 @@
     "cts" : 1724047465101,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "b87483784466212e303fedff732d36a049fb1555",
+    "timeStamp" : 1724047465101,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
