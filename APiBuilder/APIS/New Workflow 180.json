@@ -3,7 +3,7 @@
   "cts" : 1724047465101,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1724047693697,
+  "mts" : 1724064253201,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66c2e06912c8be122c87c27a",
@@ -17,13 +17,31 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c",
+    "target" : "2bf66fe9-eef3-4cc7-90cb-8ebbaae116d9"
+  }, {
     "source" : "v1",
     "target" : "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c"
   }, {
-    "source" : "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c",
+    "source" : "2bf66fe9-eef3-4cc7-90cb-8ebbaae116d9",
     "target" : "f9bb2eec-e7f7-4c20-aeda-677f9e4844a4"
   } ],
   "vertexHashMap" : {
+    "2bf66fe9-eef3-4cc7-90cb-8ebbaae116d9" : {
+      "vertexId" : "2bf66fe9-eef3-4cc7-90cb-8ebbaae116d9",
+      "vertexType" : "DATABASE",
+      "name" : "sdfgd",
+      "databaseData" : {
+        "connectorId" : "669e58c1f2496f24650978a4",
+        "databaseType" : "AZURESQL",
+        "query" : "UPDATE dbo.InsuranceData\nSET city = 'Bangalore'\nWHERE Id = 3",
+        "variableName" : "zdf",
+        "connectorName" : "azure-builder-test-2",
+        "schemaName" : "dbo",
+        "tableName" : "InsuranceData"
+      },
+      "imported" : false
+    },
     "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c" : {
       "vertexId" : "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c",
       "vertexType" : "TARGET",
@@ -92,6 +110,11 @@
     "timeStamp" : 1724047465101,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "e346de3afa53fb9322aa5eb0e274daa47b68faff",
+    "timeStamp" : 1724047693697,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
