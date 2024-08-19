@@ -3,7 +3,7 @@
   "cts" : 1724047465101,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1724064253201,
+  "mts" : 1724069281121,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66c2e06912c8be122c87c27a",
@@ -34,7 +34,7 @@
       "databaseData" : {
         "connectorId" : "669e58c1f2496f24650978a4",
         "databaseType" : "AZURESQL",
-        "query" : "UPDATE dbo.InsuranceData\nSET city = 'Bangalore'\nWHERE Id = 3",
+        "query" : "select * from dbo.InsuranceData",
         "variableName" : "zdf",
         "connectorName" : "azure-builder-test-2",
         "schemaName" : "dbo",
@@ -115,6 +115,11 @@
     "timeStamp" : 1724047693697,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "f3b3b4d2552c22e421ce0b00c39f2bcee60e9787",
+    "timeStamp" : 1724064253201,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
