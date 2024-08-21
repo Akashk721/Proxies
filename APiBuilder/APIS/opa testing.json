@@ -3,7 +3,7 @@
   "cts" : 1724242209381,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1724242565130,
+  "mts" : 1724244064258,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66c5d92136f7034b09753273",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/opa-test",
   "pathArray" : [ "opa-test" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
@@ -68,9 +68,9 @@
         "connectorName" : "testOPa",
         "policyId" : "66c5d71836f7034b09752a03",
         "policyName" : "Field Level Authorization",
-        "serverUrl" : "",
-        "packagePath" : "",
-        "token" : "",
+        "serverUrl" : "https://opa-connector.apiwiz.io/",
+        "packagePath" : "/apiwiz/builder_agent",
+        "token" : "1234",
         "inputData" : "{'consumerId': '{{consumerId}}', {{{requestBody}}}}",
         "continueOnError" : false,
         "graphqlAuthorization" : true,
@@ -86,6 +86,21 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1724244056091,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "r"
+  }, {
+    "status" : "Review",
+    "cts" : 1724244048998,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1724242580674,
+    "lastModifiedBy" : "6454a1d660f0577244784ac0",
+    "description" : "approved"
+  }, {
     "status" : "Draft",
     "cts" : 1724242209381,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -126,7 +141,13 @@
     "timeStamp" : 1724242454528,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "f4bf10a96642c8a8ad69617d99095409ad0baa30",
+    "timeStamp" : 1724242565130,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
