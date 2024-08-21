@@ -3,7 +3,7 @@
   "cts" : 1724242209381,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1724242304597,
+  "mts" : 1724242360734,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66c5d92136f7034b09753273",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "e476154a-0e2b-427a-b35f-758613d44fa9",
     "target" : "25283948-186e-4d22-9e92-e757ca913bcb"
+  }, {
+    "source" : "v1",
+    "target" : "e476154a-0e2b-427a-b35f-758613d44fa9"
   } ],
   "vertexHashMap" : {
     "25283948-186e-4d22-9e92-e757ca913bcb" : {
@@ -38,8 +41,40 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "requestBody",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : true
+      } ],
       "imported" : true
+    },
+    "e476154a-0e2b-427a-b35f-758613d44fa9" : {
+      "vertexId" : "e476154a-0e2b-427a-b35f-758613d44fa9",
+      "vertexType" : "ENTITLEMENT",
+      "name" : "test graphql opa",
+      "entitlementData" : {
+        "connectorId" : "66c212c747bf67096a026857",
+        "connectorName" : "testOPa",
+        "policyId" : "66c5d71836f7034b09752a03",
+        "policyName" : "Field Level Authorization",
+        "serverUrl" : "",
+        "packagePath" : "",
+        "token" : "",
+        "inputData" : "{'consumerId': '{{consumerId}}', {{{requestBody}}}}",
+        "continueOnError" : false,
+        "graphqlAuthorization" : true,
+        "errorResponse" : {
+          "statusCode" : 401,
+          "body" : {
+            "data" : "failed",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -51,6 +86,11 @@
   "changeLogs" : [ {
     "commitId" : "bddd035d06de5cfb2245e180d2758156f6e89f4b",
     "timeStamp" : 1724242209381,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "3abdff8206c7ed0cd6ecd9af8f0f80415264d83d",
+    "timeStamp" : 1724242304597,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
