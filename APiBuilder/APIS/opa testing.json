@@ -3,7 +3,7 @@
   "cts" : 1724242209381,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1724244434046,
+  "mts" : 1724245127803,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66c5d92136f7034b09753273",
@@ -71,7 +71,7 @@
         "serverUrl" : "https://opa-connector.apiwiz.io/",
         "packagePath" : "/apiwiz/builder_agent",
         "token" : "1234",
-        "inputData" : "{\"consumerId\": \"2342432\", {{{requestBody}}}}",
+        "inputData" : "{\"consumerId\": \"{{consumerId}}\", \"query\": {{{requestBody}}}}",
         "continueOnError" : false,
         "graphqlAuthorization" : true,
         "errorResponse" : {
@@ -149,6 +149,11 @@
   }, {
     "commitId" : "7375300bea53e5528c6e8ebc9d3a1447b24fdd63",
     "timeStamp" : 1724244064258,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "bb32b7d087a2c88bb71188e108b6199bbfae193e",
+    "timeStamp" : 1724244434046,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
