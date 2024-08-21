@@ -3,7 +3,7 @@
   "cts" : 1724242209381,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1724242368633,
+  "mts" : 1724242404944,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66c5d92136f7034b09753273",
@@ -18,13 +18,32 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "a151cd77-3a08-4c84-949d-d00b9c71bbf3"
+  }, {
     "source" : "e476154a-0e2b-427a-b35f-758613d44fa9",
     "target" : "25283948-186e-4d22-9e92-e757ca913bcb"
   }, {
-    "source" : "v1",
+    "source" : "a151cd77-3a08-4c84-949d-d00b9c71bbf3",
     "target" : "e476154a-0e2b-427a-b35f-758613d44fa9"
   } ],
   "vertexHashMap" : {
+    "a151cd77-3a08-4c84-949d-d00b9c71bbf3" : {
+      "vertexId" : "a151cd77-3a08-4c84-949d-d00b9c71bbf3",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "requestBody",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "t",
+        "value" : "\"consumer_a\"",
+        "type" : "string",
+        "source" : "a151cd77-3a08-4c84-949d-d00b9c71bbf3"
+      } ],
+      "imported" : false
+    },
     "25283948-186e-4d22-9e92-e757ca913bcb" : {
       "vertexId" : "25283948-186e-4d22-9e92-e757ca913bcb",
       "vertexType" : "STOP",
@@ -97,6 +116,11 @@
   }, {
     "commitId" : "a2e6c87a5bc6863edcfb277f13d6b6ef7fe8433a",
     "timeStamp" : 1724242360734,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "f29c5ede880881a67373d18921087d7b9467588b",
+    "timeStamp" : 1724242368633,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 3
   } ],
