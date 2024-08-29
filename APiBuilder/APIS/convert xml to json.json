@@ -3,7 +3,7 @@
   "cts" : 1724916271242,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1724916299409,
+  "mts" : 1724916410262,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66d0222fea74086e0383f332",
@@ -19,9 +19,56 @@
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "d2776342-d27f-45b2-9ef0-df5dc59faaf2"
+  }, {
+    "source" : "d2776342-d27f-45b2-9ef0-df5dc59faaf2",
     "target" : "3e5ef0ac-59fe-4586-b1ee-895bc499cfa6"
   } ],
   "vertexHashMap" : {
+    "d2776342-d27f-45b2-9ef0-df5dc59faaf2" : {
+      "vertexId" : "d2776342-d27f-45b2-9ef0-df5dc59faaf2",
+      "vertexType" : "TARGET",
+      "name" : "earthquake xml",
+      "target" : {
+        "name" : "earthquake xml",
+        "description" : "earthquake xml",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "earthquake.usgs.gov",
+          "path" : "/fdsnws/event/1/query?format=xml&starttime=2024-01-01&endtime=2024-01-02&minmagnitude=5",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "/",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "3e5ef0ac-59fe-4586-b1ee-895bc499cfa6" : {
       "vertexId" : "3e5ef0ac-59fe-4586-b1ee-895bc499cfa6",
       "vertexType" : "STOP",
@@ -51,6 +98,11 @@
   "changeLogs" : [ {
     "commitId" : "fd4f138cd0edcd9bfe83190112e4bf3489dc22ef",
     "timeStamp" : 1724916271242,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "f330408377a57edc3a470548baa9bda84ef94385",
+    "timeStamp" : 1724916299409,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
