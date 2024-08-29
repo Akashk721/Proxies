@@ -3,7 +3,7 @@
   "cts" : 1724915700498,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1724915750068,
+  "mts" : 1724915839591,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "6454a1d660f0577244784ac0",
   "proxyId" : "66d01ff4ea74086e0383f216",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "vidya.wiz vidya.wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "cd087c00-cb7a-4f36-aff6-751bb79f3ebf",
     "target" : "e1448dbf-9803-41cd-abb7-cb46a5f2b048"
+  }, {
+    "source" : "v1",
+    "target" : "cd087c00-cb7a-4f36-aff6-751bb79f3ebf"
   } ],
   "vertexHashMap" : {
     "e1448dbf-9803-41cd-abb7-cb46a5f2b048" : {
@@ -33,6 +36,50 @@
           "type" : "JSON"
         }
       }
+    },
+    "cd087c00-cb7a-4f36-aff6-751bb79f3ebf" : {
+      "vertexId" : "cd087c00-cb7a-4f36-aff6-751bb79f3ebf",
+      "vertexType" : "TARGET",
+      "name" : "Petstore ",
+      "target" : {
+        "name" : "Petstore ",
+        "description" : "Petstore ",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "petstore.swagger.io",
+          "path" : "/v2/pet/findByStatus?status=available",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -51,6 +98,11 @@
   "changeLogs" : [ {
     "commitId" : "b996a70143438c34c2afb9bbaa6df43d9e0ac893",
     "timeStamp" : 1724915700498,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "230449cf6fbf4511b67672aee16ad8751818ea77",
+    "timeStamp" : 1724915750068,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 2
   } ],
