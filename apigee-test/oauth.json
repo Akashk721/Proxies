@@ -1,0 +1,109 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "deleteCard",
+      "x-ibm-name": "deletecard",
+      "version": "1.0.0"
+    },
+    "x-ibm-configuration": {
+      "cors": {
+        "enabled": true
+      },
+      "gateway": "datapower-api-gateway",
+      "type": "rest",
+      "phase": "realized",
+      "enforced": true,
+      "testable": true,
+      "assembly": {
+        "execute": [
+          {
+            "invoke": {
+              "title": "invoke",
+              "version": "2.0.0",
+              "verb": "keep",
+              "target-url": "$(target-url)",
+              "follow-redirects": false,
+              "timeout": 60,
+              "parameter-control": {
+                "type": "allowlist",
+                "values": []
+              },
+              "header-control": {
+                "type": "blocklist",
+                "values": []
+              },
+              "inject-proxy-headers": true,
+              "persistent-connection": true,
+              "username": "tibco",
+              "password": "tibco"
+            }
+          }
+        ],
+        "finally": []
+      },
+      "properties": {
+        "target-url": {
+          "value": "https://tibcopd.etisalat.corp.ae:9771/Middleware/SmilesWrapper/deleteCard",
+          "description": "The URL of the target service",
+          "encoded": false
+        }
+      },
+      "activity-log": {
+        "enabled": true,
+        "success-content": "activity",
+        "error-content": "payload"
+      }
+    },
+    "basePath": "/v0/deletecard",
+    "paths": {
+      "/": {
+        "post": {
+          "responses": {
+            "200": {
+              "description": "success",
+              "schema": {
+                "type": "string"
+              }
+            }
+          },
+          "consumes": [],
+          "produces": [],
+          "security": [
+            {
+              "clientID": [],
+              "Authorization": [
+                "apioauth"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "securityDefinitions": {
+      "clientID": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "clientId",
+        "x-key-type": "client_id"
+      },
+      "Authorization": {
+        "type": "oauth2",
+        "x-ibm-oauth-provider": "apioauth",
+        "flow": "application",
+        "tokenUrl": "https://$(catalog.url)/confidential/oauth2/token",
+        "scopes": {
+          "apioauth": "apioauth"
+        }
+      }
+    },
+    "security": [
+      {
+        "clientID": []
+      },{
+        "Authorization":[]
+      }
+    ],
+    "schemes": [
+      "https"
+    ]
+  }
