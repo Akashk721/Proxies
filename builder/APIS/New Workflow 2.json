@@ -1,0 +1,54 @@
+{
+  "cts" : 1725354752901,
+  "createdUserName" : "Varun Margam",
+  "modifiedUserName" : "Varun Margam",
+  "mts" : 1725354752901,
+  "createdBy" : "66cc59b891376aa3215825b0",
+  "modifiedBy" : "66cc59b891376aa3215825b0",
+  "proxyId" : "66d6d300457fe0187f5efa25",
+  "revision" : 1,
+  "name" : "New Workflow 2",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Varun Margam",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "017540b2-60d8-4dcf-837c-2842bc65a020"
+  } ],
+  "vertexHashMap" : {
+    "017540b2-60d8-4dcf-837c-2842bc65a020" : {
+      "vertexId" : "017540b2-60d8-4dcf-837c-2842bc65a020",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1725354752901,
+    "lastModifiedBy" : "Varun Margam",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
