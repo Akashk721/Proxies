@@ -3,7 +3,7 @@
   "cts" : 1725354752901,
   "createdUserName" : "Varun Margam",
   "modifiedUserName" : "Varun Margam",
-  "mts" : 1725354807572,
+  "mts" : 1725354828622,
   "createdBy" : "66cc59b891376aa3215825b0",
   "modifiedBy" : "66cc59b891376aa3215825b0",
   "proxyId" : "66d6d300457fe0187f5efa25",
@@ -29,8 +29,12 @@
       "imported" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"i am running\"\n}",
+          "type" : "json"
         }
       }
     },
@@ -51,6 +55,11 @@
   "changeLogs" : [ {
     "commitId" : "2f82d52cd50afa8af67c49252fce0f54a1b59f0b",
     "timeStamp" : 1725354752901,
+    "modifiedBy" : "Varun Margam",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "dbc6fca7b6a05e54bf6937e2dc471adf0e3ec3ba",
+    "timeStamp" : 1725354807572,
     "modifiedBy" : "Varun Margam",
     "totalNodes" : 2
   } ],
