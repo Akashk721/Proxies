@@ -1,0 +1,93 @@
+{
+  "id" : "66d80324b4988565291b8ae9",
+  "cts" : 1725432612455,
+  "mts" : 1725432612455,
+  "createdBy" : "Varun Margam",
+  "modifiedBy" : "Varun Margam",
+  "kongAdminHost" : "http://3.110.150.170:9001/",
+  "runtime" : "vidya-test",
+  "workspace" : "default",
+  "swaggerId" : "66d03b7951cadc71dd786ce5",
+  "serviceName" : "number-verification",
+  "revision" : 1,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "Number Verification",
+  "serviceId" : "57cc8232-ddb7-47d4-9243-06334bd74327",
+  "service" : {
+    "serviceName" : "number-verification",
+    "protocol" : "https",
+    "host" : "3.110.150.170",
+    "hosts" : [ "3.110.150.170" ],
+    "basePath" : "/number-verification",
+    "basePaths" : [ "/number-verification" ],
+    "port" : 80,
+    "ports" : [ 9092 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    }
+  },
+  "routes" : [ {
+    "routeId" : "e1a16cf0-b960-40a6-98ff-84d0e5a63960",
+    "routeName" : "phoneNumberVerify",
+    "service" : {
+      "id" : "57cc8232-ddb7-47d4-9243-06334bd74327"
+    },
+    "protocols" : [ "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/v0/verify" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "name" : "vidya-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "http://3.110.150.170:9001/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false
+    }
+  }, {
+    "routeId" : "0340d41c-24d0-4aad-bc2b-b0ec9ff44e91",
+    "routeName" : "phoneNumberShare",
+    "service" : {
+      "id" : "57cc8232-ddb7-47d4-9243-06334bd74327"
+    },
+    "protocols" : [ "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/device-phone-number" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "name" : "vidya-test",
+      "kongAdminToken" : "test",
+      "kongAdminHost" : "http://3.110.150.170:9001/",
+      "tier" : "free",
+      "type" : "onprem",
+      "workspaceCount" : 0,
+      "readOnly" : false
+    }
+  } ],
+  "plugins" : [ {
+    "id" : "30d51bc6-9074-449b-89d0-c6ffdbf0ac85",
+    "pluginName" : "basic-auth",
+    "enabled" : true,
+    "workspaceName" : "",
+    "serviceName" : "number-verification",
+    "configs" : { }
+  } ]
+}
