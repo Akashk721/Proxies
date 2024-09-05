@@ -1,0 +1,54 @@
+{
+  "cts" : 1725530686393,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1725530686393,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "66d9823ee836d076001b494a",
+  "revision" : 1,
+  "name" : "New Workflow 184",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "6c046670-53c8-4b11-a7a1-3bc8541c8918"
+  } ],
+  "vertexHashMap" : {
+    "6c046670-53c8-4b11-a7a1-3bc8541c8918" : {
+      "vertexId" : "6c046670-53c8-4b11-a7a1-3bc8541c8918",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1725530686393,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
