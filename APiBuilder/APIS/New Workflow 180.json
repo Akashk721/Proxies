@@ -3,7 +3,7 @@
   "cts" : 1724047465101,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "divakar v",
-  "mts" : 1725532015520,
+  "mts" : 1725532052240,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "66c2e06912c8be122c87c27a",
@@ -17,17 +17,20 @@
   "locked" : true,
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
-    "source" : "6b7a12a8-2e26-429d-838c-f2db020b642b",
-    "target" : "f9bb2eec-e7f7-4c20-aeda-677f9e4844a4"
-  }, {
     "source" : "2bf66fe9-eef3-4cc7-90cb-8ebbaae116d9",
     "target" : "6b7a12a8-2e26-429d-838c-f2db020b642b"
   }, {
     "source" : "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c",
     "target" : "2bf66fe9-eef3-4cc7-90cb-8ebbaae116d9"
   }, {
+    "source" : "82ca0639-e467-4819-ad28-84f936d1692a",
+    "target" : "f9bb2eec-e7f7-4c20-aeda-677f9e4844a4"
+  }, {
     "source" : "v1",
     "target" : "8d59de6e-9afc-4ee4-bc36-b00f6cbc5c4c"
+  }, {
+    "source" : "6b7a12a8-2e26-429d-838c-f2db020b642b",
+    "target" : "82ca0639-e467-4819-ad28-84f936d1692a"
   } ],
   "vertexHashMap" : {
     "2bf66fe9-eef3-4cc7-90cb-8ebbaae116d9" : {
@@ -42,6 +45,44 @@
         "connectorName" : "azure-builder-test-2",
         "schemaName" : "dbo",
         "tableName" : "InsuranceData"
+      },
+      "imported" : false
+    },
+    "82ca0639-e467-4819-ad28-84f936d1692a" : {
+      "vertexId" : "82ca0639-e467-4819-ad28-84f936d1692a",
+      "vertexType" : "TARGET",
+      "name" : "v4",
+      "target" : {
+        "name" : "v4",
+        "description" : "v4",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "mock.apiwiz.io",
+          "path" : "/v4",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
       },
       "imported" : false
     },
@@ -164,6 +205,11 @@
     "timeStamp" : 1724069281121,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "4c7e19399d8c0af62b0446e9f59d736d06230321",
+    "timeStamp" : 1725532015520,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 5
   } ],
   "enableTracing" : false,
   "environmentName" : "",
