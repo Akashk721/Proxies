@@ -3,7 +3,7 @@
   "cts" : 1725534482692,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725603785559,
+  "mts" : 1725605931817,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66d99112e836d076001b4de9",
@@ -17,10 +17,30 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "839661b5-7591-4583-8043-be28a239668d",
     "target" : "d7d7078f-50da-480e-9bbe-832c8a9a1838"
+  }, {
+    "source" : "v1",
+    "target" : "839661b5-7591-4583-8043-be28a239668d"
   } ],
   "vertexHashMap" : {
+    "839661b5-7591-4583-8043-be28a239668d" : {
+      "vertexId" : "839661b5-7591-4583-8043-be28a239668d",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "asd",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "Base_URL",
+        "targetVariable" : "xcv",
+        "jsonArray" : false,
+        "rootElementName" : "",
+        "objectElementName" : "",
+        "attributeList" : [ "" ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "continueOnError" : false
+      },
+      "imported" : false
+    },
     "d7d7078f-50da-480e-9bbe-832c8a9a1838" : {
       "vertexId" : "d7d7078f-50da-480e-9bbe-832c8a9a1838",
       "vertexType" : "STOP",
@@ -51,6 +71,11 @@
     "commitId" : "4719b7449ec970d8ccac75a068ebef6ae07e9e28",
     "timeStamp" : 1725534482692,
     "modifiedBy" : "divakar v",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "ff7d83ef1ef44e5fcfa80bbdcc02c572460f7519",
+    "timeStamp" : 1725603785559,
+    "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
   "enableTracing" : false,
