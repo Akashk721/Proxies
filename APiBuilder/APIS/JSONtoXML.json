@@ -3,7 +3,7 @@
   "cts" : 1725534482692,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725605931817,
+  "mts" : 1725717029946,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66d99112e836d076001b4de9",
@@ -57,7 +57,14 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "convertToxml",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
       "imported" : true
     }
   },
@@ -77,6 +84,11 @@
     "timeStamp" : 1725603785559,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "26f94498961447bfe9c679647fb4405ca2080a38",
+    "timeStamp" : 1725605931817,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "dev- test Environment",
