@@ -3,17 +3,17 @@
   "cts" : 1725718159715,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725718436614,
+  "mts" : 1725718491040,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dc5e8fe836d076001b6711",
   "revision" : 1,
   "name" : "XML to JSON",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/xmlToJson",
   "pathArray" : [ "xmlToJson" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -65,6 +65,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1725718483997,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "asdf"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725718467017,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "asdf"
+  }, {
     "status" : "Draft",
     "cts" : 1725718159715,
     "lastModifiedBy" : "vidya wiz",
@@ -83,6 +93,11 @@
   }, {
     "commitId" : "155b0c9a41d5da9c14359cb11888ae12b1c1caea",
     "timeStamp" : 1725718425854,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "8d6b08c8d59b4274deafc83816b07b4e9fdac4b6",
+    "timeStamp" : 1725718436614,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
