@@ -3,7 +3,7 @@
   "cts" : 1725534482692,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725717029946,
+  "mts" : 1725717134811,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66d99112e836d076001b4de9",
@@ -29,12 +29,12 @@
       "vertexType" : "JSON_TO_XML_TRANSFORMATION",
       "name" : "asd",
       "jsonToXmlTransformationData" : {
-        "sourceVariable" : "Base_URL",
-        "targetVariable" : "xcv",
+        "sourceVariable" : "convertToxml",
+        "targetVariable" : "convertValue",
         "jsonArray" : false,
         "rootElementName" : "",
         "objectElementName" : "",
-        "attributeList" : [ "" ],
+        "attributeList" : [ "$.age", "$.name" ],
         "staticElementAttributeHashMap" : { },
         "staticPathAttributeArrayList" : [ ],
         "continueOnError" : false
@@ -87,6 +87,11 @@
   }, {
     "commitId" : "26f94498961447bfe9c679647fb4405ca2080a38",
     "timeStamp" : 1725605931817,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "e38128134abab4e8e946dc16da267d3cc1c3359a",
+    "timeStamp" : 1725717029946,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
