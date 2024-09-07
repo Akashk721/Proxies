@@ -3,7 +3,7 @@
   "cts" : 1725534482692,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725725305424,
+  "mts" : 1725726138039,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66d99112e836d076001b4de9",
@@ -34,7 +34,7 @@
         "jsonArray" : false,
         "rootElementName" : "",
         "objectElementName" : "",
-        "attributeList" : [ "$.age", "$.isStudent", "$.name" ],
+        "attributeList" : [ ],
         "staticElementAttributeHashMap" : { },
         "staticPathAttributeArrayList" : [ ],
         "continueOnError" : false
@@ -73,6 +73,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1725726129143,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725725317776,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "adsf"
+  }, {
     "status" : "Review",
     "cts" : 1725725272978,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
@@ -166,6 +176,11 @@
   }, {
     "commitId" : "a46990d7d44fd29293d9643b9799b22789240560",
     "timeStamp" : 1725724264893,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "a9eb70157dbfd48a78b5edfd0fc02498e5fcbd4e",
+    "timeStamp" : 1725725305424,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
