@@ -3,7 +3,7 @@
   "cts" : 1725718159715,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725718237641,
+  "mts" : 1725718425854,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dc5e8fe836d076001b6711",
@@ -17,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "02c949bd-11b7-44f4-a89d-68917ab051a8",
     "target" : "03f37b5c-4dc1-4633-9e1f-6217794ac1a6"
+  }, {
+    "source" : "v1",
+    "target" : "02c949bd-11b7-44f4-a89d-68917ab051a8"
   } ],
   "vertexHashMap" : {
     "03f37b5c-4dc1-4633-9e1f-6217794ac1a6" : {
@@ -46,6 +49,18 @@
         "hide" : false
       } ],
       "imported" : true
+    },
+    "02c949bd-11b7-44f4-a89d-68917ab051a8" : {
+      "vertexId" : "02c949bd-11b7-44f4-a89d-68917ab051a8",
+      "vertexType" : "XML_TO_JSON_TRANSFORMATION",
+      "name" : "xml to json",
+      "xmlToJsonTransformationData" : {
+        "sourceVariable" : "valuetoconvert",
+        "targetVariable" : "response",
+        "arrayXPaths" : [ "$." ],
+        "continueOnError" : false
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -57,6 +72,11 @@
   "changeLogs" : [ {
     "commitId" : "1df5e47d698f7d0fbdf342add9d6f842591f010d",
     "timeStamp" : 1725718159715,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "0610ec6091d6df97ac20f110638559db7b9a3632",
+    "timeStamp" : 1725718237641,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
