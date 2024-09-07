@@ -3,17 +3,17 @@
   "cts" : 1725534482692,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725717143648,
+  "mts" : 1725717295168,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66d99112e836d076001b4de9",
   "revision" : 1,
   "name" : "JSONtoXML",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/jsontoxml",
   "pathArray" : [ "jsontoxml" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -70,6 +70,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1725717265347,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725717154374,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "changes"
+  }, {
     "status" : "Draft",
     "cts" : 1725534482692,
     "lastModifiedBy" : "divakar v",
@@ -100,7 +110,13 @@
     "timeStamp" : 1725717134811,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "4431a111ea1b66d19112620b31f710cfe90e2170",
+    "timeStamp" : 1725717143648,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "dev- test Environment",
   "environmentId" : "6644b7b5a16c946c03a2175c",
