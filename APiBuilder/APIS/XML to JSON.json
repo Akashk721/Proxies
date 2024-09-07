@@ -1,0 +1,68 @@
+{
+  "id" : "66dc5e91e836d076001b6712",
+  "cts" : 1725718159715,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1725718237641,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "66dc5e8fe836d076001b6711",
+  "revision" : 1,
+  "name" : "XML to JSON",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/xmlToJson",
+  "pathArray" : [ "xmlToJson" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "03f37b5c-4dc1-4633-9e1f-6217794ac1a6"
+  } ],
+  "vertexHashMap" : {
+    "03f37b5c-4dc1-4633-9e1f-6217794ac1a6" : {
+      "vertexId" : "03f37b5c-4dc1-4633-9e1f-6217794ac1a6",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "valuetoconvert",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1725718159715,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "1df5e47d698f7d0fbdf342add9d6f842591f010d",
+    "timeStamp" : 1725718159715,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
