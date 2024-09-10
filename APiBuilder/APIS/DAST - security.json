@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725978627117,
+  "mts" : 1725978649664,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -146,6 +146,9 @@
   }, {
     "source" : "d1dec7e8-3c43-47e9-b8aa-2381acd135a5",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "bf9a74a4-6e03-4473-8f4e-4af17480b6bf",
+    "target" : "ad413196-4e22-4f91-af35-16cc3d238934"
   }, {
     "source" : "01bf75c5-4858-487c-ab48-7c114651f939",
     "target" : "8efe8a18-9c8d-4627-b6ee-e7077aff6a72"
@@ -1375,6 +1378,37 @@
         "value" : "false",
         "type" : "string",
         "source" : "6e726f79-a4ac-404f-97ba-9cdabd5d3421"
+      } ],
+      "imported" : false
+    },
+    "ad413196-4e22-4f91-af35-16cc3d238934" : {
+      "vertexId" : "ad413196-4e22-4f91-af35-16cc3d238934",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-Lack-of-Resources-Rate-Limiting",
+            "value" : "Check for Lack of Resources & Rate Limiting - Detecting Missing Rate Limiting Headers",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
       } ],
       "imported" : false
     },
@@ -2998,6 +3032,11 @@
     "timeStamp" : 1725978526142,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 53
+  }, {
+    "commitId" : "86c40d021f5f2f5e933602fcebecef6c9ecdb524",
+    "timeStamp" : 1725978627117,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 54
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
