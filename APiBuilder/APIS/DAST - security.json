@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725973618079,
+  "mts" : 1725973645961,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -41,6 +41,9 @@
   }, {
     "source" : "d1dec7e8-3c43-47e9-b8aa-2381acd135a5",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "2cecbbed-db9e-46f9-95c5-f3a9f4a77fed",
+    "target" : "ceafa534-a555-426a-93e3-343c0bd462bb"
   }, {
     "source" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
     "target" : "da64305b-9878-4282-bbac-984dd06194d4"
@@ -610,6 +613,37 @@
         "value" : "true",
         "type" : "string",
         "source" : "a9683969-6a2e-404e-91a1-dcd9a020a35e"
+      } ],
+      "imported" : false
+    },
+    "ceafa534-a555-426a-93e3-343c0bd462bb" : {
+      "vertexId" : "ceafa534-a555-426a-93e3-343c0bd462bb",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-Remote-Command-Execution",
+            "value" : "Remote Command Execution: Unix Command Injection rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
       } ],
       "imported" : false
     },
@@ -1622,6 +1656,11 @@
   }, {
     "commitId" : "1c84d1b8ca358b34e746c7e1e986ee5e13c64700",
     "timeStamp" : 1725973592116,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 29
+  }, {
+    "commitId" : "2ad428145b6441e3219530c2049ba481b3f4ca48",
+    "timeStamp" : 1725973618079,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 29
   } ],
