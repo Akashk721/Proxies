@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725976028433,
+  "mts" : 1725976054108,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -158,6 +158,9 @@
   }, {
     "source" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "34a58f5f-67a2-4774-8a4f-1544ad35a2c0",
+    "target" : "b8c16306-2e2a-4bde-b6f8-1adb8a9596a7"
   }, {
     "source" : "da64305b-9878-4282-bbac-984dd06194d4",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
@@ -1553,6 +1556,37 @@
       },
       "imported" : false
     },
+    "b8c16306-2e2a-4bde-b6f8-1adb8a9596a7" : {
+      "vertexId" : "b8c16306-2e2a-4bde-b6f8-1adb8a9596a7",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-bola",
+            "value" : "Check for Broken Object Level Authorization (BOLA) rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
+    },
     "2cecbbed-db9e-46f9-95c5-f3a9f4a77fed" : {
       "vertexId" : "2cecbbed-db9e-46f9-95c5-f3a9f4a77fed",
       "vertexType" : "TARGET",
@@ -2205,6 +2239,11 @@
     "timeStamp" : 1725975894041,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 38
+  }, {
+    "commitId" : "d8fdc19120ab1f221449d36b6372200a3e47d074",
+    "timeStamp" : 1725976028433,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 39
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
