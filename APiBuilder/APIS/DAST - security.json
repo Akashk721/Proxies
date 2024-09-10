@@ -1,0 +1,379 @@
+{
+  "id" : "66dfedcc44feb70c6e81213e",
+  "cts" : 1725951436142,
+  "createdUserName" : "Charles Livington",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1725968248219,
+  "createdBy" : "63761a7c2702eb379fb286e1",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "66dfedcc44feb70c6e81213d",
+  "revision" : 1,
+  "name" : "DAST - security",
+  "description" : "DAST - security",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/dast",
+  "pathArray" : [ "dast" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
+    "target" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af"
+  }, {
+    "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
+    "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
+    "target" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc"
+  }, {
+    "source" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
+    "target" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b"
+  }, {
+    "source" : "878d4036-0f2e-40da-b261-358c384aa0d8",
+    "target" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8"
+  }, {
+    "source" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
+    "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "v1",
+    "target" : "878d4036-0f2e-40da-b261-358c384aa0d8"
+  } ],
+  "vertexHashMap" : {
+    "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b" : {
+      "vertexId" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "process",
+        "value" : "$.datatypes"
+      }, {
+        "name" : "threats",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Content-Length",
+        "value" : "false",
+        "type" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
+        "source" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b"
+      } ],
+      "imported" : false
+    },
+    "79d8309a-ac3f-4f51-9b79-bf9a57781ef8" : {
+      "vertexId" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
+      "vertexType" : "TARGET",
+      "name" : "process",
+      "target" : {
+        "name" : "process",
+        "description" : "process",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123a\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\": \"text/plain, application/json, application/*+json, */*\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"localhost:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"user-agent\": \"Apache-HttpClient/4.4.1 (Java/11.0.17)\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"v1/tracing/saveResponse\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"Time took = 0\",\n            \"statusCode\": \"400\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "process",
+            "reference" : "body",
+            "value" : "$.datatypes",
+            "active" : true,
+            "hide" : true
+          }, {
+            "name" : "threats",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"transactionId\": {\n      \"type\": \"string\"\n    },\n    \"refAuditId\": {\n      \"type\": \"null\"\n    },\n    \"method\": {\n      \"type\": \"string\"\n    },\n    \"auditLogId\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"string\",\n      \"format\": \"color\"\n    },\n    \"statusCodeGroup\": {\n      \"type\": \"string\"\n    },\n    \"uri\": {\n      \"type\": \"string\"\n    },\n    \"datatypes\": {\n      \"type\": \"array\"\n    },\n    \"threats\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"policyViolations\": {\n      \"type\": \"boolean\"\n    },\n    \"location\": {\n      \"type\": \"string\"\n    },\n    \"state\": {\n      \"type\": \"string\"\n    },\n    \"city\": {\n      \"type\": \"string\"\n    },\n    \"zip\": {\n      \"type\": \"string\"\n    },\n    \"internal\": {\n      \"type\": \"boolean\"\n    },\n    \"sourceIp\": {\n      \"type\": \"string\",\n      \"format\": \"ip-address\"\n    },\n    \"sourceDomain\": {\n      \"type\": \"string\"\n    },\n    \"host\": {\n      \"type\": \"string\"\n    },\n    \"mappedEnvironment\": {\n      \"type\": \"string\"\n    },\n    \"priority\": {\n      \"type\": \"string\"\n    },\n    \"isDismissed\": {\n      \"type\": \"boolean\"\n    },\n    \"isBulkAPI\": {\n      \"type\": \"boolean\"\n    }\n  }\n}"
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "body" : {
+            "data" : "Failed at process",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "7734e88f-ea7c-4cd1-b0ab-53af650e11e7" : {
+      "vertexId" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "878d4036-0f2e-40da-b261-358c384aa0d8" : {
+      "vertexId" : "878d4036-0f2e-40da-b261-358c384aa0d8",
+      "vertexType" : "TARGET",
+      "name" : "Content-Length HTTP header validator",
+      "target" : {
+        "name" : "Content-Length HTTP header validator",
+        "description" : "Content-Length HTTP header validator",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "3.111.67.30:7000",
+          "path" : "{{requestPath}}",
+          "headerParams" : [ {
+            "name" : "Content-Length",
+            "value" : ""
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\", // kong only is throwing error\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\", // kong only is throwing error\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "requestHost",
+        "reference" : "body",
+        "value" : "host",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      }, {
+        "name" : "requestVerb",
+        "reference" : "body",
+        "value" : "verb",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      }, {
+        "name" : "requestPath",
+        "reference" : "body",
+        "value" : "path",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    },
+    "8c00bb17-0eeb-439c-9f19-d7de1e1530af" : {
+      "vertexId" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats",
+            "value" : "Content-Length HTTP header validator Rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b" ]
+      } ],
+      "imported" : false
+    },
+    "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc" : {
+      "vertexId" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "process",
+        "value" : "$.datatypes"
+      }, {
+        "name" : "threats",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Content-Length",
+        "value" : "true",
+        "type" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
+        "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc"
+      } ],
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Approved",
+    "cts" : 1725967106345,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "a"
+  }, {
+    "status" : "Review",
+    "cts" : 1725967088326,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725966803713,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "approved"
+  }, {
+    "status" : "Review",
+    "cts" : 1725966761610,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725966581254,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "a"
+  }, {
+    "status" : "Review",
+    "cts" : 1725966542267,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725965556485,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "a"
+  }, {
+    "status" : "Review",
+    "cts" : 1725965534040,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725965315978,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "l"
+  }, {
+    "status" : "Review",
+    "cts" : 1725965180649,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725965092146,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "a"
+  }, {
+    "status" : "Review",
+    "cts" : 1725965009249,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725964887845,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "a"
+  }, {
+    "status" : "Review",
+    "cts" : 1725964868628,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725964718942,
+    "lastModifiedBy" : "63761a7c2702eb379fb286e1",
+    "description" : "approved"
+  }, {
+    "status" : "Draft",
+    "cts" : 1725951436142,
+    "lastModifiedBy" : "Charles Livington",
+    "description" : "Created new proxy"
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
