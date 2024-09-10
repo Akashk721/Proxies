@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725978072850,
+  "mts" : 1725978120800,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -855,7 +855,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}},\n    \"Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule\" : {{RFI}},\n    \"Remote Command Execution: Unix Command Injection rule\" : {{Remote-Command-Execution}},\n    \"PHP Injection Attack: Opening/Closing Tag Found rule\" : {{PHP-Injection-Attack}},\n    \"Check for Broken Object Level Authorization (BOLA) rule\" : {{bola}},\n    \"Check for Broken User Authentication rule - Session IDs or Tokens in URLs\" : {{Broken-User-Authentication}}\n}",
+          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}},\n    \"Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule\" : {{RFI}},\n    \"Remote Command Execution: Unix Command Injection rule\" : {{Remote-Command-Execution}},\n    \"PHP Injection Attack: Opening/Closing Tag Found rule\" : {{PHP-Injection-Attack}},\n    \"Check for Broken Object Level Authorization (BOLA) rule\" : {{bola}},\n    \"Check for Broken User Authentication rule - Session IDs or Tokens in URLs\" : {{Broken-User-Authentication}},\n    \"Check for Excessive Data Exposure - Sensitive Data in API Responses\" : {{Excessive-Data}}\n}",
           "type" : "json"
         }
       }
@@ -2738,6 +2738,11 @@
   }, {
     "commitId" : "bd83d19031bb115682f7cd91ad93ca8c3bc14e6b",
     "timeStamp" : 1725978070759,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 49
+  }, {
+    "commitId" : "2356e2cfb9479319f21f2aef9e4e1dd2a1ce4f9c",
+    "timeStamp" : 1725978072850,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 49
   } ],
