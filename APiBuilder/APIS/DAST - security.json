@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725971649420,
+  "mts" : 1725971680674,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -287,7 +287,21 @@
       "conditionalFlow" : [ {
         "condition" : "if",
         "assertion" : {
-          "continueOnError" : false
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-Path-Traversal-Attack",
+            "value" : "Path Traversal Attack (/../) rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
         }
       }, {
         "condition" : "else",
@@ -1109,6 +1123,11 @@
     "timeStamp" : 1725971585809,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 19
+  }, {
+    "commitId" : "9ddf61750dd912d3e82cb0ce46f5ee1710aeb61f",
+    "timeStamp" : 1725971649420,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 20
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
