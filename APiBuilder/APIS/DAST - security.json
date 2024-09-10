@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725976117358,
+  "mts" : 1725976392773,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -131,6 +131,9 @@
   }, {
     "source" : "5483b31d-92d1-4e4b-ad86-63bf82d96623",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "v1",
+    "target" : "43d65ea2-2819-4e32-946a-8b33a5fce6ca"
   }, {
     "source" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
     "target" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b"
@@ -1322,6 +1325,59 @@
       },
       "imported" : false
     },
+    "43d65ea2-2819-4e32-946a-8b33a5fce6ca" : {
+      "vertexId" : "43d65ea2-2819-4e32-946a-8b33a5fce6ca",
+      "vertexType" : "TARGET",
+      "name" : "Broken User Authentication",
+      "target" : {
+        "name" : "Broken User Authentication",
+        "description" : "Broken User Authentication",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "3.111.67.30:7000",
+          "path" : "/v1/card/6782",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ {
+            "name" : "password",
+            "value" : "password123"
+          }, {
+            "name" : "username",
+            "value" : "admin"
+          } ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "response-Broken-User-Authentication",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "fcb8e6c8-11be-407b-ac03-d35abb712c7a" : {
       "vertexId" : "fcb8e6c8-11be-407b-ac03-d35abb712c7a",
       "vertexType" : "VARIABLES",
@@ -2340,6 +2396,11 @@
   }, {
     "commitId" : "efb08c6bdb5bf34e1ea18ce37660c6b3b76eb405",
     "timeStamp" : 1725976113476,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 42
+  }, {
+    "commitId" : "da300e20a95b25e0c877eeb66fee5bfa54d973b4",
+    "timeStamp" : 1725976117358,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 42
   } ],
