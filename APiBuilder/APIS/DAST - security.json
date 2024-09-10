@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725968294333,
+  "mts" : 1725969208235,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/dast",
   "pathArray" : [ "dast" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -35,6 +35,9 @@
   }, {
     "source" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "v1",
+    "target" : "ca7faee3-eefa-4630-9e1b-d85a0d09bee7"
   }, {
     "source" : "v1",
     "target" : "878d4036-0f2e-40da-b261-358c384aa0d8"
@@ -69,6 +72,54 @@
         "type" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
         "source" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b"
       } ],
+      "imported" : false
+    },
+    "ca7faee3-eefa-4630-9e1b-d85a0d09bee7" : {
+      "vertexId" : "ca7faee3-eefa-4630-9e1b-d85a0d09bee7",
+      "vertexType" : "TARGET",
+      "name" : "Host header is a numeric IP address",
+      "target" : {
+        "name" : "Host header is a numeric IP address",
+        "description" : "The host header is a numeric IP address",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "3.111.67.30:7000",
+          "path" : "/v1/card/create",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\",\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "2response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
       "imported" : false
     },
     "79d8309a-ac3f-4f51-9b79-bf9a57781ef8" : {
@@ -290,6 +341,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1725969041211,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725968307510,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "appro"
+  }, {
     "status" : "Approved",
     "cts" : 1725967106345,
     "lastModifiedBy" : "63761a7c2702eb379fb286e1",
@@ -373,6 +434,11 @@
   "changeLogs" : [ {
     "commitId" : "c52de08316cd65f059d6849622a366f0559845f0",
     "timeStamp" : 1725968248219,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 7
+  }, {
+    "commitId" : "520831e517dfef6b4679a5c5e05afe55016829b8",
+    "timeStamp" : 1725968294333,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 7
   } ],
