@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725975894041,
+  "mts" : 1725976028433,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -132,6 +132,9 @@
     "source" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
     "target" : "d24ed0c4-a9bb-4da9-a255-c597c95295c5"
   }, {
+    "source" : "ff2f8801-5b33-4fe5-8e2e-4dc730b3c7dc",
+    "target" : "34a58f5f-67a2-4774-8a4f-1544ad35a2c0"
+  }, {
     "source" : "d24ed0c4-a9bb-4da9-a255-c597c95295c5",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
   }, {
@@ -221,6 +224,57 @@
           "statusCode" : 500,
           "body" : {
             "data" : "Failed at process",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "34a58f5f-67a2-4774-8a4f-1544ad35a2c0" : {
+      "vertexId" : "34a58f5f-67a2-4774-8a4f-1544ad35a2c0",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request - Broken-Object-Level-Authorization",
+      "target" : {
+        "name" : "Validate Request - Broken-Object-Level-Authorization",
+        "description" : "Validate Request - Broken-Object-Level-Authorization",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          }, {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                // \"Content-Length\" :\"0\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                // \"accept\": \"text/plain, application/json, application/*+json, */*\",,\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                // \"host\": \"a\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                // \"user-agent\": \"Apache-HttpClient/4.4.1 (Java/11.0.17)\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse/123\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"Time took = 0\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "threats-bola",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
             "type" : "json"
           }
         }
@@ -2146,6 +2200,11 @@
     "timeStamp" : 1725975080546,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 37
+  }, {
+    "commitId" : "351067981c4bc0e0a36ea075efe3d9bd742b74b8",
+    "timeStamp" : 1725975894041,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 38
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
