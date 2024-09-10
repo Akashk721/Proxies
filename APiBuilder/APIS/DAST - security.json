@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725976425701,
+  "mts" : 1725976543467,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -35,6 +35,9 @@
   }, {
     "source" : "2cecbbed-db9e-46f9-95c5-f3a9f4a77fed",
     "target" : "ceafa534-a555-426a-93e3-343c0bd462bb"
+  }, {
+    "source" : "43d65ea2-2819-4e32-946a-8b33a5fce6ca",
+    "target" : "7ae29815-8e6b-4721-861e-b5c43c89fb02"
   }, {
     "source" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
     "target" : "da64305b-9878-4282-bbac-984dd06194d4"
@@ -967,6 +970,57 @@
         },
         "flowVertexes" : [ "fcb8e6c8-11be-407b-ac03-d35abb712c7a" ]
       } ],
+      "imported" : false
+    },
+    "7ae29815-8e6b-4721-861e-b5c43c89fb02" : {
+      "vertexId" : "7ae29815-8e6b-4721-861e-b5c43c89fb02",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request Broken-User-Authentication",
+      "target" : {
+        "name" : "Validate Request Broken-User-Authentication",
+        "description" : "Validate Request Broken-User-Authentication",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse?token=66d95d74be18c17e538d8420\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"Time took = 0\",\n            \"statusCode\": \"401\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "Broken-User-Authentication-threats",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
       "imported" : false
     },
     "9db4a818-4d50-4871-acde-af23d2724716" : {
@@ -2406,6 +2460,11 @@
   }, {
     "commitId" : "0eda4e706ddb96d71726c30f33d9b2e89db1171b",
     "timeStamp" : 1725976392773,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 43
+  }, {
+    "commitId" : "0a62e0a221a4817f3afc7a14e93acf78a022fa29",
+    "timeStamp" : 1725976425701,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 43
   } ],
