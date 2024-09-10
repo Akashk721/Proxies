@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725971680674,
+  "mts" : 1725971711768,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -631,7 +631,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}}\n}",
+          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}}\n}",
           "type" : "json"
         }
       }
@@ -1126,6 +1126,11 @@
   }, {
     "commitId" : "9ddf61750dd912d3e82cb0ce46f5ee1710aeb61f",
     "timeStamp" : 1725971649420,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 20
+  }, {
+    "commitId" : "c522fba967894615a439e9efa3e023c780c07e55",
+    "timeStamp" : 1725971680674,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 20
   } ],
