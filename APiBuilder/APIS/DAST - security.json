@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725972059953,
+  "mts" : 1725972146716,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -80,6 +80,9 @@
   }, {
     "source" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86",
     "target" : "a9683969-6a2e-404e-91a1-dcd9a020a35e"
+  }, {
+    "source" : "98e1b125-5597-4827-98ea-f247df698bf3",
+    "target" : "542aa8ff-58b4-485c-851a-810c03fc0cab"
   }, {
     "source" : "3da36450-3391-48bd-a297-bbed1468d064",
     "target" : "abdd73e3-9f21-4a97-96c7-06bf692ef864"
@@ -701,6 +704,56 @@
       } ],
       "imported" : false
     },
+    "542aa8ff-58b4-485c-851a-810c03fc0cab" : {
+      "vertexId" : "542aa8ff-58b4-485c-851a-810c03fc0cab",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request - RFI",
+      "target" : {
+        "name" : "Validate Request - RFI",
+        "description" : "Validate Request - RFI",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "tenant",
+            "value" : "acme-team"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "threats-RFI",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "7734e88f-ea7c-4cd1-b0ab-53af650e11e7" : {
       "vertexId" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7",
       "vertexType" : "STOP",
@@ -1285,6 +1338,11 @@
     "timeStamp" : 1725971764879,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 22
+  }, {
+    "commitId" : "46187263c84cb81a1e8c12c0d375d943444c49e0",
+    "timeStamp" : 1725972059953,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 23
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
