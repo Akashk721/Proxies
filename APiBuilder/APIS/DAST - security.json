@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725974986279,
+  "mts" : 1725974999177,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -134,6 +134,9 @@
   }, {
     "source" : "da64305b-9878-4282-bbac-984dd06194d4",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "f66e53fc-c820-4903-a858-4181b04886d7",
+    "target" : "ae3a17dd-f760-4b14-9be6-bda61dd722f0"
   }, {
     "source" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
     "target" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc"
@@ -687,7 +690,8 @@
         "condition" : "else",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "ae3a17dd-f760-4b14-9be6-bda61dd722f0" ]
       } ],
       "imported" : false
     },
@@ -963,6 +967,38 @@
         "value" : "true",
         "type" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
         "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc"
+      } ],
+      "imported" : false
+    },
+    "ae3a17dd-f760-4b14-9be6-bda61dd722f0" : {
+      "vertexId" : "ae3a17dd-f760-4b14-9be6-bda61dd722f0",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-PHP-Injection-Attack",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-PHP-Injection",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "PHP-Injection-Attack",
+        "value" : "false",
+        "type" : "string",
+        "source" : "ae3a17dd-f760-4b14-9be6-bda61dd722f0"
       } ],
       "imported" : false
     },
@@ -2018,6 +2054,11 @@
     "timeStamp" : 1725974947961,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 35
+  }, {
+    "commitId" : "bc589cc56a8bdb14bb773de45001c48c43b72661",
+    "timeStamp" : 1725974986279,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 36
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
