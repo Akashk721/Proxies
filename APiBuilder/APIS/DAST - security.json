@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725978120800,
+  "mts" : 1725978154563,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -95,6 +95,9 @@
   }, {
     "source" : "v1",
     "target" : "c5f44806-adb8-4d1e-a6c6-8c2512a2506d"
+  }, {
+    "source" : "7edc57bb-ae70-473e-b4cb-27bf00e16d93",
+    "target" : "01bf75c5-4858-487c-ab48-7c114651f939"
   }, {
     "source" : "f66e53fc-c820-4903-a858-4181b04886d7",
     "target" : "ae3a17dd-f760-4b14-9be6-bda61dd722f0"
@@ -1492,6 +1495,37 @@
       } ],
       "imported" : false
     },
+    "01bf75c5-4858-487c-ab48-7c114651f939" : {
+      "vertexId" : "01bf75c5-4858-487c-ab48-7c114651f939",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-Excessive-Data-Exposure",
+            "value" : "Check for Excessive Data Exposure - Sensitive Data in API Responses",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
+    },
     "f66e53fc-c820-4903-a858-4181b04886d7" : {
       "vertexId" : "f66e53fc-c820-4903-a858-4181b04886d7",
       "vertexType" : "CONDITIONAL_FLOW",
@@ -2743,6 +2777,11 @@
   }, {
     "commitId" : "2356e2cfb9479319f21f2aef9e4e1dd2a1ce4f9c",
     "timeStamp" : 1725978072850,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 49
+  }, {
+    "commitId" : "a7bbe93b3fc1cf96e598ba08e6fee429a16efff7",
+    "timeStamp" : 1725978120800,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 49
   } ],
