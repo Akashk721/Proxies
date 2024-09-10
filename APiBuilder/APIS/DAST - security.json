@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725969355627,
+  "mts" : 1725969423543,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -20,6 +20,9 @@
   "edgeSet" : [ {
     "source" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
     "target" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af"
+  }, {
+    "source" : "1fe10350-c693-4d1d-a372-554cfe471e91",
+    "target" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d"
   }, {
     "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
@@ -197,10 +200,17 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}}\n}",
+          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}}\n}",
           "type" : "json"
         }
       }
+    },
+    "9807b403-f2ea-49b3-af8e-a8d1d312c72d" : {
+      "vertexId" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ ],
+      "imported" : false
     },
     "1fe10350-c693-4d1d-a372-554cfe471e91" : {
       "vertexId" : "1fe10350-c693-4d1d-a372-554cfe471e91",
@@ -224,7 +234,8 @@
               "type" : "json"
             }
           }
-        }
+        },
+        "flowVertexes" : [ "9807b403-f2ea-49b3-af8e-a8d1d312c72d" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -538,6 +549,11 @@
     "timeStamp" : 1725969318827,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 9
+  }, {
+    "commitId" : "d828fa38e6d61a273ebc9199aa92e22f87b2d901",
+    "timeStamp" : 1725969355627,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 10
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
