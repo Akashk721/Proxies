@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725970493043,
+  "mts" : 1725970523707,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -44,6 +44,9 @@
   }, {
     "source" : "v1",
     "target" : "878d4036-0f2e-40da-b261-358c384aa0d8"
+  }, {
+    "source" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
+    "target" : "da64305b-9878-4282-bbac-984dd06194d4"
   }, {
     "source" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
     "target" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af"
@@ -233,7 +236,8 @@
               "type" : "json"
             }
           }
-        }
+        },
+        "flowVertexes" : [ "da64305b-9878-4282-bbac-984dd06194d4" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -403,6 +407,13 @@
       },
       "imported" : false
     },
+    "da64305b-9878-4282-bbac-984dd06194d4" : {
+      "vertexId" : "da64305b-9878-4282-bbac-984dd06194d4",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ ],
+      "imported" : false
+    },
     "7734e88f-ea7c-4cd1-b0ab-53af650e11e7" : {
       "vertexId" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7",
       "vertexType" : "STOP",
@@ -414,7 +425,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}}\n}",
+          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}}\n}",
           "type" : "json"
         }
       }
@@ -856,6 +867,11 @@
     "timeStamp" : 1725970432465,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 14
+  }, {
+    "commitId" : "e59f1614aa229a5ead0eb23ae45a7825f5049f75",
+    "timeStamp" : 1725970493043,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 15
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
