@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725976719314,
+  "mts" : 1725976733750,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -188,6 +188,9 @@
   }, {
     "source" : "b8c16306-2e2a-4bde-b6f8-1adb8a9596a7",
     "target" : "99d5c72b-98c2-4989-86ca-910c5e2abdd2"
+  }, {
+    "source" : "fd1eed87-81c7-4023-9786-714d84801e63",
+    "target" : "6e726f79-a4ac-404f-97ba-9cdabd5d3421"
   }, {
     "source" : "v1",
     "target" : "98e1b125-5597-4827-98ea-f247df698bf3"
@@ -435,6 +438,38 @@
           "continueOnError" : false
         },
         "flowVertexes" : [ "d24ed0c4-a9bb-4da9-a255-c597c95295c5" ]
+      } ],
+      "imported" : false
+    },
+    "6e726f79-a4ac-404f-97ba-9cdabd5d3421" : {
+      "vertexId" : "6e726f79-a4ac-404f-97ba-9cdabd5d3421",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "Broken-User-Authentication-threats",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-Broken-User-Authentication",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Broken-User-Authentication",
+        "value" : "false",
+        "type" : "string",
+        "source" : "6e726f79-a4ac-404f-97ba-9cdabd5d3421"
       } ],
       "imported" : false
     },
@@ -1986,7 +2021,8 @@
         "condition" : "else",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "6e726f79-a4ac-404f-97ba-9cdabd5d3421" ]
       } ],
       "imported" : false
     }
@@ -2552,6 +2588,11 @@
     "timeStamp" : 1725976703067,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 45
+  }, {
+    "commitId" : "73fed557926944b34dfd65b9fedbd837420b2750",
+    "timeStamp" : 1725976719314,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 46
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
