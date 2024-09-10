@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725978214213,
+  "mts" : 1725978446126,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -934,7 +934,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}},\n    \"Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule\" : {{RFI}},\n    \"Remote Command Execution: Unix Command Injection rule\" : {{Remote-Command-Execution}},\n    \"PHP Injection Attack: Opening/Closing Tag Found rule\" : {{PHP-Injection-Attack}},\n    \"Check for Broken Object Level Authorization (BOLA) rule\" : {{bola}},\n    \"Check for Broken User Authentication rule - Session IDs or Tokens in URLs\" : {{Broken-User-Authentication}},\n    \"Check for Excessive Data Exposure - Sensitive Data in API Responses\" : {{Excessive-Data}}\n}",
+          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}},\n    \"Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule\" : {{RFI}},\n    \"Remote Command Execution: Unix Command Injection rule\" : {{Remote-Command-Execution}},\n    \"PHP Injection Attack: Opening/Closing Tag Found rule\" : {{PHP-Injection-Attack}},\n    \"Check for Broken Object Level Authorization (BOLA) rule\" : {{bola}},\n    \"Check for Broken User Authentication rule - Session IDs or Tokens in URLs\" : {{Broken-User-Authentication}},\n    \"Check for Excessive Data Exposure - Sensitive Data in API Responses\" : {{Excessive-Data}},\n    \"Check for Lack of Resources & Rate Limiting - Detecting Missing Rate Limiting Headers\" : {{Lack-Resources}}\n}",
           "type" : "json"
         }
       }
@@ -2880,6 +2880,11 @@
   }, {
     "commitId" : "d61ed55426180169c5dfcf93e55571363cab5f33",
     "timeStamp" : 1725978211380,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 52
+  }, {
+    "commitId" : "9aff32ec441c75f4d82096187771621315136001",
+    "timeStamp" : 1725978214213,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 52
   } ],
