@@ -3,7 +3,7 @@
   "cts" : 1725887725605,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725887879786,
+  "mts" : 1725987157423,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66def4ed6c70833dc491c9aa",
@@ -17,10 +17,72 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "8bc1f31f-b02e-4176-a629-737c459dae10",
+    "target" : "30bc33dd-8fb1-4190-aca6-3251796ce133"
+  }, {
+    "source" : "30bc33dd-8fb1-4190-aca6-3251796ce133",
     "target" : "b1a4588d-68c6-4a76-864d-6afcfcfe1a06"
+  }, {
+    "source" : "v1",
+    "target" : "8bc1f31f-b02e-4176-a629-737c459dae10"
   } ],
   "vertexHashMap" : {
+    "30bc33dd-8fb1-4190-aca6-3251796ce133" : {
+      "vertexId" : "30bc33dd-8fb1-4190-aca6-3251796ce133",
+      "vertexType" : "TARGET",
+      "name" : "getAccountBalance",
+      "target" : {
+        "name" : "getAccountBalance",
+        "description" : "Obtain the balance for a single specified account",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "adsf",
+          "path" : "/v1/accountlist/banking/accounts/{accountId}/balance",
+          "headerParams" : [ {
+            "name" : "accountId",
+            "value" : ""
+          }, {
+            "name" : "openStatus",
+            "value" : ""
+          }, {
+            "name" : "accountType",
+            "value" : ""
+          }, {
+            "name" : "isOwned",
+            "value" : ""
+          }, {
+            "name" : "x-v",
+            "value" : ""
+          }, {
+            "name" : "participantId",
+            "value" : ""
+          }, {
+            "name" : "accept",
+            "value" : ""
+          } ],
+          "queryParams" : [ ],
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -39,6 +101,16 @@
           "type" : "JSON"
         }
       }
+    },
+    "8bc1f31f-b02e-4176-a629-737c459dae10" : {
+      "vertexId" : "8bc1f31f-b02e-4176-a629-737c459dae10",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 0
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -55,6 +127,11 @@
   }, {
     "commitId" : "5cd803170a994c9b654a06d5d7f851ea0ba9538e",
     "timeStamp" : 1725887797627,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "468a7da03d7b9cb6b51242361c07dcb1171855b0",
+    "timeStamp" : 1725887879786,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
