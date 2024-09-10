@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725970391890,
+  "mts" : 1725970432465,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -188,7 +188,7 @@
         "response" : {
           "statusCode" : 200,
           "variables" : [ {
-            "name" : "threats",
+            "name" : "threats-HTTP-Header-Injection",
             "reference" : "body",
             "value" : "threats",
             "active" : true,
@@ -812,6 +812,11 @@
     "timeStamp" : 1725970198743,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 13
+  }, {
+    "commitId" : "9cffece1844c4118eb8639e5a06bfc0cbe21ca5a",
+    "timeStamp" : 1725970391890,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 14
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
