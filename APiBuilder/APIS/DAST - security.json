@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725975080546,
+  "mts" : 1725975894041,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -50,6 +50,9 @@
   }, {
     "source" : "68fefe6b-64fa-4792-a867-199a6f7693f7",
     "target" : "f66e53fc-c820-4903-a858-4181b04886d7"
+  }, {
+    "source" : "v1",
+    "target" : "ff2f8801-5b33-4fe5-8e2e-4dc730b3c7dc"
   }, {
     "source" : "v1",
     "target" : "9db4a818-4d50-4871-acde-af23d2724716"
@@ -631,6 +634,54 @@
           "body" : {
             "data" : "",
             "type" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\", // kong only is throwing error\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "ff2f8801-5b33-4fe5-8e2e-4dc730b3c7dc" : {
+      "vertexId" : "ff2f8801-5b33-4fe5-8e2e-4dc730b3c7dc",
+      "vertexType" : "TARGET",
+      "name" : "Broken Object Level Authorization (BOLA)",
+      "target" : {
+        "name" : "Broken Object Level Authorization (BOLA)",
+        "description" : "Broken Object Level Authorization (BOLA)",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "3.111.67.30:7000",
+          "path" : "/v1/card/create",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\",\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"domain\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "response-bola",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
           }
         }
       },
@@ -1596,6 +1647,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1725975469189,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725975440778,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "a"
+  }, {
+    "status" : "Review",
     "cts" : 1725974273409,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -2078,6 +2139,11 @@
   }, {
     "commitId" : "154044fec4e661c9daff26920a2c9e86b3cdf649",
     "timeStamp" : 1725975033647,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 37
+  }, {
+    "commitId" : "716a4e28673051e05e8c56f64e26d57f0536db9d",
+    "timeStamp" : 1725975080546,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 37
   } ],
