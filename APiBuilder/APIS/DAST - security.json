@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725969423543,
+  "mts" : 1725969436784,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -209,7 +209,32 @@
       "vertexId" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d",
       "vertexType" : "VARIABLES",
       "name" : "Set Variable",
-      "runtimeVariableList" : [ ],
+      "runtimeVariableList" : [ {
+        "name" : "2threats",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "2response",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Host-numeric",
+        "value" : "true",
+        "type" : "string",
+        "source" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d"
+      } ],
       "imported" : false
     },
     "1fe10350-c693-4d1d-a372-554cfe471e91" : {
@@ -554,6 +579,11 @@
     "timeStamp" : 1725969355627,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 10
+  }, {
+    "commitId" : "8c2d9888b2946309b22a6a29c25a08212bcfa902",
+    "timeStamp" : 1725969423543,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 11
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
