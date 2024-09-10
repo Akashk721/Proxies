@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725978182632,
+  "mts" : 1725978193212,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -138,6 +138,9 @@
     "source" : "d1dec7e8-3c43-47e9-b8aa-2381acd135a5",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
   }, {
+    "source" : "01bf75c5-4858-487c-ab48-7c114651f939",
+    "target" : "8efe8a18-9c8d-4627-b6ee-e7077aff6a72"
+  }, {
     "source" : "542aa8ff-58b4-485c-851a-810c03fc0cab",
     "target" : "335a7ad8-b64c-4a19-9d73-8388d6a35f59"
   }, {
@@ -220,6 +223,38 @@
     "target" : "700ba964-5802-490c-ab83-ae597e536699"
   } ],
   "vertexHashMap" : {
+    "8efe8a18-9c8d-4627-b6ee-e7077aff6a72" : {
+      "vertexId" : "8efe8a18-9c8d-4627-b6ee-e7077aff6a72",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-Excessive-Data-Exposure",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-Excessive-Data-Exposure",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Excessive-Data",
+        "value" : "false",
+        "type" : "string",
+        "source" : "8efe8a18-9c8d-4627-b6ee-e7077aff6a72"
+      } ],
+      "imported" : false
+    },
     "9807b403-f2ea-49b3-af8e-a8d1d312c72d" : {
       "vertexId" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d",
       "vertexType" : "VARIABLES",
@@ -1558,7 +1593,8 @@
         "condition" : "else",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "8efe8a18-9c8d-4627-b6ee-e7077aff6a72" ]
       } ],
       "imported" : false
     },
@@ -2825,6 +2861,11 @@
     "timeStamp" : 1725978154563,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 50
+  }, {
+    "commitId" : "f715cb86e08959476381886069c9d4cc7d37e28c",
+    "timeStamp" : 1725978182632,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 51
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
