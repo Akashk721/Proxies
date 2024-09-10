@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725971585809,
+  "mts" : 1725971649420,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -74,6 +74,9 @@
   }, {
     "source" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
     "target" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc"
+  }, {
+    "source" : "dd4031ad-d832-4418-b006-a4df45967064",
+    "target" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86"
   }, {
     "source" : "878d4036-0f2e-40da-b261-358c384aa0d8",
     "target" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8"
@@ -275,6 +278,23 @@
           }
         }
       },
+      "imported" : false
+    },
+    "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86" : {
+      "vertexId" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
       "imported" : false
     },
     "abdd73e3-9f21-4a97-96c7-06bf692ef864" : {
@@ -566,7 +586,7 @@
         "response" : {
           "statusCode" : 200,
           "variables" : [ {
-            "name" : "response-Path-Traversal-Attack",
+            "name" : "threats-Path-Traversal-Attack",
             "reference" : "body",
             "value" : "threats",
             "active" : true,
@@ -1084,6 +1104,11 @@
     "timeStamp" : 1725971438007,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 18
+  }, {
+    "commitId" : "5365f618963535caa9387dc8f9fc8c44ba5aa59f",
+    "timeStamp" : 1725971585809,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 19
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
