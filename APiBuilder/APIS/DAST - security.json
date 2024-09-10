@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725972577913,
+  "mts" : 1725972636082,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -41,6 +41,9 @@
   }, {
     "source" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
     "target" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af"
+  }, {
+    "source" : "542aa8ff-58b4-485c-851a-810c03fc0cab",
+    "target" : "335a7ad8-b64c-4a19-9d73-8388d6a35f59"
   }, {
     "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
@@ -109,38 +112,6 @@
     "target" : "98e1b125-5597-4827-98ea-f247df698bf3"
   } ],
   "vertexHashMap" : {
-    "a9683969-6a2e-404e-91a1-dcd9a020a35e" : {
-      "vertexId" : "a9683969-6a2e-404e-91a1-dcd9a020a35e",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-Path-Traversal-Attack",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-Path-Traversal-Attack",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Path-Traversal",
-        "value" : "true",
-        "type" : "string",
-        "source" : "a9683969-6a2e-404e-91a1-dcd9a020a35e"
-      } ],
-      "imported" : false
-    },
     "79d8309a-ac3f-4f51-9b79-bf9a57781ef8" : {
       "vertexId" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
       "vertexType" : "TARGET",
@@ -228,6 +199,335 @@
         "value" : "true",
         "type" : "string",
         "source" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d"
+      } ],
+      "imported" : false
+    },
+    "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86" : {
+      "vertexId" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-Path-Traversal-Attack",
+            "value" : "Path Traversal Attack (/../) rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "a9683969-6a2e-404e-91a1-dcd9a020a35e" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63" ]
+      } ],
+      "imported" : false
+    },
+    "abdd73e3-9f21-4a97-96c7-06bf692ef864" : {
+      "vertexId" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-HTTP-Header-Injection",
+            "value" : "HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "da64305b-9878-4282-bbac-984dd06194d4" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "d24ed0c4-a9bb-4da9-a255-c597c95295c5" ]
+      } ],
+      "imported" : false
+    },
+    "e2892d6f-aac6-47f0-a876-366364f75860" : {
+      "vertexId" : "e2892d6f-aac6-47f0-a876-366364f75860",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request - host numeric",
+      "target" : {
+        "name" : "Validate Request - host numeric",
+        "description" : "Validate Request - host numeric",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          }, {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"{{2response}}\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "2threats",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "Failed at process",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "da64305b-9878-4282-bbac-984dd06194d4" : {
+      "vertexId" : "da64305b-9878-4282-bbac-984dd06194d4",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-HTTP-Header-Injection",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "Header-Injection-response",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Header-Injection",
+        "value" : "true",
+        "type" : "string",
+        "source" : "da64305b-9878-4282-bbac-984dd06194d4"
+      } ],
+      "imported" : false
+    },
+    "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63" : {
+      "vertexId" : "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-Path-Traversal-Attack",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-Path-Traversal-Attack",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Path-Traversal",
+        "value" : "false",
+        "type" : "string",
+        "source" : "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63"
+      } ],
+      "imported" : false
+    },
+    "1fe10350-c693-4d1d-a372-554cfe471e91" : {
+      "vertexId" : "1fe10350-c693-4d1d-a372-554cfe471e91",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "2threats",
+            "value" : "Host header is a numeric IP address rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "9807b403-f2ea-49b3-af8e-a8d1d312c72d" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7" ]
+      } ],
+      "imported" : false
+    },
+    "878d4036-0f2e-40da-b261-358c384aa0d8" : {
+      "vertexId" : "878d4036-0f2e-40da-b261-358c384aa0d8",
+      "vertexType" : "TARGET",
+      "name" : "Content-Length HTTP header validator",
+      "target" : {
+        "name" : "Content-Length HTTP header validator",
+        "description" : "Content-Length HTTP header validator",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "3.111.67.30:7000",
+          "path" : "{{requestPath}}",
+          "headerParams" : [ {
+            "name" : "Content-Length",
+            "value" : ""
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\", // kong only is throwing error\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\", // kong only is throwing error\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7" : {
+      "vertexId" : "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "2threats",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "2response",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Host-numeric",
+        "value" : "false",
+        "type" : "string",
+        "source" : "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7"
+      } ],
+      "imported" : false
+    },
+    "a9683969-6a2e-404e-91a1-dcd9a020a35e" : {
+      "vertexId" : "a9683969-6a2e-404e-91a1-dcd9a020a35e",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-Path-Traversal-Attack",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-Path-Traversal-Attack",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Path-Traversal",
+        "value" : "true",
+        "type" : "string",
+        "source" : "a9683969-6a2e-404e-91a1-dcd9a020a35e"
       } ],
       "imported" : false
     },
@@ -330,72 +630,6 @@
       },
       "imported" : false
     },
-    "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86" : {
-      "vertexId" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "threats-Path-Traversal-Attack",
-            "value" : "Path Traversal Attack (/../) rule",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "a9683969-6a2e-404e-91a1-dcd9a020a35e" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63" ]
-      } ],
-      "imported" : false
-    },
-    "abdd73e3-9f21-4a97-96c7-06bf692ef864" : {
-      "vertexId" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "threats-HTTP-Header-Injection",
-            "value" : "HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "da64305b-9878-4282-bbac-984dd06194d4" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "d24ed0c4-a9bb-4da9-a255-c597c95295c5" ]
-      } ],
-      "imported" : false
-    },
     "d24ed0c4-a9bb-4da9-a255-c597c95295c5" : {
       "vertexId" : "d24ed0c4-a9bb-4da9-a255-c597c95295c5",
       "vertexType" : "VARIABLES",
@@ -426,57 +660,6 @@
         "type" : "string",
         "source" : "d24ed0c4-a9bb-4da9-a255-c597c95295c5"
       } ],
-      "imported" : false
-    },
-    "e2892d6f-aac6-47f0-a876-366364f75860" : {
-      "vertexId" : "e2892d6f-aac6-47f0-a876-366364f75860",
-      "vertexType" : "TARGET",
-      "name" : "Validate Request - host numeric",
-      "target" : {
-        "name" : "Validate Request - host numeric",
-        "description" : "Validate Request - host numeric",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "api.apiwiz.io",
-          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
-          "headerParams" : [ {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          }, {
-            "name" : "tenant",
-            "value" : "acme-bank"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"{{2response}}\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "2threats",
-            "reference" : "body",
-            "value" : "threats",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "Failed at process",
-            "type" : "json"
-          }
-        }
-      },
       "imported" : false
     },
     "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc" : {
@@ -589,38 +772,6 @@
       },
       "imported" : false
     },
-    "da64305b-9878-4282-bbac-984dd06194d4" : {
-      "vertexId" : "da64305b-9878-4282-bbac-984dd06194d4",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-HTTP-Header-Injection",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "Header-Injection-response",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Header-Injection",
-        "value" : "true",
-        "type" : "string",
-        "source" : "da64305b-9878-4282-bbac-984dd06194d4"
-      } ],
-      "imported" : false
-    },
     "dd4031ad-d832-4418-b006-a4df45967064" : {
       "vertexId" : "dd4031ad-d832-4418-b006-a4df45967064",
       "vertexType" : "TARGET",
@@ -670,38 +821,6 @@
           }
         }
       },
-      "imported" : false
-    },
-    "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63" : {
-      "vertexId" : "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-Path-Traversal-Attack",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-Path-Traversal-Attack",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Path-Traversal",
-        "value" : "false",
-        "type" : "string",
-        "source" : "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63"
-      } ],
       "imported" : false
     },
     "542aa8ff-58b4-485c-851a-810c03fc0cab" : {
@@ -821,90 +940,6 @@
       },
       "imported" : false
     },
-    "1fe10350-c693-4d1d-a372-554cfe471e91" : {
-      "vertexId" : "1fe10350-c693-4d1d-a372-554cfe471e91",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "2threats",
-            "value" : "Host header is a numeric IP address rule",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "9807b403-f2ea-49b3-af8e-a8d1d312c72d" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7" ]
-      } ],
-      "imported" : false
-    },
-    "878d4036-0f2e-40da-b261-358c384aa0d8" : {
-      "vertexId" : "878d4036-0f2e-40da-b261-358c384aa0d8",
-      "vertexType" : "TARGET",
-      "name" : "Content-Length HTTP header validator",
-      "target" : {
-        "name" : "Content-Length HTTP header validator",
-        "description" : "Content-Length HTTP header validator",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "http",
-          "host" : "3.111.67.30:7000",
-          "path" : "{{requestPath}}",
-          "headerParams" : [ {
-            "name" : "Content-Length",
-            "value" : ""
-          }, {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\", // kong only is throwing error\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "response",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : true,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\", // kong only is throwing error\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}"
-          }
-        }
-      },
-      "imported" : false
-    },
     "3a84375f-da17-4f36-b70b-5bc8b6704ab2" : {
       "vertexId" : "3a84375f-da17-4f36-b70b-5bc8b6704ab2",
       "vertexType" : "TARGET",
@@ -981,35 +1016,34 @@
       } ],
       "imported" : true
     },
-    "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7" : {
-      "vertexId" : "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "2threats",
-        "value" : "threats",
-        "source" : "raw"
+    "335a7ad8-b64c-4a19-9d73-8388d6a35f59" : {
+      "vertexId" : "335a7ad8-b64c-4a19-9d73-8388d6a35f59",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-RFI",
+            "value" : "Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
       }, {
-        "name" : "2response",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Host-numeric",
-        "value" : "false",
-        "type" : "string",
-        "source" : "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7"
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
       } ],
       "imported" : false
     },
@@ -1351,6 +1385,11 @@
   }, {
     "commitId" : "33ac3d66d9d21f35895417a71f117d26a1b31b1e",
     "timeStamp" : 1725972200248,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 24
+  }, {
+    "commitId" : "7f40164f806512d17e8d45c204ba4f0ed47fe461",
+    "timeStamp" : 1725972577913,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 24
   } ],
