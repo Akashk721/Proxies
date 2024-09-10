@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725992097358,
+  "mts" : 1725992542964,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/dast",
   "pathArray" : [ "dast" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -45,9 +45,6 @@
     "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
   }, {
-    "source" : "ae34701a-3a24-4b3f-aa21-f34c6e7ed78d",
-    "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
-  }, {
     "source" : "c5f44806-adb8-4d1e-a6c6-8c2512a2506d",
     "target" : "68fefe6b-64fa-4792-a867-199a6f7693f7"
   }, {
@@ -69,9 +66,6 @@
     "source" : "ab890690-49a8-4a38-ac15-968e9d4a0252",
     "target" : "2cecbbed-db9e-46f9-95c5-f3a9f4a77fed"
   }, {
-    "source" : "v1",
-    "target" : "8c0c19af-d98f-45fc-b738-45d1c6ddc44b"
-  }, {
     "source" : "7ae29815-8e6b-4721-861e-b5c43c89fb02",
     "target" : "fd1eed87-81c7-4023-9786-714d84801e63"
   }, {
@@ -89,9 +83,6 @@
   }, {
     "source" : "v1",
     "target" : "c5f44806-adb8-4d1e-a6c6-8c2512a2506d"
-  }, {
-    "source" : "7edc57bb-ae70-473e-b4cb-27bf00e16d93",
-    "target" : "01bf75c5-4858-487c-ab48-7c114651f939"
   }, {
     "source" : "f66e53fc-c820-4903-a858-4181b04886d7",
     "target" : "ae3a17dd-f760-4b14-9be6-bda61dd722f0"
@@ -117,23 +108,14 @@
     "source" : "eb9a804c-9fd3-4eac-9f73-d0443675adb2",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
   }, {
-    "source" : "01bf75c5-4858-487c-ab48-7c114651f939",
-    "target" : "ae34701a-3a24-4b3f-aa21-f34c6e7ed78d"
-  }, {
     "source" : "335a7ad8-b64c-4a19-9d73-8388d6a35f59",
     "target" : "d1dec7e8-3c43-47e9-b8aa-2381acd135a5"
   }, {
     "source" : "d1dec7e8-3c43-47e9-b8aa-2381acd135a5",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
   }, {
-    "source" : "01bf75c5-4858-487c-ab48-7c114651f939",
-    "target" : "8efe8a18-9c8d-4627-b6ee-e7077aff6a72"
-  }, {
     "source" : "542aa8ff-58b4-485c-851a-810c03fc0cab",
     "target" : "335a7ad8-b64c-4a19-9d73-8388d6a35f59"
-  }, {
-    "source" : "8efe8a18-9c8d-4627-b6ee-e7077aff6a72",
-    "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
   }, {
     "source" : "dd4031ad-d832-4418-b006-a4df45967064",
     "target" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86"
@@ -146,9 +128,6 @@
   }, {
     "source" : "5483b31d-92d1-4e4b-ad86-63bf82d96623",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
-  }, {
-    "source" : "8c0c19af-d98f-45fc-b738-45d1c6ddc44b",
-    "target" : "7edc57bb-ae70-473e-b4cb-27bf00e16d93"
   }, {
     "source" : "v1",
     "target" : "43d65ea2-2819-4e32-946a-8b33a5fce6ca"
@@ -208,38 +187,6 @@
     "target" : "700ba964-5802-490c-ab83-ae597e536699"
   } ],
   "vertexHashMap" : {
-    "8efe8a18-9c8d-4627-b6ee-e7077aff6a72" : {
-      "vertexId" : "8efe8a18-9c8d-4627-b6ee-e7077aff6a72",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-Excessive-Data-Exposure",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-Excessive-Data-Exposure",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Excessive-Data",
-        "value" : "false",
-        "type" : "string",
-        "source" : "8efe8a18-9c8d-4627-b6ee-e7077aff6a72"
-      } ],
-      "imported" : false
-    },
     "79d8309a-ac3f-4f51-9b79-bf9a57781ef8" : {
       "vertexId" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
       "vertexType" : "TARGET",
@@ -543,50 +490,6 @@
       } ],
       "imported" : false
     },
-    "8c0c19af-d98f-45fc-b738-45d1c6ddc44b" : {
-      "vertexId" : "8c0c19af-d98f-45fc-b738-45d1c6ddc44b",
-      "vertexType" : "TARGET",
-      "name" : "Excessive Data Exposure",
-      "target" : {
-        "name" : "Excessive Data Exposure",
-        "description" : "Excessive Data Exposure",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "GET",
-          "scheme" : "http",
-          "host" : "3.111.67.30:7000",
-          "path" : "/v1/card/workspace",
-          "headerParams" : [ ],
-          "queryParams" : [ ],
-          "body" : {
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "response-Excessive-Data-Exposure",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : true,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
     "700ba964-5802-490c-ab83-ae597e536699" : {
       "vertexId" : "700ba964-5802-490c-ab83-ae597e536699",
       "vertexType" : "VARIABLES",
@@ -767,122 +670,6 @@
           }
         }
       },
-      "imported" : false
-    },
-    "01bf75c5-4858-487c-ab48-7c114651f939" : {
-      "vertexId" : "01bf75c5-4858-487c-ab48-7c114651f939",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "threats-Excessive-Data-Exposure",
-            "value" : "Check for Excessive Data Exposure - Sensitive Data in API Responses",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "ae34701a-3a24-4b3f-aa21-f34c6e7ed78d" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "8efe8a18-9c8d-4627-b6ee-e7077aff6a72" ]
-      } ],
-      "imported" : false
-    },
-    "7edc57bb-ae70-473e-b4cb-27bf00e16d93" : {
-      "vertexId" : "7edc57bb-ae70-473e-b4cb-27bf00e16d93",
-      "vertexType" : "TARGET",
-      "name" : "validate request Excessive-Data-Exposure",
-      "target" : {
-        "name" : "validate request Excessive-Data-Exposure",
-        "description" : "validate request Excessive-Data-Exposure",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "api.apiwiz.io",
-          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
-          "headerParams" : [ {
-            "name" : "tenant",
-            "value" : "acme-bank"
-          }, {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n             \"headerParams\": {\n                \"Content-Type\": \"application/json\",\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"{\\\"creditCard\\\": \\\"4111111111111111\\\"}\",\n            \"statusCode\": \"401\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "threats-Excessive-Data-Exposure",
-            "reference" : "body",
-            "value" : "threats",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
-    "ae34701a-3a24-4b3f-aa21-f34c6e7ed78d" : {
-      "vertexId" : "ae34701a-3a24-4b3f-aa21-f34c6e7ed78d",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-Excessive-Data-Exposure",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-Excessive-Data-Exposure",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Excessive-Data",
-        "value" : "true",
-        "type" : "string",
-        "source" : "ae34701a-3a24-4b3f-aa21-f34c6e7ed78d"
-      } ],
       "imported" : false
     },
     "f66e53fc-c820-4903-a858-4181b04886d7" : {
@@ -2030,6 +1817,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1725992245754,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725992123926,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "a"
+  }, {
     "status" : "Draft",
     "cts" : 1725992082288,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
@@ -2785,6 +2582,11 @@
     "timeStamp" : 1725991240836,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 52
+  }, {
+    "commitId" : "f5b059de8ef3147fb7b183baca50e475c351245a",
+    "timeStamp" : 1725992097358,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 47
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
