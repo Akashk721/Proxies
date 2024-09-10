@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725970571326,
+  "mts" : 1725971438007,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -80,6 +80,9 @@
   }, {
     "source" : "v1",
     "target" : "3a84375f-da17-4f36-b70b-5bc8b6704ab2"
+  }, {
+    "source" : "v1",
+    "target" : "9db4a818-4d50-4871-acde-af23d2724716"
   } ],
   "vertexHashMap" : {
     "79d8309a-ac3f-4f51-9b79-bf9a57781ef8" : {
@@ -170,6 +173,54 @@
         "type" : "string",
         "source" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d"
       } ],
+      "imported" : false
+    },
+    "9db4a818-4d50-4871-acde-af23d2724716" : {
+      "vertexId" : "9db4a818-4d50-4871-acde-af23d2724716",
+      "vertexType" : "TARGET",
+      "name" : "Path Traversal Attack",
+      "target" : {
+        "name" : "Path Traversal Attack",
+        "description" : "Path Traversal Attack",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "3.111.67.30:7000",
+          "path" : "/v1/card/create",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\",\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"/../\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "response-Path-Traversal-Attack",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
       "imported" : false
     },
     "3da36450-3391-48bd-a297-bbed1468d064" : {
@@ -725,6 +776,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1725971049358,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1725970580756,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "a"
+  }, {
+    "status" : "Review",
     "cts" : 1725970019279,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -957,6 +1018,11 @@
   }, {
     "commitId" : "2cddf5e739af3059d66075e03c15b4105454fb39",
     "timeStamp" : 1725970568245,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 17
+  }, {
+    "commitId" : "3b6d18b946a8aa7ede889e16bfdec03b35a6f094",
+    "timeStamp" : 1725970571326,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 17
   } ],
