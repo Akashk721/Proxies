@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725969208235,
+  "mts" : 1725969318827,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -23,6 +23,9 @@
   }, {
     "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "ca7faee3-eefa-4630-9e1b-d85a0d09bee7",
+    "target" : "e2892d6f-aac6-47f0-a876-366364f75860"
   }, {
     "source" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
     "target" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc"
@@ -125,10 +128,10 @@
     "79d8309a-ac3f-4f51-9b79-bf9a57781ef8" : {
       "vertexId" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
       "vertexType" : "TARGET",
-      "name" : "process",
+      "name" : "Validate Request",
       "target" : {
-        "name" : "process",
-        "description" : "process",
+        "name" : "Validate Request",
+        "description" : "Validate Request",
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "POST",
@@ -308,6 +311,56 @@
       } ],
       "imported" : false
     },
+    "e2892d6f-aac6-47f0-a876-366364f75860" : {
+      "vertexId" : "e2892d6f-aac6-47f0-a876-366364f75860",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request",
+      "target" : {
+        "name" : "Validate Request",
+        "description" : "Validate Request",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          }, {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "2threats",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "Failed at process",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc" : {
       "vertexId" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
       "vertexType" : "VARIABLES",
@@ -441,6 +494,11 @@
     "timeStamp" : 1725968294333,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 7
+  }, {
+    "commitId" : "c88a222d3fa91727a2a8f30bfe3612ae237ef1c7",
+    "timeStamp" : 1725969208235,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 8
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
