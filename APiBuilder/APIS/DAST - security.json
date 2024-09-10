@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725969318827,
+  "mts" : 1725969355627,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -35,6 +35,9 @@
   }, {
     "source" : "878d4036-0f2e-40da-b261-358c384aa0d8",
     "target" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8"
+  }, {
+    "source" : "e2892d6f-aac6-47f0-a876-366364f75860",
+    "target" : "1fe10350-c693-4d1d-a372-554cfe471e91"
   }, {
     "source" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
@@ -198,6 +201,37 @@
           "type" : "json"
         }
       }
+    },
+    "1fe10350-c693-4d1d-a372-554cfe471e91" : {
+      "vertexId" : "1fe10350-c693-4d1d-a372-554cfe471e91",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "2threats",
+            "value" : "Host header is a numeric IP address rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
     },
     "878d4036-0f2e-40da-b261-358c384aa0d8" : {
       "vertexId" : "878d4036-0f2e-40da-b261-358c384aa0d8",
@@ -499,6 +533,11 @@
     "timeStamp" : 1725969208235,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 8
+  }, {
+    "commitId" : "45ba44e3a03ab723ff8c5e8cdbd5d8c48520e3b9",
+    "timeStamp" : 1725969318827,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 9
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
