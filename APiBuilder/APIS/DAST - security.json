@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725970432465,
+  "mts" : 1725970493043,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -47,6 +47,9 @@
   }, {
     "source" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
     "target" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af"
+  }, {
+    "source" : "3da36450-3391-48bd-a297-bbed1468d064",
+    "target" : "abdd73e3-9f21-4a97-96c7-06bf692ef864"
   }, {
     "source" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
@@ -206,6 +209,37 @@
           }
         }
       },
+      "imported" : false
+    },
+    "abdd73e3-9f21-4a97-96c7-06bf692ef864" : {
+      "vertexId" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-HTTP-Header-Injection",
+            "value" : "HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
       "imported" : false
     },
     "e2892d6f-aac6-47f0-a876-366364f75860" : {
@@ -815,6 +849,11 @@
   }, {
     "commitId" : "9cffece1844c4118eb8639e5a06bfc0cbe21ca5a",
     "timeStamp" : 1725970391890,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 14
+  }, {
+    "commitId" : "a01b3794044448d1813ecdc7ffef4df534cf3d06",
+    "timeStamp" : 1725970432465,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 14
   } ],
