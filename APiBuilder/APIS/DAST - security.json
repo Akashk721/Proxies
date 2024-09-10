@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725974678226,
+  "mts" : 1725974916836,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -65,6 +65,9 @@
   }, {
     "source" : "878d4036-0f2e-40da-b261-358c384aa0d8",
     "target" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8"
+  }, {
+    "source" : "c5f44806-adb8-4d1e-a6c6-8c2512a2506d",
+    "target" : "68fefe6b-64fa-4792-a867-199a6f7693f7"
   }, {
     "source" : "v1",
     "target" : "9db4a818-4d50-4871-acde-af23d2724716"
@@ -481,6 +484,57 @@
         "type" : "string",
         "source" : "700ba964-5802-490c-ab83-ae597e536699"
       } ],
+      "imported" : false
+    },
+    "68fefe6b-64fa-4792-a867-199a6f7693f7" : {
+      "vertexId" : "68fefe6b-64fa-4792-a867-199a6f7693f7",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request PHP-Injection-Attack",
+      "target" : {
+        "name" : "Validate Request PHP-Injection-Attack",
+        "description" : "Validate Request PHP-Injection-Attack",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user\\r\\nagent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\",\n                \"Cookie\":\"as\"\n            },\n            \"queryParams\": {},\n            \"formParams\": {\n                \"test\\r\\nname\":\"file\"\n            },\n            \"verb\": \"POST\",\n            \"path\": \"http://www.target.com\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"<? echo \\\\\\\"Short tag!\\\\\\\"; ?>\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"Time took = 0\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "threats-PHP-Injection-Attack",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
       "imported" : false
     },
     "1fe10350-c693-4d1d-a372-554cfe471e91" : {
@@ -1879,6 +1933,11 @@
     "timeStamp" : 1725974239438,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 32
+  }, {
+    "commitId" : "0c779208a96c8a2f6d131952aaa97e54c58de506",
+    "timeStamp" : 1725974678226,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 33
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
