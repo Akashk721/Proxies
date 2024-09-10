@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725972200248,
+  "mts" : 1725972577913,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -765,7 +765,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}}\n}",
+          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}},\n    \"Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule\" : {{RFI}}\n}",
           "type" : "json"
         }
       }
@@ -1346,6 +1346,11 @@
   }, {
     "commitId" : "d25f2fd99d85a7580a1b2487f8b8af3f3560c560",
     "timeStamp" : 1725972146716,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 24
+  }, {
+    "commitId" : "33ac3d66d9d21f35895417a71f117d26a1b31b1e",
+    "timeStamp" : 1725972200248,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 24
   } ],
