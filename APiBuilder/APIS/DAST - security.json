@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725977949167,
+  "mts" : 1725978070759,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -147,6 +147,9 @@
     "source" : "5483b31d-92d1-4e4b-ad86-63bf82d96623",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
   }, {
+    "source" : "8c0c19af-d98f-45fc-b738-45d1c6ddc44b",
+    "target" : "7edc57bb-ae70-473e-b4cb-27bf00e16d93"
+  }, {
     "source" : "v1",
     "target" : "43d65ea2-2819-4e32-946a-8b33a5fce6ca"
   }, {
@@ -211,115 +214,6 @@
     "target" : "700ba964-5802-490c-ab83-ae597e536699"
   } ],
   "vertexHashMap" : {
-    "79d8309a-ac3f-4f51-9b79-bf9a57781ef8" : {
-      "vertexId" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
-      "vertexType" : "TARGET",
-      "name" : "Validate Request",
-      "target" : {
-        "name" : "Validate Request",
-        "description" : "Validate Request",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "api.apiwiz.io",
-          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
-          "headerParams" : [ {
-            "name" : "tenant",
-            "value" : "acme-bank"
-          }, {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123a\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\": \"text/plain, application/json, application/*+json, */*\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"localhost:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"user-agent\": \"Apache-HttpClient/4.4.1 (Java/11.0.17)\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"v1/tracing/saveResponse\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"{{{{response}}}}\",\n            \"statusCode\": \"400\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "process",
-            "reference" : "body",
-            "value" : "$.datatypes",
-            "active" : true,
-            "hide" : true
-          }, {
-            "name" : "threats",
-            "reference" : "body",
-            "value" : "threats",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ],
-          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"transactionId\": {\n      \"type\": \"string\"\n    },\n    \"refAuditId\": {\n      \"type\": \"null\"\n    },\n    \"method\": {\n      \"type\": \"string\"\n    },\n    \"auditLogId\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"string\",\n      \"format\": \"color\"\n    },\n    \"statusCodeGroup\": {\n      \"type\": \"string\"\n    },\n    \"uri\": {\n      \"type\": \"string\"\n    },\n    \"datatypes\": {\n      \"type\": \"array\"\n    },\n    \"threats\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"policyViolations\": {\n      \"type\": \"boolean\"\n    },\n    \"location\": {\n      \"type\": \"string\"\n    },\n    \"state\": {\n      \"type\": \"string\"\n    },\n    \"city\": {\n      \"type\": \"string\"\n    },\n    \"zip\": {\n      \"type\": \"string\"\n    },\n    \"internal\": {\n      \"type\": \"boolean\"\n    },\n    \"sourceIp\": {\n      \"type\": \"string\",\n      \"format\": \"ip-address\"\n    },\n    \"sourceDomain\": {\n      \"type\": \"string\"\n    },\n    \"host\": {\n      \"type\": \"string\"\n    },\n    \"mappedEnvironment\": {\n      \"type\": \"string\"\n    },\n    \"priority\": {\n      \"type\": \"string\"\n    },\n    \"isDismissed\": {\n      \"type\": \"boolean\"\n    },\n    \"isBulkAPI\": {\n      \"type\": \"boolean\"\n    }\n  }\n}"
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 500,
-          "body" : {
-            "data" : "Failed at process",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
-    "34a58f5f-67a2-4774-8a4f-1544ad35a2c0" : {
-      "vertexId" : "34a58f5f-67a2-4774-8a4f-1544ad35a2c0",
-      "vertexType" : "TARGET",
-      "name" : "Validate Request - Broken-Object-Level-Authorization",
-      "target" : {
-        "name" : "Validate Request - Broken-Object-Level-Authorization",
-        "description" : "Validate Request - Broken-Object-Level-Authorization",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "api.apiwiz.io",
-          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
-          "headerParams" : [ {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          }, {
-            "name" : "tenant",
-            "value" : "acme-bank"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse/123\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"Time took = 0\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "threats-bola",
-            "reference" : "body",
-            "value" : "threats",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
     "9807b403-f2ea-49b3-af8e-a8d1d312c72d" : {
       "vertexId" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d",
       "vertexType" : "VARIABLES",
@@ -349,71 +243,6 @@
         "value" : "true",
         "type" : "string",
         "source" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d"
-      } ],
-      "imported" : false
-    },
-    "d1dec7e8-3c43-47e9-b8aa-2381acd135a5" : {
-      "vertexId" : "d1dec7e8-3c43-47e9-b8aa-2381acd135a5",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-RFI",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-RFI",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "RFI",
-        "value" : "true",
-        "type" : "string",
-        "source" : "d1dec7e8-3c43-47e9-b8aa-2381acd135a5"
-      } ],
-      "imported" : false
-    },
-    "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86" : {
-      "vertexId" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "threats-Path-Traversal-Attack",
-            "value" : "Path Traversal Attack (/../) rule",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "a9683969-6a2e-404e-91a1-dcd9a020a35e" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63" ]
       } ],
       "imported" : false
     },
@@ -447,153 +276,6 @@
           "continueOnError" : false
         },
         "flowVertexes" : [ "d24ed0c4-a9bb-4da9-a255-c597c95295c5" ]
-      } ],
-      "imported" : false
-    },
-    "6e726f79-a4ac-404f-97ba-9cdabd5d3421" : {
-      "vertexId" : "6e726f79-a4ac-404f-97ba-9cdabd5d3421",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "Broken-User-Authentication-threats",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-Broken-User-Authentication",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Broken-User-Authentication",
-        "value" : "false",
-        "type" : "string",
-        "source" : "6e726f79-a4ac-404f-97ba-9cdabd5d3421"
-      } ],
-      "imported" : false
-    },
-    "e2892d6f-aac6-47f0-a876-366364f75860" : {
-      "vertexId" : "e2892d6f-aac6-47f0-a876-366364f75860",
-      "vertexType" : "TARGET",
-      "name" : "Validate Request - host numeric",
-      "target" : {
-        "name" : "Validate Request - host numeric",
-        "description" : "Validate Request - host numeric",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "api.apiwiz.io",
-          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
-          "headerParams" : [ {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          }, {
-            "name" : "tenant",
-            "value" : "acme-bank"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"{{2response}}\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "2threats",
-            "reference" : "body",
-            "value" : "threats",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "Failed at process",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
-    "da64305b-9878-4282-bbac-984dd06194d4" : {
-      "vertexId" : "da64305b-9878-4282-bbac-984dd06194d4",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-HTTP-Header-Injection",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "Header-Injection-response",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Header-Injection",
-        "value" : "true",
-        "type" : "string",
-        "source" : "da64305b-9878-4282-bbac-984dd06194d4"
-      } ],
-      "imported" : false
-    },
-    "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63" : {
-      "vertexId" : "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-Path-Traversal-Attack",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-Path-Traversal-Attack",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Path-Traversal",
-        "value" : "false",
-        "type" : "string",
-        "source" : "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63"
       } ],
       "imported" : false
     },
@@ -670,90 +352,6 @@
         "value" : "false",
         "type" : "string",
         "source" : "700ba964-5802-490c-ab83-ae597e536699"
-      } ],
-      "imported" : false
-    },
-    "68fefe6b-64fa-4792-a867-199a6f7693f7" : {
-      "vertexId" : "68fefe6b-64fa-4792-a867-199a6f7693f7",
-      "vertexType" : "TARGET",
-      "name" : "Validate Request PHP-Injection-Attack",
-      "target" : {
-        "name" : "Validate Request PHP-Injection-Attack",
-        "description" : "Validate Request PHP-Injection-Attack",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "api.apiwiz.io",
-          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
-          "headerParams" : [ {
-            "name" : "tenant",
-            "value" : "acme-bank"
-          }, {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user\\r\\nagent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\",\n                \"Cookie\":\"as\"\n            },\n            \"queryParams\": {},\n            \"formParams\": {\n                \"test\\r\\nname\":\"file\"\n            },\n            \"verb\": \"POST\",\n            \"path\": \"http://www.target.com\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"<? echo \\\\\\\"Short tag!\\\\\\\"; ?>\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"Time took = 0\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "threats-PHP-Injection-Attack",
-            "reference" : "body",
-            "value" : "threats",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
-    "1fe10350-c693-4d1d-a372-554cfe471e91" : {
-      "vertexId" : "1fe10350-c693-4d1d-a372-554cfe471e91",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "2threats",
-            "value" : "Host header is a numeric IP address rule",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "9807b403-f2ea-49b3-af8e-a8d1d312c72d" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7" ]
       } ],
       "imported" : false
     },
@@ -888,101 +486,55 @@
       } ],
       "imported" : false
     },
-    "f66e53fc-c820-4903-a858-4181b04886d7" : {
-      "vertexId" : "f66e53fc-c820-4903-a858-4181b04886d7",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "threats-PHP-Injection-Attack",
-            "value" : "PHP Injection Attack: Opening/Closing Tag Found rule",
-            "valueDataType" : "STRING"
+    "7edc57bb-ae70-473e-b4cb-27bf00e16d93" : {
+      "vertexId" : "7edc57bb-ae70-473e-b4cb-27bf00e16d93",
+      "vertexType" : "TARGET",
+      "name" : "validate request Excessive-Data-Exposure",
+      "target" : {
+        "name" : "validate request Excessive-Data-Exposure",
+        "description" : "validate request Excessive-Data-Exposure",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
           } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n             \"headerParams\": {\n                \"Content-Type\": \"application/json\",\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"{\\\"creditCard\\\": \\\"4111111111111111\\\"}\",\n            \"statusCode\": \"401\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "threats-Excessive-Data-Exposure",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
           }
-        },
-        "flowVertexes" : [ "5483b31d-92d1-4e4b-ad86-63bf82d96623" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "ae3a17dd-f760-4b14-9be6-bda61dd722f0" ]
-      } ],
-      "imported" : false
-    },
-    "99d5c72b-98c2-4989-86ca-910c5e2abdd2" : {
-      "vertexId" : "99d5c72b-98c2-4989-86ca-910c5e2abdd2",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-bola",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-bola",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "bola",
-        "value" : "false",
-        "type" : "string",
-        "source" : "99d5c72b-98c2-4989-86ca-910c5e2abdd2"
-      } ],
-      "imported" : false
-    },
-    "a9683969-6a2e-404e-91a1-dcd9a020a35e" : {
-      "vertexId" : "a9683969-6a2e-404e-91a1-dcd9a020a35e",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-Path-Traversal-Attack",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-Path-Traversal-Attack",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Path-Traversal",
-        "value" : "true",
-        "type" : "string",
-        "source" : "a9683969-6a2e-404e-91a1-dcd9a020a35e"
-      } ],
+        }
+      },
       "imported" : false
     },
     "c5f44806-adb8-4d1e-a6c6-8c2512a2506d" : {
@@ -1165,6 +717,878 @@
       },
       "imported" : false
     },
+    "58a202bb-a5c4-4d7f-885f-1403f7d561f5" : {
+      "vertexId" : "58a202bb-a5c4-4d7f-885f-1403f7d561f5",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "Broken-User-Authentication-threats",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-Broken-User-Authentication",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Broken-User-Authentication",
+        "value" : "true",
+        "type" : "string",
+        "source" : "58a202bb-a5c4-4d7f-885f-1403f7d561f5"
+      } ],
+      "imported" : false
+    },
+    "ae3a17dd-f760-4b14-9be6-bda61dd722f0" : {
+      "vertexId" : "ae3a17dd-f760-4b14-9be6-bda61dd722f0",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-PHP-Injection-Attack",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-PHP-Injection",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "PHP-Injection-Attack",
+        "value" : "false",
+        "type" : "string",
+        "source" : "ae3a17dd-f760-4b14-9be6-bda61dd722f0"
+      } ],
+      "imported" : false
+    },
+    "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b" : {
+      "vertexId" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "process",
+        "value" : "$.datatypes"
+      }, {
+        "name" : "threats",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Content-Length",
+        "value" : "false",
+        "type" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
+        "source" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b"
+      } ],
+      "imported" : false
+    },
+    "eb9a804c-9fd3-4eac-9f73-d0443675adb2" : {
+      "vertexId" : "eb9a804c-9fd3-4eac-9f73-d0443675adb2",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-bola",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-bola",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "bola",
+        "value" : "true",
+        "type" : "string",
+        "source" : "eb9a804c-9fd3-4eac-9f73-d0443675adb2"
+      } ],
+      "imported" : false
+    },
+    "7734e88f-ea7c-4cd1-b0ab-53af650e11e7" : {
+      "vertexId" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}},\n    \"Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule\" : {{RFI}},\n    \"Remote Command Execution: Unix Command Injection rule\" : {{Remote-Command-Execution}},\n    \"PHP Injection Attack: Opening/Closing Tag Found rule\" : {{PHP-Injection-Attack}},\n    \"Check for Broken Object Level Authorization (BOLA) rule\" : {{bola}},\n    \"Check for Broken User Authentication rule - Session IDs or Tokens in URLs\" : {{Broken-User-Authentication}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "5483b31d-92d1-4e4b-ad86-63bf82d96623" : {
+      "vertexId" : "5483b31d-92d1-4e4b-ad86-63bf82d96623",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-PHP-Injection-Attack",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-PHP-Injection",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "PHP-Injection-Attack",
+        "value" : "true",
+        "type" : "string",
+        "source" : "5483b31d-92d1-4e4b-ad86-63bf82d96623"
+      } ],
+      "imported" : false
+    },
+    "3a84375f-da17-4f36-b70b-5bc8b6704ab2" : {
+      "vertexId" : "3a84375f-da17-4f36-b70b-5bc8b6704ab2",
+      "vertexType" : "TARGET",
+      "name" : " HTTP Header Injection Attack via payload (CR/LF detected)",
+      "target" : {
+        "name" : " HTTP Header Injection Attack via payload (CR/LF detected)",
+        "description" : "\nHTTP Header Injection Attack via payload (CR/LF detected)",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "3.111.67.30:7000",
+          "path" : "/v1/card/create",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\",\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "Header-Injection-response",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "ab890690-49a8-4a38-ac15-968e9d4a0252" : {
+      "vertexId" : "ab890690-49a8-4a38-ac15-968e9d4a0252",
+      "vertexType" : "TARGET",
+      "name" : "Remote Command Execution: Unix Command Injection",
+      "target" : {
+        "name" : "Remote Command Execution: Unix Command Injection",
+        "description" : "Remote Command Execution: Unix Command Injection",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "3.111.67.30:7000",
+          "path" : "/v1/card/create",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\",\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"test\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "response-Remote-Command-Execution",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : true,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "b8c16306-2e2a-4bde-b6f8-1adb8a9596a7" : {
+      "vertexId" : "b8c16306-2e2a-4bde-b6f8-1adb8a9596a7",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-bola",
+            "value" : "Check for Broken Object Level Authorization (BOLA) rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "eb9a804c-9fd3-4eac-9f73-d0443675adb2" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "99d5c72b-98c2-4989-86ca-910c5e2abdd2" ]
+      } ],
+      "imported" : false
+    },
+    "335a7ad8-b64c-4a19-9d73-8388d6a35f59" : {
+      "vertexId" : "335a7ad8-b64c-4a19-9d73-8388d6a35f59",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-RFI",
+            "value" : "Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "d1dec7e8-3c43-47e9-b8aa-2381acd135a5" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "700ba964-5802-490c-ab83-ae597e536699" ]
+      } ],
+      "imported" : false
+    },
+    "fd1eed87-81c7-4023-9786-714d84801e63" : {
+      "vertexId" : "fd1eed87-81c7-4023-9786-714d84801e63",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "Broken-User-Authentication-threats",
+            "value" : "Check for Broken Function Level Authorization - Check for Unauthorized Requests",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "58a202bb-a5c4-4d7f-885f-1403f7d561f5" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "6e726f79-a4ac-404f-97ba-9cdabd5d3421" ]
+      } ],
+      "imported" : false
+    },
+    "79d8309a-ac3f-4f51-9b79-bf9a57781ef8" : {
+      "vertexId" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request",
+      "target" : {
+        "name" : "Validate Request",
+        "description" : "Validate Request",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123a\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\": \"text/plain, application/json, application/*+json, */*\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"localhost:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"user-agent\": \"Apache-HttpClient/4.4.1 (Java/11.0.17)\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"v1/tracing/saveResponse\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"{{{{response}}}}\",\n            \"statusCode\": \"400\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "process",
+            "reference" : "body",
+            "value" : "$.datatypes",
+            "active" : true,
+            "hide" : true
+          }, {
+            "name" : "threats",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ],
+          "responseSchema" : "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"transactionId\": {\n      \"type\": \"string\"\n    },\n    \"refAuditId\": {\n      \"type\": \"null\"\n    },\n    \"method\": {\n      \"type\": \"string\"\n    },\n    \"auditLogId\": {\n      \"type\": \"string\"\n    },\n    \"statusCode\": {\n      \"type\": \"string\",\n      \"format\": \"color\"\n    },\n    \"statusCodeGroup\": {\n      \"type\": \"string\"\n    },\n    \"uri\": {\n      \"type\": \"string\"\n    },\n    \"datatypes\": {\n      \"type\": \"array\"\n    },\n    \"threats\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      }\n    },\n    \"policyViolations\": {\n      \"type\": \"boolean\"\n    },\n    \"location\": {\n      \"type\": \"string\"\n    },\n    \"state\": {\n      \"type\": \"string\"\n    },\n    \"city\": {\n      \"type\": \"string\"\n    },\n    \"zip\": {\n      \"type\": \"string\"\n    },\n    \"internal\": {\n      \"type\": \"boolean\"\n    },\n    \"sourceIp\": {\n      \"type\": \"string\",\n      \"format\": \"ip-address\"\n    },\n    \"sourceDomain\": {\n      \"type\": \"string\"\n    },\n    \"host\": {\n      \"type\": \"string\"\n    },\n    \"mappedEnvironment\": {\n      \"type\": \"string\"\n    },\n    \"priority\": {\n      \"type\": \"string\"\n    },\n    \"isDismissed\": {\n      \"type\": \"boolean\"\n    },\n    \"isBulkAPI\": {\n      \"type\": \"boolean\"\n    }\n  }\n}"
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "body" : {
+            "data" : "Failed at process",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "34a58f5f-67a2-4774-8a4f-1544ad35a2c0" : {
+      "vertexId" : "34a58f5f-67a2-4774-8a4f-1544ad35a2c0",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request - Broken-Object-Level-Authorization",
+      "target" : {
+        "name" : "Validate Request - Broken-Object-Level-Authorization",
+        "description" : "Validate Request - Broken-Object-Level-Authorization",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          }, {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse/123\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"Time took = 0\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "threats-bola",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "d1dec7e8-3c43-47e9-b8aa-2381acd135a5" : {
+      "vertexId" : "d1dec7e8-3c43-47e9-b8aa-2381acd135a5",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-RFI",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-RFI",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "RFI",
+        "value" : "true",
+        "type" : "string",
+        "source" : "d1dec7e8-3c43-47e9-b8aa-2381acd135a5"
+      } ],
+      "imported" : false
+    },
+    "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86" : {
+      "vertexId" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-Path-Traversal-Attack",
+            "value" : "Path Traversal Attack (/../) rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "a9683969-6a2e-404e-91a1-dcd9a020a35e" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63" ]
+      } ],
+      "imported" : false
+    },
+    "6e726f79-a4ac-404f-97ba-9cdabd5d3421" : {
+      "vertexId" : "6e726f79-a4ac-404f-97ba-9cdabd5d3421",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "Broken-User-Authentication-threats",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-Broken-User-Authentication",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Broken-User-Authentication",
+        "value" : "false",
+        "type" : "string",
+        "source" : "6e726f79-a4ac-404f-97ba-9cdabd5d3421"
+      } ],
+      "imported" : false
+    },
+    "e2892d6f-aac6-47f0-a876-366364f75860" : {
+      "vertexId" : "e2892d6f-aac6-47f0-a876-366364f75860",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request - host numeric",
+      "target" : {
+        "name" : "Validate Request - host numeric",
+        "description" : "Validate Request - host numeric",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          }, {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user-agent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\"\n            },\n            \"queryParams\": {},\n            \"verb\": \"POST\",\n            \"path\": \"/v1/tracing/saveResponse\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"desc\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"{{2response}}\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "2threats",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "Failed at process",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "da64305b-9878-4282-bbac-984dd06194d4" : {
+      "vertexId" : "da64305b-9878-4282-bbac-984dd06194d4",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-HTTP-Header-Injection",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "Header-Injection-response",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Header-Injection",
+        "value" : "true",
+        "type" : "string",
+        "source" : "da64305b-9878-4282-bbac-984dd06194d4"
+      } ],
+      "imported" : false
+    },
+    "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63" : {
+      "vertexId" : "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-Path-Traversal-Attack",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-Path-Traversal-Attack",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Path-Traversal",
+        "value" : "false",
+        "type" : "string",
+        "source" : "68ebe1f6-5dc1-460b-b945-4a1c47d3dd63"
+      } ],
+      "imported" : false
+    },
+    "68fefe6b-64fa-4792-a867-199a6f7693f7" : {
+      "vertexId" : "68fefe6b-64fa-4792-a867-199a6f7693f7",
+      "vertexType" : "TARGET",
+      "name" : "Validate Request PHP-Injection-Attack",
+      "target" : {
+        "name" : "Validate Request PHP-Injection-Attack",
+        "description" : "Validate Request PHP-Injection-Attack",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "api.apiwiz.io",
+          "path" : "/v1/apiwiz-runtime-agent/api-security/process",
+          "headerParams" : [ {
+            "name" : "tenant",
+            "value" : "acme-bank"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"transactionId\": \"66c44e2ac925854ee8f09f1b\",\n    \"complianceCheckDTO\": {\n        \"request\": {\n            \"headerParams\": {\n                \"traceid\": \"ae2330cd214005b9\",\n                \"x-b3-parentspanid\": \"8bdad74caf0b259f\",\n                \"Content-Length\": \"123\",\n                \"request-timestamp\": 1724141098308,\n                \"x-b3-sampled\": \"0\",\n                \"accept\":\"\",\n                \"spanid\": \"173a96b5fc7e3c9b\",\n                \"parentspanid\": \"a5ad399fc7a9055f\",\n                \"x-b3-traceid\": \"c6f15ea8186d3546\",\n                \"x-b3-spanid\": \"d9482d79cb14b252\",\n                \"host\": \"127.0.0.1:8081\",\n                \"gateway-type\": \"MICROSERVICES\",\n                \"Content-Type\": \"application/json\",\n                \"region\": \"EMEA\",\n                \"connection\": \"Keep-Alive\",\n                \"response-timestamp\": 1724141098310,\n                \"accept-encoding\": \"gzip,deflate\",\n                \"Transfer-Encoding\":\"gzip\",\n                \"user\\r\\nagent\":\"\",\n                \"Range\": \"bytes=0-499,0-499,0-499,0-499,0 - 499 , 0-499\",\n                \"Cookie\":\"as\"\n            },\n            \"queryParams\": {},\n            \"formParams\": {\n                \"test\\r\\nname\":\"file\"\n            },\n            \"verb\": \"POST\",\n            \"path\": \"http://www.target.com\",\n            \"hostname\": \"127.0.0.1:8081\",\n            \"requestBody\": \"{\\\"name1\\\":\\\"null\\\",\\\"description1\\\":\\\"<? echo \\\\\\\"Short tag!\\\\\\\"; ?>\\\",\\\"aget\\\":\\\"21\\\"}\",\n            \"scheme\": \"http\",\n            \"port\": 8081\n        },\n        \"response\": {\n            \"headerParams\": {\n                \"X-Requests-Remaining\": 0\n            },\n            \"responseBody\": \"Time took = 0\",\n            \"statusCode\": \"200\"\n        },\n        \"clientIp\": \"127.0.0.1\",\n        \"serverIp\": \"34.217.218.221\",\n        \"serverHost\": \"127.0.0.1:8081\"\n    }\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "threats-PHP-Injection-Attack",
+            "reference" : "body",
+            "value" : "threats",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "1fe10350-c693-4d1d-a372-554cfe471e91" : {
+      "vertexId" : "1fe10350-c693-4d1d-a372-554cfe471e91",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "2threats",
+            "value" : "Host header is a numeric IP address rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "9807b403-f2ea-49b3-af8e-a8d1d312c72d" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7" ]
+      } ],
+      "imported" : false
+    },
+    "f66e53fc-c820-4903-a858-4181b04886d7" : {
+      "vertexId" : "f66e53fc-c820-4903-a858-4181b04886d7",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "threats-PHP-Injection-Attack",
+            "value" : "PHP Injection Attack: Opening/Closing Tag Found rule",
+            "valueDataType" : "STRING"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "5483b31d-92d1-4e4b-ad86-63bf82d96623" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "ae3a17dd-f760-4b14-9be6-bda61dd722f0" ]
+      } ],
+      "imported" : false
+    },
+    "99d5c72b-98c2-4989-86ca-910c5e2abdd2" : {
+      "vertexId" : "99d5c72b-98c2-4989-86ca-910c5e2abdd2",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-bola",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-bola",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "bola",
+        "value" : "false",
+        "type" : "string",
+        "source" : "99d5c72b-98c2-4989-86ca-910c5e2abdd2"
+      } ],
+      "imported" : false
+    },
+    "a9683969-6a2e-404e-91a1-dcd9a020a35e" : {
+      "vertexId" : "a9683969-6a2e-404e-91a1-dcd9a020a35e",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-Path-Traversal-Attack",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-Path-Traversal-Attack",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Path-Traversal",
+        "value" : "true",
+        "type" : "string",
+        "source" : "a9683969-6a2e-404e-91a1-dcd9a020a35e"
+      } ],
+      "imported" : false
+    },
     "3da36450-3391-48bd-a297-bbed1468d064" : {
       "vertexId" : "3da36450-3391-48bd-a297-bbed1468d064",
       "vertexType" : "TARGET",
@@ -1214,38 +1638,6 @@
           }
         }
       },
-      "imported" : false
-    },
-    "58a202bb-a5c4-4d7f-885f-1403f7d561f5" : {
-      "vertexId" : "58a202bb-a5c4-4d7f-885f-1403f7d561f5",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "Broken-User-Authentication-threats",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-Broken-User-Authentication",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Broken-User-Authentication",
-        "value" : "true",
-        "type" : "string",
-        "source" : "58a202bb-a5c4-4d7f-885f-1403f7d561f5"
-      } ],
       "imported" : false
     },
     "d24ed0c4-a9bb-4da9-a255-c597c95295c5" : {
@@ -1311,38 +1703,6 @@
       } ],
       "imported" : false
     },
-    "ae3a17dd-f760-4b14-9be6-bda61dd722f0" : {
-      "vertexId" : "ae3a17dd-f760-4b14-9be6-bda61dd722f0",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-PHP-Injection-Attack",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-PHP-Injection",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "PHP-Injection-Attack",
-        "value" : "false",
-        "type" : "string",
-        "source" : "ae3a17dd-f760-4b14-9be6-bda61dd722f0"
-      } ],
-      "imported" : false
-    },
     "29a4b2e9-8555-44d6-8fe7-f06974eed6ef" : {
       "vertexId" : "29a4b2e9-8555-44d6-8fe7-f06974eed6ef",
       "vertexType" : "VARIABLES",
@@ -1372,37 +1732,6 @@
         "value" : "true",
         "type" : "string",
         "source" : "29a4b2e9-8555-44d6-8fe7-f06974eed6ef"
-      } ],
-      "imported" : false
-    },
-    "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b" : {
-      "vertexId" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "process",
-        "value" : "$.datatypes"
-      }, {
-        "name" : "threats",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "Content-Length",
-        "value" : "false",
-        "type" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
-        "source" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b"
       } ],
       "imported" : false
     },
@@ -1641,54 +1970,6 @@
       },
       "imported" : false
     },
-    "eb9a804c-9fd3-4eac-9f73-d0443675adb2" : {
-      "vertexId" : "eb9a804c-9fd3-4eac-9f73-d0443675adb2",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-bola",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-bola",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "bola",
-        "value" : "true",
-        "type" : "string",
-        "source" : "eb9a804c-9fd3-4eac-9f73-d0443675adb2"
-      } ],
-      "imported" : false
-    },
-    "7734e88f-ea7c-4cd1-b0ab-53af650e11e7" : {
-      "vertexId" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "headers" : {
-          "Content-Type" : "application/json"
-        },
-        "body" : {
-          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}},\n    \"Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule\" : {{RFI}},\n    \"Remote Command Execution: Unix Command Injection rule\" : {{Remote-Command-Execution}},\n    \"PHP Injection Attack: Opening/Closing Tag Found rule\" : {{PHP-Injection-Attack}},\n    \"Check for Broken Object Level Authorization (BOLA) rule\" : {{bola}},\n    \"Check for Broken User Authentication rule - Session IDs or Tokens in URLs\" : {{Broken-User-Authentication}}\n}",
-          "type" : "json"
-        }
-      }
-    },
     "98e1b125-5597-4827-98ea-f247df698bf3" : {
       "vertexId" : "98e1b125-5597-4827-98ea-f247df698bf3",
       "vertexType" : "TARGET",
@@ -1738,167 +2019,6 @@
           }
         }
       },
-      "imported" : false
-    },
-    "5483b31d-92d1-4e4b-ad86-63bf82d96623" : {
-      "vertexId" : "5483b31d-92d1-4e4b-ad86-63bf82d96623",
-      "vertexType" : "VARIABLES",
-      "name" : "Set Variable",
-      "runtimeVariableList" : [ {
-        "name" : "threats-PHP-Injection-Attack",
-        "value" : "threats",
-        "source" : "raw"
-      }, {
-        "name" : "response-PHP-Injection",
-        "value" : "$",
-        "source" : "raw"
-      }, {
-        "name" : "requestHost",
-        "value" : "host",
-        "source" : "raw"
-      }, {
-        "name" : "requestVerb",
-        "value" : "verb",
-        "source" : "raw"
-      }, {
-        "name" : "requestPath",
-        "value" : "path",
-        "source" : "raw"
-      }, {
-        "name" : "PHP-Injection-Attack",
-        "value" : "true",
-        "type" : "string",
-        "source" : "5483b31d-92d1-4e4b-ad86-63bf82d96623"
-      } ],
-      "imported" : false
-    },
-    "3a84375f-da17-4f36-b70b-5bc8b6704ab2" : {
-      "vertexId" : "3a84375f-da17-4f36-b70b-5bc8b6704ab2",
-      "vertexType" : "TARGET",
-      "name" : " HTTP Header Injection Attack via payload (CR/LF detected)",
-      "target" : {
-        "name" : " HTTP Header Injection Attack via payload (CR/LF detected)",
-        "description" : "\nHTTP Header Injection Attack via payload (CR/LF detected)",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "http",
-          "host" : "3.111.67.30:7000",
-          "path" : "/v1/card/create",
-          "headerParams" : [ {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\",\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"Kirby Janette\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "Header-Injection-response",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : true,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
-    "ab890690-49a8-4a38-ac15-968e9d4a0252" : {
-      "vertexId" : "ab890690-49a8-4a38-ac15-968e9d4a0252",
-      "vertexType" : "TARGET",
-      "name" : "Remote Command Execution: Unix Command Injection",
-      "target" : {
-        "name" : "Remote Command Execution: Unix Command Injection",
-        "description" : "Remote Command Execution: Unix Command Injection",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "http",
-          "host" : "3.111.67.30:7000",
-          "path" : "/v1/card/create",
-          "headerParams" : [ {
-            "name" : "Content-Type",
-            "value" : "application/json"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n    \"request_id\": \"7a10f3eb-fe56-4699-9bd0-044a63508828\",\n    \"virtual\": true,\n    \"holder_id\": \"173ab846-de2a-1234-5678-160bd2e660e6\",\n    \"label\": \"test\",\n    \"accounts\": [\n        \"75aa436d-2a04-4ab9-af14-ed0955769b8c\"\n    ],\n    \"categories\": [\n        \"groceries\",\n        \"restaurants\"\n    ],\n    \"spending_limits\": {\n        \"single\": {\n            \"amount\": 200.22,\n            \"currency\": \"GBP\"\n        },\n        \"week\": {\n            \"amount\": 200.44,\n            \"currency\": \"GBP\"\n        }\n    }\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ {
-            "name" : "response-Remote-Command-Execution",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false
-          } ]
-        },
-        "timeout" : 0,
-        "continueOnError" : true,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
-    "b8c16306-2e2a-4bde-b6f8-1adb8a9596a7" : {
-      "vertexId" : "b8c16306-2e2a-4bde-b6f8-1adb8a9596a7",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "threats-bola",
-            "value" : "Check for Broken Object Level Authorization (BOLA) rule",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "eb9a804c-9fd3-4eac-9f73-d0443675adb2" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "99d5c72b-98c2-4989-86ca-910c5e2abdd2" ]
-      } ],
       "imported" : false
     },
     "2cecbbed-db9e-46f9-95c5-f3a9f4a77fed" : {
@@ -1980,39 +2100,6 @@
       } ],
       "imported" : true
     },
-    "335a7ad8-b64c-4a19-9d73-8388d6a35f59" : {
-      "vertexId" : "335a7ad8-b64c-4a19-9d73-8388d6a35f59",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "threats-RFI",
-            "value" : "Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "d1dec7e8-3c43-47e9-b8aa-2381acd135a5" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "700ba964-5802-490c-ab83-ae597e536699" ]
-      } ],
-      "imported" : false
-    },
     "8c00bb17-0eeb-439c-9f19-d7de1e1530af" : {
       "vertexId" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
       "vertexType" : "CONDITIONAL_FLOW",
@@ -2043,39 +2130,6 @@
           "continueOnError" : false
         },
         "flowVertexes" : [ "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b" ]
-      } ],
-      "imported" : false
-    },
-    "fd1eed87-81c7-4023-9786-714d84801e63" : {
-      "vertexId" : "fd1eed87-81c7-4023-9786-714d84801e63",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "CONTAINS",
-            "key" : "Broken-User-Authentication-threats",
-            "value" : "Check for Broken Function Level Authorization - Check for Unauthorized Requests",
-            "valueDataType" : "STRING"
-          } ],
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 500,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "58a202bb-a5c4-4d7f-885f-1403f7d561f5" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "continueOnError" : false
-        },
-        "flowVertexes" : [ "6e726f79-a4ac-404f-97ba-9cdabd5d3421" ]
       } ],
       "imported" : false
     }
@@ -2676,6 +2730,11 @@
     "timeStamp" : 1725977737629,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 47
+  }, {
+    "commitId" : "d470c091caf54a3b8e250ab0390b3567fb3460d4",
+    "timeStamp" : 1725977949167,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 48
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
