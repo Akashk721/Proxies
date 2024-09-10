@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725970536370,
+  "mts" : 1725970554026,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -41,6 +41,9 @@
   }, {
     "source" : "v1",
     "target" : "ca7faee3-eefa-4630-9e1b-d85a0d09bee7"
+  }, {
+    "source" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
+    "target" : "d24ed0c4-a9bb-4da9-a255-c597c95295c5"
   }, {
     "source" : "v1",
     "target" : "878d4036-0f2e-40da-b261-358c384aa0d8"
@@ -242,7 +245,40 @@
         "condition" : "else",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "d24ed0c4-a9bb-4da9-a255-c597c95295c5" ]
+      } ],
+      "imported" : false
+    },
+    "d24ed0c4-a9bb-4da9-a255-c597c95295c5" : {
+      "vertexId" : "d24ed0c4-a9bb-4da9-a255-c597c95295c5",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-HTTP-Header-Injection",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "Header-Injection-response",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Header-Injection",
+        "value" : "false",
+        "type" : "string",
+        "source" : "d24ed0c4-a9bb-4da9-a255-c597c95295c5"
       } ],
       "imported" : false
     },
@@ -900,6 +936,11 @@
   }, {
     "commitId" : "7aeb60f524ac326a129b88ec4871d944b965d81a",
     "timeStamp" : 1725970523707,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 16
+  }, {
+    "commitId" : "690364dbfb1de7eeecdda0bb99d24efb1ace81fb",
+    "timeStamp" : 1725970536370,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 16
   } ],
