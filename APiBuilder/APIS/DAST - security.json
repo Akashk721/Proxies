@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725969436784,
+  "mts" : 1725969449992,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -23,6 +23,9 @@
   }, {
     "source" : "1fe10350-c693-4d1d-a372-554cfe471e91",
     "target" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d"
+  }, {
+    "source" : "1fe10350-c693-4d1d-a372-554cfe471e91",
+    "target" : "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7"
   }, {
     "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
@@ -265,7 +268,8 @@
         "condition" : "else",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7" ]
       } ],
       "imported" : false
     },
@@ -347,6 +351,38 @@
         "hide" : false
       } ],
       "imported" : true
+    },
+    "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7" : {
+      "vertexId" : "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "2threats",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "2response",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Host-numeric",
+        "value" : "false",
+        "type" : "string",
+        "source" : "b7375c2d-8eeb-4d7c-8a74-c7302cc5aae7"
+      } ],
+      "imported" : false
     },
     "8c00bb17-0eeb-439c-9f19-d7de1e1530af" : {
       "vertexId" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
@@ -582,6 +618,11 @@
   }, {
     "commitId" : "8c2d9888b2946309b22a6a29c25a08212bcfa902",
     "timeStamp" : 1725969423543,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 11
+  }, {
+    "commitId" : "e61a6eeed6e7a3fd32995592aa0cbf09d1d4c187",
+    "timeStamp" : 1725969436784,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 11
   } ],
