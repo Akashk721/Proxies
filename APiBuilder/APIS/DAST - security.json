@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725971711768,
+  "mts" : 1725971724138,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -27,6 +27,30 @@
     "source" : "9db4a818-4d50-4871-acde-af23d2724716",
     "target" : "dd4031ad-d832-4418-b006-a4df45967064"
   }, {
+    "source" : "e2892d6f-aac6-47f0-a876-366364f75860",
+    "target" : "1fe10350-c693-4d1d-a372-554cfe471e91"
+  }, {
+    "source" : "v1",
+    "target" : "878d4036-0f2e-40da-b261-358c384aa0d8"
+  }, {
+    "source" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
+    "target" : "da64305b-9878-4282-bbac-984dd06194d4"
+  }, {
+    "source" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
+    "target" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af"
+  }, {
+    "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
+    "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
+  }, {
+    "source" : "dd4031ad-d832-4418-b006-a4df45967064",
+    "target" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86"
+  }, {
+    "source" : "878d4036-0f2e-40da-b261-358c384aa0d8",
+    "target" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8"
+  }, {
+    "source" : "v1",
+    "target" : "9db4a818-4d50-4871-acde-af23d2724716"
+  }, {
     "source" : "ca7faee3-eefa-4630-9e1b-d85a0d09bee7",
     "target" : "e2892d6f-aac6-47f0-a876-366364f75860"
   }, {
@@ -35,9 +59,6 @@
   }, {
     "source" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
     "target" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b"
-  }, {
-    "source" : "e2892d6f-aac6-47f0-a876-366364f75860",
-    "target" : "1fe10350-c693-4d1d-a372-554cfe471e91"
   }, {
     "source" : "3ef9b8fe-ebb1-4ed7-8d02-44eb9a1c3b1b",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
@@ -48,25 +69,16 @@
     "source" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
     "target" : "d24ed0c4-a9bb-4da9-a255-c597c95295c5"
   }, {
-    "source" : "v1",
-    "target" : "878d4036-0f2e-40da-b261-358c384aa0d8"
-  }, {
     "source" : "d24ed0c4-a9bb-4da9-a255-c597c95295c5",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
   }, {
-    "source" : "abdd73e3-9f21-4a97-96c7-06bf692ef864",
-    "target" : "da64305b-9878-4282-bbac-984dd06194d4"
-  }, {
-    "source" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
-    "target" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af"
+    "source" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86",
+    "target" : "a9683969-6a2e-404e-91a1-dcd9a020a35e"
   }, {
     "source" : "3da36450-3391-48bd-a297-bbed1468d064",
     "target" : "abdd73e3-9f21-4a97-96c7-06bf692ef864"
   }, {
     "source" : "9807b403-f2ea-49b3-af8e-a8d1d312c72d",
-    "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
-  }, {
-    "source" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc",
     "target" : "7734e88f-ea7c-4cd1-b0ab-53af650e11e7"
   }, {
     "source" : "da64305b-9878-4282-bbac-984dd06194d4",
@@ -75,22 +87,45 @@
     "source" : "8c00bb17-0eeb-439c-9f19-d7de1e1530af",
     "target" : "45b760c1-8398-4e2a-b5fc-0e73bad5ffcc"
   }, {
-    "source" : "dd4031ad-d832-4418-b006-a4df45967064",
-    "target" : "7db47a16-3ff9-46ee-83e8-6e8fd0ee7b86"
-  }, {
-    "source" : "878d4036-0f2e-40da-b261-358c384aa0d8",
-    "target" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8"
-  }, {
     "source" : "3a84375f-da17-4f36-b70b-5bc8b6704ab2",
     "target" : "3da36450-3391-48bd-a297-bbed1468d064"
   }, {
     "source" : "v1",
     "target" : "3a84375f-da17-4f36-b70b-5bc8b6704ab2"
-  }, {
-    "source" : "v1",
-    "target" : "9db4a818-4d50-4871-acde-af23d2724716"
   } ],
   "vertexHashMap" : {
+    "a9683969-6a2e-404e-91a1-dcd9a020a35e" : {
+      "vertexId" : "a9683969-6a2e-404e-91a1-dcd9a020a35e",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "threats-Path-Traversal-Attack",
+        "value" : "threats",
+        "source" : "raw"
+      }, {
+        "name" : "response-Path-Traversal-Attack",
+        "value" : "$",
+        "source" : "raw"
+      }, {
+        "name" : "requestHost",
+        "value" : "host",
+        "source" : "raw"
+      }, {
+        "name" : "requestVerb",
+        "value" : "verb",
+        "source" : "raw"
+      }, {
+        "name" : "requestPath",
+        "value" : "path",
+        "source" : "raw"
+      }, {
+        "name" : "Path-Traversal",
+        "value" : "true",
+        "type" : "string",
+        "source" : "a9683969-6a2e-404e-91a1-dcd9a020a35e"
+      } ],
+      "imported" : false
+    },
     "79d8309a-ac3f-4f51-9b79-bf9a57781ef8" : {
       "vertexId" : "79d8309a-ac3f-4f51-9b79-bf9a57781ef8",
       "vertexType" : "TARGET",
@@ -302,7 +337,8 @@
               "type" : "json"
             }
           }
-        }
+        },
+        "flowVertexes" : [ "a9683969-6a2e-404e-91a1-dcd9a020a35e" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -1131,6 +1167,11 @@
   }, {
     "commitId" : "c522fba967894615a439e9efa3e023c780c07e55",
     "timeStamp" : 1725971680674,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 20
+  }, {
+    "commitId" : "d0409751d9e4a624d0b5b33f4d32cf953ce93617",
+    "timeStamp" : 1725971711768,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 20
   } ],
