@@ -3,7 +3,7 @@
   "cts" : 1725951436142,
   "createdUserName" : "Charles Livington",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1725976392773,
+  "mts" : 1725976425701,
   "createdBy" : "63761a7c2702eb379fb286e1",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66dfedcc44feb70c6e81213d",
@@ -1504,7 +1504,7 @@
           "Content-Type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}},\n    \"Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule\" : {{RFI}},\n    \"Remote Command Execution: Unix Command Injection rule\" : {{Remote-Command-Execution}},\n    \"PHP Injection Attack: Opening/Closing Tag Found rule\" : {{PHP-Injection-Attack}},\n    \"Check for Broken Object Level Authorization (BOLA) rule\" : {{bola}}\n}",
+          "data" : "{\n    \"Content-Length HTTP header validator Rule\" : {{Content-Length}},\n    \"Host header is a numeric IP address rule\" : {{Host-numeric}},\n    \"HTTP Header Injection Attack via payload (CR/LF detected) rule - 921150\" : {{Header-Injection}},\n    \"Path Traversal Attack (/../) rule\" : {{Path-Traversal}},\n    \"Possible Remote File Inclusion (RFI) Attack: Off-Domain Reference/Link rule\" : {{RFI}},\n    \"Remote Command Execution: Unix Command Injection rule\" : {{Remote-Command-Execution}},\n    \"PHP Injection Attack: Opening/Closing Tag Found rule\" : {{PHP-Injection-Attack}},\n    \"Check for Broken Object Level Authorization (BOLA) rule\" : {{bola}},\n    \"Check for Broken User Authentication rule - Session IDs or Tokens in URLs\" : {{Broken-User-Authentication}}\n}",
           "type" : "json"
         }
       }
@@ -2403,6 +2403,11 @@
     "timeStamp" : 1725976117358,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 42
+  }, {
+    "commitId" : "0eda4e706ddb96d71726c30f33d9b2e89db1171b",
+    "timeStamp" : 1725976392773,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 43
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
