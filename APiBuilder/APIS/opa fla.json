@@ -1,0 +1,151 @@
+{
+  "id" : "669e1077f2496f2465094ea9",
+  "cts" : 1721634934418,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1726143309504,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "669e1076f2496f2465094ea2",
+  "revision" : 1,
+  "name" : "opa fla",
+  "description" : "opa fla",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/opa-fla",
+  "pathArray" : [ "opa-fla" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "d8986188-2381-403e-bd4a-312a1708a48e",
+    "target" : "e2e14956-f8ed-4c51-8a7d-9cd0e4f56753"
+  }, {
+    "source" : "v1",
+    "target" : "d8986188-2381-403e-bd4a-312a1708a48e"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "form",
+        "reference" : "body",
+        "value" : "form",
+        "active" : false,
+        "source" : "formParams",
+        "hide" : false
+      }, {
+        "name" : "lurl",
+        "reference" : "body",
+        "value" : "url",
+        "active" : false,
+        "source" : "urlEncoding",
+        "hide" : false
+      }, {
+        "name" : "asdfsd",
+        "reference" : "body",
+        "value" : "asdf",
+        "active" : false,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    },
+    "e2e14956-f8ed-4c51-8a7d-9cd0e4f56753" : {
+      "vertexId" : "e2e14956-f8ed-4c51-8a7d-9cd0e4f56753",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 0,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "d8986188-2381-403e-bd4a-312a1708a48e" : {
+      "vertexId" : "d8986188-2381-403e-bd4a-312a1708a48e",
+      "vertexType" : "ENTITLEMENT",
+      "name" : "opa fla",
+      "entitlementData" : {
+        "connectorId" : "66c212c747bf67096a026857",
+        "connectorName" : "testOPa",
+        "policyId" : "66c5d6ee36f7034b097529ef",
+        "policyName" : "Field Level Authorization",
+        "serverUrl" : "",
+        "packagePath" : "",
+        "token" : "",
+        "inputData" : "{\n    \"consumer\": \"consumer_a\",\n    \"query\": [\n        \"getAllHealthInsurance\"\n    ]\n}",
+        "graphqlAuthorization" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 401,
+          "body" : {
+            "data" : "opa failed",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1721634934418,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "cd046804bdfc9908c62702c6bfbdc93a81ee8ba7",
+    "timeStamp" : 1721634934418,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "ef72d18fa4a9d257f48581db52ece6e46a78785e",
+    "timeStamp" : 1723259848134,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "f4a29d45e880b0a6a4562598bef37c1bd4a9c6eb",
+    "timeStamp" : 1723259858008,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "f92c996dea46b895609e750ea55afd09aa396aee",
+    "timeStamp" : 1723259861889,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "ac81d37ac957314ac1ab24b1840d80b31518e31d",
+    "timeStamp" : 1723462479520,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "745881d7f5238800c3ed4cf952b2c4b7a08bbf0a",
+    "timeStamp" : 1723962120125,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "55a10de9f12a4fe16b95ac1dea9a20e52fe82a32",
+    "timeStamp" : 1723962458093,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "fa8c7f3435ce423d45b780836a8a1c40f62229ca",
+    "timeStamp" : 1723962469630,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "0b9f2d1a9713df2523bbea87fa6d5950d1a29e63",
+    "timeStamp" : 1726143286858,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 5
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false,
+  "deleted" : false
+}
