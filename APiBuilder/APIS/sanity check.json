@@ -2,10 +2,10 @@
   "id" : "66e289b42e931857fbd450ef",
   "cts" : 1726122414669,
   "createdUserName" : "pranav A",
-  "modifiedUserName" : "pranav A",
-  "mts" : 1726122501298,
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1726135130235,
   "createdBy" : "6655a103339aa715119d5a13",
-  "modifiedBy" : "6655a103339aa715119d5a13",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e289ae2e931857fbd450ee",
   "revision" : 1,
   "name" : "sanity check",
@@ -16,9 +16,12 @@
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "pranav A",
+  "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "f58eacd2-c3b1-41ac-839f-0d7098d50e8e"
+  }, {
+    "source" : "f58eacd2-c3b1-41ac-839f-0d7098d50e8e",
     "target" : "81a4f70a-214f-4b40-aaa0-526d265c93e7"
   } ],
   "vertexHashMap" : {
@@ -38,8 +41,34 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "$.asdf",
+        "reference" : "path-variable",
+        "value" : "asdfasdf",
+        "active" : true,
+        "source" : "path-variable",
+        "hide" : false
+      } ],
       "imported" : true
+    },
+    "f58eacd2-c3b1-41ac-839f-0d7098d50e8e" : {
+      "vertexId" : "f58eacd2-c3b1-41ac-839f-0d7098d50e8e",
+      "vertexType" : "XML_TO_JSON_TRANSFORMATION",
+      "name" : "adsfa",
+      "xmlToJsonTransformationData" : {
+        "sourceVariable" : "$.asdf",
+        "targetVariable" : "asdf",
+        "arrayXPaths" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -53,10 +82,15 @@
     "timeStamp" : 1726122414669,
     "modifiedBy" : "pranav A",
     "totalNodes" : 2
+  }, {
+    "commitId" : "83796240cf9dc1aeb3cc83cf573611f8d1918f58",
+    "timeStamp" : 1726122501298,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
