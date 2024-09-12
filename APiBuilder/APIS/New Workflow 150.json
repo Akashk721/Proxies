@@ -2,10 +2,10 @@
   "id" : "669e1077f2496f2465094ea9",
   "cts" : 1721634934418,
   "createdUserName" : "vidya.wiz vidya.wiz",
-  "modifiedUserName" : "vidya.wiz vidya.wiz",
-  "mts" : 1723962469630,
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1726143286858,
   "createdBy" : "6454a1d660f0577244784ac0",
-  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "669e1076f2496f2465094ea2",
   "revision" : 1,
   "name" : "New Workflow 150",
@@ -15,16 +15,19 @@
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "vidya.wiz vidya.wiz",
+  "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "4e5d09da-8fd1-46e2-9a61-d16da3f06723",
     "target" : "e2e14956-f8ed-4c51-8a7d-9cd0e4f56753"
   }, {
     "source" : "v1",
-    "target" : "6efee332-db2e-4c50-b2e1-2a3cab9dd14f"
+    "target" : "d8986188-2381-403e-bd4a-312a1708a48e"
   }, {
     "source" : "6efee332-db2e-4c50-b2e1-2a3cab9dd14f",
     "target" : "4e5d09da-8fd1-46e2-9a61-d16da3f06723"
+  }, {
+    "source" : "d8986188-2381-403e-bd4a-312a1708a48e",
+    "target" : "6efee332-db2e-4c50-b2e1-2a3cab9dd14f"
   } ],
   "vertexHashMap" : {
     "v1" : {
@@ -66,6 +69,31 @@
           "type" : "JSON"
         }
       }
+    },
+    "d8986188-2381-403e-bd4a-312a1708a48e" : {
+      "vertexId" : "d8986188-2381-403e-bd4a-312a1708a48e",
+      "vertexType" : "ENTITLEMENT",
+      "name" : "opa fla",
+      "entitlementData" : {
+        "connectorId" : "66c212c747bf67096a026857",
+        "connectorName" : "testOPa",
+        "policyId" : "66c5d6ee36f7034b097529ef",
+        "policyName" : "Field Level Authorization",
+        "serverUrl" : "",
+        "packagePath" : "",
+        "token" : "",
+        "inputData" : "{\n    \"consumer\": \"consumer_a\",\n    \"query\": [\n        \"getAllHealthInsurance\"\n    ]\n}",
+        "graphqlAuthorization" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 401,
+          "body" : {
+            "data" : "opa failed",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "6efee332-db2e-4c50-b2e1-2a3cab9dd14f" : {
       "vertexId" : "6efee332-db2e-4c50-b2e1-2a3cab9dd14f",
@@ -178,10 +206,15 @@
     "timeStamp" : 1723962458093,
     "modifiedBy" : "vidya.wiz vidya.wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "fa8c7f3435ce423d45b780836a8a1c40f62229ca",
+    "timeStamp" : 1723962469630,
+    "modifiedBy" : "vidya.wiz vidya.wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
