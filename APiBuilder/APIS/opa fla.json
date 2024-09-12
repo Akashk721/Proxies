@@ -3,7 +3,7 @@
   "cts" : 1721634934418,
   "createdUserName" : "vidya.wiz vidya.wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726143318203,
+  "mts" : 1726144477452,
   "createdBy" : "6454a1d660f0577244784ac0",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "669e1076f2496f2465094ea2",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/opa-fla",
   "pathArray" : [ "opa-fla" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -75,10 +75,10 @@
         "connectorName" : "testOPa",
         "policyId" : "66c5d6ee36f7034b097529ef",
         "policyName" : "Field Level Authorization",
-        "serverUrl" : "",
-        "packagePath" : "",
-        "token" : "",
-        "inputData" : "{\n    \"consumer\": \"consumer_a\",\n    \"query\": [\n        \"getAllHealthInsurance\"\n    ]\n}",
+        "serverUrl" : "https://opa-connector.apiwiz.io/",
+        "packagePath" : "/apiwiz/builder_agent",
+        "token" : "1234",
+        "inputData" : "{\n    \"consumer\": \"consumer_a\",\n    \"query\": [\n        \"getAllHealthInsurance\",\n        \"getAllHealthInsurance.id\",\n        \"getAllHealthInsurance.policyNumber\",\n        \"getAllHealthInsurance.insuredName\"\n    ]\n}",
         "graphqlAuthorization" : false,
         "continueOnError" : false,
         "errorResponse" : {
@@ -93,6 +93,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1726144427569,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1726143330985,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "a"
+  }, {
     "status" : "Draft",
     "cts" : 1721634934418,
     "lastModifiedBy" : "vidya.wiz vidya.wiz",
@@ -148,7 +158,13 @@
     "timeStamp" : 1726143309504,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "69631047a2f99e96002c192f2c3f78827dd00f79",
+    "timeStamp" : 1726143318203,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
