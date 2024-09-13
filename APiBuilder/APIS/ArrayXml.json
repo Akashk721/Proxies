@@ -3,7 +3,7 @@
   "cts" : 1726212166414,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726212229321,
+  "mts" : 1726212274236,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e3e846336e9f6dc6aaebf4",
@@ -18,9 +18,31 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "61255799-1f9e-438d-82c5-530b121fb6fd"
+  }, {
+    "source" : "61255799-1f9e-438d-82c5-530b121fb6fd",
     "target" : "c9bd1d63-689b-4c48-a371-4a48dc110e28"
   } ],
   "vertexHashMap" : {
+    "61255799-1f9e-438d-82c5-530b121fb6fd" : {
+      "vertexId" : "61255799-1f9e-438d-82c5-530b121fb6fd",
+      "vertexType" : "XML_TO_JSON_TRANSFORMATION",
+      "name" : "xmltojson",
+      "xmlToJsonTransformationData" : {
+        "sourceVariable" : "converttojson",
+        "targetVariable" : "convertedouput",
+        "arrayXPaths" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "c9bd1d63-689b-4c48-a371-4a48dc110e28" : {
       "vertexId" : "c9bd1d63-689b-4c48-a371-4a48dc110e28",
       "vertexType" : "STOP",
@@ -57,6 +79,11 @@
   "changeLogs" : [ {
     "commitId" : "29b0df4a28b781d590028555f687b1806d001be3",
     "timeStamp" : 1726212166414,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "fed77d22a80e8c5b38ac3c665e85d31b3c153d45",
+    "timeStamp" : 1726212229321,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
