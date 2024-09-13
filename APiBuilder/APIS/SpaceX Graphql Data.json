@@ -3,17 +3,17 @@
   "cts" : 1726214457918,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726214723680,
+  "mts" : 1726214789066,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e3f139336e9f6dc6aaf18e",
   "revision" : 1,
   "name" : "SpaceX Graphql Data",
   "apiType" : "RESTAPI",
-  "apiMethod" : "POST",
+  "apiMethod" : "GET",
   "path" : "/get-spacex-data",
   "pathArray" : [ "get-spacex-data" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -93,6 +93,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1726214779538,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1726214732166,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1726214457918,
     "lastModifiedBy" : "vidya wiz",
@@ -113,7 +123,13 @@
     "timeStamp" : 1726214707428,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "7042b137c43e508efc27fcc698519babb81f43de",
+    "timeStamp" : 1726214723680,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
