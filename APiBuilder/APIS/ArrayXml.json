@@ -3,7 +3,7 @@
   "cts" : 1726212166414,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726212305333,
+  "mts" : 1726212321836,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e3e846336e9f6dc6aaebf4",
@@ -64,6 +64,13 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ {
+        "name" : "application/xml",
+        "reference" : "headers",
+        "value" : "content-type",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false
+      }, {
         "name" : "converttojson",
         "reference" : "body",
         "value" : "$",
@@ -93,6 +100,11 @@
   }, {
     "commitId" : "f693b242ad1f71157ce10d98e83d88b2ca4528b0",
     "timeStamp" : 1726212274236,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "27ef38b8329a436b13160ee9db78004ad3e6f625",
+    "timeStamp" : 1726212305333,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
