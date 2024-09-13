@@ -3,7 +3,7 @@
   "cts" : 1726212166414,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726212332325,
+  "mts" : 1726213812342,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e3e846336e9f6dc6aaebf4",
@@ -13,7 +13,7 @@
   "apiMethod" : "POST",
   "path" : "/arrayxmltojson",
   "pathArray" : [ "arrayxmltojson" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -31,7 +31,7 @@
       "xmlToJsonTransformationData" : {
         "sourceVariable" : "converttojson",
         "targetVariable" : "convertedouput",
-        "arrayXPaths" : [ ],
+        "arrayXPaths" : [ "/rootArray/arraylement/everyobject" ],
         "continueOnError" : false,
         "errorResponse" : {
           "statusCode" : 200,
@@ -75,6 +75,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1726213767522,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1726213596863,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "t"
+  }, {
     "status" : "Draft",
     "cts" : 1726212166414,
     "lastModifiedBy" : "vidya wiz",
@@ -105,7 +115,13 @@
     "timeStamp" : 1726212321836,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "db06784ae3ff95079303dc97193087888446c01b",
+    "timeStamp" : 1726212332325,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
