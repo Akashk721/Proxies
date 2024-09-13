@@ -3,7 +3,7 @@
   "cts" : 1726214457918,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726214789066,
+  "mts" : 1726214800034,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e3f139336e9f6dc6aaf18e",
@@ -59,7 +59,10 @@
           "scheme" : "https",
           "host" : "spacex-production.up.railway.app",
           "path" : "/",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
           "queryParams" : [ ],
           "body" : {
             "data" : "{\"query\":\"query ExampleQuery {\\n  company {\\n    ceo\\n  }\\n  roadster {\\n    apoapsis_au\\n  }\\n}\\n\",\"variables\":{}}",
@@ -126,6 +129,11 @@
   }, {
     "commitId" : "7042b137c43e508efc27fcc698519babb81f43de",
     "timeStamp" : 1726214723680,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "b398563c515c5f8193d0816cf28a014ed6bebae5",
+    "timeStamp" : 1726214789066,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
