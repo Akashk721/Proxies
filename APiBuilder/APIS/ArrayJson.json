@@ -3,7 +3,7 @@
   "cts" : 1726206268424,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726206549877,
+  "mts" : 1726206562235,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e3d13ce2f66f4c8e64e420",
@@ -47,7 +47,7 @@
         "jsonArray" : true,
         "rootElementName" : "rootArray",
         "objectElementName" : "",
-        "attributeList" : [ "$..[*].age" ],
+        "attributeList" : [ "$.[*].age" ],
         "staticElementAttributeHashMap" : { },
         "staticPathAttributeArrayList" : [ ],
         "continueOnError" : false,
@@ -100,6 +100,11 @@
   }, {
     "commitId" : "757d9d2d4937e5434a338c7d73ae5951e945979e",
     "timeStamp" : 1726206528636,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "a66661d8bec9fa07318d34fde59b8aa0d74bd308",
+    "timeStamp" : 1726206549877,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
