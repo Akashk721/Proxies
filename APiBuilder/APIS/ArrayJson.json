@@ -3,7 +3,7 @@
   "cts" : 1726206268424,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726206605361,
+  "mts" : 1726206640045,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e3d13ce2f66f4c8e64e420",
@@ -13,7 +13,7 @@
   "apiMethod" : "POST",
   "path" : "/arrayjson",
   "pathArray" : [ "arrayjson" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -32,8 +32,8 @@
       "proxyResponse" : {
         "statusCode" : 200,
         "body" : {
-          "data" : "{\n    \"all\": true\n}",
-          "type" : "json"
+          "data" : "{{{xml}}}",
+          "type" : "xml"
         }
       }
     },
@@ -77,6 +77,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1726206621436,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "sd"
+  }, {
+    "status" : "Approved",
+    "cts" : 1726206614204,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "n"
+  }, {
     "status" : "Draft",
     "cts" : 1726206268424,
     "lastModifiedBy" : "vidya wiz",
@@ -115,6 +125,11 @@
   }, {
     "commitId" : "1f8e05cacd5c17e75235f736c54d27a3e91ef915",
     "timeStamp" : 1726206570448,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "ede357cbe6ec3dbec622466a37609a20f34aa65b",
+    "timeStamp" : 1726206605361,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
