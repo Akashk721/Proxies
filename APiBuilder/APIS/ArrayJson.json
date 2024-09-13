@@ -3,7 +3,7 @@
   "cts" : 1726206268424,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726206352303,
+  "mts" : 1726206528636,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e3d13ce2f66f4c8e64e420",
@@ -18,6 +18,9 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "485b960a-9c81-463a-81d3-b77d253bdfdb"
+  }, {
+    "source" : "485b960a-9c81-463a-81d3-b77d253bdfdb",
     "target" : "66474ee5-2644-4603-9780-acbff8227d25"
   } ],
   "vertexHashMap" : {
@@ -33,6 +36,30 @@
           "type" : "json"
         }
       }
+    },
+    "485b960a-9c81-463a-81d3-b77d253bdfdb" : {
+      "vertexId" : "485b960a-9c81-463a-81d3-b77d253bdfdb",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "arrayData",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "convertoxml",
+        "targetVariable" : "xml",
+        "jsonArray" : true,
+        "rootElementName" : "rootArray",
+        "objectElementName" : "",
+        "attributeList" : [ "$.$.[*].age" ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -63,6 +90,11 @@
   }, {
     "commitId" : "50ff93e2a5d9825f03bb1ebc9037b1b487daaca7",
     "timeStamp" : 1726206331539,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "b064cca9e146801d2fb9ab52be02d85970258fcf",
+    "timeStamp" : 1726206352303,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
