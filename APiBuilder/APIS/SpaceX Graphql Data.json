@@ -3,7 +3,7 @@
   "cts" : 1726214457918,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1726214644133,
+  "mts" : 1726214707428,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "66e3f139336e9f6dc6aaf18e",
@@ -18,6 +18,9 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "dae40856-4321-4140-8344-545d34b8a48e"
+  }, {
+    "source" : "dae40856-4321-4140-8344-545d34b8a48e",
     "target" : "d3158ca6-5284-41ca-b9d1-2d4bb85715d2"
   } ],
   "vertexHashMap" : {
@@ -39,6 +42,50 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "dae40856-4321-4140-8344-545d34b8a48e" : {
+      "vertexId" : "dae40856-4321-4140-8344-545d34b8a48e",
+      "vertexType" : "TARGET",
+      "name" : "Get Spacex Data",
+      "target" : {
+        "name" : "Get Spacex Data",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "spacex-production.up.railway.app",
+          "path" : "/",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\"query\":\"query ExampleQuery {\\n  company {\\n    ceo\\n  }\\n  roadster {\\n    apoapsis_au\\n  }\\n}\\n\",\"variables\":{}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "graphqlData",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -50,6 +97,11 @@
   "changeLogs" : [ {
     "commitId" : "bc7b67e4db7a28508c7c672670b3e5296f850c7a",
     "timeStamp" : 1726214457918,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "1c44bde21d32e0b1b0a607d5d9abca8add50dccc",
+    "timeStamp" : 1726214644133,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
