@@ -3,7 +3,7 @@
   "cts" : 1727069819021,
   "createdUserName" : "pranav A",
   "modifiedUserName" : "pranav A",
-  "mts" : 1727072249581,
+  "mts" : 1727075900008,
   "createdBy" : "6655a103339aa715119d5a13",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "66f0fe7bc8461d3e4fa4eeaf",
@@ -12,9 +12,9 @@
   "description" : "test1",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/test1",
-  "pathArray" : [ "test1" ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/test1/{value}",
+  "pathArray" : [ "test1", "*" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
@@ -89,6 +89,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1727075870719,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1727072297151,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "test1"
+  }, {
     "status" : "Draft",
     "cts" : 1727069819021,
     "lastModifiedBy" : "pranav A",
@@ -114,10 +124,16 @@
     "timeStamp" : 1727071978560,
     "modifiedBy" : "pranav A",
     "totalNodes" : 2
+  }, {
+    "commitId" : "9bebbbe519c3b5e186d4c52d2987e66de467705a",
+    "timeStamp" : 1727072249581,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "env-1",
   "environmentId" : "663b6da807ffe9048e4253e3",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
