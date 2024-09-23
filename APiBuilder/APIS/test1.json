@@ -3,7 +3,7 @@
   "cts" : 1727069819021,
   "createdUserName" : "pranav A",
   "modifiedUserName" : "pranav A",
-  "mts" : 1727071978560,
+  "mts" : 1727072249581,
   "createdBy" : "6655a103339aa715119d5a13",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "66f0fe7bc8461d3e4fa4eeaf",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "406a40b5-a83a-46e7-938d-beb1ceeb012c",
     "target" : "cb71123e-bbd1-48f7-8d5f-d1cebc4d0718"
+  }, {
+    "source" : "v1",
+    "target" : "406a40b5-a83a-46e7-938d-beb1ceeb012c"
   } ],
   "vertexHashMap" : {
     "cb71123e-bbd1-48f7-8d5f-d1cebc4d0718" : {
@@ -33,6 +36,49 @@
           "type" : "JSON"
         }
       }
+    },
+    "406a40b5-a83a-46e7-938d-beb1ceeb012c" : {
+      "vertexId" : "406a40b5-a83a-46e7-938d-beb1ceeb012c",
+      "vertexType" : "TARGET",
+      "name" : "getUser",
+      "target" : {
+        "name" : "getUser",
+        "description" : "getUser",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dev-mock.apiwiz.io",
+          "path" : "/getUser",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "x-tenant",
+            "value" : "b8e236df-4b26-49ef-9532-5e43ea0c10a4"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : ""
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "{\"id\":1,\"name\":\"Apiwiz\"}",
+            "type" : ""
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -61,6 +107,11 @@
   }, {
     "commitId" : "7f9d8757601102364a7c0c70aee79c8ee7f3287f",
     "timeStamp" : 1727071923211,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "93cfb2120cc3de002d2c9c78375ec4ed49e4dac3",
+    "timeStamp" : 1727071978560,
     "modifiedBy" : "pranav A",
     "totalNodes" : 2
   } ],
