@@ -1,0 +1,102 @@
+{
+  "cts" : 1727254767222,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1727254767222,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "66f3d0ef7df2fc0ae694de55",
+  "revision" : 1,
+  "name" : "ArrayJson-09-25-2024 08:59:27",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/arrayjson",
+  "pathArray" : [ "arrayjson" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "485b960a-9c81-463a-81d3-b77d253bdfdb"
+  }, {
+    "source" : "485b960a-9c81-463a-81d3-b77d253bdfdb",
+    "target" : "66474ee5-2644-4603-9780-acbff8227d25"
+  } ],
+  "vertexHashMap" : {
+    "66474ee5-2644-4603-9780-acbff8227d25" : {
+      "vertexId" : "66474ee5-2644-4603-9780-acbff8227d25",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/xml"
+        },
+        "body" : {
+          "data" : "{{{xml}}}",
+          "type" : "xml"
+        }
+      }
+    },
+    "485b960a-9c81-463a-81d3-b77d253bdfdb" : {
+      "vertexId" : "485b960a-9c81-463a-81d3-b77d253bdfdb",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "arrayData",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "convertoxml",
+        "targetVariable" : "xml",
+        "jsonArray" : true,
+        "rootElementName" : "rootArray",
+        "objectElementName" : "everyobject",
+        "attributeList" : [ ],
+        "staticElementAttributeHashMap" : {
+          "name" : {
+            "working" : "rahul",
+            "nihal" : "ahamed"
+          }
+        },
+        "staticPathAttributeArrayList" : [ {
+          "path" : "$[*].age",
+          "attributeHashMap" : {
+            "everyAge" : "ok"
+          }
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "convertoxml",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false
+      } ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1727254767222,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
