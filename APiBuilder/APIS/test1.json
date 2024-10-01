@@ -3,7 +3,7 @@
   "cts" : 1727069819021,
   "createdUserName" : "pranav A",
   "modifiedUserName" : "pranav A",
-  "mts" : 1727153463720,
+  "mts" : 1727778331425,
   "createdBy" : "6655a103339aa715119d5a13",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "66f0fe7bc8461d3e4fa4eeaf",
@@ -22,6 +22,9 @@
     "target" : "5b73008e-4808-4e59-89a5-8f96ca649211"
   }, {
     "source" : "5b73008e-4808-4e59-89a5-8f96ca649211",
+    "target" : "d0174714-21c5-42c1-950d-4e5ee2d62aa6"
+  }, {
+    "source" : "d0174714-21c5-42c1-950d-4e5ee2d62aa6",
     "target" : "cb71123e-bbd1-48f7-8d5f-d1cebc4d0718"
   }, {
     "source" : "v1",
@@ -90,7 +93,8 @@
           } ],
           "queryParams" : [ ],
           "body" : {
-            "data" : ""
+            "data" : "{\n  \"id\": 12345,\n  \"name\": \"Jane Doe\",\n  \"age\": 32,\n  \"email\": \"jane.doe@example.com\",\n  \"address\": {\n    \"street\": \"1,ranga street\",\n    \"city\": \"Springfield\",\n    \"postalCode\": \"12345\",\n    \"country\": \"USA\"\n  },\n  \"phones\": [\n    {\n      \"type\": \"home\",\n      \"number\": \"555-555-1234\"\n    },\n    {\n      \"type\": \"work\",\n      \"number\": \"555-555-5678\"\n    },\n    {\n      \"type\": \"work2\",\n      \"number\": \"555-555-56789\"\n    }\n  ],\n  \"preferences\": {\n    \"contactMethods\": [\n      \"email\",\n      \"phone\"\n    ],\n    \"newsletters\": {\n      \"weekly\": true,\n      \"monthly\": false\n    }\n  },\n  \"orders\": [\n    {\n      \"orderId\": 1001,\n      \"items\": [\n        {\n          \"itemId\": 2001,\n          \"productName\": \"Laptop1\",\n          \"quantity\": 1,\n          \"price\": 1200.99\n        },\n        {\n          \"itemId\": 2002,\n          \"productName\": \"Wireless Mouse\",\n          \"quantity\": 2,\n          \"price\": 25.50\n        }\n      ],\n      \"total\": 1251.99,\n      \"status\": \"Shipped\"\n    },\n    {\n      \"orderId\": 1002,\n      \"items\": [\n        {\n          \"itemId\": 3001,\n          \"productName\": \"Smartphone\",\n          \"quantity\": 1,\n          \"price\": 799.49\n        }\n      ],\n      \"total\": 799.49,\n      \"status\": \"Processing\"\n    }\n  ],\n  \"membership\": {\n    \"level\": \"Gold\",\n    \"points\": 2450,\n    \"rewards\": [\n      {\n        \"rewardId\": 501,\n        \"rewardName\": \"10% off next purchase\",\n        \"expirationDate\": \"2024-12-31\"\n      },\n      {\n        \"rewardId\": 502,\n        \"rewardName\": \"Free shipping\",\n        \"expirationDate\": \"2025-01-15\"\n      }\n    ]\n  }\n}",
+            "type" : "json"
           },
           "formParams" : [ ],
           "urlEncodedParams" : [ ]
@@ -104,6 +108,13 @@
             "active" : true,
             "source" : "headers",
             "hide" : false
+          }, {
+            "name" : "json",
+            "reference" : "body",
+            "value" : "$.",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
           } ]
         },
         "timeout" : 0,
@@ -113,6 +124,30 @@
           "body" : {
             "data" : "{\"id\":1,\"name\":\"Apiwiz\"}",
             "type" : ""
+          }
+        }
+      },
+      "imported" : false
+    },
+    "d0174714-21c5-42c1-950d-4e5ee2d62aa6" : {
+      "vertexId" : "d0174714-21c5-42c1-950d-4e5ee2d62aa6",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "t",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "json",
+        "targetVariable" : "sample",
+        "jsonArray" : false,
+        "rootElementName" : "person",
+        "objectElementName" : "",
+        "attributeList" : [ ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
           }
         }
       },
@@ -212,6 +247,11 @@
     "timeStamp" : 1727153359212,
     "modifiedBy" : "pranav A",
     "totalNodes" : 3
+  }, {
+    "commitId" : "b3e706a9c38612a76d5d9b962d7cac8665f2e2c0",
+    "timeStamp" : 1727153463720,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : true,
