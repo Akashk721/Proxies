@@ -1,0 +1,54 @@
+{
+  "cts" : 1727778821355,
+  "createdUserName" : "pranav A",
+  "modifiedUserName" : "pranav A",
+  "mts" : 1727778821355,
+  "createdBy" : "6655a103339aa715119d5a13",
+  "modifiedBy" : "6655a103339aa715119d5a13",
+  "proxyId" : "66fbd00544558b0981282155",
+  "revision" : 1,
+  "name" : "New Workflow 198",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "pranav A",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "8d1503b0-da43-4df0-b4cd-683ab2349af7"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    },
+    "8d1503b0-da43-4df0-b4cd-683ab2349af7" : {
+      "vertexId" : "8d1503b0-da43-4df0-b4cd-683ab2349af7",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1727778821355,
+    "lastModifiedBy" : "pranav A",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
