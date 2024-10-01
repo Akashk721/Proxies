@@ -3,7 +3,7 @@
   "cts" : 1727778821355,
   "createdUserName" : "pranav A",
   "modifiedUserName" : "pranav A",
-  "mts" : 1727779306204,
+  "mts" : 1727779971006,
   "createdBy" : "6655a103339aa715119d5a13",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "66fbd00544558b0981282155",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/reqres",
   "pathArray" : [ "reqres" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
@@ -63,12 +63,18 @@
         "request" : {
           "apiMethod" : "GET",
           "scheme" : "https",
-          "host" : "reqres.in",
-          "path" : "/api/users",
-          "headerParams" : [ ],
+          "host" : "dev-mock.apiwiz.io",
+          "path" : "/sc-apiwiz/getAllUsers",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "x-tenant",
+            "value" : "b8e236df-4b26-49ef-9532-5e43ea0c10a4"
+          } ],
           "queryParams" : [ ],
           "body" : {
-            "data" : "{\n  \"id\": 12345,\n  \"name\": \"Jane Doe\",\n  \"age\": 32,\n  \"email\": \"jane.doe@example.com\",\n  \"address\": {\n    \"street\": \"1,ranga street\",\n    \"city\": \"Springfield\",\n    \"postalCode\": \"12345\",\n    \"country\": \"USA\"\n  },\n  \"phones\": [\n    {\n      \"type\": \"home\",\n      \"number\": \"555-555-1234\"\n    },\n    {\n      \"type\": \"work\",\n      \"number\": \"555-555-5678\"\n    },\n    {\n      \"type\": \"work2\",\n      \"number\": \"555-555-56789\"\n    }\n  ],\n  \"preferences\": {\n    \"contactMethods\": [\n      \"email\",\n      \"phone\"\n    ],\n    \"newsletters\": {\n      \"weekly\": true,\n      \"monthly\": false\n    }\n  },\n  \"orders\": [\n    {\n      \"orderId\": 1001,\n      \"items\": [\n        {\n          \"itemId\": 2001,\n          \"productName\": \"Laptop1\",\n          \"quantity\": 1,\n          \"price\": 1200.99\n        },\n        {\n          \"itemId\": 2002,\n          \"productName\": \"Wireless Mouse\",\n          \"quantity\": 2,\n          \"price\": 25.50\n        }\n      ],\n      \"total\": 1251.99,\n      \"status\": \"Shipped\"\n    },\n    {\n      \"orderId\": 1002,\n      \"items\": [\n        {\n          \"itemId\": 3001,\n          \"productName\": \"Smartphone\",\n          \"quantity\": 1,\n          \"price\": 799.49\n        }\n      ],\n      \"total\": 799.49,\n      \"status\": \"Processing\"\n    }\n  ],\n  \"membership\": {\n    \"level\": \"Gold\",\n    \"points\": 2450,\n    \"rewards\": [\n      {\n        \"rewardId\": 501,\n        \"rewardName\": \"10% off next purchase\",\n        \"expirationDate\": \"2024-12-31\"\n      },\n      {\n        \"rewardId\": 502,\n        \"rewardName\": \"Free shipping\",\n        \"expirationDate\": \"2025-01-15\"\n      }\n    ]\n  }\n}",
+            "data" : "",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -118,6 +124,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1727779859177,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1727779319270,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a"
+  }, {
     "status" : "Draft",
     "cts" : 1727778821355,
     "lastModifiedBy" : "pranav A",
@@ -138,7 +154,13 @@
     "timeStamp" : 1727779263635,
     "modifiedBy" : "pranav A",
     "totalNodes" : 3
+  }, {
+    "commitId" : "27b50af07a8d0f0358acf291f6d35f98b4a836d1",
+    "timeStamp" : 1727779306204,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "env-1",
   "environmentId" : "663b6da807ffe9048e4253e3",
