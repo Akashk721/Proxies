@@ -3,7 +3,7 @@
   "cts" : 1727778821355,
   "createdUserName" : "pranav A",
   "modifiedUserName" : "pranav A",
-  "mts" : 1727780580799,
+  "mts" : 1727780591276,
   "createdBy" : "6655a103339aa715119d5a13",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "66fbd00544558b0981282155",
@@ -33,7 +33,7 @@
       "vertexType" : "JSON_TO_XML_TRANSFORMATION",
       "name" : "t1",
       "jsonToXmlTransformationData" : {
-        "sourceVariable" : "json",
+        "sourceVariable" : "xml",
         "targetVariable" : "xml",
         "jsonArray" : false,
         "rootElementName" : "person",
@@ -182,6 +182,11 @@
   }, {
     "commitId" : "50a3d603bcec7c8282e606ffcbe8880c82cd9944",
     "timeStamp" : 1727779971006,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "64c7c37f00c8e97c3e5dec280b1cdef3fd55119f",
+    "timeStamp" : 1727780580799,
     "modifiedBy" : "pranav A",
     "totalNodes" : 4
   } ],
