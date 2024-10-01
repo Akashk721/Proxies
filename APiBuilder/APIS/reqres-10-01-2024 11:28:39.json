@@ -1,0 +1,136 @@
+{
+  "cts" : 1727782119372,
+  "createdUserName" : "pranav A",
+  "modifiedUserName" : "pranav A",
+  "mts" : 1727782119372,
+  "createdBy" : "6655a103339aa715119d5a13",
+  "modifiedBy" : "6655a103339aa715119d5a13",
+  "proxyId" : "66fbdce744558b0981282465",
+  "revision" : 1,
+  "name" : "reqres-10-01-2024 11:28:39",
+  "description" : "reqres",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/reqres",
+  "pathArray" : [ "reqres" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "pranav A",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0"
+  }, {
+    "source" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0",
+    "target" : "d8161318-d34f-43bc-807b-3d7ff0f0d02a"
+  }, {
+    "source" : "d8161318-d34f-43bc-807b-3d7ff0f0d02a",
+    "target" : "8d1503b0-da43-4df0-b4cd-683ab2349af7"
+  } ],
+  "vertexHashMap" : {
+    "d8161318-d34f-43bc-807b-3d7ff0f0d02a" : {
+      "vertexId" : "d8161318-d34f-43bc-807b-3d7ff0f0d02a",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "a1",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "json",
+        "targetVariable" : "xml",
+        "jsonArray" : false,
+        "rootElementName" : "person1",
+        "objectElementName" : "",
+        "attributeList" : [ ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "dcee8a8f-351a-4e7a-b16c-42658c58dcc0" : {
+      "vertexId" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0",
+      "vertexType" : "TARGET",
+      "name" : "rqeres",
+      "target" : {
+        "name" : "rqeres",
+        "description" : "reqres",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dev-mock.apiwiz.io",
+          "path" : "/sc-apiwiz/getUser",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "x-tenant",
+            "value" : "b8e236df-4b26-49ef-9532-5e43ea0c10a4"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "json",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "8d1503b0-da43-4df0-b4cd-683ab2349af7" : {
+      "vertexId" : "8d1503b0-da43-4df0-b4cd-683ab2349af7",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1727782119372,
+    "lastModifiedBy" : "pranav A",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "env-1",
+  "environmentId" : "663b6da807ffe9048e4253e3",
+  "deleted" : false,
+  "deployed" : false
+}
