@@ -3,7 +3,7 @@
   "cts" : 1727778821355,
   "createdUserName" : "pranav A",
   "modifiedUserName" : "pranav A",
-  "mts" : 1727780610390,
+  "mts" : 1727780672385,
   "createdBy" : "6655a103339aa715119d5a13",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "66fbd00544558b0981282155",
@@ -18,40 +18,16 @@
   "locked" : true,
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
-    "source" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0",
-    "target" : "ea5f8b67-1481-4570-8153-b5e17440b7e0"
-  }, {
-    "source" : "ea5f8b67-1481-4570-8153-b5e17440b7e0",
+    "source" : "d9d12677-fb8b-4318-b6c4-e7941ac99d3b",
     "target" : "8d1503b0-da43-4df0-b4cd-683ab2349af7"
   }, {
     "source" : "v1",
     "target" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0"
+  }, {
+    "source" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0",
+    "target" : "d9d12677-fb8b-4318-b6c4-e7941ac99d3b"
   } ],
   "vertexHashMap" : {
-    "ea5f8b67-1481-4570-8153-b5e17440b7e0" : {
-      "vertexId" : "ea5f8b67-1481-4570-8153-b5e17440b7e0",
-      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
-      "name" : "t1",
-      "jsonToXmlTransformationData" : {
-        "sourceVariable" : "xml",
-        "targetVariable" : "xml",
-        "jsonArray" : false,
-        "rootElementName" : "person",
-        "objectElementName" : "",
-        "attributeList" : [ ],
-        "staticElementAttributeHashMap" : { },
-        "staticPathAttributeArrayList" : [ ],
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
     "dcee8a8f-351a-4e7a-b16c-42658c58dcc0" : {
       "vertexId" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0",
       "vertexType" : "TARGET",
@@ -110,6 +86,25 @@
       "requestVariables" : [ ],
       "imported" : true
     },
+    "d9d12677-fb8b-4318-b6c4-e7941ac99d3b" : {
+      "vertexId" : "d9d12677-fb8b-4318-b6c4-e7941ac99d3b",
+      "vertexType" : "XML_TO_JSON_TRANSFORMATION",
+      "name" : "a",
+      "xmlToJsonTransformationData" : {
+        "sourceVariable" : "xml",
+        "targetVariable" : "json",
+        "arrayXPaths" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "8d1503b0-da43-4df0-b4cd-683ab2349af7" : {
       "vertexId" : "8d1503b0-da43-4df0-b4cd-683ab2349af7",
       "vertexType" : "STOP",
@@ -124,6 +119,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1727780640828,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a4"
+  }, {
+    "status" : "Approved",
+    "cts" : 1727780620109,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a3"
+  }, {
     "status" : "Review",
     "cts" : 1727780522013,
     "lastModifiedBy" : "6655a103339aa715119d5a13",
@@ -192,6 +197,11 @@
   }, {
     "commitId" : "d377e89f2b477dcf9266295cfb2449bf35cc7ca3",
     "timeStamp" : 1727780591276,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "7bda803001988f05de1964610ae52727bf1e900d",
+    "timeStamp" : 1727780610390,
     "modifiedBy" : "pranav A",
     "totalNodes" : 4
   } ],
