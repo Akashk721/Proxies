@@ -1,15 +1,16 @@
 {
+  "id" : "6704ce2602afc5238c963e1b",
   "cts" : 1728368163409,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1728368163409,
+  "mts" : 1728368202051,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6704ce2302afc5238c963e1a",
   "revision" : 1,
   "name" : "New Workflow 200",
-  "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiType" : "GRAPHQL",
+  "apiMethod" : "POST",
   "path" : "/",
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
@@ -37,7 +38,7 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     }
   },
   "statusHistory" : [ {
@@ -45,6 +46,12 @@
     "cts" : 1728368163409,
     "lastModifiedBy" : "vidya wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "cb63d438a7be952a2a4d8370c6f0644d634bfc4c",
+    "timeStamp" : 1728368163409,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
