@@ -1,8 +1,9 @@
 {
+  "id" : "6707740ec6f0683392b5898a",
   "cts" : 1728541702259,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1728541702259,
+  "mts" : 1728542326779,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "669f78e6f2496f2465099e28",
@@ -17,20 +18,23 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "46752d98-fbc3-43c9-8f80-de29d3642b9b",
-    "target" : "46838e10-08d0-47f6-9c3a-e1ca8f01d5f0"
-  }, {
     "source" : "51f76a35-7737-4743-8fbe-3b5f5e323f9a",
     "target" : "d0602a7c-83f7-456b-8ea1-248c897a3b6f"
   }, {
     "source" : "d0602a7c-83f7-456b-8ea1-248c897a3b6f",
     "target" : "46752d98-fbc3-43c9-8f80-de29d3642b9b"
   }, {
+    "source" : "46752d98-fbc3-43c9-8f80-de29d3642b9b",
+    "target" : "25850d9f-1f61-4342-9be4-9a6c841f9fc7"
+  }, {
     "source" : "99452f64-b78e-4b8e-87e1-90f34d305802",
     "target" : "b14f840a-b946-42f9-9e63-58e27957e248"
   }, {
     "source" : "b14f840a-b946-42f9-9e63-58e27957e248",
     "target" : "51f76a35-7737-4743-8fbe-3b5f5e323f9a"
+  }, {
+    "source" : "25850d9f-1f61-4342-9be4-9a6c841f9fc7",
+    "target" : "46838e10-08d0-47f6-9c3a-e1ca8f01d5f0"
   }, {
     "source" : "v1",
     "target" : "99452f64-b78e-4b8e-87e1-90f34d305802"
@@ -62,6 +66,39 @@
         "variableName" : "mySqlResponse",
         "connectorName" : "Varun-MYSQL",
         "tableName" : "employees"
+      },
+      "imported" : false
+    },
+    "25850d9f-1f61-4342-9be4-9a6c841f9fc7" : {
+      "vertexId" : "25850d9f-1f61-4342-9be4-9a6c841f9fc7",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "({0}) && ({1} || {2})",
+        "placeHolders" : [ {
+          "rule" : "PRESENT",
+          "key" : "jsessionid",
+          "value" : "",
+          "valueDataType" : "STRING"
+        }, {
+          "rule" : "REGEX",
+          "key" : "xapikey",
+          "value" : "^[a-zA-Z0-9-_]{32}$",
+          "valueDataType" : "STRING"
+        }, {
+          "rule" : "PRESENT",
+          "key" : "mySqlResponse",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
       },
       "imported" : false
     },
@@ -134,6 +171,18 @@
       }
     }
   },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1728541702259,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy revision"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "a20d9493969541ac8ca93256be89ca52b930c26f",
+    "timeStamp" : 1728541702259,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 7
+  } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
