@@ -1,8 +1,9 @@
 {
+  "id" : "670e1267fe90965d320d65ae",
   "cts" : 1728975461655,
   "createdUserName" : "pranav A",
   "modifiedUserName" : "pranav A",
-  "mts" : 1728975461655,
+  "mts" : 1728975484356,
   "createdBy" : "6655a103339aa715119d5a13",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670e1265fe90965d320d65ad",
@@ -37,7 +38,7 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     }
   },
   "statusHistory" : [ {
@@ -45,6 +46,12 @@
     "cts" : 1728975461655,
     "lastModifiedBy" : "pranav A",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "8ef7ea07fb8622364b1c452c32af638eac8ef8dc",
+    "timeStamp" : 1728975461655,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
