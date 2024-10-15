@@ -1,0 +1,66 @@
+{
+  "id" : "670e1267fe90965d320d65ae",
+  "cts" : 1728975461655,
+  "createdUserName" : "pranav A",
+  "modifiedUserName" : "pranav A",
+  "mts" : 1728975499657,
+  "createdBy" : "6655a103339aa715119d5a13",
+  "modifiedBy" : "6655a103339aa715119d5a13",
+  "proxyId" : "670e1265fe90965d320d65ad",
+  "revision" : 1,
+  "name" : "DM testing 2",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "pranav A",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "0cb33395-a07a-423c-ab10-e996c8817016"
+  } ],
+  "vertexHashMap" : {
+    "0cb33395-a07a-423c-ab10-e996c8817016" : {
+      "vertexId" : "0cb33395-a07a-423c-ab10-e996c8817016",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1728975461655,
+    "lastModifiedBy" : "pranav A",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "8ef7ea07fb8622364b1c452c32af638eac8ef8dc",
+    "timeStamp" : 1728975461655,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "98f88c250e2771f31ed5a2934200d5c91d53824e",
+    "timeStamp" : 1728975484356,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
