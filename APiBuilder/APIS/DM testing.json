@@ -3,7 +3,7 @@
   "cts" : 1728896621863,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "pranav A",
-  "mts" : 1728973819810,
+  "mts" : 1728974197174,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670cde6db4ca4801a248c6b6",
@@ -11,8 +11,8 @@
   "name" : "DM testing",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/dmTesting1",
+  "pathArray" : [ "dmTesting1" ],
   "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "pranav A",
@@ -97,6 +97,31 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1728974180453,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "f"
+  }, {
+    "status" : "Approved",
+    "cts" : 1728974158187,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "s4"
+  }, {
+    "status" : "Review",
+    "cts" : 1728974154265,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "s4"
+  }, {
+    "status" : "Review",
+    "cts" : 1728973885386,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1728973830796,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "s3"
+  }, {
+    "status" : "Review",
     "cts" : 1728973720987,
     "lastModifiedBy" : "6655a103339aa715119d5a13",
     "description" : "s2"
@@ -131,7 +156,13 @@
     "timeStamp" : 1728973802703,
     "modifiedBy" : "pranav A",
     "totalNodes" : 3
+  }, {
+    "commitId" : "3ca10b8bea855144fd0b65a4f11c4daa9ca7a77d",
+    "timeStamp" : 1728973819810,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
