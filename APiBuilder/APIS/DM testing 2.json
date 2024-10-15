@@ -3,7 +3,7 @@
   "cts" : 1728975461655,
   "createdUserName" : "pranav A",
   "modifiedUserName" : "pranav A",
-  "mts" : 1728975499657,
+  "mts" : 1728975520414,
   "createdBy" : "6655a103339aa715119d5a13",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670e1265fe90965d320d65ad",
@@ -17,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "1418666e-6920-456d-92ff-1eedffc50bd4",
     "target" : "0cb33395-a07a-423c-ab10-e996c8817016"
+  }, {
+    "source" : "v1",
+    "target" : "1418666e-6920-456d-92ff-1eedffc50bd4"
   } ],
   "vertexHashMap" : {
     "0cb33395-a07a-423c-ab10-e996c8817016" : {
@@ -32,6 +35,43 @@
           "type" : "JSON"
         }
       }
+    },
+    "1418666e-6920-456d-92ff-1eedffc50bd4" : {
+      "vertexId" : "1418666e-6920-456d-92ff-1eedffc50bd4",
+      "vertexType" : "TARGET",
+      "name" : "sample",
+      "target" : {
+        "name" : "sample",
+        "description" : "sample",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "ss",
+          "path" : "/s",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -55,6 +95,11 @@
   }, {
     "commitId" : "98f88c250e2771f31ed5a2934200d5c91d53824e",
     "timeStamp" : 1728975484356,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "2bc3844f0bf406ce46af6bef55d983964dc89e84",
+    "timeStamp" : 1728975499657,
     "modifiedBy" : "pranav A",
     "totalNodes" : 2
   } ],
