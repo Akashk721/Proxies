@@ -3,7 +3,7 @@
   "cts" : 1728896621863,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "pranav A",
-  "mts" : 1728974322905,
+  "mts" : 1728975197251,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670cde6db4ca4801a248c6b6",
@@ -18,13 +18,10 @@
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
     "source" : "4d5f5941-437c-4c42-8af1-e0e3f6e1a829",
-    "target" : "2c37961c-1688-4748-a059-13fa1cde8cf0"
+    "target" : "01193a32-e05a-4d23-9152-3ac631928c30"
   }, {
     "source" : "v1",
     "target" : "4d5f5941-437c-4c42-8af1-e0e3f6e1a829"
-  }, {
-    "source" : "2c37961c-1688-4748-a059-13fa1cde8cf0",
-    "target" : "01193a32-e05a-4d23-9152-3ac631928c30"
   } ],
   "vertexHashMap" : {
     "01193a32-e05a-4d23-9152-3ac631928c30" : {
@@ -38,30 +35,6 @@
           "type" : "JSON"
         }
       }
-    },
-    "2c37961c-1688-4748-a059-13fa1cde8cf0" : {
-      "vertexId" : "2c37961c-1688-4748-a059-13fa1cde8cf0",
-      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
-      "name" : "xml",
-      "jsonToXmlTransformationData" : {
-        "sourceVariable" : "json",
-        "targetVariable" : "xml",
-        "jsonArray" : false,
-        "rootElementName" : "person",
-        "objectElementName" : "",
-        "attributeList" : [ ],
-        "staticElementAttributeHashMap" : { },
-        "staticPathAttributeArrayList" : [ ],
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
     },
     "4d5f5941-437c-4c42-8af1-e0e3f6e1a829" : {
       "vertexId" : "4d5f5941-437c-4c42-8af1-e0e3f6e1a829",
@@ -123,6 +96,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1728975122166,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1728974334459,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "d"
+  }, {
     "status" : "Review",
     "cts" : 1728974261604,
     "lastModifiedBy" : "6655a103339aa715119d5a13",
@@ -213,6 +196,11 @@
     "timeStamp" : 1728974281378,
     "modifiedBy" : "pranav A",
     "totalNodes" : 3
+  }, {
+    "commitId" : "d95e6ab002dba6f8d4a91dcf37f6311f595815f5",
+    "timeStamp" : 1728974322905,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
