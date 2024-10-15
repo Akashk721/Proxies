@@ -3,7 +3,7 @@
   "cts" : 1728896621863,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "pranav A",
-  "mts" : 1728975419972,
+  "mts" : 1728975949956,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670cde6db4ca4801a248c6b6",
@@ -18,52 +18,15 @@
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
     "source" : "4d5f5941-437c-4c42-8af1-e0e3f6e1a829",
-    "target" : "a7d7540c-674d-4e37-8d39-730c27642535"
+    "target" : "0ff0d034-2aa5-4482-8119-b846ad317770"
   }, {
-    "source" : "a7d7540c-674d-4e37-8d39-730c27642535",
+    "source" : "0ff0d034-2aa5-4482-8119-b846ad317770",
     "target" : "01193a32-e05a-4d23-9152-3ac631928c30"
   }, {
     "source" : "v1",
     "target" : "4d5f5941-437c-4c42-8af1-e0e3f6e1a829"
   } ],
   "vertexHashMap" : {
-    "a7d7540c-674d-4e37-8d39-730c27642535" : {
-      "vertexId" : "a7d7540c-674d-4e37-8d39-730c27642535",
-      "vertexType" : "TARGET",
-      "name" : "sample",
-      "target" : {
-        "name" : "sample",
-        "description" : "sample",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "GET",
-          "scheme" : "https",
-          "host" : "gg",
-          "path" : "/g",
-          "headerParams" : [ ],
-          "queryParams" : [ ],
-          "body" : {
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 200,
-          "variables" : [ ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
     "01193a32-e05a-4d23-9152-3ac631928c30" : {
       "vertexId" : "01193a32-e05a-4d23-9152-3ac631928c30",
       "vertexType" : "STOP",
@@ -133,9 +96,43 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "0ff0d034-2aa5-4482-8119-b846ad317770" : {
+      "vertexId" : "0ff0d034-2aa5-4482-8119-b846ad317770",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "xml",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "json",
+        "targetVariable" : "xml",
+        "jsonArray" : false,
+        "rootElementName" : "person",
+        "objectElementName" : "",
+        "attributeList" : [ ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1728975919769,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1728975439185,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "ap"
+  }, {
     "status" : "Review",
     "cts" : 1728975122166,
     "lastModifiedBy" : "6655a103339aa715119d5a13",
@@ -246,6 +243,11 @@
     "timeStamp" : 1728975197251,
     "modifiedBy" : "pranav A",
     "totalNodes" : 3
+  }, {
+    "commitId" : "9caeadca89254bbeea49c6ddfbcca65ccc5939dc",
+    "timeStamp" : 1728975419972,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
   } ],
   "virtualHostList" : [ ],
   "enableTracing" : false,
