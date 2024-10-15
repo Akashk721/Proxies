@@ -3,7 +3,7 @@
   "cts" : 1728975461655,
   "createdUserName" : "pranav A",
   "modifiedUserName" : "pranav A",
-  "mts" : 1728975520414,
+  "mts" : 1728975602713,
   "createdBy" : "6655a103339aa715119d5a13",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670e1265fe90965d320d65ad",
@@ -11,9 +11,9 @@
   "name" : "DM testing 2",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/dmTesting2",
+  "pathArray" : [ "dmTesting2" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
@@ -82,6 +82,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1728975579534,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "f"
+  }, {
+    "status" : "Approved",
+    "cts" : 1728975532737,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "ap"
+  }, {
     "status" : "Draft",
     "cts" : 1728975461655,
     "lastModifiedBy" : "pranav A",
@@ -102,6 +112,11 @@
     "timeStamp" : 1728975499657,
     "modifiedBy" : "pranav A",
     "totalNodes" : 2
+  }, {
+    "commitId" : "4a0bb2815abce258d0fee795469581cc9af1deb3",
+    "timeStamp" : 1728975520414,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
