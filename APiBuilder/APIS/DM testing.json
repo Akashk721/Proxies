@@ -3,7 +3,7 @@
   "cts" : 1728896621863,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "pranav A",
-  "mts" : 1728974199512,
+  "mts" : 1728974281378,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670cde6db4ca4801a248c6b6",
@@ -39,10 +39,10 @@
     "4d5f5941-437c-4c42-8af1-e0e3f6e1a829" : {
       "vertexId" : "4d5f5941-437c-4c42-8af1-e0e3f6e1a829",
       "vertexType" : "TARGET",
-      "name" : "getUser",
+      "name" : "updateUser",
       "target" : {
-        "name" : "getUser",
-        "description" : "getUser",
+        "name" : "updateUser",
+        "description" : "updateUser",
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "PUT",
@@ -96,6 +96,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1728974261604,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1728974210463,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "s6"
+  }, {
     "status" : "Review",
     "cts" : 1728974180453,
     "lastModifiedBy" : "6655a103339aa715119d5a13",
@@ -164,6 +174,11 @@
   }, {
     "commitId" : "ff7ad6597eb8aa9908092c9b6fa06fca2d4a8b00",
     "timeStamp" : 1728974197174,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "73a88b326d79d41f93b0a5e69264cabe594b516a",
+    "timeStamp" : 1728974199512,
     "modifiedBy" : "pranav A",
     "totalNodes" : 3
   } ],
