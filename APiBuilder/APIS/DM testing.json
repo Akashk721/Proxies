@@ -3,7 +3,7 @@
   "cts" : 1728896621863,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "pranav A",
-  "mts" : 1728972665153,
+  "mts" : 1728973463259,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670cde6db4ca4801a248c6b6",
@@ -17,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "4d5f5941-437c-4c42-8af1-e0e3f6e1a829",
     "target" : "01193a32-e05a-4d23-9152-3ac631928c30"
+  }, {
+    "source" : "v1",
+    "target" : "4d5f5941-437c-4c42-8af1-e0e3f6e1a829"
   } ],
   "vertexHashMap" : {
     "01193a32-e05a-4d23-9152-3ac631928c30" : {
@@ -32,6 +35,49 @@
           "type" : "JSON"
         }
       }
+    },
+    "4d5f5941-437c-4c42-8af1-e0e3f6e1a829" : {
+      "vertexId" : "4d5f5941-437c-4c42-8af1-e0e3f6e1a829",
+      "vertexType" : "TARGET",
+      "name" : "getUser",
+      "target" : {
+        "name" : "getUser",
+        "description" : "getUser",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dev-mock.apiwiz.io",
+          "path" : "/sc-apiwiz/getUser",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "x-tenant",
+            "value" : "b8e236df-4b26-49ef-9532-5e43ea0c10a4"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -52,10 +98,15 @@
     "timeStamp" : 1728896621863,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "e2d065aa81561f4646f3d3d6fa1e509a0395cbae",
+    "timeStamp" : 1728972665153,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
