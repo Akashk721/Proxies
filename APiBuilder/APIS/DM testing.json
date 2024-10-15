@@ -3,7 +3,7 @@
   "cts" : 1728896621863,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "pranav A",
-  "mts" : 1728973463259,
+  "mts" : 1728973802703,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670cde6db4ca4801a248c6b6",
@@ -13,7 +13,7 @@
   "apiMethod" : "GET",
   "path" : "/",
   "pathArray" : [ ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "pranav A",
   "edgeSet" : [ {
@@ -45,10 +45,10 @@
         "description" : "getUser",
         "apiType" : "RESTAPI",
         "request" : {
-          "apiMethod" : "GET",
+          "apiMethod" : "PUT",
           "scheme" : "https",
           "host" : "dev-mock.apiwiz.io",
-          "path" : "/sc-apiwiz/getUser",
+          "path" : "/sc-apiwiz/updateUser",
           "headerParams" : [ {
             "name" : "content-type",
             "value" : "application/json"
@@ -58,6 +58,7 @@
           } ],
           "queryParams" : [ ],
           "body" : {
+            "data" : "{\n    \"id\": 1,\n    \"name\": \"Itorix\"\n}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -65,7 +66,14 @@
         },
         "response" : {
           "statusCode" : 200,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "json",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -88,6 +96,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1728973720987,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "s2"
+  }, {
+    "status" : "Approved",
+    "cts" : 1728973479928,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "s1"
+  }, {
     "status" : "Draft",
     "cts" : 1728896621863,
     "lastModifiedBy" : "vidya wiz",
@@ -103,6 +121,11 @@
     "timeStamp" : 1728972665153,
     "modifiedBy" : "pranav A",
     "totalNodes" : 2
+  }, {
+    "commitId" : "1593f9209993802b17d074f34f87113ee1115cca",
+    "timeStamp" : 1728973463259,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
