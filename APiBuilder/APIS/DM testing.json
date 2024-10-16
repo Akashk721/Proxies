@@ -3,7 +3,7 @@
   "cts" : 1728896621863,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "pranav A",
-  "mts" : 1729061105048,
+  "mts" : 1729061201055,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670cde6db4ca4801a248c6b6",
@@ -110,9 +110,9 @@
         "attributeList" : [ ],
         "staticElementAttributeHashMap" : { },
         "staticPathAttributeArrayList" : [ ],
-        "continueOnError" : false,
+        "continueOnError" : true,
         "errorResponse" : {
-          "statusCode" : 400,
+          "statusCode" : 200,
           "body" : {
             "data" : "",
             "type" : "json"
@@ -123,6 +123,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1729061173297,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1729061116818,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "c"
+  }, {
     "status" : "Review",
     "cts" : 1729061047180,
     "lastModifiedBy" : "6655a103339aa715119d5a13",
@@ -286,6 +296,11 @@
   }, {
     "commitId" : "f6feed67aa51631632f9226ffa43c2d4227d8d92",
     "timeStamp" : 1729061094408,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "382e8658eaef86b9e4f9e9706e585dc90b653008",
+    "timeStamp" : 1729061105048,
     "modifiedBy" : "pranav A",
     "totalNodes" : 4
   } ],
