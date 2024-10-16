@@ -3,7 +3,7 @@
   "cts" : 1728896621863,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "pranav A",
-  "mts" : 1729061201055,
+  "mts" : 1729061297278,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "6655a103339aa715119d5a13",
   "proxyId" : "670cde6db4ca4801a248c6b6",
@@ -71,10 +71,10 @@
           "statusCode" : 200,
           "variables" : [ {
             "name" : "json",
-            "reference" : "headers",
-            "value" : "x-tenant",
+            "reference" : "body",
+            "value" : "$",
             "active" : true,
-            "source" : "headers",
+            "source" : "raw",
             "hide" : false
           } ]
         },
@@ -301,6 +301,11 @@
   }, {
     "commitId" : "382e8658eaef86b9e4f9e9706e585dc90b653008",
     "timeStamp" : 1729061105048,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "624b748e5310cf971b4980c058d81a4b52c7dc12",
+    "timeStamp" : 1729061201055,
     "modifiedBy" : "pranav A",
     "totalNodes" : 4
   } ],
