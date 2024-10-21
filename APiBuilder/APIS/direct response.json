@@ -3,7 +3,7 @@
   "cts" : 1729503519851,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1729503791066,
+  "mts" : 1729503843104,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6716211f62d2882bf4419e89",
@@ -12,8 +12,8 @@
   "description" : "azure-connector",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/response",
-  "pathArray" : [ "response" ],
+  "path" : "/swaggers",
+  "pathArray" : [ "swaggers" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya wiz",
@@ -57,6 +57,11 @@
   }, {
     "commitId" : "b06228b5a2198a132892ddcfd819c4d9ef1c8b47",
     "timeStamp" : 1729503772180,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "bdd6b7b455095ad4f57af19449add3c1067fea85",
+    "timeStamp" : 1729503791066,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
