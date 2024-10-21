@@ -1,0 +1,62 @@
+{
+  "id" : "6716212662d2882bf4419e8a",
+  "cts" : 1729503519851,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1729503772180,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "6716211f62d2882bf4419e89",
+  "revision" : 1,
+  "name" : "direct response",
+  "description" : "azure-connector",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/response",
+  "pathArray" : [ "response" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "da1055a6-0eda-4566-a91c-8ccb367ef47c"
+  } ],
+  "vertexHashMap" : {
+    "da1055a6-0eda-4566-a91c-8ccb367ef47c" : {
+      "vertexId" : "da1055a6-0eda-4566-a91c-8ccb367ef47c",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1729503519851,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "a0695f2cc04bcac25c3690285925c9c06aee48f0",
+    "timeStamp" : 1729503519851,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
