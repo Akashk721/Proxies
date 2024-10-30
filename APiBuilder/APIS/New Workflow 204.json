@@ -1,8 +1,9 @@
 {
+  "id" : "671f69bd9d05ad36c5a6f196",
   "cts" : 1730111931355,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1730111931355,
+  "mts" : 1730261333886,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "671f69bb9d05ad36c5a6f195",
@@ -25,7 +26,7 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     },
     "1be0f6bf-a077-488e-a3a0-8f2d98b67bba" : {
       "vertexId" : "1be0f6bf-a077-488e-a3a0-8f2d98b67bba",
@@ -46,9 +47,15 @@
     "lastModifiedBy" : "vidya wiz",
     "description" : "Created new proxy"
   } ],
-  "enableTracing" : false,
+  "changeLogs" : [ {
+    "commitId" : "2d6e93a0dc7a615199eaef27ed10d9d982bfb886",
+    "timeStamp" : 1730111931355,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
