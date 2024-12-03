@@ -3,15 +3,15 @@
   "cts" : 1730111931355,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1733205663462,
+  "mts" : 1733205683954,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "671f69bb9d05ad36c5a6f195",
   "revision" : 1,
   "name" : "kafka trigger",
   "description" : "des",
-  "apiType" : "GRAPHQL",
-  "apiMethod" : "POST",
+  "apiType" : "KAFKA",
+  "apiMethod" : "GET",
   "path" : "/",
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
@@ -61,6 +61,11 @@
   }, {
     "commitId" : "a3d7e77474d55794cbee81d1aef2e55129638599",
     "timeStamp" : 1733205650569,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "7211accd309d9dbfb5c7f35e056e612dce553652",
+    "timeStamp" : 1733205663462,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
