@@ -3,7 +3,7 @@
   "cts" : 1730111931355,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1733205683954,
+  "mts" : 1733303280796,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "671f69bb9d05ad36c5a6f195",
@@ -17,10 +17,7 @@
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya wiz",
-  "edgeSet" : [ {
-    "source" : "v1",
-    "target" : "1be0f6bf-a077-488e-a3a0-8f2d98b67bba"
-  } ],
+  "edgeSet" : [ ],
   "vertexHashMap" : {
     "v1" : {
       "vertexId" : "v1",
@@ -28,18 +25,6 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
-    },
-    "1be0f6bf-a077-488e-a3a0-8f2d98b67bba" : {
-      "vertexId" : "1be0f6bf-a077-488e-a3a0-8f2d98b67bba",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "body" : {
-          "type" : "JSON"
-        }
-      }
     }
   },
   "statusHistory" : [ {
@@ -66,6 +51,11 @@
   }, {
     "commitId" : "7211accd309d9dbfb5c7f35e056e612dce553652",
     "timeStamp" : 1733205663462,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "30a5484d805cafc3b7af8035a4dc23197954a57e",
+    "timeStamp" : 1733205683954,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
