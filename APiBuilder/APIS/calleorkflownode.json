@@ -1,0 +1,88 @@
+{
+  "cts" : 1733833716544,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1733833716544,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "675833f4a9d48b44c2581844",
+  "revision" : 1,
+  "name" : "calleorkflownode",
+  "description" : "calleorkflownode",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/calleorkflownode",
+  "pathArray" : [ "calleorkflownode" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "cd087c00-cb7a-4f36-aff6-751bb79f3ebf",
+    "target" : "6af8d340-b479-44c1-be63-aa0bc32416ec"
+  }, {
+    "source" : "v1",
+    "target" : "cd087c00-cb7a-4f36-aff6-751bb79f3ebf"
+  } ],
+  "vertexHashMap" : {
+    "cd087c00-cb7a-4f36-aff6-751bb79f3ebf" : {
+      "vertexId" : "cd087c00-cb7a-4f36-aff6-751bb79f3ebf",
+      "vertexType" : "CALL_WORKFLOW",
+      "name" : "call a workflow",
+      "description" : "get call of reqres.in",
+      "callWorkflowData" : {
+        "childWorkflowId" : "674012984894b33c5074000b",
+        "childWorkflowName" : "set variables",
+        "virtualHostId" : "1234",
+        "virtualHostName" : "localhost",
+        "headerParams" : [ {
+          "name" : "x-tenant",
+          "value" : "acme-team-dev"
+        } ],
+        "formParams" : [ ],
+        "urlEncodedParams" : [ ],
+        "requestBody" : { },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "6af8d340-b479-44c1-be63-aa0bc32416ec" : {
+      "vertexId" : "6af8d340-b479-44c1-be63-aa0bc32416ec",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{{{response}}}",
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1733833716544,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false,
+  "deleted" : false
+}
