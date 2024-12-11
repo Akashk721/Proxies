@@ -3,7 +3,7 @@
   "cts" : 1733893055858,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1733893095315,
+  "mts" : 1733893671929,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67591bbfb07e4b456eaf2592",
@@ -18,10 +18,47 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "a6ad6ae7-8173-4004-98ca-2fd79c93509e",
     "target" : "9b41c1f6-b384-4933-81ac-b0a352d722e2"
+  }, {
+    "source" : "v1",
+    "target" : "a6ad6ae7-8173-4004-98ca-2fd79c93509e"
   } ],
   "vertexHashMap" : {
+    "a6ad6ae7-8173-4004-98ca-2fd79c93509e" : {
+      "vertexId" : "a6ad6ae7-8173-4004-98ca-2fd79c93509e",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "jsessionid",
+        "value" : "1234",
+        "type" : "number",
+        "feelExpression" : false
+      }, {
+        "name" : "xapikey",
+        "value" : "token123",
+        "feelExpression" : false
+      }, {
+        "name" : "1stenv",
+        "value" : "adslfk",
+        "feelExpression" : false
+      }, {
+        "name" : "2ndenv",
+        "value" : "wer",
+        "feelExpression" : false
+      }, {
+        "name" : "3rdenv",
+        "value" : "zxcv",
+        "feelExpression" : false
+      }, {
+        "name" : "newvar",
+        "value" : "customvar",
+        "type" : "string",
+        "feelExpression" : false,
+        "source" : "a6ad6ae7-8173-4004-98ca-2fd79c93509e"
+      } ],
+      "imported" : false
+    },
     "9b41c1f6-b384-4933-81ac-b0a352d722e2" : {
       "vertexId" : "9b41c1f6-b384-4933-81ac-b0a352d722e2",
       "vertexType" : "STOP",
@@ -63,6 +100,11 @@
   "changeLogs" : [ {
     "commitId" : "4a9964da9e8782437ab1c0e4804eeb9633cd3c53",
     "timeStamp" : 1733893055858,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "cd7b3cabac42f854bf386cd9aa7aa9c1a8b7c4a8",
+    "timeStamp" : 1733893095315,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
