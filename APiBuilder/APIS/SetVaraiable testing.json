@@ -1,0 +1,77 @@
+{
+  "id" : "67591bc2b07e4b456eaf2593",
+  "cts" : 1733893055858,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1733893095315,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "67591bbfb07e4b456eaf2592",
+  "revision" : 1,
+  "name" : "SetVaraiable testing",
+  "description" : "desc",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/variable",
+  "pathArray" : [ "variable" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "9b41c1f6-b384-4933-81ac-b0a352d722e2"
+  } ],
+  "vertexHashMap" : {
+    "9b41c1f6-b384-4933-81ac-b0a352d722e2" : {
+      "vertexId" : "9b41c1f6-b384-4933-81ac-b0a352d722e2",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "useEnforcedRules" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1733893055858,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "4a9964da9e8782437ab1c0e4804eeb9633cd3c53",
+    "timeStamp" : 1733893055858,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "env-1",
+  "environmentId" : "663b6da807ffe9048e4253e3",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
