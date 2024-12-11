@@ -3,7 +3,7 @@
   "cts" : 1733893055858,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1733898630219,
+  "mts" : 1733898773714,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67591bbfb07e4b456eaf2592",
@@ -30,8 +30,8 @@
       "vertexType" : "VARIABLES",
       "name" : "Set Variable",
       "runtimeVariableList" : [ {
-        "name" : "xapikey",
-        "value" : "token123new",
+        "name" : "jsessionid",
+        "value" : "1234234",
         "feelExpression" : false,
         "source" : "ENV_VALUE"
       }, {
@@ -99,6 +99,11 @@
   }, {
     "commitId" : "67bac970175d7d684adf4b9ac08bbb895c6491e7",
     "timeStamp" : 1733898609139,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "902dd37feb31dc104b0a2f2db0ba7b157f66a68d",
+    "timeStamp" : 1733898630219,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
