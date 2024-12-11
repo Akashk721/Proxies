@@ -3,7 +3,7 @@
   "cts" : 1733893055858,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1733898773714,
+  "mts" : 1733898953999,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67591bbfb07e4b456eaf2592",
@@ -32,6 +32,17 @@
       "runtimeVariableList" : [ {
         "name" : "jsessionid",
         "value" : "1234234",
+        "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
+        "source" : "ENV_VALUE"
+      }, {
+        "name" : "xapikey",
+        "value" : "token123n234",
+        "type" : "json",
         "feelExpression" : false,
         "source" : "ENV_VALUE"
       }, {
@@ -104,6 +115,11 @@
   }, {
     "commitId" : "902dd37feb31dc104b0a2f2db0ba7b157f66a68d",
     "timeStamp" : 1733898630219,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "62704e86ba362f21d4176d26883b82c62de93f41",
+    "timeStamp" : 1733898773714,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
