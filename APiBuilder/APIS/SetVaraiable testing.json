@@ -3,7 +3,7 @@
   "cts" : 1733893055858,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1733893671929,
+  "mts" : 1733898609139,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67591bbfb07e4b456eaf2592",
@@ -31,25 +31,15 @@
       "name" : "Set Variable",
       "runtimeVariableList" : [ {
         "name" : "jsessionid",
-        "value" : "1234",
+        "value" : "1234234",
         "type" : "number",
-        "feelExpression" : false
-      }, {
-        "name" : "xapikey",
-        "value" : "token123",
-        "feelExpression" : false
-      }, {
-        "name" : "1stenv",
-        "value" : "adslfk",
-        "feelExpression" : false
-      }, {
-        "name" : "2ndenv",
-        "value" : "wer",
-        "feelExpression" : false
-      }, {
-        "name" : "3rdenv",
-        "value" : "zxcv",
-        "feelExpression" : false
+        "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
+        "source" : "ENV_VALUE"
       }, {
         "name" : "newvar",
         "value" : "customvar",
@@ -107,6 +97,11 @@
     "timeStamp" : 1733893095315,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "4771762ae9ae827a6f393535645195a76e529b50",
+    "timeStamp" : 1733893671929,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "env-1",
