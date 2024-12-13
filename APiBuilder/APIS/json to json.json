@@ -1,0 +1,181 @@
+{
+  "cts" : 1734065662579,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1734065662579,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "670e1265fe90965d320d65ad",
+  "revision" : 2,
+  "name" : "json to json",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/dmTesting4",
+  "pathArray" : [ "dmTesting4" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "1418666e-6920-456d-92ff-1eedffc50bd4",
+    "target" : "0cb33395-a07a-423c-ab10-e996c8817016"
+  }, {
+    "source" : "v1",
+    "target" : "1418666e-6920-456d-92ff-1eedffc50bd4"
+  } ],
+  "vertexHashMap" : {
+    "0cb33395-a07a-423c-ab10-e996c8817016" : {
+      "vertexId" : "0cb33395-a07a-423c-ab10-e996c8817016",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{{{jsonVarTarget}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "1418666e-6920-456d-92ff-1eedffc50bd4" : {
+      "vertexId" : "1418666e-6920-456d-92ff-1eedffc50bd4",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "data_mapping",
+      "dataMappingData" : {
+        "sourceVariable" : "jsonVar",
+        "targetVariable" : "jsonVarTarget",
+        "targetSchema" : "{ \"$schema\": \"http://json-schema.org/draft-07/schema#\", \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"integer\" }, \"name\": { \"type\": \"string\" }, \"age\": { \"type\": \"integer\" }, \"email\": { \"type\": \"string\", \"format\": \"email\" }, \"address\": { \"type\": \"object\", \"properties\": { \"street\": { \"type\": \"string\" }, \"city\": { \"type\": \"string\" }, \"postalCode\": { \"type\": \"string\" }, \"country\": { \"type\": \"string\" } }, \"required\": [\"street\", \"city\", \"postalCode\", \"country\"] }, \"phones\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"type\": { \"type\": \"string\" }, \"number\": { \"type\": \"string\" } }, \"required\": [\"type\", \"number\"] } }, \"preferences\": { \"type\": \"object\", \"properties\": { \"contactMethods\": { \"type\": \"array\", \"items\": { \"type\": \"string\" } }, \"newsletters\": { \"type\": \"object\", \"properties\": { \"weekly\": { \"type\": \"boolean\" }, \"monthly\": { \"type\": \"boolean\" } }, \"required\": [\"weekly\", \"monthly\"] } }, \"required\": [\"contactMethods\", \"newsletters\"] }, \"orders\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"orderId\": { \"type\": \"integer\" }, \"items\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"itemId\": { \"type\": \"integer\" }, \"productName\": { \"type\": \"string\" }, \"quantity\": { \"type\": \"integer\" }, \"price\": { \"type\": \"number\" } }, \"required\": [\"itemId\", \"productName\", \"quantity\", \"price\"] } }, \"total\": { \"type\": \"number\" }, \"status\": { \"type\": \"string\" } }, \"required\": [\"orderId\", \"items\", \"total\", \"status\"] } }, \"membership\": { \"type\": \"object\", \"properties\": { \"level\": { \"type\": \"string\" }, \"points\": { \"type\": \"integer\" }, \"rewards\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"rewardId\": { \"type\": \"integer\" }, \"rewardName\": { \"type\": \"string\" }, \"expirationDate\": { \"type\": \"string\", \"format\": \"date\" } }, \"required\": [\"rewardId\", \"rewardName\", \"expirationDate\"] } } }, \"required\": [\"level\", \"points\", \"rewards\"] } }, \"required\": [\"id\", \"name\", \"age\", \"email\", \"address\", \"phones\", \"preferences\", \"orders\", \"membership\"] }",
+        "pathOperations" : [ {
+          "sourcePathList" : [ "$.id" ],
+          "targetPath" : "$.id",
+          "feelExpression" : {
+            "expression" : "id + 100",
+            "variableMap" : {
+              "id" : "$.id"
+            }
+          }
+        }, {
+          "sourcePathList" : [ "$.name" ],
+          "targetPath" : "$.name"
+        }, {
+          "sourcePathList" : [ "$.age" ],
+          "targetPath" : "$.age"
+        }, {
+          "sourcePathList" : [ "$.email" ],
+          "targetPath" : "$.email"
+        }, {
+          "sourcePathList" : [ "$.address" ],
+          "targetPath" : "$.address"
+        }, {
+          "sourcePathList" : [ "$.phones[*].type" ],
+          "targetPath" : "$.phones[*].type"
+        }, {
+          "sourcePathList" : [ "$.phones[*].number" ],
+          "targetPath" : "$.phones[*].number"
+        }, {
+          "sourcePathList" : [ "$.address.street" ],
+          "targetPath" : "$.address.street"
+        }, {
+          "sourcePathList" : [ "$.address.city" ],
+          "targetPath" : "$.address.city"
+        }, {
+          "sourcePathList" : [ "$.address.postalCode" ],
+          "targetPath" : "$.address.postalCode"
+        }, {
+          "sourcePathList" : [ "$.address.country" ],
+          "targetPath" : "$.address.country"
+        }, {
+          "sourcePathList" : [ "$.orders[*].orderId" ],
+          "targetPath" : "$.orders[*].orderId"
+        }, {
+          "sourcePathList" : [ "$.orders[*].items[*].itemId" ],
+          "targetPath" : "$.orders[*].items[*].itemId"
+        }, {
+          "sourcePathList" : [ "$.orders[*].items[*].productName" ],
+          "targetPath" : "$.orders[*].items[*].productName"
+        }, {
+          "sourcePathList" : [ "$.orders[*].items[*].quantity" ],
+          "targetPath" : "$.orders[*].items[*].quantity"
+        }, {
+          "sourcePathList" : [ "$.orders[*].items[*].price" ],
+          "targetPath" : "$.orders[*].items[*].price"
+        }, {
+          "sourcePathList" : [ "$.orders[*].total" ],
+          "targetPath" : "$.orders[*].total"
+        }, {
+          "sourcePathList" : [ "$.orders[*].status" ],
+          "targetPath" : "$.orders[*].status"
+        }, {
+          "sourcePathList" : [ "$.preferences.contactMethods[*]" ],
+          "targetPath" : "$.preferences.contactMethods[*]"
+        }, {
+          "sourcePathList" : [ "$.preferences.newsletters.weekly" ],
+          "targetPath" : "$.preferences.newsletters.weekly"
+        }, {
+          "sourcePathList" : [ "$.preferences.newsletters.monthly" ],
+          "targetPath" : "$.preferences.newsletters.monthly"
+        }, {
+          "sourcePathList" : [ "$.membership.level" ],
+          "targetPath" : "$.membership.level"
+        }, {
+          "sourcePathList" : [ "$.membership.points" ],
+          "targetPath" : "$.membership.points"
+        }, {
+          "sourcePathList" : [ "$.membership.rewards[*].rewardName" ],
+          "targetPath" : "$.membership.rewards[*].rewardName"
+        }, {
+          "sourcePathList" : [ "$.membership.rewards[*].rewardId" ],
+          "targetPath" : "$.membership.rewards[*].rewardId"
+        }, {
+          "sourcePathList" : [ "$.membership.rewards[*].expirationDate" ],
+          "targetPath" : "$.membership.rewards[*].expirationDate"
+        } ],
+        "arrayPathList" : [ {
+          "keyPath" : "$.phones[*]",
+          "valuePath" : "$.phones[*]"
+        }, {
+          "keyPath" : "$.orders[*]",
+          "valuePath" : "$.orders[*]"
+        }, {
+          "keyPath" : "$.orders[*].items[*]",
+          "valuePath" : "$.orders[*].items[*]"
+        }, {
+          "keyPath" : "$.preferences.contactMethods[*]",
+          "valuePath" : "$.preferences.contactMethods[*]"
+        }, {
+          "keyPath" : "$.membership.rewards[*]",
+          "valuePath" : "$.membership.rewards[*]"
+        } ],
+        "sourceType" : "JSON",
+        "targetType" : "JSON",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "{{{response}}}",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "jsonVar",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true
+    }
+  },
+  "enableTracing" : false,
+  "environmentId" : "6644b7b5a16c946c03a2175c",
+  "deployed" : false,
+  "deleted" : false
+}
