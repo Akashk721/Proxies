@@ -3,7 +3,7 @@
   "cts" : 1734056508810,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734056976202,
+  "mts" : 1734071574233,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675b9a3c366c1f52024c738f",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "f58a46ec-1635-4a84-ac7f-b97a4a12d75e",
     "target" : "b723924d-5415-4596-9391-4b7ac385a4bb"
+  }, {
+    "source" : "v1",
+    "target" : "f58a46ec-1635-4a84-ac7f-b97a4a12d75e"
   } ],
   "vertexHashMap" : {
     "b723924d-5415-4596-9391-4b7ac385a4bb" : {
@@ -76,6 +79,35 @@
           }
         }
       }
+    },
+    "f58a46ec-1635-4a84-ac7f-b97a4a12d75e" : {
+      "vertexId" : "f58a46ec-1635-4a84-ac7f-b97a4a12d75e",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "zxcv",
+      "dataMappingData" : {
+        "sourceVariable" : "item1",
+        "targetVariable" : "d",
+        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"teszxcvting\": {\n      \"type\": \"integer\"\n    },\n    \"nazxcvme\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"testing\",\n    \"name\"\n  ]\n}",
+        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"testing\": {\n      \"type\": \"integer\"\n    },\n    \"name\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"testing\",\n    \"name\"\n  ]\n}",
+        "pathOperations" : [ {
+          "sourcePathList" : [ "$.testing" ],
+          "targetPath" : "$.teszxcvting"
+        }, {
+          "sourcePathList" : [ "$.name" ],
+          "targetPath" : "$.nazxcvme"
+        } ],
+        "sourceType" : "JSON",
+        "targetType" : "JSON",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -92,6 +124,11 @@
   }, {
     "commitId" : "769e70f2ca40855e73ccbe725bc4d433a5f87280",
     "timeStamp" : 1734056531414,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "bb79f11401ad6cc6c7b233c0ac0b473d075d1a12",
+    "timeStamp" : 1734056976202,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
