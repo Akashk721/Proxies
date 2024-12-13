@@ -3,7 +3,7 @@
   "cts" : 1734082764315,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734089377482,
+  "mts" : 1734089792163,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675c00cc0a2e831ff801d952",
@@ -11,7 +11,7 @@
   "name" : "dm2",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/dm-2",
   "pathArray" : [ "dm-2" ],
   "revisionStatus" : "REVIEW",
@@ -97,6 +97,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1734089784435,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1734089425178,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "test"
+  }, {
+    "status" : "Review",
     "cts" : 1734083713848,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -144,6 +154,11 @@
   }, {
     "commitId" : "5afefa54bbcbe78add2981b7d3de75dbd4dcd047",
     "timeStamp" : 1734089335141,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "08b09dad933188a88450995619bf9153430a3d6b",
+    "timeStamp" : 1734089377482,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
