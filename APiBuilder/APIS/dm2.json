@@ -3,7 +3,7 @@
   "cts" : 1734082764315,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734089335141,
+  "mts" : 1734089377482,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675c00cc0a2e831ff801d952",
@@ -36,10 +36,10 @@
         "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"testing\": {\n      \"type\": \"integer\"\n    },\n    \"name\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"testing\",\n    \"name\"\n  ]\n}",
         "pathOperations" : [ {
           "sourcePathList" : [ "$.testing" ],
-          "targetPath" : "/root[*]/testing"
+          "targetPath" : "/root/testing"
         }, {
           "sourcePathList" : [ "$.name" ],
-          "targetPath" : "/root[*]/name"
+          "targetPath" : "/root/name"
         } ],
         "sourceType" : "JSON",
         "targetType" : "XML",
@@ -139,6 +139,11 @@
   }, {
     "commitId" : "f8195a0604adef75f9a86b8c2b144ddf83150b35",
     "timeStamp" : 1734083197615,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "5afefa54bbcbe78add2981b7d3de75dbd4dcd047",
+    "timeStamp" : 1734089335141,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
