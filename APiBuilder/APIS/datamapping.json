@@ -3,7 +3,7 @@
   "cts" : 1734056508810,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734074171832,
+  "mts" : 1734074303271,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675b9a3c366c1f52024c738f",
@@ -11,7 +11,7 @@
   "name" : "datamapping",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/dm-testing-1",
   "pathArray" : [ "dm-testing-1" ],
   "revisionStatus" : "REVIEW",
@@ -121,6 +121,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1734074292077,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1734074180929,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "test"
+  }, {
+    "status" : "Review",
     "cts" : 1734074101328,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -173,6 +183,11 @@
   }, {
     "commitId" : "649105890709c58f0e960edef43c9f332617e154",
     "timeStamp" : 1734073759262,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "191f5f1a533df881df4a6564104f912489f7946d",
+    "timeStamp" : 1734074171832,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
