@@ -3,7 +3,7 @@
   "cts" : 1734056508810,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734072033025,
+  "mts" : 1734073738007,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675b9a3c366c1f52024c738f",
@@ -71,10 +71,10 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ {
-        "name" : "extract1",
+        "name" : "",
         "reference" : "headers",
-        "value" : "item1",
-        "active" : true,
+        "value" : "",
+        "active" : false,
         "source" : "headers",
         "hide" : false,
         "feelExpression" : false
@@ -84,6 +84,14 @@
         "value" : "item2",
         "active" : true,
         "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "extract1",
+        "reference" : "body",
+        "value" : "item1",
+        "active" : true,
+        "source" : "raw",
         "hide" : false,
         "feelExpression" : false
       }, {
@@ -134,6 +142,11 @@
   }, {
     "commitId" : "d7af5c7e7cfe518ea07b14d3ab9d37980febfe67",
     "timeStamp" : 1734071574233,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "47ce3b364091e3e4a43b9a851f3e6fc89e5b6a2f",
+    "timeStamp" : 1734072033025,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
