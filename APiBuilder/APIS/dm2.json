@@ -1,0 +1,138 @@
+{
+  "id" : "675c00ce0a2e831ff801d953",
+  "cts" : 1734082764315,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1734083197615,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "675c00cc0a2e831ff801d952",
+  "revision" : 1,
+  "name" : "dm2",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/dm-2",
+  "pathArray" : [ "dm-2" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "9194f538-c059-49ba-8ce7-da89e17c57fe"
+  }, {
+    "source" : "9194f538-c059-49ba-8ce7-da89e17c57fe",
+    "target" : "c51b29b9-a72c-459a-acad-0759c7801cf9"
+  } ],
+  "vertexHashMap" : {
+    "9194f538-c059-49ba-8ce7-da89e17c57fe" : {
+      "vertexId" : "9194f538-c059-49ba-8ce7-da89e17c57fe",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "dm2",
+      "dataMappingData" : {
+        "sourceVariable" : "extractedPayload",
+        "targetVariable" : "output",
+        "targetSchema" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->\n<xs:schema attributeFormDefault=\"unqualified\" elementFormDefault=\"qualified\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:element name=\"root\">\n    <xs:complexType>\n      <xs:sequence>\n        <xs:element name=\"testing\" type=\"xs:unsignedByte\" />\n        <xs:element name=\"name\" type=\"xs:string\" />\n      </xs:sequence>\n    </xs:complexType>\n  </xs:element>\n</xs:schema>",
+        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"testing\": {\n      \"type\": \"integer\"\n    },\n    \"name\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"testing\",\n    \"name\"\n  ]\n}",
+        "pathOperations" : [ {
+          "sourcePathList" : [ "$.testing" ],
+          "targetPath" : "/root[*]/testing"
+        }, {
+          "sourcePathList" : [ "$.name" ],
+          "targetPath" : "/root[*]/name"
+        } ],
+        "sourceType" : "JSON",
+        "targetType" : "XML",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "extractedPayload",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "useEnforcedRules" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "c51b29b9-a72c-459a-acad-0759c7801cf9" : {
+      "vertexId" : "c51b29b9-a72c-459a-acad-0759c7801cf9",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{{output}}",
+          "type" : "xml"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1734083167799,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "asdf"
+  }, {
+    "status" : "Approved",
+    "cts" : 1734083149923,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "test"
+  }, {
+    "status" : "Draft",
+    "cts" : 1734082764315,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "10cf1c3a1630a33b93abb16f7b3d846bb52f59ca",
+    "timeStamp" : 1734082764315,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "e668816c24e17d1785141175a96e87fe4986ba74",
+    "timeStamp" : 1734083071060,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "c2976b1fc958875428daee01fc6e08e3f0988648",
+    "timeStamp" : 1734083133384,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "deployed" : false,
+  "deleted" : false
+}
