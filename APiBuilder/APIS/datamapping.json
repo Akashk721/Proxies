@@ -3,7 +3,7 @@
   "cts" : 1734056508810,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734073747029,
+  "mts" : 1734073759262,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675b9a3c366c1f52024c738f",
@@ -12,8 +12,8 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/dm-testing-1",
+  "pathArray" : [ "dm-testing-1" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya wiz",
@@ -153,6 +153,11 @@
   }, {
     "commitId" : "e384b481bbcd2da4a2127e78ea82a0e7f7023934",
     "timeStamp" : 1734073738007,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "ee8916443a15708b1f4517500a7b9ac974c65777",
+    "timeStamp" : 1734073747029,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
