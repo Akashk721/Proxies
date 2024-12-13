@@ -1,0 +1,69 @@
+{
+  "cts" : 1734082764315,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1734082764315,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "675c00cc0a2e831ff801d952",
+  "revision" : 1,
+  "name" : "New Workflow 207",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "c51b29b9-a72c-459a-acad-0759c7801cf9"
+  } ],
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "c51b29b9-a72c-459a-acad-0759c7801cf9" : {
+      "vertexId" : "c51b29b9-a72c-459a-acad-0759c7801cf9",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1734082764315,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "deployed" : false,
+  "deleted" : false
+}
