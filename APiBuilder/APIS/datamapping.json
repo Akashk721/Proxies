@@ -3,7 +3,7 @@
   "cts" : 1734056508810,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734071574233,
+  "mts" : 1734072033025,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675b9a3c366c1f52024c738f",
@@ -18,11 +18,11 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "f58a46ec-1635-4a84-ac7f-b97a4a12d75e",
-    "target" : "b723924d-5415-4596-9391-4b7ac385a4bb"
-  }, {
     "source" : "v1",
-    "target" : "f58a46ec-1635-4a84-ac7f-b97a4a12d75e"
+    "target" : "d626fba4-b4f0-450c-91f0-6d3cfcba39cf"
+  }, {
+    "source" : "d626fba4-b4f0-450c-91f0-6d3cfcba39cf",
+    "target" : "b723924d-5415-4596-9391-4b7ac385a4bb"
   } ],
   "vertexHashMap" : {
     "b723924d-5415-4596-9391-4b7ac385a4bb" : {
@@ -36,6 +36,35 @@
           "type" : "JSON"
         }
       }
+    },
+    "d626fba4-b4f0-450c-91f0-6d3cfcba39cf" : {
+      "vertexId" : "d626fba4-b4f0-450c-91f0-6d3cfcba39cf",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "tert",
+      "dataMappingData" : {
+        "sourceVariable" : "item1",
+        "targetVariable" : "t",
+        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"testinwerg\": {\n      \"type\": \"integer\"\n    },\n    \"namewer\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"testing\",\n    \"name\"\n  ]\n}",
+        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"testing\": {\n      \"type\": \"integer\"\n    },\n    \"name\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"testing\",\n    \"name\"\n  ]\n}",
+        "pathOperations" : [ {
+          "sourcePathList" : [ "$.testing" ],
+          "targetPath" : "$.testinwerg"
+        }, {
+          "sourcePathList" : [ "$.name" ],
+          "targetPath" : "$.namewer"
+        } ],
+        "sourceType" : "JSON",
+        "targetType" : "JSON",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -79,35 +108,6 @@
           }
         }
       }
-    },
-    "f58a46ec-1635-4a84-ac7f-b97a4a12d75e" : {
-      "vertexId" : "f58a46ec-1635-4a84-ac7f-b97a4a12d75e",
-      "vertexType" : "DATA_MAPPING",
-      "name" : "zxcv",
-      "dataMappingData" : {
-        "sourceVariable" : "item1",
-        "targetVariable" : "d",
-        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"teszxcvting\": {\n      \"type\": \"integer\"\n    },\n    \"nazxcvme\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"testing\",\n    \"name\"\n  ]\n}",
-        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"testing\": {\n      \"type\": \"integer\"\n    },\n    \"name\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"testing\",\n    \"name\"\n  ]\n}",
-        "pathOperations" : [ {
-          "sourcePathList" : [ "$.testing" ],
-          "targetPath" : "$.teszxcvting"
-        }, {
-          "sourcePathList" : [ "$.name" ],
-          "targetPath" : "$.nazxcvme"
-        } ],
-        "sourceType" : "JSON",
-        "targetType" : "JSON",
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -131,6 +131,11 @@
     "timeStamp" : 1734056976202,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "d7af5c7e7cfe518ea07b14d3ab9d37980febfe67",
+    "timeStamp" : 1734071574233,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
