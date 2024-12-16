@@ -3,7 +3,7 @@
   "cts" : 1734090151269,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734330055816,
+  "mts" : 1734344281917,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675c1da70a2e831ff801e789",
@@ -19,65 +19,9 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "ed39f349-65b4-4256-9732-c7c764a27d41"
-  }, {
-    "source" : "ed39f349-65b4-4256-9732-c7c764a27d41",
     "target" : "fb6f81c6-3ab1-4c18-a5bc-6671becbe97c"
   } ],
   "vertexHashMap" : {
-    "ed39f349-65b4-4256-9732-c7c764a27d41" : {
-      "vertexId" : "ed39f349-65b4-4256-9732-c7c764a27d41",
-      "vertexType" : "DATA_MAPPING",
-      "name" : "tsd",
-      "dataMappingData" : {
-        "sourceVariable" : "$",
-        "targetVariable" : "test",
-        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"description\": \"\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"loanId\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"customerId\": {\n      \"type\": \"string\",\n      \"minLength\": 1\n    },\n    \"amount\": {\n      \"type\": \"number\"\n    },\n    \"income\": {\n      \"type\": \"number\"\n    },\n    \"liabilities\": {\n      \"type\": \"number\"\n    },\n    \"fraudCheckRequired\": {\n      \"type\": \"boolean\"\n    }\n  },\n  \"required\": [\n    \"loanId\",\n    \"customerId\",\n    \"amount\",\n    \"income\",\n    \"liabilities\",\n    \"fraudCheckRequired\"\n  ]\n}",
-        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"array\",\n  \"items\": [\n    {\n      \"type\": \"object\",\n      \"properties\": {\n        \"_id\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"timestamp\": {\n              \"type\": \"integer\"\n            },\n            \"date\": {\n              \"type\": \"integer\"\n            }\n          },\n          \"required\": [\n            \"timestamp\",\n            \"date\"\n          ]\n        },\n        \"customerId\": {\n          \"type\": \"string\"\n        },\n        \"name\": {\n          \"type\": \"string\"\n        },\n        \"income\": {\n          \"type\": \"integer\"\n        },\n        \"existingLiabilities\": {\n          \"type\": \"integer\"\n        },\n        \"loanHistory\": {\n          \"type\": \"array\",\n          \"items\": [\n            {\n              \"type\": \"object\",\n              \"properties\": {\n                \"loanId\": {\n                  \"type\": \"string\"\n                },\n                \"status\": {\n                  \"type\": \"string\"\n                }\n              },\n              \"required\": [\n                \"loanId\",\n                \"status\"\n              ]\n            },\n            {\n              \"type\": \"object\",\n              \"properties\": {\n                \"loanId\": {\n                  \"type\": \"string\"\n                },\n                \"status\": {\n                  \"type\": \"string\"\n                }\n              },\n              \"required\": [\n                \"loanId\",\n                \"status\"\n              ]\n            }\n          ]\n        }\n      },\n      \"required\": [\n        \"_id\",\n        \"customerId\",\n        \"name\",\n        \"income\",\n        \"existingLiabilities\",\n        \"loanHistory\"\n      ]\n    }\n  ]\n}",
-        "pathOperations" : [ {
-          "sourcePathList" : [ "$[*].existingLiabilities" ],
-          "targetPath" : "$.liabilities",
-          "feelExpression" : {
-            "expression" : "(. existingLiabilities )",
-            "variableMap" : {
-              "$[*].existingLiabilities" : "existingLiabilities"
-            }
-          }
-        }, {
-          "sourcePathList" : [ "$[*].income" ],
-          "targetPath" : "$.income"
-        }, {
-          "sourcePathList" : [ "$[*].customerId" ],
-          "targetPath" : "$.customerId"
-        }, {
-          "sourcePathList" : [ "$[*].loanHistory[*].loanId" ],
-          "targetPath" : "$.loanId"
-        }, {
-          "sourcePathList" : [ "$[*].income" ],
-          "targetPath" : "$.amount",
-          "feelExpression" : {
-            "expression" : "10000",
-            "variableMap" : {
-              "$[*].income" : "income"
-            }
-          }
-        }, {
-          "sourcePathList" : [ "$[*].existingLiabilities" ],
-          "targetPath" : "$.fraudCheckRequired"
-        } ],
-        "sourceType" : "JSON",
-        "targetType" : "JSON",
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false
-    },
     "fb6f81c6-3ab1-4c18-a5bc-6671becbe97c" : {
       "vertexId" : "fb6f81c6-3ab1-4c18-a5bc-6671becbe97c",
       "vertexType" : "STOP",
@@ -95,9 +39,9 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ {
-        "name" : "$",
+        "name" : "extrr",
         "reference" : "raw",
-        "value" : "test",
+        "value" : "$",
         "variableDataType" : "STRING",
         "active" : true,
         "source" : "raw",
