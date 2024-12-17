@@ -3,7 +3,7 @@
   "cts" : 1734090151269,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734431065896,
+  "mts" : 1734432906828,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675c1da70a2e831ff801e789",
@@ -18,10 +18,41 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "b4d24c81-7956-45c8-a124-44dcbde8d4d2",
     "target" : "fb6f81c6-3ab1-4c18-a5bc-6671becbe97c"
+  }, {
+    "source" : "v1",
+    "target" : "b4d24c81-7956-45c8-a124-44dcbde8d4d2"
   } ],
   "vertexHashMap" : {
+    "b4d24c81-7956-45c8-a124-44dcbde8d4d2" : {
+      "vertexId" : "b4d24c81-7956-45c8-a124-44dcbde8d4d2",
+      "vertexType" : "FEEL_SCRIPT",
+      "name" : "testingfeelscip",
+      "description" : "",
+      "feelScriptData" : {
+        "expression" : "concatenate( item1 + item2 )",
+        "feelVariableList" : [ {
+          "name" : "item1",
+          "value" : "{{var1}}",
+          "valueDataType" : "STRING"
+        }, {
+          "name" : "item2",
+          "value" : "{{var2}}"
+        } ],
+        "targetVariable" : "outputvalue",
+        "variableDataType" : "STRING",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "fb6f81c6-3ab1-4c18-a5bc-6671becbe97c" : {
       "vertexId" : "fb6f81c6-3ab1-4c18-a5bc-6671becbe97c",
       "vertexType" : "STOP",
@@ -94,6 +125,11 @@
   }, {
     "commitId" : "022d036fb4a54d140b34a07097810e07505135b1",
     "timeStamp" : 1734344281917,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "6c0aa4951b434902051e67bba13e00f20f657558",
+    "timeStamp" : 1734431065896,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
