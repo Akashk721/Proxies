@@ -3,7 +3,7 @@
   "cts" : 1734090151269,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734435551909,
+  "mts" : 1734435576237,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675c1da70a2e831ff801e789",
@@ -38,7 +38,8 @@
           "valueDataType" : "STRING"
         }, {
           "name" : "item2",
-          "value" : "34"
+          "value" : "34",
+          "valueDataType" : "STRING"
         } ],
         "targetVariable" : "outputvalue",
         "variableDataType" : "STRING",
@@ -186,6 +187,11 @@
   }, {
     "commitId" : "67ee07052ca86bd6f851cccc9416210b21fc0c16",
     "timeStamp" : 1734435273108,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "a6d1d4dc14382eac921f566bb908dd018d065f4a",
+    "timeStamp" : 1734435551909,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
