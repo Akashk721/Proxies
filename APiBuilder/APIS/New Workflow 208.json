@@ -3,7 +3,7 @@
   "cts" : 1734090151269,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734435576237,
+  "mts" : 1734435721803,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675c1da70a2e831ff801e789",
@@ -19,6 +19,9 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "b4d24c81-7956-45c8-a124-44dcbde8d4d2",
+    "target" : "f97d5b0c-7292-4f50-8819-6fe9df0578df"
+  }, {
+    "source" : "f97d5b0c-7292-4f50-8819-6fe9df0578df",
     "target" : "fb6f81c6-3ab1-4c18-a5bc-6671becbe97c"
   }, {
     "source" : "v1",
@@ -43,6 +46,27 @@
         } ],
         "targetVariable" : "outputvalue",
         "variableDataType" : "STRING",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "f97d5b0c-7292-4f50-8819-6fe9df0578df" : {
+      "vertexId" : "f97d5b0c-7292-4f50-8819-6fe9df0578df",
+      "vertexType" : "JAVASCRIPT",
+      "name" : "jsnode",
+      "description" : "",
+      "javascriptData" : {
+        "targetVariable" : "otput",
+        "variableDataType" : "STRING",
+        "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n// Implement script logic here\n console.log(input.foo);\n const otput = {\n    \"test\": 'urnning'\n }\n return otput;\n };",
+        "variables" : { },
         "continueOnError" : false,
         "errorResponse" : {
           "statusCode" : 400,
@@ -114,6 +138,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1734435672009,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1734435603426,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "re"
+  }, {
     "status" : "Review",
     "cts" : 1734435548321,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
@@ -192,6 +226,11 @@
   }, {
     "commitId" : "a6d1d4dc14382eac921f566bb908dd018d065f4a",
     "timeStamp" : 1734435551909,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "9c04f802a1fc09e704ee942b437f29f899dad6c1",
+    "timeStamp" : 1734435576237,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
