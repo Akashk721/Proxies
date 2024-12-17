@@ -3,7 +3,7 @@
   "cts" : 1734090151269,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734434727197,
+  "mts" : 1734435273108,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675c1da70a2e831ff801e789",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/feel-java",
   "pathArray" : [ "feel-java" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -73,7 +73,7 @@
       "requestVariables" : [ {
         "name" : "var1",
         "reference" : "headers",
-        "value" : "$.var1",
+        "value" : "var1",
         "variableDataType" : "STRING",
         "active" : true,
         "source" : "headers",
@@ -82,7 +82,7 @@
       }, {
         "name" : "var2",
         "reference" : "headers",
-        "value" : "$.var2",
+        "value" : "var2",
         "variableDataType" : "STRING",
         "active" : true,
         "source" : "headers",
@@ -113,6 +113,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1734435256804,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1734434778561,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1734090151269,
     "lastModifiedBy" : "vidya wiz",
@@ -158,7 +168,13 @@
     "timeStamp" : 1734434462714,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "405eee63c8aabc8ffd9ee3c91aad5304215e3ab3",
+    "timeStamp" : 1734434727197,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
