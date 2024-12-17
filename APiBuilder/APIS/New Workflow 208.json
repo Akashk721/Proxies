@@ -3,7 +3,7 @@
   "cts" : 1734090151269,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734344281917,
+  "mts" : 1734431065896,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675c1da70a2e831ff801e789",
@@ -12,8 +12,8 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/feel-java",
+  "pathArray" : [ "feel-java" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya wiz",
@@ -39,6 +39,24 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ {
+        "name" : "var1",
+        "reference" : "headers",
+        "value" : "$.var1",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "var2",
+        "reference" : "headers",
+        "value" : "$.var2",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
         "name" : "extrr",
         "reference" : "raw",
         "value" : "$",
@@ -73,6 +91,11 @@
     "timeStamp" : 1734090151269,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "022d036fb4a54d140b34a07097810e07505135b1",
+    "timeStamp" : 1734344281917,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
@@ -80,6 +103,6 @@
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
