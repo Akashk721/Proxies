@@ -1,0 +1,76 @@
+{
+  "id" : "6763e587c753514e8004e898",
+  "cts" : 1734600069099,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1734600286510,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "6763e585c753514e8004e897",
+  "revision" : 1,
+  "name" : "DataMappingTesting-1",
+  "description" : "dsaf",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/dm-testing-1",
+  "pathArray" : [ "dm-testing-1" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "4eac1d81-c06d-4ce3-89c5-87b37e662001"
+  } ],
+  "vertexHashMap" : {
+    "4eac1d81-c06d-4ce3-89c5-87b37e662001" : {
+      "vertexId" : "4eac1d81-c06d-4ce3-89c5-87b37e662001",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 400,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1734600069099,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "9ae87bba6560d957ae0308c0b9d9444453d1d90f",
+    "timeStamp" : 1734600069099,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
