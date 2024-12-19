@@ -3,7 +3,7 @@
   "cts" : 1734600069099,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734600286510,
+  "mts" : 1734600313748,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6763e585c753514e8004e897",
@@ -11,7 +11,7 @@
   "name" : "DataMappingTesting-1",
   "description" : "dsaf",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/dm-testing-1",
   "pathArray" : [ "dm-testing-1" ],
   "revisionStatus" : "DRAFT",
@@ -38,7 +38,16 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "extractedData",
+        "reference" : "raw",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
       "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
@@ -62,6 +71,11 @@
   "changeLogs" : [ {
     "commitId" : "9ae87bba6560d957ae0308c0b9d9444453d1d90f",
     "timeStamp" : 1734600069099,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "ed7583e021704eb6aa79a45f23b1312dacbedcc9",
+    "timeStamp" : 1734600286510,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
