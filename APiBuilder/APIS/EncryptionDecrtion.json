@@ -3,7 +3,7 @@
   "cts" : 1735558839031,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1735641879901,
+  "mts" : 1735641896233,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "677286b77fde1f4a4f7fbc0a",
@@ -33,6 +33,7 @@
       "proxyResponse" : {
         "statusCode" : 400,
         "body" : {
+          "data" : "{{output}}",
           "type" : "JSON"
         }
       }
@@ -109,6 +110,11 @@
     "timeStamp" : 1735641823427,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "e9fb3602b85a60672f86cfb331906c5a5d2dc8dc",
+    "timeStamp" : 1735641879901,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
