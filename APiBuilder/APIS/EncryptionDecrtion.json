@@ -3,7 +3,7 @@
   "cts" : 1735558839031,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1735641823427,
+  "mts" : 1735641879901,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "677286b77fde1f4a4f7fbc0a",
@@ -19,6 +19,9 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "c2ad33bc-3257-4744-8ff5-54925ff76290"
+  }, {
+    "source" : "c2ad33bc-3257-4744-8ff5-54925ff76290",
     "target" : "726a2627-ba3b-40c9-8522-9427ca4d8bc0"
   } ],
   "vertexHashMap" : {
@@ -33,6 +36,29 @@
           "type" : "JSON"
         }
       }
+    },
+    "c2ad33bc-3257-4744-8ff5-54925ff76290" : {
+      "vertexId" : "c2ad33bc-3257-4744-8ff5-54925ff76290",
+      "vertexType" : "ENCRYPTION",
+      "name" : "CryptNode",
+      "description" : "testing",
+      "encryptionData" : {
+        "sourceVariable" : "publickey",
+        "transformationKey" : "-----BEGIN PUBLIC KEY-----\n        MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqmuOBDzSXGB7BteoMxuO\n        QM47iphAKwMCZg5/7elDD13NmgMkqthCKQrQv3/vIsprNUYAbf1LHdGOKYRHcOy2\n        7D970LHHnKY8xTjJ8w8tOX9rQl3XbUUEPWOd9dDDG7FZGUrgQmiqrs5VfSVHoG/w\n        h/3b/xJ8JZH4GsM0mlPKDhXVc0N6XHLHaNObnKozPcP3OZqyYZxB2zGPBe7cRSSA\n        jSIMrtfytJT3SgZqxclOXUg+ZPh6OUfBfVKlOVOUcnl4iVncMEMc1STbM6TuvnpR\n        jYFLKmTKuapcmSvyPg9QG2xK7K/coIqNTD8hGmc5BnjnUoZglsxDcY0QLWwSaKdc\n        4wIDAQAB\n        -----END PUBLIC KEY-----",
+        "algorithmType" : "RSA",
+        "modeType" : "ECB",
+        "paddingType" : "PKCS1Padding",
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "continueOnError" : false,
+        "sourceProvidedAtNode" : false
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -76,6 +102,11 @@
   }, {
     "commitId" : "e6486997a6b32c7a76ac1bd178514e7589526027",
     "timeStamp" : 1735558870462,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "0ada1d8c2af6402dad385952cbce8b8039118d5e",
+    "timeStamp" : 1735641823427,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
