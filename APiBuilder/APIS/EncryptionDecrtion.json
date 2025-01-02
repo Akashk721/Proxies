@@ -3,7 +3,7 @@
   "cts" : 1735558839031,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1735641904377,
+  "mts" : 1735793286825,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "677286b77fde1f4a4f7fbc0a",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/EncryptionDecrtion",
   "pathArray" : [ "EncryptionDecrtion" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -48,6 +48,7 @@
       "description" : "testing",
       "encryptionData" : {
         "sourceVariable" : "publickey",
+        "targetVariable" : "output",
         "transformationKey" : "-----BEGIN PUBLIC KEY-----\n        MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqmuOBDzSXGB7BteoMxuO\n        QM47iphAKwMCZg5/7elDD13NmgMkqthCKQrQv3/vIsprNUYAbf1LHdGOKYRHcOy2\n        7D970LHHnKY8xTjJ8w8tOX9rQl3XbUUEPWOd9dDDG7FZGUrgQmiqrs5VfSVHoG/w\n        h/3b/xJ8JZH4GsM0mlPKDhXVc0N6XHLHaNObnKozPcP3OZqyYZxB2zGPBe7cRSSA\n        jSIMrtfytJT3SgZqxclOXUg+ZPh6OUfBfVKlOVOUcnl4iVncMEMc1STbM6TuvnpR\n        jYFLKmTKuapcmSvyPg9QG2xK7K/coIqNTD8hGmc5BnjnUoZglsxDcY0QLWwSaKdc\n        4wIDAQAB\n        -----END PUBLIC KEY-----",
         "algorithmType" : "RSA",
         "modeType" : "ECB",
@@ -93,6 +94,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1735643253041,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1735641914371,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1735558839031,
     "lastModifiedBy" : "vidya wiz",
@@ -123,7 +134,13 @@
     "timeStamp" : 1735641896233,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "12134491c1855538bd67a6bfb30b1514402a09d7",
+    "timeStamp" : 1735641904377,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
