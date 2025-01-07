@@ -3,7 +3,7 @@
   "cts" : 1735558839031,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1735800259100,
+  "mts" : 1736228802218,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "677286b77fde1f4a4f7fbc0a",
@@ -18,16 +18,43 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "c7e19697-7946-44a9-ba6d-0e5d40746fd5",
-    "target" : "726a2627-ba3b-40c9-8522-9427ca4d8bc0"
-  }, {
     "source" : "v1",
     "target" : "c2ad33bc-3257-4744-8ff5-54925ff76290"
+  }, {
+    "source" : "c7e19697-7946-44a9-ba6d-0e5d40746fd5",
+    "target" : "fb93298f-ef59-4999-ac12-ab8d09dbe781"
+  }, {
+    "source" : "fb93298f-ef59-4999-ac12-ab8d09dbe781",
+    "target" : "726a2627-ba3b-40c9-8522-9427ca4d8bc0"
   }, {
     "source" : "c2ad33bc-3257-4744-8ff5-54925ff76290",
     "target" : "c7e19697-7946-44a9-ba6d-0e5d40746fd5"
   } ],
   "vertexHashMap" : {
+    "fb93298f-ef59-4999-ac12-ab8d09dbe781" : {
+      "vertexId" : "fb93298f-ef59-4999-ac12-ab8d09dbe781",
+      "vertexType" : "ENCRYPTION",
+      "name" : "asdlfkj",
+      "description" : "",
+      "encryptionData" : {
+        "sourceData" : "testing",
+        "transformationKey" : "asdf",
+        "initializationVector" : "adf",
+        "algorithmType" : "AES",
+        "modeType" : "CBC",
+        "paddingType" : "PKCS5Padding",
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "continueOnError" : false,
+        "sourceProvidedAtNode" : false
+      },
+      "imported" : false
+    },
     "726a2627-ba3b-40c9-8522-9427ca4d8bc0" : {
       "vertexId" : "726a2627-ba3b-40c9-8522-9427ca4d8bc0",
       "vertexType" : "STOP",
@@ -121,6 +148,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1736228441399,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1735800266318,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "test"
+  }, {
     "status" : "Review",
     "cts" : 1735798879853,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
@@ -219,6 +256,11 @@
   }, {
     "commitId" : "8cf3cb3235e3f0326461b1aa534e008aaa7ba49d",
     "timeStamp" : 1735799021615,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "bb99c89f96ed62d725f48d51694b34ddf273bff5",
+    "timeStamp" : 1735800259100,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 4
   } ],
