@@ -3,7 +3,7 @@
   "cts" : 1734056508810,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1734074303271,
+  "mts" : 1737022487017,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "675b9a3c366c1f52024c738f",
@@ -41,7 +41,7 @@
     "d626fba4-b4f0-450c-91f0-6d3cfcba39cf" : {
       "vertexId" : "d626fba4-b4f0-450c-91f0-6d3cfcba39cf",
       "vertexType" : "DATA_MAPPING",
-      "name" : "tert",
+      "name" : "tertt",
       "dataMappingData" : {
         "sourceVariable" : "item1",
         "targetVariable" : "t",
@@ -121,6 +121,26 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1735265770363,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1734080958916,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "test"
+  }, {
+    "status" : "Review",
+    "cts" : 1734080696481,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1734074310819,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "sd"
+  }, {
+    "status" : "Review",
     "cts" : 1734074292077,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -188,6 +208,11 @@
   }, {
     "commitId" : "191f5f1a533df881df4a6564104f912489f7946d",
     "timeStamp" : 1734074171832,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "0c1e6dcaed3d224af7376433604bc45ce26e8857",
+    "timeStamp" : 1734074303271,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
