@@ -1,14 +1,15 @@
 {
+  "id" : "67932cfd1e93503f3a4356ae",
   "cts" : 1737698555257,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1737698555257,
+  "mts" : 1737718322206,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67932cfb1e93503f3a4356ad",
   "revision" : 1,
   "name" : "New Workflow 214",
-  "description" : "",
+  "description" : "sdf",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
   "path" : "/",
@@ -38,7 +39,7 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false,
+      "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
         "continueOnError" : false,
@@ -57,6 +58,12 @@
     "cts" : 1737698555257,
     "lastModifiedBy" : "vidya wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "e1f6c96e919176ea0c92ea89cd461fba4f13c7a9",
+    "timeStamp" : 1737698555257,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
