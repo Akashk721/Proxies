@@ -3,7 +3,7 @@
   "cts" : 1737900362141,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1737900444566,
+  "mts" : 1737900802154,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6796414a1e93503f3a4356d0",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "7e3f00fa-677f-4edf-94e0-aca1352957ef",
     "target" : "20b03c15-7435-4f6a-9646-2991ff126f73"
+  }, {
+    "source" : "v1",
+    "target" : "7e3f00fa-677f-4edf-94e0-aca1352957ef"
   } ],
   "vertexHashMap" : {
     "20b03c15-7435-4f6a-9646-2991ff126f73" : {
@@ -38,7 +41,16 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "extracted",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
       "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
@@ -51,6 +63,28 @@
           }
         }
       }
+    },
+    "7e3f00fa-677f-4edf-94e0-aca1352957ef" : {
+      "vertexId" : "7e3f00fa-677f-4edf-94e0-aca1352957ef",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "enhace",
+      "dataMappingData" : {
+        "sourceVariable" : "extracted",
+        "targetVariable" : "output",
+        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"street\": {\n      \"type\": \"string\"\n    },\n    \"history\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"previous_city\": {\n            \"type\": \"string\"\n          },\n          \"years\": {\n            \"type\": \"integer\"\n          }\n        },\n        \"required\": [\"previous_city\", \"years\"]\n      }\n    }\n  },\n  \"required\": [\"street\", \"history\"]\n}",
+        "sourceSchema" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->\n<xs:schema attributeFormDefault=\"unqualified\" elementFormDefault=\"qualified\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:element name=\"person\">\n    <xs:complexType>\n      <xs:sequence>\n        <xs:element name=\"name\" type=\"xs:string\" />\n        <xs:element name=\"age\" type=\"xs:decimal\" />\n        <xs:element name=\"contacts\">\n          <xs:complexType>\n            <xs:sequence>\n              <xs:element maxOccurs=\"unbounded\" name=\"contact\">\n                <xs:complexType>\n                  <xs:sequence>\n                    <xs:element name=\"type\" type=\"xs:string\" />\n                    <xs:element name=\"value\" type=\"xs:string\" />\n                  </xs:sequence>\n                </xs:complexType>\n              </xs:element>\n            </xs:sequence>\n          </xs:complexType>\n        </xs:element>\n        <xs:element name=\"address\">\n          <xs:complexType>\n            <xs:sequence>\n              <xs:element name=\"street\" type=\"xs:string\" />\n              <xs:element name=\"city\" type=\"xs:string\" />\n              <xs:element name=\"zipcode\" type=\"xs:unsignedShort\" />\n              <xs:element name=\"history\">\n                <xs:complexType>\n                  <xs:sequence>\n                    <xs:element maxOccurs=\"unbounded\" name=\"previous_address\">\n                      <xs:complexType>\n                        <xs:sequence>\n                          <xs:element name=\"previous_city\" type=\"xs:string\" />\n                          <xs:element name=\"years\" type=\"xs:unsignedByte\" />\n                        </xs:sequence>\n                      </xs:complexType>\n                    </xs:element>\n                  </xs:sequence>\n                </xs:complexType>\n              </xs:element>\n            </xs:sequence>\n          </xs:complexType>\n        </xs:element>\n        <xs:element name=\"num\">\n          <xs:complexType>\n            <xs:sequence>\n              <xs:element maxOccurs=\"unbounded\" name=\"n\" type=\"xs:unsignedByte\" />\n            </xs:sequence>\n          </xs:complexType>\n        </xs:element>\n      </xs:sequence>\n    </xs:complexType>\n  </xs:element>\n</xs:schema>",
+        "sourceType" : "XML",
+        "targetType" : "JSON",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -62,6 +96,11 @@
   "changeLogs" : [ {
     "commitId" : "dad74324242e0c6228f496cf4bb64c924a9b4459",
     "timeStamp" : 1737900362141,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "ba441375dc239bed0b889ced272801bade18a47e",
+    "timeStamp" : 1737900444566,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
