@@ -3,7 +3,7 @@
   "cts" : 1738044301238,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738047256236,
+  "mts" : 1738055792572,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6798738db3dc5f1b13a5c53d",
@@ -45,7 +45,34 @@
         "name" : "extracted",
         "reference" : "body",
         "value" : "$",
-        "variableDataType" : "STRING",
+        "variableDataType" : "ARRAY",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "newitem",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "OBJECT",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "searching",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "BOOLEAN",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "newexgtracted",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "ARRAY",
         "active" : true,
         "source" : "raw",
         "hide" : false,
@@ -97,6 +124,11 @@
   }, {
     "commitId" : "8aec0c875609c08948ed2fc56b60a1055687d6e6",
     "timeStamp" : 1738044529683,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "aca9cbbed05cc1bef52018794c602ee06cef0a35",
+    "timeStamp" : 1738047256236,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
