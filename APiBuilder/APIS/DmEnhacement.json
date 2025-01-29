@@ -3,7 +3,7 @@
   "cts" : 1737900362141,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738118006715,
+  "mts" : 1738118020115,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6796414a1e93503f3a4356d0",
@@ -56,7 +56,10 @@
           "scheme" : "https",
           "host" : "kj",
           "path" : "/",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "es",
+            "value" : "sd"
+          } ],
           "queryParams" : [ ],
           "body" : {
             "data" : "{\n\t\"query\": \"mutation addUser($name: String!){\\n    addUser(name: $name){\\n        id\\n        name\\n    }\\n}\",\n\t\"variables\": {\n\t\t\"name\": {\n\t\t\t\"name\": \"name\",\n\t\t\t\"type\": \"String!\",\n\t\t\t\"extensions\": {},\n\t\t\t\"astNode\": {\n\t\t\t\t\"kind\": \"InputValueDefinition\",\n\t\t\t\t\"name\": {\n\t\t\t\t\t\"kind\": \"Name\",\n\t\t\t\t\t\"value\": \"name\",\n\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\"start\": 210,\n\t\t\t\t\t\t\"end\": 214\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t\"type\": {\n\t\t\t\t\t\"kind\": \"NonNullType\",\n\t\t\t\t\t\"type\": {\n\t\t\t\t\t\t\"kind\": \"NamedType\",\n\t\t\t\t\t\t\"name\": {\n\t\t\t\t\t\t\t\"kind\": \"Name\",\n\t\t\t\t\t\t\t\"value\": \"String\",\n\t\t\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\t\t\"start\": 216,\n\t\t\t\t\t\t\t\t\"end\": 222\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\t\"start\": 216,\n\t\t\t\t\t\t\t\"end\": 222\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\"start\": 216,\n\t\t\t\t\t\t\"end\": 223\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t\"directives\": [],\n\t\t\t\t\"loc\": {\n\t\t\t\t\t\"start\": 210,\n\t\t\t\t\t\"end\": 223\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}",
@@ -174,6 +177,11 @@
     "timeStamp" : 1738117370109,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "c7720876770972ebe9b0bee78acc5e34fb411efd",
+    "timeStamp" : 1738118006715,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
