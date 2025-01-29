@@ -3,7 +3,7 @@
   "cts" : 1737900362141,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738117370109,
+  "mts" : 1738118006715,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6796414a1e93503f3a4356d0",
@@ -21,8 +21,11 @@
     "source" : "7e3f00fa-677f-4edf-94e0-aca1352957ef",
     "target" : "20b03c15-7435-4f6a-9646-2991ff126f73"
   }, {
-    "source" : "v1",
+    "source" : "4d69457d-e062-4d9a-ab25-00bb9efe56d2",
     "target" : "7e3f00fa-677f-4edf-94e0-aca1352957ef"
+  }, {
+    "source" : "v1",
+    "target" : "4d69457d-e062-4d9a-ab25-00bb9efe56d2"
   } ],
   "vertexHashMap" : {
     "20b03c15-7435-4f6a-9646-2991ff126f73" : {
@@ -40,6 +43,55 @@
           "type" : "json"
         }
       }
+    },
+    "4d69457d-e062-4d9a-ab25-00bb9efe56d2" : {
+      "vertexId" : "4d69457d-e062-4d9a-ab25-00bb9efe56d2",
+      "vertexType" : "TARGET",
+      "name" : "addUser",
+      "target" : {
+        "name" : "addUser",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "kj",
+          "path" : "/",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"query\": \"mutation addUser($name: String!){\\n    addUser(name: $name){\\n        id\\n        name\\n    }\\n}\",\n\t\"variables\": {\n\t\t\"name\": {\n\t\t\t\"name\": \"name\",\n\t\t\t\"type\": \"String!\",\n\t\t\t\"extensions\": {},\n\t\t\t\"astNode\": {\n\t\t\t\t\"kind\": \"InputValueDefinition\",\n\t\t\t\t\"name\": {\n\t\t\t\t\t\"kind\": \"Name\",\n\t\t\t\t\t\"value\": \"name\",\n\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\"start\": 210,\n\t\t\t\t\t\t\"end\": 214\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t\"type\": {\n\t\t\t\t\t\"kind\": \"NonNullType\",\n\t\t\t\t\t\"type\": {\n\t\t\t\t\t\t\"kind\": \"NamedType\",\n\t\t\t\t\t\t\"name\": {\n\t\t\t\t\t\t\t\"kind\": \"Name\",\n\t\t\t\t\t\t\t\"value\": \"String\",\n\t\t\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\t\t\"start\": 216,\n\t\t\t\t\t\t\t\t\"end\": 222\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\t\"start\": 216,\n\t\t\t\t\t\t\t\"end\": 222\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\"start\": 216,\n\t\t\t\t\t\t\"end\": 223\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t\"directives\": [],\n\t\t\t\t\"loc\": {\n\t\t\t\t\t\"start\": 210,\n\t\t\t\t\t\"end\": 223\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -115,6 +167,11 @@
   }, {
     "commitId" : "947479a582167849baf189d11135ce22a5e1bd21",
     "timeStamp" : 1737900857021,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "c15b964b318c77093b4cb0248a0713582345a47d",
+    "timeStamp" : 1738117370109,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
