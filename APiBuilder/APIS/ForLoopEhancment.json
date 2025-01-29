@@ -3,7 +3,7 @@
   "cts" : 1738044301238,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738116837380,
+  "mts" : 1738116886806,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6798738db3dc5f1b13a5c53d",
@@ -98,7 +98,7 @@
       "loopData" : {
         "variables" : [ ],
         "listType" : "json",
-        "loopList" : [ ],
+        "loopList" : [ "{\"id\":234}", "{\"id\":24}", "{\"id\":4}", "{\"id\":1}" ],
         "listName" : "testing ing",
         "startingVertex" : [ ]
       },
@@ -144,6 +144,11 @@
   }, {
     "commitId" : "50c7ee349154c524143876f205057970d81f8e64",
     "timeStamp" : 1738116830820,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "22f27f37dc716d1d9d71d6cde0f40694f5eb4899",
+    "timeStamp" : 1738116837380,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
