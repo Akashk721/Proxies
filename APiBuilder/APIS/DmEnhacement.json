@@ -3,7 +3,7 @@
   "cts" : 1737900362141,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1737900857021,
+  "mts" : 1738117370109,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6796414a1e93503f3a4356d0",
@@ -11,7 +11,7 @@
   "name" : "DmEnhacement",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/dm-enhacement",
   "pathArray" : [ "dm-enhacement" ],
   "revisionStatus" : "DRAFT",
@@ -110,6 +110,11 @@
   }, {
     "commitId" : "ca72d43c3fc9f5475aaee85544cc48d800e40e31",
     "timeStamp" : 1737900802154,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "947479a582167849baf189d11135ce22a5e1bd21",
+    "timeStamp" : 1737900857021,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
