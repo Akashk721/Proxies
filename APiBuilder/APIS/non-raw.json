@@ -3,7 +3,7 @@
   "cts" : 1738125076631,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738125113508,
+  "mts" : 1738125226335,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6799af14b3dc5f1b13a5c574",
@@ -19,6 +19,9 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "9a833584-4310-45c2-b2fb-b5c0f33939d1"
+  }, {
+    "source" : "9a833584-4310-45c2-b2fb-b5c0f33939d1",
     "target" : "9ce1598a-47a9-458c-b45b-943e19fbd904"
   } ],
   "vertexHashMap" : {
@@ -51,6 +54,58 @@
           "type" : "JSON"
         }
       }
+    },
+    "9a833584-4310-45c2-b2fb-b5c0f33939d1" : {
+      "vertexId" : "9a833584-4310-45c2-b2fb-b5c0f33939d1",
+      "vertexType" : "TARGET",
+      "name" : "NewRaw",
+      "target" : {
+        "name" : "NewRaw",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "https://postman-echo.com",
+          "path" : "/post",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{extracted}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -62,6 +117,11 @@
   "changeLogs" : [ {
     "commitId" : "2c0c74be345fe7187eaf75ea7a9865f1c9d60286",
     "timeStamp" : 1738125076631,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "7bb428f572dbfd033b45a33940c3f158bd92c5c5",
+    "timeStamp" : 1738125113508,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
