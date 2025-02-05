@@ -3,7 +3,7 @@
   "cts" : 1738566918656,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738566968130,
+  "mts" : 1738723480166,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a06d06ed876a141e4f861b",
@@ -11,14 +11,17 @@
   "name" : "SchedulerTriggerSupport",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "apiMethod" : "POST",
+  "path" : "/set-vafa",
+  "pathArray" : [ "set-vafa" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "6351184f-1ece-4f31-a972-7404e1be06de"
+  }, {
+    "source" : "6351184f-1ece-4f31-a972-7404e1be06de",
     "target" : "b249ea2d-2f10-43f8-9163-dc2386a848c9"
   } ],
   "vertexHashMap" : {
@@ -34,11 +37,27 @@
         }
       }
     },
+    "6351184f-1ece-4f31-a972-7404e1be06de" : {
+      "vertexId" : "6351184f-1ece-4f31-a972-7404e1be06de",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ ],
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Start",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "sldkf",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
       "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
@@ -64,6 +83,11 @@
     "timeStamp" : 1738566918656,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "848f89ad93c2521ac90491bac40a42f10911f381",
+    "timeStamp" : 1738566968130,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
@@ -73,6 +97,6 @@
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
