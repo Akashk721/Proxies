@@ -1,0 +1,72 @@
+{
+  "cts" : 1738749972858,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1738749972858,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "67a33814b50b17485978058c",
+  "revision" : 1,
+  "name" : "New Workflow 219",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "3c20a70b-1cc4-46de-b640-f5f3413e04b9"
+  } ],
+  "vertexHashMap" : {
+    "3c20a70b-1cc4-46de-b640-f5f3413e04b9" : {
+      "vertexId" : "3c20a70b-1cc4-46de-b640-f5f3413e04b9",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 400,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "imported" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1738749972858,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
