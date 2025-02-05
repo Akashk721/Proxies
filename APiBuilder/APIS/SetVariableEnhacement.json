@@ -3,7 +3,7 @@
   "cts" : 1738749972858,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738758886248,
+  "mts" : 1738759871222,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a33814b50b17485978058c",
@@ -82,6 +82,11 @@
       "vertexType" : "VARIABLES",
       "name" : "Enhancement",
       "runtimeVariableList" : [ {
+        "name" : "number",
+        "value" : "12",
+        "feelExpression" : false,
+        "override" : false
+      }, {
         "name" : "extracted",
         "value" : "{\n    \"id\": \"override\"\n}",
         "type" : "OBJECT",
@@ -92,6 +97,13 @@
           "value" : "",
           "valueDataType" : "STRING"
         } ],
+        "source" : "raw",
+        "override" : true
+      }, {
+        "name" : "unchangedValue",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "feelExpression" : false,
         "source" : "raw",
         "override" : false
       }, {
@@ -115,6 +127,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1738759358304,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1738758892383,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "asd"
+  }, {
     "status" : "Review",
     "cts" : 1738758798117,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
@@ -180,7 +202,13 @@
     "timeStamp" : 1738758817568,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "f18c6933927304615f931316b9bd931b931d2406",
+    "timeStamp" : 1738758886248,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "env for assert",
   "environmentId" : "6691012d3211b0160450ae0f",
