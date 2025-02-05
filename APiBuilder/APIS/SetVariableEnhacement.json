@@ -3,7 +3,7 @@
   "cts" : 1738749972858,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738759871222,
+  "mts" : 1738773241158,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a33814b50b17485978058c",
@@ -85,6 +85,11 @@
         "name" : "number",
         "value" : "12",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "override" : false
       }, {
         "name" : "extracted",
@@ -104,6 +109,11 @@
         "value" : "$",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "source" : "raw",
         "override" : false
       }, {
@@ -114,7 +124,7 @@
         "feelVariableList" : [ {
           "name" : "newnum",
           "value" : "{{number}}",
-          "valueDataType" : "STRING"
+          "valueDataType" : "INTEGER"
         }, {
           "name" : "",
           "value" : "",
@@ -127,6 +137,36 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1738773224842,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1738769564599,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "xvc"
+  }, {
+    "status" : "Review",
+    "cts" : 1738769512680,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1738769428253,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "hg"
+  }, {
+    "status" : "Review",
+    "cts" : 1738769414365,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1738759880575,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "adsf"
+  }, {
     "status" : "Review",
     "cts" : 1738759358304,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
@@ -205,6 +245,11 @@
   }, {
     "commitId" : "f18c6933927304615f931316b9bd931b931d2406",
     "timeStamp" : 1738758886248,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "1b14040d1a5f9d3fa533c25f33b7955dbb2821c6",
+    "timeStamp" : 1738759871222,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
