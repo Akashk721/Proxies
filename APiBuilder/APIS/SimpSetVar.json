@@ -3,7 +3,7 @@
   "cts" : 1738760110130,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738760164822,
+  "mts" : 1738760189031,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a35faedb4a1d6a29aca4df",
@@ -19,9 +19,38 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "ec61a64d-91bd-4e8a-8c04-a513977eb946"
+  }, {
+    "source" : "ec61a64d-91bd-4e8a-8c04-a513977eb946",
     "target" : "0cb5f7ed-9302-4b05-8e30-f868a2d8b694"
   } ],
   "vertexHashMap" : {
+    "ec61a64d-91bd-4e8a-8c04-a513977eb946" : {
+      "vertexId" : "ec61a64d-91bd-4e8a-8c04-a513977eb946",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "number",
+        "value" : "12",
+        "feelExpression" : false,
+        "override" : false
+      }, {
+        "name" : "extract1",
+        "value" : "{\n    \"id\": true\n}",
+        "variableDataType" : "STRING",
+        "feelExpression" : false,
+        "source" : "raw",
+        "override" : true
+      }, {
+        "name" : "extract2",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "feelExpression" : false,
+        "source" : "raw",
+        "override" : false
+      } ],
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -85,6 +114,11 @@
   }, {
     "commitId" : "3bb747cc31b8771cacb4183d1f4fea57568783b5",
     "timeStamp" : 1738760145554,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "fc706dd9fb6933498433e4603577ca21b9231023",
+    "timeStamp" : 1738760164822,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
