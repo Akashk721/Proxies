@@ -3,7 +3,7 @@
   "cts" : 1738760110130,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738760220470,
+  "mts" : 1738760271351,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a35faedb4a1d6a29aca4df",
@@ -11,10 +11,10 @@
   "name" : "SimpSetVar",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/setimplset",
   "pathArray" : [ "setimplset" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -105,6 +105,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1738760264211,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1738760230199,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "ads"
+  }, {
     "status" : "Draft",
     "cts" : 1738760110130,
     "lastModifiedBy" : "vidya wiz",
@@ -130,7 +140,13 @@
     "timeStamp" : 1738760189031,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "3bd2e974e87c567b1c5ca8d58d8e942cea35a922",
+    "timeStamp" : 1738760220470,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
