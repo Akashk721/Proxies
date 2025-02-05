@@ -3,7 +3,7 @@
   "cts" : 1737900362141,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738118020115,
+  "mts" : 1738714695923,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6796414a1e93503f3a4356d0",
@@ -21,11 +21,8 @@
     "source" : "7e3f00fa-677f-4edf-94e0-aca1352957ef",
     "target" : "20b03c15-7435-4f6a-9646-2991ff126f73"
   }, {
-    "source" : "4d69457d-e062-4d9a-ab25-00bb9efe56d2",
-    "target" : "7e3f00fa-677f-4edf-94e0-aca1352957ef"
-  }, {
     "source" : "v1",
-    "target" : "4d69457d-e062-4d9a-ab25-00bb9efe56d2"
+    "target" : "7e3f00fa-677f-4edf-94e0-aca1352957ef"
   } ],
   "vertexHashMap" : {
     "20b03c15-7435-4f6a-9646-2991ff126f73" : {
@@ -43,58 +40,6 @@
           "type" : "json"
         }
       }
-    },
-    "4d69457d-e062-4d9a-ab25-00bb9efe56d2" : {
-      "vertexId" : "4d69457d-e062-4d9a-ab25-00bb9efe56d2",
-      "vertexType" : "TARGET",
-      "name" : "addUser",
-      "target" : {
-        "name" : "addUser",
-        "apiType" : "GRAPHQL",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "kj",
-          "path" : "/",
-          "headerParams" : [ {
-            "name" : "es",
-            "value" : "sd"
-          } ],
-          "queryParams" : [ ],
-          "body" : {
-            "data" : "{\n\t\"query\": \"mutation addUser($name: String!){\\n    addUser(name: $name){\\n        id\\n        name\\n    }\\n}\",\n\t\"variables\": {\n\t\t\"name\": {\n\t\t\t\"name\": \"name\",\n\t\t\t\"type\": \"String!\",\n\t\t\t\"extensions\": {},\n\t\t\t\"astNode\": {\n\t\t\t\t\"kind\": \"InputValueDefinition\",\n\t\t\t\t\"name\": {\n\t\t\t\t\t\"kind\": \"Name\",\n\t\t\t\t\t\"value\": \"name\",\n\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\"start\": 210,\n\t\t\t\t\t\t\"end\": 214\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t\"type\": {\n\t\t\t\t\t\"kind\": \"NonNullType\",\n\t\t\t\t\t\"type\": {\n\t\t\t\t\t\t\"kind\": \"NamedType\",\n\t\t\t\t\t\t\"name\": {\n\t\t\t\t\t\t\t\"kind\": \"Name\",\n\t\t\t\t\t\t\t\"value\": \"String\",\n\t\t\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\t\t\"start\": 216,\n\t\t\t\t\t\t\t\t\"end\": 222\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\t\"start\": 216,\n\t\t\t\t\t\t\t\"end\": 222\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t\"loc\": {\n\t\t\t\t\t\t\"start\": 216,\n\t\t\t\t\t\t\"end\": 223\n\t\t\t\t\t}\n\t\t\t\t},\n\t\t\t\t\"directives\": [],\n\t\t\t\t\"loc\": {\n\t\t\t\t\t\"start\": 210,\n\t\t\t\t\t\"end\": 223\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 400,
-          "variables" : [ ]
-        },
-        "timeout" : 0,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        },
-        "securityResponse" : {
-          "isEnabled" : false,
-          "useEnforcedRules" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        }
-      },
-      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -130,9 +75,28 @@
       "dataMappingData" : {
         "sourceVariable" : "extracted",
         "targetVariable" : "output",
-        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"street\": {\n      \"type\": \"string\"\n    },\n    \"history\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"previous_city\": {\n            \"type\": \"string\"\n          },\n          \"years\": {\n            \"type\": \"integer\"\n          }\n        },\n        \"required\": [\"previous_city\", \"years\"]\n      }\n    }\n  },\n  \"required\": [\"street\", \"history\"]\n}",
-        "sourceSchema" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->\n<xs:schema attributeFormDefault=\"unqualified\" elementFormDefault=\"qualified\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:element name=\"person\">\n    <xs:complexType>\n      <xs:sequence>\n        <xs:element name=\"name\" type=\"xs:string\" />\n        <xs:element name=\"age\" type=\"xs:decimal\" />\n        <xs:element name=\"contacts\">\n          <xs:complexType>\n            <xs:sequence>\n              <xs:element maxOccurs=\"unbounded\" name=\"contact\">\n                <xs:complexType>\n                  <xs:sequence>\n                    <xs:element name=\"type\" type=\"xs:string\" />\n                    <xs:element name=\"value\" type=\"xs:string\" />\n                  </xs:sequence>\n                </xs:complexType>\n              </xs:element>\n            </xs:sequence>\n          </xs:complexType>\n        </xs:element>\n        <xs:element name=\"address\">\n          <xs:complexType>\n            <xs:sequence>\n              <xs:element name=\"street\" type=\"xs:string\" />\n              <xs:element name=\"city\" type=\"xs:string\" />\n              <xs:element name=\"zipcode\" type=\"xs:unsignedShort\" />\n              <xs:element name=\"history\">\n                <xs:complexType>\n                  <xs:sequence>\n                    <xs:element maxOccurs=\"unbounded\" name=\"previous_address\">\n                      <xs:complexType>\n                        <xs:sequence>\n                          <xs:element name=\"previous_city\" type=\"xs:string\" />\n                          <xs:element name=\"years\" type=\"xs:unsignedByte\" />\n                        </xs:sequence>\n                      </xs:complexType>\n                    </xs:element>\n                  </xs:sequence>\n                </xs:complexType>\n              </xs:element>\n            </xs:sequence>\n          </xs:complexType>\n        </xs:element>\n        <xs:element name=\"num\">\n          <xs:complexType>\n            <xs:sequence>\n              <xs:element maxOccurs=\"unbounded\" name=\"n\" type=\"xs:unsignedByte\" />\n            </xs:sequence>\n          </xs:complexType>\n        </xs:element>\n      </xs:sequence>\n    </xs:complexType>\n  </xs:element>\n</xs:schema>",
-        "sourceType" : "XML",
+        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"sourceValue\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"value\": {\n          \"type\": \"integer\"\n        },\n        \"isPositive\": {\n          \"type\": \"boolean\"\n        }\n      },\n      \"required\": [\n        \"value\",\n        \"isPositive\"\n      ]\n    },\n    \"isEven\": {\n      \"type\": \"boolean\"\n    }\n  },\n  \"required\": [\n    \"sourceValue\",\n    \"isEven\"\n  ]\n}",
+        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"name\": {\n      \"type\": \"string\"\n    },\n    \"age\": {\n      \"type\": \"integer\"\n    },\n    \"isEmployee\": {\n      \"type\": \"boolean\"\n    },\n    \"address\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"street\": {\n          \"type\": \"string\"\n        },\n        \"city\": {\n          \"type\": \"string\"\n        },\n        \"zipCode\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"street\",\n        \"city\",\n        \"zipCode\"\n      ]\n    },\n    \"skills\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"string\"\n        }\n      ]\n    },\n    \"projectCount\": {\n      \"type\": \"integer\"\n    },\n    \"projects\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        },\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        },\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        }\n      ]\n    }\n  },\n  \"required\": [\n    \"name\",\n    \"age\",\n    \"isEmployee\",\n    \"address\",\n    \"skills\",\n    \"projectCount\",\n    \"projects\"\n  ]\n}",
+        "pathOperations" : [ {
+          "sourcePathList" : [ {
+            "sourcePath" : "$.projects[*].title.name",
+            "customPath" : false
+          } ],
+          "targetPath" : "$.sourceValue.value"
+        }, {
+          "sourcePathList" : [ {
+            "sourcePath" : "$.projects[*].title.rank[*]",
+            "customPath" : false
+          } ],
+          "targetPath" : "$.sourceValue.isPositive"
+        }, {
+          "sourcePathList" : [ {
+            "sourcePath" : "$.projects[*].techStack",
+            "customPath" : false
+          } ],
+          "targetPath" : "$.isEven"
+        } ],
+        "sourceType" : "JSON",
         "targetType" : "JSON",
         "continueOnError" : false,
         "errorResponse" : {
@@ -182,6 +146,11 @@
     "timeStamp" : 1738118006715,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "a1d3e54f0c408625cdd940e9aaa98f3a04aee025",
+    "timeStamp" : 1738118020115,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
@@ -191,6 +160,6 @@
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
