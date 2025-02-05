@@ -3,7 +3,7 @@
   "cts" : 1738749972858,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738750053212,
+  "mts" : 1738750068983,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a33814b50b17485978058c",
@@ -11,7 +11,7 @@
   "name" : "SetVariableEnhacement",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/setvaraible",
   "pathArray" : [ "setvaraible" ],
   "revisionStatus" : "DRAFT",
@@ -41,7 +41,16 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Request",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "extracted",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
       "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
@@ -79,6 +88,11 @@
     "timeStamp" : 1738750010622,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "a85d3f3b064ac893a7c1e7eb66d7cb3ad4704674",
+    "timeStamp" : 1738750053212,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
