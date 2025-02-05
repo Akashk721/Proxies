@@ -3,7 +3,7 @@
   "cts" : 1738566918656,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738723480166,
+  "mts" : 1738723516401,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a06d06ed876a141e4f861b",
@@ -19,6 +19,9 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "531628e0-bf81-4d87-a888-68d834adc3ea"
+  }, {
+    "source" : "531628e0-bf81-4d87-a888-68d834adc3ea",
     "target" : "6351184f-1ece-4f31-a972-7404e1be06de"
   }, {
     "source" : "6351184f-1ece-4f31-a972-7404e1be06de",
@@ -42,6 +45,63 @@
       "vertexType" : "VARIABLES",
       "name" : "Set Variable",
       "runtimeVariableList" : [ ],
+      "imported" : false
+    },
+    "531628e0-bf81-4d87-a888-68d834adc3ea" : {
+      "vertexId" : "531628e0-bf81-4d87-a888-68d834adc3ea",
+      "vertexType" : "TARGET",
+      "name" : "zxcv",
+      "target" : {
+        "name" : "zxcv",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "zxcv",
+          "path" : "/",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "target",
+            "reference" : "body",
+            "value" : "$",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
       "imported" : false
     },
     "v1" : {
@@ -88,6 +148,11 @@
     "timeStamp" : 1738566968130,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "0d8355c77325d4dd44d50fb12e4dee0b02f77739",
+    "timeStamp" : 1738723480166,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
