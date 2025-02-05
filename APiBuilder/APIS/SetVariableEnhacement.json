@@ -3,7 +3,7 @@
   "cts" : 1738749972858,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738758694797,
+  "mts" : 1738758817568,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a33814b50b17485978058c",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/setvaraible",
   "pathArray" : [ "setvaraible" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -47,6 +47,15 @@
       "name" : "Request",
       "requestVariables" : [ {
         "name" : "extracted",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "unchangedValue",
         "reference" : "body",
         "value" : "$",
         "variableDataType" : "STRING",
@@ -106,6 +115,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1738758798117,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "asd"
+  }, {
+    "status" : "Approved",
+    "cts" : 1738758709308,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "test"
+  }, {
     "status" : "Draft",
     "cts" : 1738749972858,
     "lastModifiedBy" : "vidya wiz",
@@ -149,6 +168,11 @@
   }, {
     "commitId" : "cb3627903dd0e76dba775884861f3035fcb41e78",
     "timeStamp" : 1738758639388,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "d7f1aabd99ee0cbc766521a5a7b3928c4ab68e23",
+    "timeStamp" : 1738758694797,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
