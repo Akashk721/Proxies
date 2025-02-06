@@ -1,8 +1,9 @@
 {
+  "id" : "67a47a8cdb4a1d6a29aca54a",
   "cts" : 1738832522742,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738832522742,
+  "mts" : 1738833713087,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a47a8adb4a1d6a29aca549",
@@ -17,10 +18,32 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "7ad9b78a-84a9-4d48-8df9-e862c227aed6",
     "target" : "9204554f-a5d3-4d8e-90d1-6b9aae437d93"
+  }, {
+    "source" : "v1",
+    "target" : "7ad9b78a-84a9-4d48-8df9-e862c227aed6"
   } ],
   "vertexHashMap" : {
+    "7ad9b78a-84a9-4d48-8df9-e862c227aed6" : {
+      "vertexId" : "7ad9b78a-84a9-4d48-8df9-e862c227aed6",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "",
+        "placeHolders" : [ ],
+        "feelExpression" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "9204554f-a5d3-4d8e-90d1-6b9aae437d93" : {
       "vertexId" : "9204554f-a5d3-4d8e-90d1-6b9aae437d93",
       "vertexType" : "STOP",
@@ -37,8 +60,17 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Request",
-      "requestVariables" : [ ],
-      "imported" : false,
+      "requestVariables" : [ {
+        "name" : "extracted",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
         "continueOnError" : false,
@@ -57,6 +89,12 @@
     "cts" : 1738832522742,
     "lastModifiedBy" : "vidya wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "230217800d5a0b6619de2d9bc51887ed090b5ad1",
+    "timeStamp" : 1738832522742,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
