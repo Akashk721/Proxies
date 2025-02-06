@@ -1,0 +1,134 @@
+{
+  "id" : "67a47a8cdb4a1d6a29aca54a",
+  "cts" : 1738832522742,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1738833816636,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "67a47a8adb4a1d6a29aca549",
+  "revision" : 1,
+  "name" : "AssertionTesting",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "7ad9b78a-84a9-4d48-8df9-e862c227aed6",
+    "target" : "9204554f-a5d3-4d8e-90d1-6b9aae437d93"
+  }, {
+    "source" : "v1",
+    "target" : "7ad9b78a-84a9-4d48-8df9-e862c227aed6"
+  } ],
+  "vertexHashMap" : {
+    "7ad9b78a-84a9-4d48-8df9-e862c227aed6" : {
+      "vertexId" : "7ad9b78a-84a9-4d48-8df9-e862c227aed6",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "({0})",
+        "placeHolders" : [ {
+          "rule" : "EQUAL_TO",
+          "key" : "extracted",
+          "value" : "20",
+          "valueDataType" : "INTEGER"
+        } ],
+        "feelExpression" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 410,
+          "body" : {
+            "data" : "{\n    \"terminated\": true\n}",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "9204554f-a5d3-4d8e-90d1-6b9aae437d93" : {
+      "vertexId" : "9204554f-a5d3-4d8e-90d1-6b9aae437d93",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 400,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{extracted}}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "extracted",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1738832522742,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "230217800d5a0b6619de2d9bc51887ed090b5ad1",
+    "timeStamp" : 1738832522742,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "ab763fb56ffe50288e2c454f4dfc6c4c60e294fd",
+    "timeStamp" : 1738833713087,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "d12f13ffa1172e2619b88467ef30bfb680825109",
+    "timeStamp" : 1738833772638,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "b522cac7a69d24fe96563244248d11db8729200a",
+    "timeStamp" : 1738833797896,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
