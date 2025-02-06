@@ -3,7 +3,7 @@
   "cts" : 1738832522742,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738838996997,
+  "mts" : 1738848340731,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a47a8adb4a1d6a29aca549",
@@ -150,6 +150,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1738848331030,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1738839025755,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "cv"
+  }, {
+    "status" : "Review",
     "cts" : 1738834725431,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -219,9 +229,14 @@
     "timeStamp" : 1738834423051,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "44ccf6a113e929784404991ec61ed855981f41e0",
+    "timeStamp" : 1738838996997,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
   } ],
   "virtualHostList" : [ ],
-  "enableTracing" : false,
+  "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
   "selectedVirtualHostName" : "",
