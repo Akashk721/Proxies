@@ -3,7 +3,7 @@
   "cts" : 1738832522742,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738833892605,
+  "mts" : 1738834423051,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a47a8adb4a1d6a29aca549",
@@ -11,7 +11,7 @@
   "name" : "AssertionTesting",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/assertiontesting",
   "pathArray" : [ "assertiontesting" ],
   "revisionStatus" : "REVIEW",
@@ -95,6 +95,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1738833961317,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1738833900701,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "ret"
+  }, {
+    "status" : "Review",
     "cts" : 1738833864350,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "zcxv"
@@ -134,7 +144,13 @@
     "timeStamp" : 1738833816636,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "bab124c9554e8807509c0f7598be4fe91221a384",
+    "timeStamp" : 1738833892605,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
