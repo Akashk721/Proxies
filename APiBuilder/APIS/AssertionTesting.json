@@ -3,7 +3,7 @@
   "cts" : 1738832522742,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738834423051,
+  "mts" : 1738838996997,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a47a8adb4a1d6a29aca549",
@@ -21,8 +21,11 @@
     "source" : "7ad9b78a-84a9-4d48-8df9-e862c227aed6",
     "target" : "9204554f-a5d3-4d8e-90d1-6b9aae437d93"
   }, {
-    "source" : "v1",
+    "source" : "085c9381-052f-4fe4-80f7-60246fb2dce1",
     "target" : "7ad9b78a-84a9-4d48-8df9-e862c227aed6"
+  }, {
+    "source" : "v1",
+    "target" : "085c9381-052f-4fe4-80f7-60246fb2dce1"
   } ],
   "vertexHashMap" : {
     "7ad9b78a-84a9-4d48-8df9-e862c227aed6" : {
@@ -44,6 +47,58 @@
           "body" : {
             "data" : "{\n    \"terminated\": true\n}",
             "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "085c9381-052f-4fe4-80f7-60246fb2dce1" : {
+      "vertexId" : "085c9381-052f-4fe4-80f7-60246fb2dce1",
+      "vertexType" : "TARGET",
+      "name" : "TargetPost",
+      "target" : {
+        "name" : "TargetPost",
+        "description" : "zxcv",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
           }
         }
       },
@@ -94,6 +149,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1738834725431,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1738834430923,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "ewr"
+  }, {
     "status" : "Review",
     "cts" : 1738833961317,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
@@ -147,6 +212,11 @@
   }, {
     "commitId" : "bab124c9554e8807509c0f7598be4fe91221a384",
     "timeStamp" : 1738833892605,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "dc57349e503cf54fb5ea74de443777386859d1f9",
+    "timeStamp" : 1738834423051,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
