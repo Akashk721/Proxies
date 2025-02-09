@@ -3,7 +3,7 @@
   "cts" : 1738566918656,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739114103001,
+  "mts" : 1739114151861,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a06d06ed876a141e4f861b",
@@ -44,15 +44,15 @@
     "531628e0-bf81-4d87-a888-68d834adc3ea" : {
       "vertexId" : "531628e0-bf81-4d87-a888-68d834adc3ea",
       "vertexType" : "TARGET",
-      "name" : "zxcv",
+      "name" : "TARGETPOST",
       "target" : {
-        "name" : "zxcv",
+        "name" : "TARGETPOST",
         "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "GET",
           "scheme" : "https",
-          "host" : "zxcv",
-          "path" : "/",
+          "host" : "postman-echo.com",
+          "path" : "/get",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "body" : {
@@ -64,7 +64,7 @@
         "response" : {
           "statusCode" : 400,
           "variables" : [ {
-            "name" : "target",
+            "name" : "output",
             "reference" : "body",
             "value" : "$",
             "variableDataType" : "STRING",
@@ -162,6 +162,11 @@
     "timeStamp" : 1739095863331,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "a94667d5f730e0d1ed6a23ea23b223fee7c72782",
+    "timeStamp" : 1739114103001,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
