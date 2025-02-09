@@ -3,7 +3,7 @@
   "cts" : 1739121566955,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739121654197,
+  "mts" : 1739121711717,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a8e39e56241c5bdc1ed167",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "c8e108e0-a89a-43c2-85b5-a23b1b3a34ec",
     "target" : "ef50f334-d612-4b99-b01d-211ac3cd1ed3"
+  }, {
+    "source" : "v1",
+    "target" : "c8e108e0-a89a-43c2-85b5-a23b1b3a34ec"
   } ],
   "vertexHashMap" : {
     "ef50f334-d612-4b99-b01d-211ac3cd1ed3" : {
@@ -33,6 +36,62 @@
           "type" : "JSON"
         }
       }
+    },
+    "c8e108e0-a89a-43c2-85b5-a23b1b3a34ec" : {
+      "vertexId" : "c8e108e0-a89a-43c2-85b5-a23b1b3a34ec",
+      "vertexType" : "TARGET",
+      "name" : "fixed",
+      "target" : {
+        "name" : "fixed",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "extract",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -62,6 +121,11 @@
   "changeLogs" : [ {
     "commitId" : "4917e5ef350da25be41b1b94f799cb37d803bc56",
     "timeStamp" : 1739121566955,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "1a0cbbf8b69bf3b75a9e9f68596f7705e561af3c",
+    "timeStamp" : 1739121654197,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
