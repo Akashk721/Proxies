@@ -3,7 +3,7 @@
   "cts" : 1738566918656,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1738723555707,
+  "mts" : 1739095863331,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67a06d06ed876a141e4f861b",
@@ -50,13 +50,15 @@
         "type" : "STRING",
         "variableDataType" : "STRING",
         "feelExpression" : false,
-        "source" : "raw"
+        "source" : "raw",
+        "override" : false
       }, {
         "name" : "sldkf",
         "value" : "$",
         "variableDataType" : "STRING",
         "feelExpression" : false,
-        "source" : "raw"
+        "source" : "raw",
+        "override" : false
       } ],
       "imported" : false
     },
@@ -171,6 +173,11 @@
     "timeStamp" : 1738723516401,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "81e9ee4c30d5d135c7965f924e23bb85b5c32d88",
+    "timeStamp" : 1738723555707,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
@@ -180,6 +187,7 @@
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
 }
