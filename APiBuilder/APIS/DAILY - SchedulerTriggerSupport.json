@@ -1,0 +1,187 @@
+{
+  "id" : "67a06d09ed876a141e4f861c",
+  "cts" : 1738566918656,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1739121538415,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "67a06d06ed876a141e4f861b",
+  "revision" : 1,
+  "name" : "DAILY - SchedulerTriggerSupport",
+  "description" : "",
+  "apiType" : "SCHEDULED_TRIGGER",
+  "apiMethod" : "POST",
+  "path" : "/set-vafa",
+  "pathArray" : [ "set-vafa" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "531628e0-bf81-4d87-a888-68d834adc3ea"
+  }, {
+    "source" : "531628e0-bf81-4d87-a888-68d834adc3ea",
+    "target" : "b249ea2d-2f10-43f8-9163-dc2386a848c9"
+  } ],
+  "vertexHashMap" : {
+    "b249ea2d-2f10-43f8-9163-dc2386a848c9" : {
+      "vertexId" : "b249ea2d-2f10-43f8-9163-dc2386a848c9",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{output}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "531628e0-bf81-4d87-a888-68d834adc3ea" : {
+      "vertexId" : "531628e0-bf81-4d87-a888-68d834adc3ea",
+      "vertexType" : "TARGET",
+      "name" : "TARGETPOST",
+      "target" : {
+        "name" : "TARGETPOST",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "output",
+            "reference" : "body",
+            "value" : "$",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "sldkf",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1738566918656,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "cd719c55aeb0ea01797fb6ad3d97f8c6b05f3f78",
+    "timeStamp" : 1738566918656,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "848f89ad93c2521ac90491bac40a42f10911f381",
+    "timeStamp" : 1738566968130,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "0d8355c77325d4dd44d50fb12e4dee0b02f77739",
+    "timeStamp" : 1738723480166,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "12981a599a44d5537084a666eb911e343cfe9590",
+    "timeStamp" : 1738723516401,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "81e9ee4c30d5d135c7965f924e23bb85b5c32d88",
+    "timeStamp" : 1738723555707,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "7317cf43bbccb3c940fb3306c7ff91263d5aabc2",
+    "timeStamp" : 1739095863331,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "a94667d5f730e0d1ed6a23ea23b223fee7c72782",
+    "timeStamp" : 1739114103001,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "fba005b9add358525d752faf758ebbae2095c4c9",
+    "timeStamp" : 1739114151861,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
