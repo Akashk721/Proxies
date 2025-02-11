@@ -3,7 +3,7 @@
   "cts" : 1739265855818,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739268252848,
+  "mts" : 1739268546697,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab174054895d779c738e53",
@@ -22,9 +22,26 @@
     "target" : "20b03c15-7435-4f6a-9646-2991ff126f73"
   }, {
     "source" : "v1",
+    "target" : "c7b509a0-5dff-4a64-85e9-9c90fcc51ffa"
+  }, {
+    "source" : "c7b509a0-5dff-4a64-85e9-9c90fcc51ffa",
     "target" : "3e10c0a6-ea7a-4834-8a43-c5b12b4b45b7"
   } ],
   "vertexHashMap" : {
+    "c7b509a0-5dff-4a64-85e9-9c90fcc51ffa" : {
+      "vertexId" : "c7b509a0-5dff-4a64-85e9-9c90fcc51ffa",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "extracted",
+        "value" : "<numbers type=\"integerList\">\n    <number id=\"1\">adsf</number>\n    <number id=\"2\">2</number>\n    <number id=\"3\">3</number>\n    <number id=\"4\">4</number>\n    <number id=\"5\">5</number>\n</numbers>",
+        "variableDataType" : "STRING",
+        "feelExpression" : false,
+        "source" : "raw",
+        "override" : true
+      } ],
+      "imported" : false
+    },
     "3e10c0a6-ea7a-4834-8a43-c5b12b4b45b7" : {
       "vertexId" : "3e10c0a6-ea7a-4834-8a43-c5b12b4b45b7",
       "vertexType" : "DATA_MAPPING",
@@ -100,6 +117,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1739268498235,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1739268257870,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "cxv"
+  }, {
+    "status" : "Review",
     "cts" : 1739268236704,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -167,6 +194,11 @@
   }, {
     "commitId" : "31497782b93fc417b3bd95f8d6c3eec0cd921a04",
     "timeStamp" : 1739268097517,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "1d0c7b6c53178051028a88fa510e55d84e95c518",
+    "timeStamp" : 1739268252848,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
