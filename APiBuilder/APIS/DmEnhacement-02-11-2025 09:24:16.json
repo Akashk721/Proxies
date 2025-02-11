@@ -3,7 +3,7 @@
   "cts" : 1739265855818,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739268097517,
+  "mts" : 1739268252848,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab174054895d779c738e53",
@@ -77,7 +77,7 @@
       "requestVariables" : [ {
         "name" : "extracted",
         "reference" : "body",
-        "value" : "/",
+        "value" : "/*",
         "variableDataType" : "STRING",
         "active" : true,
         "source" : "raw",
@@ -99,6 +99,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1739268236704,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1739268126414,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "sdf"
+  }, {
     "status" : "Review",
     "cts" : 1739268045408,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
@@ -152,6 +162,11 @@
   }, {
     "commitId" : "e00c7113aa73c233733b98bcef9b83d2127372d4",
     "timeStamp" : 1739267734338,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "31497782b93fc417b3bd95f8d6c3eec0cd921a04",
+    "timeStamp" : 1739268097517,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
