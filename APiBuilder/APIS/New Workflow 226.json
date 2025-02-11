@@ -1,15 +1,16 @@
 {
+  "id" : "67ab3bdd157bda25eb5b2c8f",
   "cts" : 1739275227102,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739275227102,
+  "mts" : 1739276745480,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab3bdb157bda25eb5b2c8e",
   "revision" : 1,
   "name" : "New Workflow 226",
   "description" : "",
-  "apiType" : "RESTAPI",
+  "apiType" : "SCHEDULED",
   "apiMethod" : "GET",
   "path" : "/",
   "pathArray" : [ ],
@@ -35,10 +36,10 @@
     },
     "v1" : {
       "vertexId" : "v1",
-      "vertexType" : "START",
+      "vertexType" : "SCHEDULED_TRIGGER",
       "name" : "Request",
       "requestVariables" : [ ],
-      "imported" : false,
+      "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
         "continueOnError" : false,
@@ -57,6 +58,12 @@
     "cts" : 1739275227102,
     "lastModifiedBy" : "vidya wiz",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "80632530aa50ae1a1341613befd636ebf9aa1675",
+    "timeStamp" : 1739275227102,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
