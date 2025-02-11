@@ -3,7 +3,7 @@
   "cts" : 1739265855818,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739266604307,
+  "mts" : 1739267457931,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab174054895d779c738e53",
@@ -30,14 +30,14 @@
       "vertexType" : "DATA_MAPPING",
       "name" : "zxcv",
       "dataMappingData" : {
-        "sourceVariable" : "output",
+        "sourceVariable" : "extracted",
         "targetVariable" : "xmltojson",
         "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"simpleList\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"integer\"\n        },\n        {\n          \"type\": \"integer\"\n        },\n        {\n          \"type\": \"integer\"\n        }\n      ]\n    },\n    \"address\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"streetAddress\": {\n          \"type\": \"string\"\n        },\n        \"city\": {\n          \"type\": \"string\"\n        },\n        \"postalCode\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"streetAddress\",\n        \"city\",\n        \"postalCode\"\n      ]\n    }\n  },\n  \"required\": [\n    \"simpleList\",\n    \"address\"\n  ]\n}",
         "sourceSchema" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->\n<xs:schema attributeFormDefault=\"unqualified\" elementFormDefault=\"qualified\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:element name=\"numbers\">\n    <xs:complexType>\n      <xs:sequence>\n        <xs:element maxOccurs=\"unbounded\" name=\"number\">\n          <xs:complexType>\n            <xs:simpleContent>\n              <xs:extension base=\"xs:unsignedByte\">\n                <xs:attribute name=\"id\" type=\"xs:unsignedByte\" use=\"required\" />\n              </xs:extension>\n            </xs:simpleContent>\n          </xs:complexType>\n        </xs:element>\n      </xs:sequence>\n      <xs:attribute name=\"type\" type=\"xs:string\" use=\"required\" />\n    </xs:complexType>\n  </xs:element>\n</xs:schema>",
         "pathOperations" : [ {
           "sourcePathList" : [ {
-            "sourcePath" : "/numbers/number[0]",
-            "customPath" : true
+            "sourcePath" : "/numbers/number",
+            "customPath" : false
           } ],
           "targetPath" : "$.address.streetAddress"
         } ],
@@ -109,6 +109,11 @@
     "timeStamp" : 1739265855818,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 5
+  }, {
+    "commitId" : "69937df7558407eabd314687a2c538db60357ac2",
+    "timeStamp" : 1739266604307,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
