@@ -3,7 +3,7 @@
   "cts" : 1739265855818,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739268847197,
+  "mts" : 1739269232521,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab174054895d779c738e53",
@@ -57,6 +57,28 @@
             "customPath" : true
           } ],
           "targetPath" : "$.address.streetAddress"
+        }, {
+          "sourcePathList" : [ {
+            "sourcePath" : "/numbers/number",
+            "customPath" : false
+          } ],
+          "targetPath" : "$.simpleList[*]"
+        }, {
+          "sourcePathList" : [ {
+            "sourcePath" : "/numbers/number[2]",
+            "customPath" : true
+          } ],
+          "targetPath" : "$.address.city"
+        }, {
+          "sourcePathList" : [ {
+            "sourcePath" : "/numbers/number[2]",
+            "customPath" : true
+          } ],
+          "targetPath" : "$.address.postalCode"
+        } ],
+        "arrayPathList" : [ {
+          "keyPath" : "$.simpleList[*]",
+          "valuePath" : "/numbers/number"
         } ],
         "sourceType" : "XML",
         "targetType" : "JSON",
@@ -116,6 +138,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1739269177508,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1739268859368,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "zxcv"
+  }, {
     "status" : "Review",
     "cts" : 1739268831532,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
@@ -214,6 +246,11 @@
   }, {
     "commitId" : "2b47393a2ee8d391b4e5bccd933c36b4ce9cf65f",
     "timeStamp" : 1739268546697,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "b19e5f72e32c93a296aa8a985552b469ae30246f",
+    "timeStamp" : 1739268847197,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 4
   } ],
