@@ -3,7 +3,7 @@
   "cts" : 1739265855818,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739267463638,
+  "mts" : 1739267709425,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab174054895d779c738e53",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/dm-enhacement",
   "pathArray" : [ "dm-enhacement" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -36,8 +36,8 @@
         "sourceSchema" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->\n<xs:schema attributeFormDefault=\"unqualified\" elementFormDefault=\"qualified\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:element name=\"numbers\">\n    <xs:complexType>\n      <xs:sequence>\n        <xs:element maxOccurs=\"unbounded\" name=\"number\">\n          <xs:complexType>\n            <xs:simpleContent>\n              <xs:extension base=\"xs:unsignedByte\">\n                <xs:attribute name=\"id\" type=\"xs:unsignedByte\" use=\"required\" />\n              </xs:extension>\n            </xs:simpleContent>\n          </xs:complexType>\n        </xs:element>\n      </xs:sequence>\n      <xs:attribute name=\"type\" type=\"xs:string\" use=\"required\" />\n    </xs:complexType>\n  </xs:element>\n</xs:schema>",
         "pathOperations" : [ {
           "sourcePathList" : [ {
-            "sourcePath" : "/numbers/number",
-            "customPath" : false
+            "sourcePath" : "/numbers/number[0]",
+            "customPath" : true
           } ],
           "targetPath" : "$.address.streetAddress"
         } ],
@@ -99,6 +99,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1739267688920,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1739267470340,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "sd"
+  }, {
     "status" : "Draft",
     "cts" : 1739265855818,
     "lastModifiedBy" : "vidya wiz",
@@ -119,7 +129,13 @@
     "timeStamp" : 1739267457931,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "cd59c31222bcc7a67a351843309e61abbb41b322",
+    "timeStamp" : 1739267463638,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
