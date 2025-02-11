@@ -1,0 +1,186 @@
+{
+  "cts" : 1739265855818,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1739265855818,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "67ab174054895d779c738e53",
+  "revision" : 1,
+  "name" : "DmEnhacement-02-11-2025 09:24:16",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/dm-enhacement",
+  "pathArray" : [ "dm-enhacement" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "16ca35fc-dd8d-41b5-8203-1b967db4f7e6",
+    "target" : "3e10c0a6-ea7a-4834-8a43-c5b12b4b45b7"
+  }, {
+    "source" : "3e10c0a6-ea7a-4834-8a43-c5b12b4b45b7",
+    "target" : "20b03c15-7435-4f6a-9646-2991ff126f73"
+  }, {
+    "source" : "7e3f00fa-677f-4edf-94e0-aca1352957ef",
+    "target" : "16ca35fc-dd8d-41b5-8203-1b967db4f7e6"
+  }, {
+    "source" : "v1",
+    "target" : "7e3f00fa-677f-4edf-94e0-aca1352957ef"
+  } ],
+  "vertexHashMap" : {
+    "20b03c15-7435-4f6a-9646-2991ff126f73" : {
+      "vertexId" : "20b03c15-7435-4f6a-9646-2991ff126f73",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 400,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{output}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "16ca35fc-dd8d-41b5-8203-1b967db4f7e6" : {
+      "vertexId" : "16ca35fc-dd8d-41b5-8203-1b967db4f7e6",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "c,mnv",
+      "dataMappingData" : {
+        "sourceVariable" : "output",
+        "targetVariable" : "c",
+        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"name\": {\n      \"type\": \"string\"\n    },\n    \"age\": {\n      \"type\": \"integer\"\n    },\n    \"isEmployee\": {\n      \"type\": \"boolean\"\n    },\n    \"address\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"street\": {\n          \"type\": \"string\"\n        },\n        \"city\": {\n          \"type\": \"string\"\n        },\n        \"zipCode\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"street\",\n        \"city\",\n        \"zipCode\"\n      ]\n    },\n    \"skills\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"string\"\n        }\n      ]\n    },\n    \"projectCount\": {\n      \"type\": \"integer\"\n    },\n    \"projects\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        },\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        },\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        }\n      ]\n    }\n  },\n  \"required\": [\n    \"name\",\n    \"age\",\n    \"isEmployee\",\n    \"address\",\n    \"skills\",\n    \"projectCount\",\n    \"projects\"\n  ]\n}",
+        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"name\": {\n      \"type\": \"string\"\n    },\n    \"age\": {\n      \"type\": \"integer\"\n    },\n    \"isEmployee\": {\n      \"type\": \"boolean\"\n    },\n    \"address\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"street\": {\n          \"type\": \"string\"\n        },\n        \"city\": {\n          \"type\": \"string\"\n        },\n        \"zipCode\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"street\",\n        \"city\",\n        \"zipCode\"\n      ]\n    },\n    \"skills\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"string\"\n        }\n      ]\n    },\n    \"projectCount\": {\n      \"type\": \"integer\"\n    },\n    \"projects\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        },\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        },\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        }\n      ]\n    }\n  },\n  \"required\": [\n    \"name\",\n    \"age\",\n    \"isEmployee\",\n    \"address\",\n    \"skills\",\n    \"projectCount\",\n    \"projects\"\n  ]\n}",
+        "sourceType" : "JSON",
+        "targetType" : "JSON",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "extracted",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "7e3f00fa-677f-4edf-94e0-aca1352957ef" : {
+      "vertexId" : "7e3f00fa-677f-4edf-94e0-aca1352957ef",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "enhace",
+      "dataMappingData" : {
+        "sourceVariable" : "extracted",
+        "targetVariable" : "output",
+        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"sourceValue\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"value\": {\n          \"type\": \"integer\"\n        },\n        \"isPositive\": {\n          \"type\": \"boolean\"\n        }\n      },\n      \"required\": [\n        \"value\",\n        \"isPositive\"\n      ]\n    },\n    \"isEven\": {\n      \"type\": \"boolean\"\n    }\n  },\n  \"required\": [\n    \"sourceValue\",\n    \"isEven\"\n  ]\n}",
+        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"name\": {\n      \"type\": \"string\"\n    },\n    \"age\": {\n      \"type\": \"integer\"\n    },\n    \"isEmployee\": {\n      \"type\": \"boolean\"\n    },\n    \"address\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"street\": {\n          \"type\": \"string\"\n        },\n        \"city\": {\n          \"type\": \"string\"\n        },\n        \"zipCode\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"street\",\n        \"city\",\n        \"zipCode\"\n      ]\n    },\n    \"skills\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"string\"\n        },\n        {\n          \"type\": \"string\"\n        }\n      ]\n    },\n    \"projectCount\": {\n      \"type\": \"integer\"\n    },\n    \"projects\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        },\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        },\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"title\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"rank\": {\n                  \"type\": \"array\",\n                  \"items\": [\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    },\n                    {\n                      \"type\": \"integer\"\n                    }\n                  ]\n                }\n              },\n              \"required\": [\n                \"name\",\n                \"rank\"\n              ]\n            },\n            \"techStack\": {\n              \"type\": \"array\",\n              \"items\": [\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                },\n                {\n                  \"type\": \"string\"\n                }\n              ]\n            }\n          },\n          \"required\": [\n            \"title\",\n            \"techStack\"\n          ]\n        }\n      ]\n    }\n  },\n  \"required\": [\n    \"name\",\n    \"age\",\n    \"isEmployee\",\n    \"address\",\n    \"skills\",\n    \"projectCount\",\n    \"projects\"\n  ]\n}",
+        "pathOperations" : [ {
+          "sourcePathList" : [ {
+            "sourcePath" : "$.projects[0].title.name",
+            "customPath" : true
+          } ],
+          "targetPath" : "$.sourceValue.value"
+        }, {
+          "sourcePathList" : [ {
+            "sourcePath" : "$.projects[0].title.rank[0]",
+            "customPath" : true
+          } ],
+          "targetPath" : "$.sourceValue.isPositive"
+        }, {
+          "sourcePathList" : [ {
+            "sourcePath" : "$.projects[0].techStack[0]",
+            "customPath" : true
+          } ],
+          "targetPath" : "$.isEven"
+        } ],
+        "sourceType" : "JSON",
+        "targetType" : "JSON",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "3e10c0a6-ea7a-4834-8a43-c5b12b4b45b7" : {
+      "vertexId" : "3e10c0a6-ea7a-4834-8a43-c5b12b4b45b7",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "zxcv",
+      "dataMappingData" : {
+        "sourceVariable" : "output",
+        "targetVariable" : "xmltojson",
+        "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"simpleList\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"integer\"\n        },\n        {\n          \"type\": \"integer\"\n        },\n        {\n          \"type\": \"integer\"\n        }\n      ]\n    },\n    \"address\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"streetAddress\": {\n          \"type\": \"string\"\n        },\n        \"city\": {\n          \"type\": \"string\"\n        },\n        \"postalCode\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"streetAddress\",\n        \"city\",\n        \"postalCode\"\n      ]\n    }\n  },\n  \"required\": [\n    \"simpleList\",\n    \"address\"\n  ]\n}",
+        "sourceSchema" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->\n<xs:schema attributeFormDefault=\"unqualified\" elementFormDefault=\"qualified\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:element name=\"numbers\">\n    <xs:complexType>\n      <xs:sequence>\n        <xs:element maxOccurs=\"unbounded\" name=\"number\">\n          <xs:complexType>\n            <xs:simpleContent>\n              <xs:extension base=\"xs:unsignedByte\">\n                <xs:attribute name=\"id\" type=\"xs:unsignedByte\" use=\"required\" />\n              </xs:extension>\n            </xs:simpleContent>\n          </xs:complexType>\n        </xs:element>\n      </xs:sequence>\n      <xs:attribute name=\"type\" type=\"xs:string\" use=\"required\" />\n    </xs:complexType>\n  </xs:element>\n</xs:schema>",
+        "pathOperations" : [ {
+          "sourcePathList" : [ {
+            "sourcePath" : "/numbers/number[0]",
+            "customPath" : true
+          } ],
+          "targetPath" : "$.address.streetAddress"
+        } ],
+        "sourceType" : "XML",
+        "targetType" : "JSON",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1739265855818,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
