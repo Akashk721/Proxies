@@ -3,14 +3,14 @@
   "cts" : 1739275227102,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739446779796,
+  "mts" : 1739447645533,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab3bdb157bda25eb5b2c8e",
   "revision" : 1,
   "name" : "curlexportexting",
   "description" : "",
-  "apiType" : "RESTAPI",
+  "apiType" : "GRAPHQL",
   "apiMethod" : "POST",
   "path" : "/curlexport",
   "pathArray" : [ "curlexport" ],
@@ -178,6 +178,11 @@
     "timeStamp" : 1739445825479,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "ee38a8164507c75cfd5328c528cc91bcc634c431",
+    "timeStamp" : 1739446779796,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
@@ -188,6 +193,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
