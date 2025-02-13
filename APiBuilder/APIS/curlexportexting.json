@@ -1,0 +1,120 @@
+{
+  "id" : "67ab3bdd157bda25eb5b2c8f",
+  "cts" : 1739275227102,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1739445796020,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "67ab3bdb157bda25eb5b2c8e",
+  "revision" : 1,
+  "name" : "curlexportexting",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/curlexport",
+  "pathArray" : [ "curlexport" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "b0a4d20b-4fde-4d9a-9af2-0abf591a0505"
+  } ],
+  "vertexHashMap" : {
+    "b0a4d20b-4fde-4d9a-9af2-0abf591a0505" : {
+      "vertexId" : "b0a4d20b-4fde-4d9a-9af2-0abf591a0505",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 400,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "headerVaraiable",
+        "reference" : "headers",
+        "value" : "haeder1",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "queryvariable",
+        "reference" : "query-params",
+        "value" : "query1",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "query-params",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "extract",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "pathVaraiable",
+        "reference" : "path-variable",
+        "value" : "path1",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "path-variable",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1739275227102,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "80632530aa50ae1a1341613befd636ebf9aa1675",
+    "timeStamp" : 1739275227102,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "9cd4eb8a46dd8896fa0bb3b2a1b6ed592ee3b227",
+    "timeStamp" : 1739276745480,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "acme-team-gcp-stage",
+  "selectedVirtualHostId" : "664c95008ac11a73dcf3eb8e",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
