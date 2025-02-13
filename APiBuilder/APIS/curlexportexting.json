@@ -3,7 +3,7 @@
   "cts" : 1739275227102,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739449005333,
+  "mts" : 1739450368376,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab3bdb157bda25eb5b2c8e",
@@ -19,6 +19,9 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "b0f966ba-a59b-44ab-8591-c461262506da"
+  }, {
+    "source" : "b0f966ba-a59b-44ab-8591-c461262506da",
     "target" : "b0a4d20b-4fde-4d9a-9af2-0abf591a0505"
   } ],
   "vertexHashMap" : {
@@ -37,6 +40,59 @@
           "type" : "json"
         }
       }
+    },
+    "b0f966ba-a59b-44ab-8591-c461262506da" : {
+      "vertexId" : "b0f966ba-a59b-44ab-8591-c461262506da",
+      "vertexType" : "TARGET",
+      "name" : "testindf",
+      "target" : {
+        "name" : "testindf",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "google.com",
+          "path" : "/asdf",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "{\n    \"testing\": true\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -95,6 +151,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1739450252801,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1739449023246,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "sdf"
+  }, {
+    "status" : "Review",
     "cts" : 1739448992561,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -152,6 +218,11 @@
   }, {
     "commitId" : "1b6d6529f77be067a57ffe4c54cff63c6055852b",
     "timeStamp" : 1739448112938,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "2d748ebd08007332cf04f2f00cbfe19455f7ea79",
+    "timeStamp" : 1739449005333,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
