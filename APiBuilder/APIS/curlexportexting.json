@@ -3,18 +3,18 @@
   "cts" : 1739275227102,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739448112938,
+  "mts" : 1739449005333,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab3bdb157bda25eb5b2c8e",
   "revision" : 1,
   "name" : "curlexportexting",
   "description" : "",
-  "apiType" : "GRAPHQL",
+  "apiType" : "RESTAPI",
   "apiMethod" : "POST",
   "path" : "/curlexport",
   "pathArray" : [ "curlexport" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -94,6 +94,26 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1739448992561,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1739448233397,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "sdf"
+  }, {
+    "status" : "Review",
+    "cts" : 1739448200167,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "ds"
+  }, {
+    "status" : "Approved",
+    "cts" : 1739448157658,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "sd"
+  }, {
     "status" : "Draft",
     "cts" : 1739275227102,
     "lastModifiedBy" : "vidya wiz",
@@ -129,7 +149,13 @@
     "timeStamp" : 1739447645533,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "1b6d6529f77be067a57ffe4c54cff63c6055852b",
+    "timeStamp" : 1739448112938,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
