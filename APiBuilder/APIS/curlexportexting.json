@@ -3,7 +3,7 @@
   "cts" : 1739275227102,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739445796020,
+  "mts" : 1739445825479,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67ab3bdb157bda25eb5b2c8e",
@@ -11,7 +11,7 @@
   "name" : "curlexportexting",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiMethod" : "POST",
   "path" : "/curlexport",
   "pathArray" : [ "curlexport" ],
   "revisionStatus" : "DRAFT",
@@ -103,6 +103,11 @@
   }, {
     "commitId" : "9cd4eb8a46dd8896fa0bb3b2a1b6ed592ee3b227",
     "timeStamp" : 1739276745480,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "4ad2fad66ab97929aab5fcef30044cca5c32e300",
+    "timeStamp" : 1739445796020,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
