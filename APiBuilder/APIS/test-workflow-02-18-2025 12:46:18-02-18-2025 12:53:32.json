@@ -3,7 +3,7 @@
   "cts" : 1739883212030,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739884001839,
+  "mts" : 1739884335711,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67b482cc6fd61a1bdf4c8878",
@@ -47,14 +47,23 @@
         },
         "response" : {
           "statusCode" : 400,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "lava",
+            "reference" : "body",
+            "value" : "$",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
         },
         "timeout" : 0,
         "continueOnError" : false,
         "errorResponse" : {
           "statusCode" : 400,
           "body" : {
-            "data" : "{{myData}}",
+            "data" : "",
             "type" : "json"
           }
         },
@@ -110,6 +119,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1739884163656,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1739884022206,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "approved"
+  }, {
+    "status" : "Review",
     "cts" : 1739883945827,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -147,6 +166,11 @@
   }, {
     "commitId" : "8d2343f00819c7f8569bee4da31748ad79c8ec64",
     "timeStamp" : 1739883989468,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "888d9b7c0a559652e23d1c2badabc43fa8c68f69",
+    "timeStamp" : 1739884001839,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
