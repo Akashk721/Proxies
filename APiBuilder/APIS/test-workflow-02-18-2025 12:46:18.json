@@ -3,7 +3,7 @@
   "cts" : 1739882778805,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739882842482,
+  "mts" : 1739882869116,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67b4811a6fd61a1bdf4c881e",
@@ -36,8 +36,8 @@
         "request" : {
           "apiMethod" : "GET",
           "scheme" : "https",
-          "host" : "https://sandboxapi.tonikbank.com/v1/accountlist",
-          "path" : "/v1/accountlist/banking/accounts",
+          "host" : "postman-echo.com",
+          "path" : "/get",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "targetRequestBodyType" : "NONE",
@@ -113,6 +113,11 @@
   "changeLogs" : [ {
     "commitId" : "7d4c693978fbf6878284fdaa37b51e8dbff8a41c",
     "timeStamp" : 1739882778805,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "459b0f5272582881e50c2aae51eb00cc6851d527",
+    "timeStamp" : 1739882842482,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
