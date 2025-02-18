@@ -1,0 +1,91 @@
+{
+  "id" : "67b4749f6fd61a1bdf4c8548",
+  "cts" : 1739879581322,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1739880685559,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "67b4749d6fd61a1bdf4c8547",
+  "revision" : 1,
+  "name" : "test-workflow",
+  "description" : "Description",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/getData",
+  "pathArray" : [ "getData" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "a60ffe10-03d6-4a4e-9557-132ff1143224"
+  } ],
+  "vertexHashMap" : {
+    "a60ffe10-03d6-4a4e-9557-132ff1143224" : {
+      "vertexId" : "a60ffe10-03d6-4a4e-9557-132ff1143224",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 400,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "headerA",
+        "reference" : "headers",
+        "value" : "123",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "headers" : {
+            "header1" : "header1"
+          },
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1739879581322,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "702d9835dcea25ca568ac7649d26b17dc74e748c",
+    "timeStamp" : 1739879581322,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "env-1",
+  "environmentId" : "663b6da807ffe9048e4253e3",
+  "selectedVirtualHostName" : "acme-team-gcp-stage",
+  "selectedVirtualHostId" : "664c95008ac11a73dcf3eb8e",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
