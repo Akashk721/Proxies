@@ -1,11 +1,11 @@
 {
-  "cts" : 1739879185056,
+  "cts" : 1739879581322,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739879185056,
+  "mts" : 1739879581322,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
-  "proxyId" : "67b473116fd61a1bdf4c8524",
+  "proxyId" : "67b4749d6fd61a1bdf4c8547",
   "revision" : 1,
   "name" : "New Workflow 227",
   "description" : "",
@@ -18,11 +18,11 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
-    "target" : "388dec8c-16b8-4b03-81c0-63919196f814"
+    "target" : "a60ffe10-03d6-4a4e-9557-132ff1143224"
   } ],
   "vertexHashMap" : {
-    "388dec8c-16b8-4b03-81c0-63919196f814" : {
-      "vertexId" : "388dec8c-16b8-4b03-81c0-63919196f814",
+    "a60ffe10-03d6-4a4e-9557-132ff1143224" : {
+      "vertexId" : "a60ffe10-03d6-4a4e-9557-132ff1143224",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -54,7 +54,7 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1739879185056,
+    "cts" : 1739879581322,
     "lastModifiedBy" : "vidya wiz",
     "description" : "Created new proxy"
   } ],
