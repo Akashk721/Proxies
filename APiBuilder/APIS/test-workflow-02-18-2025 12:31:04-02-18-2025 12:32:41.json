@@ -1,8 +1,9 @@
 {
+  "id" : "67b47dea6fd61a1bdf4c8777",
   "cts" : 1739881960999,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739881960999,
+  "mts" : 1739881987515,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67b47de96fd61a1bdf4c8776",
@@ -11,8 +12,8 @@
   "description" : "Description",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/getData",
-  "pathArray" : [ "getData" ],
+  "path" : "/getDataTest",
+  "pathArray" : [ "getDataTest" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "vidya wiz",
@@ -108,6 +109,12 @@
     "cts" : 1739881960999,
     "lastModifiedBy" : "vidya wiz",
     "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "f8af9eec806b994046c3605c968b7ce2d423a71a",
+    "timeStamp" : 1739881960999,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "env-1",
