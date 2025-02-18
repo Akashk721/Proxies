@@ -1,0 +1,123 @@
+{
+  "cts" : 1739882778805,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1739882778805,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "67b4811a6fd61a1bdf4c881e",
+  "revision" : 1,
+  "name" : "test-workflow-02-18-2025 12:46:18",
+  "description" : "Description",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/getData",
+  "pathArray" : [ "getData" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "e469007e-f3bd-4ae3-bf54-f01ce4104b0f"
+  }, {
+    "source" : "e469007e-f3bd-4ae3-bf54-f01ce4104b0f",
+    "target" : "a60ffe10-03d6-4a4e-9557-132ff1143224"
+  } ],
+  "vertexHashMap" : {
+    "e469007e-f3bd-4ae3-bf54-f01ce4104b0f" : {
+      "vertexId" : "e469007e-f3bd-4ae3-bf54-f01ce4104b0f",
+      "vertexType" : "TARGET",
+      "name" : "listAccounts",
+      "target" : {
+        "name" : "listAccounts",
+        "description" : "Obtain a list of accounts",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "https://sandboxapi.tonikbank.com/v1/accountlist",
+          "path" : "/v1/accountlist/banking/accounts",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
+    },
+    "a60ffe10-03d6-4a4e-9557-132ff1143224" : {
+      "vertexId" : "a60ffe10-03d6-4a4e-9557-132ff1143224",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 400,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1739882778805,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "env-1",
+  "environmentId" : "663b6da807ffe9048e4253e3",
+  "selectedVirtualHostName" : "acme-team-gcp-stage",
+  "selectedVirtualHostId" : "664c95008ac11a73dcf3eb8e",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
