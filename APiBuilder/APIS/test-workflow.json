@@ -3,7 +3,7 @@
   "cts" : 1739879581322,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739880685559,
+  "mts" : 1739880927996,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67b4749d6fd61a1bdf4c8547",
@@ -19,9 +19,60 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "e469007e-f3bd-4ae3-bf54-f01ce4104b0f"
+  }, {
+    "source" : "e469007e-f3bd-4ae3-bf54-f01ce4104b0f",
     "target" : "a60ffe10-03d6-4a4e-9557-132ff1143224"
   } ],
   "vertexHashMap" : {
+    "e469007e-f3bd-4ae3-bf54-f01ce4104b0f" : {
+      "vertexId" : "e469007e-f3bd-4ae3-bf54-f01ce4104b0f",
+      "vertexType" : "TARGET",
+      "name" : "listAccounts",
+      "target" : {
+        "name" : "listAccounts",
+        "description" : "Obtain a list of accounts",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "https://sandboxapi.tonikbank.com/v1/accountlist",
+          "path" : "/v1/accountlist/banking/accounts",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
+    },
     "a60ffe10-03d6-4a4e-9557-132ff1143224" : {
       "vertexId" : "a60ffe10-03d6-4a4e-9557-132ff1143224",
       "vertexType" : "STOP",
@@ -38,25 +89,13 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Request",
-      "requestVariables" : [ {
-        "name" : "headerA",
-        "reference" : "headers",
-        "value" : "123",
-        "variableDataType" : "STRING",
-        "active" : true,
-        "source" : "headers",
-        "hide" : false,
-        "feelExpression" : false
-      } ],
+      "requestVariables" : [ ],
       "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
         "continueOnError" : false,
         "errorResponse" : {
           "statusCode" : 400,
-          "headers" : {
-            "header1" : "header1"
-          },
           "body" : {
             "data" : "",
             "type" : "json"
@@ -74,6 +113,11 @@
   "changeLogs" : [ {
     "commitId" : "702d9835dcea25ca568ac7649d26b17dc74e748c",
     "timeStamp" : 1739879581322,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "d727b98e9805b16f926292e9c7bf83911fec1051",
+    "timeStamp" : 1739880685559,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
