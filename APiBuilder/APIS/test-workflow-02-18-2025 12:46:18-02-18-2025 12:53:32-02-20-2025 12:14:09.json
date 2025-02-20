@@ -1,8 +1,9 @@
 {
+  "id" : "67b71c9341603b16904971ec",
   "cts" : 1740053649511,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1740053649511,
+  "mts" : 1740053737320,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67b71c9141603b16904971ea",
@@ -17,11 +18,14 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
+    "source" : "5bdd1c5c-67d2-491e-94c5-8604b080b2aa",
+    "target" : "a60ffe10-03d6-4a4e-9557-132ff1143224"
+  }, {
     "source" : "v1",
     "target" : "e469007e-f3bd-4ae3-bf54-f01ce4104b0f"
   }, {
     "source" : "e469007e-f3bd-4ae3-bf54-f01ce4104b0f",
-    "target" : "a60ffe10-03d6-4a4e-9557-132ff1143224"
+    "target" : "5bdd1c5c-67d2-491e-94c5-8604b080b2aa"
   } ],
   "vertexHashMap" : {
     "e469007e-f3bd-4ae3-bf54-f01ce4104b0f" : {
@@ -97,6 +101,30 @@
         }
       }
     },
+    "5bdd1c5c-67d2-491e-94c5-8604b080b2aa" : {
+      "vertexId" : "5bdd1c5c-67d2-491e-94c5-8604b080b2aa",
+      "vertexType" : "INCREMENT_DECREMENT",
+      "name" : "test-increment",
+      "description" : "Description",
+      "incDecData" : {
+        "incDecOperationList" : [ {
+          "operationName" : "operation1",
+          "description" : "Description",
+          "changeType" : "INCREMENT",
+          "value" : "10",
+          "variableName" : "1stenv"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -121,6 +149,12 @@
     "cts" : 1740053649511,
     "lastModifiedBy" : "vidya wiz",
     "description" : "Duplicated proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "66ec704a6cf27b5b9244adb2c23de4e17113e36e",
+    "timeStamp" : 1740053649511,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "env-1",
