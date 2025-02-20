@@ -1,8 +1,9 @@
 {
+  "id" : "67b56d69454bff2969fed237",
   "cts" : 1739943265226,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1739943265226,
+  "mts" : 1740048400294,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "67b56d61454bff2969fed236",
@@ -38,7 +39,7 @@
       "vertexType" : "START",
       "name" : "Request",
       "requestVariables" : [ ],
-      "imported" : false,
+      "imported" : true,
       "securityResponse" : {
         "isEnabled" : false,
         "continueOnError" : false,
@@ -58,11 +59,17 @@
     "lastModifiedBy" : "vidya wiz",
     "description" : "Created new proxy"
   } ],
+  "changeLogs" : [ {
+    "commitId" : "e185d40d98f3069c3ec231873bd8e98a0a1752a0",
+    "timeStamp" : 1739943265226,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  } ],
   "enableTracing" : false,
-  "environmentName" : "",
-  "environmentId" : "",
-  "selectedVirtualHostName" : "",
-  "selectedVirtualHostId" : "",
+  "environmentName" : "env-1",
+  "environmentId" : "663b6da807ffe9048e4253e3",
+  "selectedVirtualHostName" : "acme-team-gcp-stage",
+  "selectedVirtualHostId" : "664c95008ac11a73dcf3eb8e",
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
