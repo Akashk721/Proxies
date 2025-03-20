@@ -1,0 +1,1499 @@
+{
+  "cts" : 1742472031646,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1742472031646,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "67dc035f11aed30ac89663ec",
+  "revision" : 1,
+  "name" : "Digital Remittance-02-23-2025 18:27:30-03-20-2025 06:42:02",
+  "description" : "Fund Transfer API for Credit and Pesonet Transactions",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/v1/fund-transfer",
+  "pathArray" : [ "v1", "fund-transfer" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "edgeSet" : [ {
+    "source" : "f5ea078d-3fa2-49c9-ac7d-f4a031d114d9",
+    "target" : "726e3393-97ec-47cd-8e65-2b4f517665d9"
+  }, {
+    "source" : "43c52442-663f-4562-8a68-df119a6dd4c0",
+    "target" : "6d324088-fe38-4862-8e42-e478c4ef2eb1"
+  }, {
+    "source" : "726e3393-97ec-47cd-8e65-2b4f517665d9",
+    "target" : "03d2c1c0-abc0-4169-993b-22a5985cfc58"
+  }, {
+    "source" : "9287df97-b525-409f-bb0a-948643854ec2",
+    "target" : "726e3393-97ec-47cd-8e65-2b4f517665d9"
+  }, {
+    "source" : "03d2c1c0-abc0-4169-993b-22a5985cfc58",
+    "target" : "7a01612d-3b2c-4af0-8870-a1862f156782"
+  }, {
+    "source" : "d3989879-6fca-4770-a947-4b2ed818f252",
+    "target" : "5daff710-1717-4c5f-900f-2b7ca4a25a69"
+  }, {
+    "source" : "dac72f92-db10-4d4b-99d4-dc96bd7d4312",
+    "target" : "d36376ca-925d-45b2-8b48-112b463935eb"
+  }, {
+    "source" : "7a01612d-3b2c-4af0-8870-a1862f156782",
+    "target" : "6e21548c-c28f-4af3-b698-f01973a7c601"
+  }, {
+    "source" : "5daff710-1717-4c5f-900f-2b7ca4a25a69",
+    "target" : "9287df97-b525-409f-bb0a-948643854ec2"
+  }, {
+    "source" : "a910c6ed-a3f0-4d18-a8e1-161609c2d7cd",
+    "target" : "dfc3f532-a7e7-4c41-a6cc-c217d0939ae4"
+  }, {
+    "source" : "4e65ee00-0552-496a-b87c-c97d7fc56dea",
+    "target" : "5daff710-1717-4c5f-900f-2b7ca4a25a69"
+  }, {
+    "source" : "54ac7f27-925a-40c5-b1f9-749c2624f859",
+    "target" : "ca4fdb4d-fc6a-425e-8617-b34812bb1d93"
+  }, {
+    "source" : "726e3393-97ec-47cd-8e65-2b4f517665d9",
+    "target" : "a910c6ed-a3f0-4d18-a8e1-161609c2d7cd"
+  }, {
+    "source" : "d36376ca-925d-45b2-8b48-112b463935eb",
+    "target" : "4e65ee00-0552-496a-b87c-c97d7fc56dea"
+  }, {
+    "source" : "dfc3f532-a7e7-4c41-a6cc-c217d0939ae4",
+    "target" : "d0f47e21-2496-4bcf-854e-29abc72b644c"
+  }, {
+    "source" : "5daff710-1717-4c5f-900f-2b7ca4a25a69",
+    "target" : "f5ea078d-3fa2-49c9-ac7d-f4a031d114d9"
+  }, {
+    "source" : "ca4fdb4d-fc6a-425e-8617-b34812bb1d93",
+    "target" : "dac72f92-db10-4d4b-99d4-dc96bd7d4312"
+  }, {
+    "source" : "v1",
+    "target" : "54ac7f27-925a-40c5-b1f9-749c2624f859"
+  }, {
+    "source" : "d36376ca-925d-45b2-8b48-112b463935eb",
+    "target" : "d3989879-6fca-4770-a947-4b2ed818f252"
+  }, {
+    "source" : "dfc3f532-a7e7-4c41-a6cc-c217d0939ae4",
+    "target" : "43c52442-663f-4562-8a68-df119a6dd4c0"
+  }, {
+    "source" : "7a01612d-3b2c-4af0-8870-a1862f156782",
+    "target" : "6864be5d-99c8-42f8-afaa-ebbf29016eb7"
+  } ],
+  "vertexHashMap" : {
+    "f5ea078d-3fa2-49c9-ac7d-f4a031d114d9" : {
+      "vertexId" : "f5ea078d-3fa2-49c9-ac7d-f4a031d114d9",
+      "vertexType" : "TARGET",
+      "name" : "Fund Transfer - Credit",
+      "target" : {
+        "name" : "Fund Transfer - Credit",
+        "description" : "Post credit transaction to core system (XML)",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/payment/transaction",
+          "headerParams" : [ {
+            "name" : "x-introspect-basic-authorization-header",
+            "value" : "{{apiKey}}"
+          }, {
+            "name" : "Authorization",
+            "value" : "{{oauthToken}}"
+          }, {
+            "name" : "content-type",
+            "value" : "application/xml"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{fund-transfer-credit-payload}}}",
+            "type" : "xml"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "fundTransferResponse",
+            "reference" : "body",
+            "value" : "/*",
+            "variableDataType" : "OBJECT",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "isSucessful",
+            "reference" : "body",
+            "value" : "/FIXML/Header/ResponseHeader/HostTransaction/Status",
+            "variableDataType" : "BOOLEAN",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "messageDateTime",
+            "reference" : "body",
+            "value" : "/FIXML/Header/ResponseHeader/ResponseMessageInfo/MessageDateTime",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "tranDate",
+            "reference" : "body",
+            "value" : "/FIXML/Body/doTransferTransactionResponse/TransferTranOutputStruct/transferTranDetail/tranIdentifierTransfer/tranDate",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "tranId",
+            "reference" : "body",
+            "value" : "/FIXML/Body/doTransferTransactionResponse/TransferTranOutputStruct/transferTranDetail/tranIdentifierTransfer/tranId",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "errorCode",
+            "reference" : "body",
+            "value" : "/FIXML/Body/Error/FISystemException/ErrorDetail/ErrorCode",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "errorDesc",
+            "reference" : "body",
+            "value" : "/FIXML/Body/Error/FISystemException/ErrorDetail/ErrorDesc",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "errorType",
+            "reference" : "body",
+            "value" : "/FIXML/Body/Error/FISystemException/ErrorDetail/ErrorType",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "invalidExpiredTokenResponse",
+            "reference" : "body",
+            "value" : "$",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "coreSystemErrorRespXML",
+            "reference" : "body",
+            "value" : "/FIXML/Body/Error",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "stcode",
+            "reference" : "status-code",
+            "value" : "",
+            "active" : true,
+            "source" : "status-code",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 60000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "body" : {
+            "data" : "{\n    \"message\":\"Credit Request to Core System Timed Out. Try again...\",\n    \"code\":\"RCBC-TIMEOUT-408\"\n}",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
+    },
+    "4e65ee00-0552-496a-b87c-c97d7fc56dea" : {
+      "vertexId" : "4e65ee00-0552-496a-b87c-c97d7fc56dea",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "Map Fund Transfer - Pesonet payload",
+      "description" : "Map Fund Transfer - Pesonet payload",
+      "dataMappingData" : {
+        "sourceVariable" : "requestBody",
+        "targetVariable" : "fund-transfer-pesonet-payload",
+        "targetSchema" : "<xs:schema attributeFormDefault=\"unqualified\" elementFormDefault=\"qualified\" targetNamespace=\"http://www.finacle.com/fixml\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:element name=\"FIXML\">\n    <xs:complexType>\n      <xs:sequence>\n        <xs:element name=\"Header\">\n          <xs:complexType>\n            <xs:sequence>\n              <xs:element name=\"RequestHeader\">\n                <xs:complexType>\n                  <xs:sequence>\n                    <xs:element name=\"MessageKey\">\n                      <xs:complexType>\n                        <xs:sequence>\n                          <xs:element type=\"xs:string\" name=\"RequestUUID\"/>\n                          <xs:element type=\"xs:string\" name=\"ServiceRequestId\"/>\n                          <xs:element type=\"xs:float\" name=\"ServiceRequestVersion\"/>\n                          <xs:element type=\"xs:string\" name=\"ChannelId\"/>\n                        </xs:sequence>\n                      </xs:complexType>\n                    </xs:element>\n                    <xs:element name=\"RequestMessageInfo\">\n                      <xs:complexType>\n                        <xs:sequence>\n                          <xs:element type=\"xs:string\" name=\"BankId\"/>\n                          <xs:element type=\"xs:string\" name=\"TimeZone\"/>\n                          <xs:element type=\"xs:string\" name=\"EntityId\"/>\n                          <xs:element type=\"xs:string\" name=\"EntityType\"/>\n                          <xs:element type=\"xs:string\" name=\"ArmCorrelationId\"/>\n                          <xs:element type=\"xs:dateTime\" name=\"MessageDateTime\"/>\n                        </xs:sequence>\n                      </xs:complexType>\n                    </xs:element>\n                    <xs:element name=\"Security\">\n                      <xs:complexType>\n                        <xs:sequence>\n                          <xs:element name=\"Token\">\n                            <xs:complexType>\n                              <xs:sequence>\n                                <xs:element name=\"PasswordToken\">\n                                  <xs:complexType>\n                                    <xs:sequence>\n                                      <xs:element type=\"xs:string\" name=\"UserId\"/>\n                                      <xs:element type=\"xs:string\" name=\"Password\"/>\n                                    </xs:sequence>\n                                  </xs:complexType>\n                                </xs:element>\n                              </xs:sequence>\n                            </xs:complexType>\n                          </xs:element>\n                          <xs:element type=\"xs:string\" name=\"FICertToken\"/>\n                          <xs:element type=\"xs:string\" name=\"RealUserLoginSessionId\"/>\n                          <xs:element type=\"xs:string\" name=\"RealUser\"/>\n                          <xs:element type=\"xs:string\" name=\"RealUserPwd\"/>\n                          <xs:element type=\"xs:string\" name=\"SSOTransferToken\"/>\n                        </xs:sequence>\n                      </xs:complexType>\n                    </xs:element>\n                  </xs:sequence>\n                </xs:complexType>\n              </xs:element>\n            </xs:sequence>\n          </xs:complexType>\n        </xs:element>\n        <xs:element name=\"Body\">\n          <xs:complexType>\n            <xs:sequence>\n              <xs:element name=\"PmtAddRequest\">\n                <xs:complexType>\n                  <xs:sequence>\n                    <xs:element name=\"PmtAddRq\">\n                      <xs:complexType>\n                        <xs:sequence>\n                          <xs:element type=\"xs:string\" name=\"PmtProduct\"/>\n                          <xs:element name=\"DrAcct\">\n                            <xs:complexType>\n                              <xs:sequence>\n                                <xs:element type=\"xs:int\" name=\"AcctId\"/>\n                              </xs:sequence>\n                            </xs:complexType>\n                          </xs:element>\n                          <xs:element name=\"RemitAmt\">\n                            <xs:complexType>\n                              <xs:sequence>\n                                <xs:element type=\"xs:float\" name=\"amountValue\"/>\n                                <xs:element type=\"xs:string\" name=\"currencyCode\"/>\n                              </xs:sequence>\n                            </xs:complexType>\n                          </xs:element>\n                          <xs:element name=\"ChrgAcct\">\n                            <xs:complexType>\n                              <xs:sequence>\n                                <xs:element type=\"xs:string\" name=\"AcctId\"/>\n                              </xs:sequence>\n                            </xs:complexType>\n                          </xs:element>\n                          <xs:element name=\"BeneficiaryDtls\">\n                            <xs:complexType>\n                              <xs:sequence>\n                                <xs:element type=\"xs:string\" name=\"Name\"/>\n                                <xs:element name=\"PostAddr\">\n                                  <xs:complexType>\n                                    <xs:sequence>\n                                      <xs:element type=\"xs:string\" name=\"Addr1\"/>\n                                      <xs:element type=\"xs:string\" name=\"Addr2\"/>\n                                      <xs:element type=\"xs:string\" name=\"Addr3\"/>\n                                    </xs:sequence>\n                                  </xs:complexType>\n                                </xs:element>\n                                <xs:element type=\"xs:string\" name=\"AddrTypeInd\"/>\n                                <xs:element type=\"xs:long\" name=\"AcctId\"/>\n                                <xs:element name=\"BankInfo\">\n                                  <xs:complexType>\n                                    <xs:sequence>\n                                      <xs:element name=\"PostAddr\">\n                                        <xs:complexType>\n                                          <xs:sequence>\n                                            <xs:element type=\"xs:string\" name=\"Addr1\"/>\n                                            <xs:element type=\"xs:string\" name=\"Country\"/>\n                                          </xs:sequence>\n                                        </xs:complexType>\n                                      </xs:element>\n                                    </xs:sequence>\n                                  </xs:complexType>\n                                </xs:element>\n                              </xs:sequence>\n                            </xs:complexType>\n                          </xs:element>\n                          <xs:element name=\"InstitutionDtls\">\n                            <xs:complexType>\n                              <xs:sequence>\n                                <xs:element type=\"xs:string\" name=\"AddrTypeInd\"/>\n                                <xs:element type=\"xs:string\" name=\"AcctId\"/>\n                                <xs:element name=\"BankInfo\">\n                                  <xs:complexType>\n                                    <xs:sequence>\n                                      <xs:element type=\"xs:string\" name=\"BankId\"/>\n                                      <xs:element type=\"xs:string\" name=\"BranchId\"/>\n                                    </xs:sequence>\n                                  </xs:complexType>\n                                </xs:element>\n                              </xs:sequence>\n                            </xs:complexType>\n                          </xs:element>\n                          <xs:element type=\"xs:string\" name=\"PmtSysId\"/>\n                        </xs:sequence>\n                      </xs:complexType>\n                    </xs:element>\n                    <xs:element name=\"PmtAdd_CustomData\">\n                      <xs:complexType>\n                        <xs:sequence>\n                          <xs:element type=\"xs:string\" name=\"waiveCharges\"/>\n                          <xs:element type=\"xs:string\" name=\"netChargeFlg\"/>\n                          <xs:element type=\"xs:string\" name=\"chargeOption\"/>\n                          <xs:element type=\"xs:string\" name=\"eventId\"/>\n                          <xs:element type=\"xs:string\" name=\"eventType\"/>\n                          <xs:element type=\"xs:string\" name=\"REMITINFO1\"/>\n                          <xs:element type=\"xs:string\" name=\"REMITINFO2\"/>\n                          <xs:element type=\"xs:string\" name=\"REMITINFO3\"/>\n                          <xs:element type=\"xs:string\" name=\"REMITINFO4\"/>\n                        </xs:sequence>\n                      </xs:complexType>\n                    </xs:element>\n                  </xs:sequence>\n                </xs:complexType>\n              </xs:element>\n            </xs:sequence>\n          </xs:complexType>\n        </xs:element>\n      </xs:sequence>\n             <xs:attribute name=\"xmlns:xsi\" type=\"xs:string\" use=\"required\"/>\n        <xs:attribute name=\"xmlns:xsd\" type=\"xs:string\" use=\"required\"/>\n        <xs:attribute name=\"xsi:schemaLocation\" type=\"xs:string\" use=\"required\"/>\n        <xs:attribute name=\"xmlns\" type=\"xs:string\" use=\"required\"/>\n    </xs:complexType>\n  </xs:element>\n</xs:schema>",
+        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"partnerReferenceInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"InstructionId\": {\n          \"type\": \"string\"\n        },\n        \"endtoendId\": {\n          \"type\": \"string\"\n        },\n        \"transactionId\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"InstructionId\",\n        \"endtoendId\",\n        \"transactionId\"\n      ]\n    },\n    \"paymentInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"paymentType\": {\n          \"type\": \"string\"\n        },\n        \"prtryAccountType\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"paymentType\",\n        \"prtryAccountType\"\n      ]\n    },\n    \"debtorAccountInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"dbtrAccountNo\": {\n          \"type\": \"string\"\n        },\n        \"dbtrAccountName\": {\n          \"type\": \"string\"\n        },\n        \"dbtrAddress\": {\n          \"type\": \"string\"\n        },\n        \"dbtrEmail\": {\n          \"type\": \"string\"\n        },\n        \"dbtrCountryCode\": {\n          \"type\": \"string\"\n        },\n        \"dbtrBirthDt\": {\n          \"type\": \"string\"\n        },\n        \"dbtrBIC\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"dbtrAccountNo\",\n        \"dbtrAccountName\",\n        \"dbtrAddress\",\n        \"dbtrEmail\",\n        \"dbtrCountryCode\",\n        \"dbtrBirthDt\",\n        \"dbtrBIC\"\n      ]\n    },\n    \"creditorAccountInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"cdtrAccountNo\": {\n          \"type\": \"string\"\n        },\n        \"cdtrAccountName\": {\n          \"type\": \"string\"\n        },\n        \"cdtrAddress\": {\n          \"type\": \"string\"\n        },\n        \"cdtrEmail\": {\n          \"type\": \"string\"\n        },\n        \"cdtrCountryCode\": {\n          \"type\": \"string\"\n        },\n        \"cdtrBirthDt\": {\n          \"type\": \"string\"\n        },\n        \"cdtrBIC\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"cdtrAccountNo\",\n        \"cdtrAccountName\",\n        \"cdtrAddress\",\n        \"cdtrEmail\",\n        \"cdtrCountryCode\",\n        \"cdtrBirthDt\",\n        \"cdtrBIC\"\n      ]\n    },\n    \"contactDetails\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"mobileNumber\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"mobileNumber\"\n      ]\n    },\n    \"amount\": {\n      \"type\": \"string\"\n    },\n    \"currency\": {\n      \"type\": \"string\"\n    },\n    \"purpose\": {\n      \"type\": \"string\"\n    },\n    \"settlementDate\": {\n      \"type\": \"string\"\n    },\n    \"remittanceInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"unstructuredInfo\": {\n          \"type\": \"string\"\n        },\n        \"RemittanceProp\": {\n          \"type\": \"string\"\n        },\n        \"remittanceNumber\": {\n          \"type\": \"string\"\n        },\n        \"AddtlRmtInfo\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"unstructuredInfo\",\n        \"RemittanceProp\",\n        \"remittanceNumber\",\n        \"AddtlRmtInfo\"\n      ]\n    },\n    \"supplementaryData\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"subscriberNumber\": {\n          \"type\": \"string\"\n        },\n        \"OtherId\": {\n          \"type\": \"string\"\n        },\n        \"pointofInteractionID\": {\n          \"type\": \"string\"\n        },\n        \"PAN\": {\n          \"type\": \"string\"\n        },\n        \"expiryDate\": {\n          \"type\": \"string\"\n        },\n        \"type\": {\n          \"type\": \"string\"\n        },\n        \"systemName\": {\n          \"type\": \"string\"\n        },\n        \"groupId\": {\n          \"type\": \"string\"\n        },\n        \"merchantCategoryCode\": {\n          \"type\": \"string\"\n        },\n        \"transactionRef\": {\n          \"type\": \"string\"\n        },\n        \"tipAmount\": {\n          \"type\": \"string\"\n        },\n        \"tipCurrency\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"subscriberNumber\",\n        \"OtherId\",\n        \"pointofInteractionID\",\n        \"PAN\",\n        \"expiryDate\",\n        \"type\",\n        \"systemName\",\n        \"groupId\",\n        \"merchantCategoryCode\",\n        \"transactionRef\",\n        \"tipAmount\",\n        \"tipCurrency\"\n      ]\n    }\n  },\n  \"required\": [\n    \"partnerReferenceInformation\",\n    \"paymentInformation\",\n    \"debtorAccountInformation\",\n    \"creditorAccountInformation\",\n    \"contactDetails\",\n    \"amount\",\n    \"currency\",\n    \"purpose\",\n    \"settlementDate\",\n    \"remittanceInformation\",\n    \"supplementaryData\"\n  ]\n}",
+        "pathOperations" : [ {
+          "sourcePathList" : [ {
+            "sourcePath" : "$.amount",
+            "customPath" : false
+          } ],
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/RemitAmt/amountValue",
+          "containsDirectValue" : false,
+          "containsCustomList" : false
+        }, {
+          "sourcePathList" : [ {
+            "sourcePath" : "$.currency",
+            "customPath" : false
+          } ],
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/RemitAmt/currencyCode",
+          "containsDirectValue" : false,
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/@xmlns:xsi",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "\"http://www.w3.org/2001/XMLSchema-instance\""
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/@xmlns:xsd",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "\"http://www.w3.org/2001/XMLSchema\""
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/@xsi:schemaLocation",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "\"http://www.finacle.com/fixml PmtAdd.xsd\""
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/@xmlns",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "\"http://www.finacle.com/fixml\""
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/MessageKey/RequestUUID",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "{{uuid.v4()}}"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/MessageKey/ServiceRequestId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "PmtAdd"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/MessageKey/ServiceRequestVersion",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "10.3"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/MessageKey/ChannelId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "BIZ"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/RequestMessageInfo/MessageDateTime",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "{{now()}}"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/PmtProduct",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "CT"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/DrAcct/AcctId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "{{daccountno}}"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/ChrgAcct/AcctId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "{{daccountno}}"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/BeneficiaryDtls/Name",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "Caitlin Samson 221201T01"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/BeneficiaryDtls/PostAddr/Addr1",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "Head Office Philippines"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/BeneficiaryDtls/AddrTypeInd",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "A"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/BeneficiaryDtls/AcctId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "{{caccountno}}"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/InstitutionDtls/AddrTypeInd",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "B"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/InstitutionDtls/BankInfo/BankId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "AUBK"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/InstitutionDtls/BankInfo/BranchId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "PHXXX"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAddRq/PmtSysId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "EPCSP"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAdd_CustomData/waiveCharges",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "Y"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAdd_CustomData/netChargeFlg",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "N"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAdd_CustomData/chargeOption",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "OUR"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAdd_CustomData/eventType",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "RECHO"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/PmtAddRequest/PmtAdd_CustomData/REMITINFO1",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "Test Transfer Purpose"
+          },
+          "containsCustomList" : false
+        } ],
+        "sourceType" : "JSON",
+        "targetType" : "XML",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "Mapping failed - Pesonet",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "54ac7f27-925a-40c5-b1f9-749c2624f859" : {
+      "vertexId" : "54ac7f27-925a-40c5-b1f9-749c2624f859",
+      "vertexType" : "JAVASCRIPT",
+      "name" : "Custom timestamp",
+      "description" : "Custom timestamp",
+      "javascriptData" : {
+        "targetVariable" : "timestamp",
+        "variableDataType" : "STRING",
+        "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n// Implement script logic here\n    const now = new Date();\n    return now.toISOString().replace('T', ' ').replace('Z', '').slice(0, -1);\n };",
+        "variables" : { },
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "customResponseMapping" : false
+      },
+      "imported" : false
+    },
+    "43c52442-663f-4562-8a68-df119a6dd4c0" : {
+      "vertexId" : "43c52442-663f-4562-8a68-df119a6dd4c0",
+      "vertexType" : "XML_TO_JSON_TRANSFORMATION",
+      "name" : "TransformCoreSystemResponse",
+      "description" : "Convert Core System's response (XML) to JSON",
+      "xmlToJsonTransformationData" : {
+        "sourceVariable" : "coreSystemErrorRespXML",
+        "targetVariable" : "coreSystemErrorRespJSON",
+        "arrayXPaths" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 500,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n    \"message\":\"Core System's Error Message Could not be rendered in JSON\"\n}",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "d3989879-6fca-4770-a947-4b2ed818f252" : {
+      "vertexId" : "d3989879-6fca-4770-a947-4b2ed818f252",
+      "vertexType" : "DATA_MAPPING",
+      "name" : "Map Fund Transfer - Credit payload",
+      "description" : "Map Fund Transfer - Credit payload",
+      "dataMappingData" : {
+        "sourceVariable" : "requestBody",
+        "targetVariable" : "fund-transfer-credit-payload",
+        "targetSchema" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" \n           targetNamespace=\"http://www.finacle.com/fixml\" \n           xmlns=\"http://www.finacle.com/fixml\" \n           elementFormDefault=\"qualified\">\n\n    <xs:element name=\"FIXML\">\n        <xs:complexType>\n            <xs:sequence>\n                <xs:element name=\"Header\">\n                    <xs:complexType>\n                        <xs:sequence>\n                            <xs:element name=\"RequestHeader\">\n                                <xs:complexType>\n                                    <xs:sequence>\n                                        <xs:element name=\"MessageKey\">\n                                            <xs:complexType>\n                                                <xs:sequence>\n                                                    <xs:element name=\"RequestUUID\" type=\"xs:string\" />\n                                                    <xs:element name=\"ServiceRequestId\" type=\"xs:string\" />\n                                                    <xs:element name=\"ServiceRequestVersion\" type=\"xs:string\" />\n                                                    <xs:element name=\"ChannelId\" type=\"xs:string\" />\n                                                </xs:sequence>\n                                            </xs:complexType>\n                                        </xs:element>\n                                        <xs:element name=\"RequestMessageInfo\">\n                                            <xs:complexType>\n                                                <xs:sequence>\n                                                    <xs:element name=\"BankId\" type=\"xs:string\" />\n                                                    <xs:element name=\"TimeZone\" type=\"xs:string\" minOccurs=\"0\" />\n                                                    <xs:element name=\"EntityId\" type=\"xs:string\" minOccurs=\"0\" />\n                                                    <xs:element name=\"EntityType\" type=\"xs:string\" minOccurs=\"0\" />\n                                                    <xs:element name=\"ArmCorrelationId\" type=\"xs:string\" minOccurs=\"0\" />\n                                                    <xs:element name=\"MessageDateTime\" type=\"xs:dateTime\" />\n                                                </xs:sequence>\n                                            </xs:complexType>\n                                        </xs:element>\n                                        <xs:element name=\"Security\">\n                                            <xs:complexType>\n                                                <xs:sequence>\n                                                    <xs:element name=\"Token\">\n                                                        <xs:complexType>\n                                                            <xs:sequence>\n                                                                <xs:element name=\"PasswordToken\">\n                                                                    <xs:complexType>\n                                                                        <xs:sequence>\n                                                                            <xs:element name=\"UserId\" type=\"xs:string\" minOccurs=\"0\" />\n                                                                            <xs:element name=\"Password\" type=\"xs:string\" minOccurs=\"0\" />\n                                                                        </xs:sequence>\n                                                                    </xs:complexType>\n                                                                </xs:element>\n                                                            </xs:sequence>\n                                                        </xs:complexType>\n                                                    </xs:element>\n                                                    <xs:element name=\"FICertToken\" type=\"xs:string\" minOccurs=\"0\" />\n                                                    <xs:element name=\"RealUserLoginSessionId\" type=\"xs:string\" minOccurs=\"0\" />\n                                                    <xs:element name=\"RealUser\" type=\"xs:string\" minOccurs=\"0\" />\n                                                    <xs:element name=\"RealUserPwd\" type=\"xs:string\" minOccurs=\"0\" />\n                                                    <xs:element name=\"SSOTransferToken\" type=\"xs:string\" minOccurs=\"0\" />\n                                                </xs:sequence>\n                                            </xs:complexType>\n                                        </xs:element>\n                                    </xs:sequence>\n                                </xs:complexType>\n                            </xs:element>\n                        </xs:sequence>\n                    </xs:complexType>\n                </xs:element>\n\n                <xs:element name=\"Body\">\n                    <xs:complexType>\n                        <xs:sequence>\n                            <xs:element name=\"doTransferTransactionRequest\">\n                                <xs:complexType>\n                                    <xs:sequence>\n                                        <xs:element name=\"TransferTranStruct\">\n                                            <xs:complexType>\n                                                <xs:sequence>\n                                                    <xs:element name=\"transferTranDetail\">\n                                                        <xs:complexType>\n                                                            <xs:sequence>\n                                                                <xs:element name=\"partTransactionDetailLL\" maxOccurs=\"unbounded\">\n                                                                    <xs:complexType>\n                                                                        <xs:sequence>\n                                                                            <xs:element name=\"acctId\">\n                                                                                <xs:complexType>\n                                                                                    <xs:sequence>\n                                                                                        <xs:element name=\"foracid\" type=\"xs:string\" />\n                                                                                    </xs:sequence>\n                                                                                </xs:complexType>\n                                                                            </xs:element>\n                                                                            <xs:element name=\"partTransactionType\">\n                                                                                <xs:complexType>\n                                                                                    <xs:sequence>\n                                                                                        <xs:element name=\"creditDebitFlag\" type=\"xs:string\" />\n                                                                                    </xs:sequence>\n                                                                                </xs:complexType>\n                                                                            </xs:element>\n                                                                            <xs:element name=\"tranCode\" type=\"xs:string\" />\n                                                                            <xs:element name=\"tranCrncyCode\" type=\"xs:string\" />\n                                                                            <xs:element name=\"transactionAmt\">\n                                                                                <xs:complexType>\n                                                                                    <xs:sequence>\n                                                                                        <xs:element name=\"amountValue\" type=\"xs:decimal\" />\n                                                                                        <xs:element name=\"currencyCode\" type=\"xs:string\" />\n                                                                                    </xs:sequence>\n                                                                                </xs:complexType>\n                                                                            </xs:element>\n                                                                            <xs:element name=\"transactionParticulars\" type=\"xs:string\" />\n                                                                            <xs:element name=\"transactionRmks\" type=\"xs:string\" />\n                                                                            <xs:element name=\"valueDate\" type=\"xs:dateTime\" />\n                                                                        </xs:sequence>\n                                                                    </xs:complexType>\n                                                                </xs:element>\n                                                            </xs:sequence>\n                                                        </xs:complexType>\n                                                    </xs:element>\n                                                    <xs:element name=\"transferTranHeader\">\n                                                        <xs:complexType>\n                                                            <xs:sequence>\n                                                                <xs:element name=\"tranSubTypeTransfer\">\n                                                                    <xs:complexType>\n                                                                        <xs:sequence>\n                                                                            <xs:element name=\"transactionType\" type=\"xs:string\" />\n                                                                            <xs:element name=\"tranSubType\" type=\"xs:string\" />\n                                                                        </xs:sequence>\n                                                                    </xs:complexType>\n                                                                </xs:element>\n                                                            </xs:sequence>\n                                                        </xs:complexType>\n                                                    </xs:element>\n                                                </xs:sequence>\n                                            </xs:complexType>\n                                        </xs:element>\n                                    </xs:sequence>\n                                </xs:complexType>\n                            </xs:element>\n                        </xs:sequence>\n                    </xs:complexType>\n                </xs:element>\n\n            </xs:sequence>\n\n            <!-- Correct placement for schemaLocation -->\n            <xs:attribute name=\"xmlns:xsi\" type=\"xs:string\" use=\"required\"/>\n            <xs:attribute name=\"xmlns:xsd\" type=\"xs:string\" use=\"required\"/>\n            <xs:attribute name=\"xsi:schemaLocation\" type=\"xs:string\" use=\"required\"/>\n            <xs:attribute name=\"xmlns\" type=\"xs:string\" use=\"required\"/>\n        </xs:complexType>\n    </xs:element>\n</xs:schema>\n",
+        "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"partnerReferenceInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"InstructionId\": {\n          \"type\": \"string\"\n        },\n        \"endtoendId\": {\n          \"type\": \"string\"\n        },\n        \"transactionId\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"InstructionId\",\n        \"endtoendId\",\n        \"transactionId\"\n      ]\n    },\n    \"paymentInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"paymentType\": {\n          \"type\": \"string\"\n        },\n        \"prtryAccountType\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"paymentType\",\n        \"prtryAccountType\"\n      ]\n    },\n    \"debtorAccountInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"dbtrAccountNo\": {\n          \"type\": \"string\"\n        },\n        \"dbtrAccountName\": {\n          \"type\": \"string\"\n        },\n        \"dbtrAddress\": {\n          \"type\": \"string\"\n        },\n        \"dbtrEmail\": {\n          \"type\": \"string\"\n        },\n        \"dbtrCountryCode\": {\n          \"type\": \"string\"\n        },\n        \"dbtrBirthDt\": {\n          \"type\": \"string\"\n        },\n        \"dbtrBIC\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"dbtrAccountNo\",\n        \"dbtrAccountName\",\n        \"dbtrAddress\",\n        \"dbtrEmail\",\n        \"dbtrCountryCode\",\n        \"dbtrBirthDt\",\n        \"dbtrBIC\"\n      ]\n    },\n    \"creditorAccountInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"cdtrAccountNo\": {\n          \"type\": \"string\"\n        },\n        \"cdtrAccountName\": {\n          \"type\": \"string\"\n        },\n        \"cdtrAddress\": {\n          \"type\": \"string\"\n        },\n        \"cdtrEmail\": {\n          \"type\": \"string\"\n        },\n        \"cdtrCountryCode\": {\n          \"type\": \"string\"\n        },\n        \"cdtrBirthDt\": {\n          \"type\": \"string\"\n        },\n        \"cdtrBIC\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"cdtrAccountNo\",\n        \"cdtrAccountName\",\n        \"cdtrAddress\",\n        \"cdtrEmail\",\n        \"cdtrCountryCode\",\n        \"cdtrBirthDt\",\n        \"cdtrBIC\"\n      ]\n    },\n    \"contactDetails\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"mobileNumber\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"mobileNumber\"\n      ]\n    },\n    \"amount\": {\n      \"type\": \"string\"\n    },\n    \"currency\": {\n      \"type\": \"string\"\n    },\n    \"purpose\": {\n      \"type\": \"string\"\n    },\n    \"settlementDate\": {\n      \"type\": \"string\"\n    },\n    \"remittanceInformation\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"unstructuredInfo\": {\n          \"type\": \"string\"\n        },\n        \"RemittanceProp\": {\n          \"type\": \"string\"\n        },\n        \"remittanceNumber\": {\n          \"type\": \"string\"\n        },\n        \"AddtlRmtInfo\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"unstructuredInfo\",\n        \"RemittanceProp\",\n        \"remittanceNumber\",\n        \"AddtlRmtInfo\"\n      ]\n    },\n    \"supplementaryData\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"subscriberNumber\": {\n          \"type\": \"string\"\n        },\n        \"OtherId\": {\n          \"type\": \"string\"\n        },\n        \"pointofInteractionID\": {\n          \"type\": \"string\"\n        },\n        \"PAN\": {\n          \"type\": \"string\"\n        },\n        \"expiryDate\": {\n          \"type\": \"string\"\n        },\n        \"type\": {\n          \"type\": \"string\"\n        },\n        \"systemName\": {\n          \"type\": \"string\"\n        },\n        \"groupId\": {\n          \"type\": \"string\"\n        },\n        \"merchantCategoryCode\": {\n          \"type\": \"string\"\n        },\n        \"transactionRef\": {\n          \"type\": \"string\"\n        },\n        \"tipAmount\": {\n          \"type\": \"string\"\n        },\n        \"tipCurrency\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"subscriberNumber\",\n        \"OtherId\",\n        \"pointofInteractionID\",\n        \"PAN\",\n        \"expiryDate\",\n        \"type\",\n        \"systemName\",\n        \"groupId\",\n        \"merchantCategoryCode\",\n        \"transactionRef\",\n        \"tipAmount\",\n        \"tipCurrency\"\n      ]\n    }\n  },\n  \"required\": [\n    \"partnerReferenceInformation\",\n    \"paymentInformation\",\n    \"debtorAccountInformation\",\n    \"creditorAccountInformation\",\n    \"contactDetails\",\n    \"amount\",\n    \"currency\",\n    \"purpose\",\n    \"settlementDate\",\n    \"remittanceInformation\",\n    \"supplementaryData\"\n  ]\n}",
+        "pathOperations" : [ {
+          "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail[*]",
+          "containsDirectValue" : false,
+          "containsCustomList" : true,
+          "customListData" : {
+            "recordList" : [ {
+              "pathOperations" : [ {
+                "sourcePathList" : [ {
+                  "sourcePath" : "$.currency",
+                  "customPath" : false
+                } ],
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/tranCrncyCode",
+                "containsDirectValue" : false,
+                "containsCustomList" : false
+              }, {
+                "sourcePathList" : [ {
+                  "sourcePath" : "$.currency",
+                  "customPath" : false
+                } ],
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/transactionAmt/currencyCode",
+                "containsDirectValue" : false,
+                "containsCustomList" : false
+              }, {
+                "sourcePathList" : [ {
+                  "sourcePath" : "$.amount",
+                  "customPath" : false
+                } ],
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/transactionAmt/amountValue",
+                "containsDirectValue" : false,
+                "containsCustomList" : false
+              }, {
+                "sourcePathList" : [ {
+                  "sourcePath" : "$.purpose",
+                  "customPath" : false
+                } ],
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/transactionRmks",
+                "containsDirectValue" : false,
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/acctId/foracid",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "{{daccountno}}"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/partTransactionType/creditDebitFlag",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "D"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/tranCode",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "CTRIA"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/transactionParticulars",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "BA24624000012"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/valueDate",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "2021-09-11T00:00:00.0"
+                },
+                "containsCustomList" : false
+              } ]
+            }, {
+              "pathOperations" : [ {
+                "sourcePathList" : [ {
+                  "sourcePath" : "$.currency",
+                  "customPath" : false
+                } ],
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/tranCrncyCode",
+                "containsDirectValue" : false,
+                "containsCustomList" : false
+              }, {
+                "sourcePathList" : [ {
+                  "sourcePath" : "$.currency",
+                  "customPath" : false
+                } ],
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/transactionAmt/currencyCode",
+                "containsDirectValue" : false,
+                "containsCustomList" : false
+              }, {
+                "sourcePathList" : [ {
+                  "sourcePath" : "$.amount",
+                  "customPath" : false
+                } ],
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/transactionAmt/amountValue",
+                "containsDirectValue" : false,
+                "containsCustomList" : false
+              }, {
+                "sourcePathList" : [ {
+                  "sourcePath" : "$.purpose",
+                  "customPath" : false
+                } ],
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/transactionRmks",
+                "containsDirectValue" : false,
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/acctId/foracid",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "{{caccountno}}"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/partTransactionType/creditDebitFlag",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "C"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/tranCode",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "CTRIA"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/valueDate",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "2021-09-11T00:00:00.0"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranDetail/partTransactionDetailLL[*]/transactionParticulars",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "BA24624000012"
+                },
+                "containsCustomList" : false
+              } ]
+            } ]
+          }
+        }, {
+          "targetPath" : "/FIXML/@xmlns:xsi",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "\"http://www.w3.org/2001/XMLSchema-instance\""
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/@xmlns:xsd",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "\"http://www.w3.org/2001/XMLSchema\""
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/@xsi:schemaLocation",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "\"http://www.finacle.com/doTransferTransaction.xsd\""
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/@xmlns",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "\"http://www.finacle.com/fixml\""
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/MessageKey/RequestUUID",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "{{uuid.v4()}}"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/MessageKey/ServiceRequestId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "doTransferTransaction"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/MessageKey/ServiceRequestVersion",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "10.3"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/MessageKey/ChannelId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "BIZ"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/RequestMessageInfo/BankId",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "01"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Header/RequestHeader/RequestMessageInfo/MessageDateTime",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "{{now()}}"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranHeader/tranSubTypeTransfer/transactionType",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "T"
+          },
+          "containsCustomList" : false
+        }, {
+          "targetPath" : "/FIXML/Body/doTransferTransactionRequest/TransferTranStruct/transferTranHeader/tranSubTypeTransfer/tranSubType",
+          "containsDirectValue" : true,
+          "directValueData" : {
+            "directValueType" : "DIRECT_VALUE",
+            "value" : "CI"
+          },
+          "containsCustomList" : false
+        } ],
+        "sourceType" : "JSON",
+        "targetType" : "XML",
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "Mapping failed - Credit",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "dac72f92-db10-4d4b-99d4-dc96bd7d4312" : {
+      "vertexId" : "dac72f92-db10-4d4b-99d4-dc96bd7d4312",
+      "vertexType" : "DECRYPTION",
+      "name" : "Decrypt debit Account No",
+      "description" : "Decrypt debit Account No",
+      "decryptionData" : {
+        "sourceVariable" : "daccnountNumberencoded",
+        "sourceProvidedAtNode" : false,
+        "targetVariable" : "daccountno",
+        "transformationKey" : "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCcyI+GJRdkiyZoMmn0moSaxmDflrECyq4vhyo8afR6my336FFpm8+8jNY+JdxX5PC83GDcEX2O48imJoq/ipRbaax1gAXHH+8ICXC60OoDIaVHcTFlPpGS2n39P1ByVPwK/9dGs2BQBrs5hev0w6zS/Ih7BaczhSEFBhHP3lFcbqjyQWdN0Xlv9kvxjrrXEUwrawzdr3Wx4VUrmb3aIWwSLoNMazmFCViICgQlEvKy8BsewH+td5bS43kPJ9s3U7mDud1uAkcYawIuaZMK/d7I3M0zQzO0XLyiyTP6JnhxD5b21jfU6NcQjtt1enD9Hoxyl7eCEgVBzSw2PB7k8YPHAgMBAAECggEBAJkW+ZYZ97qUaR9LQsy2aI8c8BDC+vrn36fHCsXNDA0AI6WzcnN10iWhO72ZiItGoI85fVbFuV1iLFWYwth/P5f3Go/tPzcNhoDJfwrb3fTK0LFu5LWgn9LOiEFVpn7NXwJ6iMGfe4cI254yl5D71HB8Z+QARCB5eSGHqLLZuYZPd8YCuTq54XH9Bl0vpPbeRvcWWiL4FjDuBhwpyf1dL3rocOqUXyikNpE4ySfg2izywawF/R1nDvRK0g1jbuB1qqvrytevUlZDteWyVmNXpNdzh1XkYjWaF0GALtU0BcbU/JUgSEtRy7Oqy+nvUsrLUfJDkBdQXMCO+z+65jQOwVECgYEA6Z485HWtUFfaoffI/OMpClk8ltKE2SJ0vSNGSCWeaqRrrZ1Ao2gbl8X+ixzthYHyy9WMKG4Eb3B6noVaSPMPQExBMDgZjairUgH2G8q97xLt4rC+KuWkSN86UiX95iQiN2q9QOfCmx6pvO7VfGu0ds55dITtNYFL1vaAIoo8c18CgYEAq83cZ+AkRZgEI9YOdhtaxz8EIKk3ABIxkj4+i32rRkzHHKPR6OPXSy3sVwFkt5y/4m9XjFDrRgfFx0iJtfumPFTopEy5ESry9g05AdC+1Fr1NKHcNy03t/wol/eVO0BmGMZqm5kUbZm5LhvV8h+Pvd+G0+Ohlbzp9AYC6/oJcJkCgYAHeLgZ1mmkmCq142baL6mwWwpFCJaXGzMAmZA13n4iiv+mndDjaQD46awqZtJx4qYRPtMst9gMeFxzlXA9xQhH1ih/kku+7BYOmWF1ohZQ/xn8lgp+9Lk8W2dSGUT1h1JQ02kaGk9vBpwHHtxVDlzHL/NSdq3feDMkvN18PU+RoQKBgEI7VXnSJgmSRh5Omjqb5w4i1AOHWIW1fdjEGDaMVuf+F1CKMxUWKNx5ssAD8ID8c9jmVZjpZRoVSwC9jSFUB00A6sLUNRBSP2HtzQlPIRIakqccsxmuW+mY00lqj+RMuk9YxqZ/iCmMdqA46OyzkCWBs6eh/JwOPR7u5ld0iAkZAoGBAMZPIwY7MsPQA4qi9wxCNbElm2vAVMatuHbXEaNH1PopLmBOp3yThI6oE5NZW9yj97nuBR+o4xErJ55AUZYP4JmSND6YPO0408cBxHfsYo2phnmmz2TOY2IsXMMG3RuZFGe5LV40N5w7Ud2NqzSAMag4RF+wyufXX81LxplJYSRA",
+        "algorithmType" : "RSA",
+        "modeType" : "ECB",
+        "paddingType" : "PKCS1Padding",
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "continueOnError" : false
+      },
+      "imported" : false
+    },
+    "a910c6ed-a3f0-4d18-a8e1-161609c2d7cd" : {
+      "vertexId" : "a910c6ed-a3f0-4d18-a8e1-161609c2d7cd",
+      "vertexType" : "TARGET",
+      "name" : "Add Data to Registry",
+      "target" : {
+        "name" : "Add Data to Registry",
+        "description" : "Add Data to Registry",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/itorix/v2/service-registry/67a447ba210fb10f6a637798/rows",
+          "headerParams" : [ {
+            "name" : "jsessionid",
+            "value" : "67bb10fb4b645475055e664b"
+          }, {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "{\n    \"data\": [\n        {\n            \"key\": \"e1c83469-8d8d-4e70-a913-204063732c45\",\n            \"value\": {{{timestamp}}}\n        },\n        {\n            \"key\": \"519bbb50-67e0-4d45-b9af-fe37511a759b\",\n            \"value\": \"{{transactionId}}\"\n        },\n        {\n            \"key\": \"b020d384-beb3-4c62-8de9-c03d7d0b6f66\",\n            \"value\": \"{{InstructionId}}\"\n        },\n        {\n            \"key\": \"48656e56-47c5-4c93-b15c-cb2df66c7e20\",\n            \"value\": \"APIWiz\"\n        },\n        {\n            \"key\": \"ec075755-7de0-491e-a7cb-aef3abb8dbfe\",\n            \"value\": \"400\"\n        }\n    ]\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
+    },
+    "726e3393-97ec-47cd-8e65-2b4f517665d9" : {
+      "vertexId" : "726e3393-97ec-47cd-8e65-2b4f517665d9",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "isSucessful",
+            "value" : "SUCCESS",
+            "valueDataType" : "STRING"
+          } ],
+          "feelExpression" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "03d2c1c0-abc0-4169-993b-22a5985cfc58" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "a910c6ed-a3f0-4d18-a8e1-161609c2d7cd" ]
+      } ],
+      "imported" : false
+    },
+    "dfc3f532-a7e7-4c41-a6cc-c217d0939ae4" : {
+      "vertexId" : "dfc3f532-a7e7-4c41-a6cc-c217d0939ae4",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "NOT_EQUAL_TO",
+            "key" : "stcode",
+            "value" : "401",
+            "valueDataType" : "INTEGER"
+          } ],
+          "feelExpression" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "43c52442-663f-4562-8a68-df119a6dd4c0" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "d0f47e21-2496-4bcf-854e-29abc72b644c" ]
+      } ],
+      "imported" : false
+    },
+    "d36376ca-925d-45b2-8b48-112b463935eb" : {
+      "vertexId" : "d36376ca-925d-45b2-8b48-112b463935eb",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "CONTAINS",
+            "key" : "branchCode",
+            "value" : "RCBC",
+            "valueDataType" : "STRING"
+          } ],
+          "feelExpression" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "d3989879-6fca-4770-a947-4b2ed818f252" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "4e65ee00-0552-496a-b87c-c97d7fc56dea" ]
+      } ],
+      "imported" : false
+    },
+    "ca4fdb4d-fc6a-425e-8617-b34812bb1d93" : {
+      "vertexId" : "ca4fdb4d-fc6a-425e-8617-b34812bb1d93",
+      "vertexType" : "DECRYPTION",
+      "name" : "Decrypt credit Account No",
+      "description" : "Decrypt credit Account No",
+      "decryptionData" : {
+        "sourceVariable" : "caccnountNumberencoded",
+        "sourceProvidedAtNode" : false,
+        "targetVariable" : "caccountno",
+        "transformationKey" : "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCcyI+GJRdkiyZoMmn0moSaxmDflrECyq4vhyo8afR6my336FFpm8+8jNY+JdxX5PC83GDcEX2O48imJoq/ipRbaax1gAXHH+8ICXC60OoDIaVHcTFlPpGS2n39P1ByVPwK/9dGs2BQBrs5hev0w6zS/Ih7BaczhSEFBhHP3lFcbqjyQWdN0Xlv9kvxjrrXEUwrawzdr3Wx4VUrmb3aIWwSLoNMazmFCViICgQlEvKy8BsewH+td5bS43kPJ9s3U7mDud1uAkcYawIuaZMK/d7I3M0zQzO0XLyiyTP6JnhxD5b21jfU6NcQjtt1enD9Hoxyl7eCEgVBzSw2PB7k8YPHAgMBAAECggEBAJkW+ZYZ97qUaR9LQsy2aI8c8BDC+vrn36fHCsXNDA0AI6WzcnN10iWhO72ZiItGoI85fVbFuV1iLFWYwth/P5f3Go/tPzcNhoDJfwrb3fTK0LFu5LWgn9LOiEFVpn7NXwJ6iMGfe4cI254yl5D71HB8Z+QARCB5eSGHqLLZuYZPd8YCuTq54XH9Bl0vpPbeRvcWWiL4FjDuBhwpyf1dL3rocOqUXyikNpE4ySfg2izywawF/R1nDvRK0g1jbuB1qqvrytevUlZDteWyVmNXpNdzh1XkYjWaF0GALtU0BcbU/JUgSEtRy7Oqy+nvUsrLUfJDkBdQXMCO+z+65jQOwVECgYEA6Z485HWtUFfaoffI/OMpClk8ltKE2SJ0vSNGSCWeaqRrrZ1Ao2gbl8X+ixzthYHyy9WMKG4Eb3B6noVaSPMPQExBMDgZjairUgH2G8q97xLt4rC+KuWkSN86UiX95iQiN2q9QOfCmx6pvO7VfGu0ds55dITtNYFL1vaAIoo8c18CgYEAq83cZ+AkRZgEI9YOdhtaxz8EIKk3ABIxkj4+i32rRkzHHKPR6OPXSy3sVwFkt5y/4m9XjFDrRgfFx0iJtfumPFTopEy5ESry9g05AdC+1Fr1NKHcNy03t/wol/eVO0BmGMZqm5kUbZm5LhvV8h+Pvd+G0+Ohlbzp9AYC6/oJcJkCgYAHeLgZ1mmkmCq142baL6mwWwpFCJaXGzMAmZA13n4iiv+mndDjaQD46awqZtJx4qYRPtMst9gMeFxzlXA9xQhH1ih/kku+7BYOmWF1ohZQ/xn8lgp+9Lk8W2dSGUT1h1JQ02kaGk9vBpwHHtxVDlzHL/NSdq3feDMkvN18PU+RoQKBgEI7VXnSJgmSRh5Omjqb5w4i1AOHWIW1fdjEGDaMVuf+F1CKMxUWKNx5ssAD8ID8c9jmVZjpZRoVSwC9jSFUB00A6sLUNRBSP2HtzQlPIRIakqccsxmuW+mY00lqj+RMuk9YxqZ/iCmMdqA46OyzkCWBs6eh/JwOPR7u5ld0iAkZAoGBAMZPIwY7MsPQA4qi9wxCNbElm2vAVMatuHbXEaNH1PopLmBOp3yThI6oE5NZW9yj97nuBR+o4xErJ55AUZYP4JmSND6YPO0408cBxHfsYo2phnmmz2TOY2IsXMMG3RuZFGe5LV40N5w7Ud2NqzSAMag4RF+wyufXX81LxplJYSRA",
+        "algorithmType" : "RSA",
+        "modeType" : "ECB",
+        "paddingType" : "PKCS1Padding",
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "continueOnError" : false
+      },
+      "imported" : false
+    },
+    "6e21548c-c28f-4af3-b698-f01973a7c601" : {
+      "vertexId" : "6e21548c-c28f-4af3-b698-f01973a7c601",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n  \"messageDateTime\":\"{{messageDateTime}}\",\n  \"tranDate\":\"{{tranDate}}\",\n  \"tranId\":\"{{tranId}}\",\n  \"status\":\"{{isSucessful}}\"\n}\n",
+          "type" : "json"
+        }
+      }
+    },
+    "6864be5d-99c8-42f8-afaa-ebbf29016eb7" : {
+      "vertexId" : "6864be5d-99c8-42f8-afaa-ebbf29016eb7",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n  \"messageDateTime\":\"{{messageDateTime}}\",\n  \"pmtOrderId\":\"{{pmtOrderId}}\",\n  \"status\":\"{{isSucessful}}\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "9287df97-b525-409f-bb0a-948643854ec2" : {
+      "vertexId" : "9287df97-b525-409f-bb0a-948643854ec2",
+      "vertexType" : "TARGET",
+      "name" : "Fund Transfer - Pesonet",
+      "target" : {
+        "name" : "Fund Transfer - Pesonet",
+        "description" : "Post pesonet transaction to core system (XML)",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/payment/transaction",
+          "headerParams" : [ {
+            "name" : "x-introspect-basic-authorization-header",
+            "value" : "{{apiKey}}"
+          }, {
+            "name" : "Authorization",
+            "value" : "{{oauthToken}}"
+          }, {
+            "name" : "content-type",
+            "value" : "application/xml"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{fund-transfer-pesonet-payload}}}",
+            "type" : "xml"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "fundTransferResponse",
+            "reference" : "body",
+            "value" : "/*",
+            "variableDataType" : "OBJECT",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "isSucessful",
+            "reference" : "body",
+            "value" : "/FIXML/Header/ResponseHeader/HostTransaction/Status",
+            "variableDataType" : "BOOLEAN",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "pmtOrderId",
+            "reference" : "body",
+            "value" : "/FIXML/Body/PmtAddResponse/PmtAddRs/PmtOrderId",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "messageDateTime",
+            "reference" : "body",
+            "value" : "/FIXML/Header/ResponseHeader/ResponseMessageInfo/MessageDateTime",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "errorCode",
+            "reference" : "body",
+            "value" : "/FIXML/Body/Error/FISystemException/ErrorDetail/ErrorCode",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "errorDesc",
+            "reference" : "body",
+            "value" : "/FIXML/Body/Error/FISystemException/ErrorDetail/ErrorDesc",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "errorType",
+            "reference" : "body",
+            "value" : "/FIXML/Body/Error/FISystemException/ErrorDetail/ErrorType",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "invalidExpiredTokenResponse",
+            "reference" : "body",
+            "value" : "$",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "coreSystemErrorRespXML",
+            "reference" : "body",
+            "value" : "/FIXML/Body/Error",
+            "variableDataType" : "STRING",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "stcode",
+            "reference" : "status-code",
+            "value" : "",
+            "active" : true,
+            "source" : "status-code",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 7000,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 408,
+          "headers" : {
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n    \"message\":\"Pesonet Request to Core System Timed Out. Try again ...\",\n    \"code\":\"RCBC-TIMEOUT-408\"\n}",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "oauthToken",
+        "reference" : "headers",
+        "value" : "Authorization",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "apiKey",
+        "reference" : "headers",
+        "value" : "x-introspect-basic-authorization-header",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "requestBody",
+        "reference" : "body",
+        "value" : "$",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "branchCode",
+        "reference" : "body",
+        "value" : "$.creditorAccountInformation.cdtrBIC",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "daccnountNumberencoded",
+        "reference" : "body",
+        "value" : "$.debtorAccountInformation.dbtrAccountNo",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "caccnountNumberencoded",
+        "reference" : "body",
+        "value" : "$.creditorAccountInformation.cdtrAccountNo",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "amount",
+        "reference" : "body",
+        "value" : "$.amount",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "currency",
+        "reference" : "body",
+        "value" : "$.currency",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "purpose",
+        "reference" : "body",
+        "value" : "$.purpose",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "InstructionId",
+        "reference" : "body",
+        "value" : "partnerReferenceInformation.InstructionId",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "transactionId",
+        "reference" : "body",
+        "value" : "partnerReferenceInformation.transactionId",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "securityResponse" : {
+        "isEnabled" : true,
+        "useEnforcedRules" : false,
+        "ruleGroup" : [ {
+          "id" : "66de7ba9ce79b82d24ec5b81",
+          "name" : "OWASP Violations Validator",
+          "rules" : [ {
+            "id" : "66de8048ce79b82d24ec5d7f",
+            "name" : "SQL based Injection Attack"
+          } ]
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "headers" : {
+            "Content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n    \"message\":\"Threat found in the incoming request\"\n}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "5daff710-1717-4c5f-900f-2b7ca4a25a69" : {
+      "vertexId" : "5daff710-1717-4c5f-900f-2b7ca4a25a69",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "PRESENT",
+            "key" : "fund-transfer-credit-payload",
+            "value" : "",
+            "valueDataType" : "STRING"
+          } ],
+          "feelExpression" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "f5ea078d-3fa2-49c9-ac7d-f4a031d114d9" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "9287df97-b525-409f-bb0a-948643854ec2" ]
+      } ],
+      "imported" : false
+    },
+    "7a01612d-3b2c-4af0-8870-a1862f156782" : {
+      "vertexId" : "7a01612d-3b2c-4af0-8870-a1862f156782",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "PRESENT",
+            "key" : "tranId",
+            "value" : "",
+            "valueDataType" : "STRING"
+          } ],
+          "feelExpression" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "6e21548c-c28f-4af3-b698-f01973a7c601" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "6864be5d-99c8-42f8-afaa-ebbf29016eb7" ]
+      } ],
+      "imported" : false
+    },
+    "d0f47e21-2496-4bcf-854e-29abc72b644c" : {
+      "vertexId" : "d0f47e21-2496-4bcf-854e-29abc72b644c",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 401,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{invalidExpiredTokenResponse}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "03d2c1c0-abc0-4169-993b-22a5985cfc58" : {
+      "vertexId" : "03d2c1c0-abc0-4169-993b-22a5985cfc58",
+      "vertexType" : "TARGET",
+      "name" : "Add Data to registry",
+      "target" : {
+        "name" : "Add Data to registry",
+        "description" : "Add Data to registry",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/itorix/v2/service-registry/67a447ba210fb10f6a637798/rows",
+          "headerParams" : [ {
+            "name" : "jsessionid",
+            "value" : "67bb10fb4b645475055e664b"
+          }, {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "{\n    \"data\": [\n        {\n            \"key\": \"e1c83469-8d8d-4e70-a913-204063732c45\",\n            \"value\": {{{timestamp}}}\n        },\n        {\n            \"key\": \"519bbb50-67e0-4d45-b9af-fe37511a759b\",\n            \"value\": \"{{transactionId}}\"\n        },\n        {\n            \"key\": \"b020d384-beb3-4c62-8de9-c03d7d0b6f66\",\n            \"value\": \"{{InstructionId}}\"\n        },\n        {\n            \"key\": \"48656e56-47c5-4c93-b15c-cb2df66c7e20\",\n            \"value\": \"APIWiz\"\n        },\n        {\n            \"key\": \"ec075755-7de0-491e-a7cb-aef3abb8dbfe\",\n            \"value\": \"200\"\n        }\n    ]\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false
+    },
+    "6d324088-fe38-4862-8e42-e478c4ef2eb1" : {
+      "vertexId" : "6d324088-fe38-4862-8e42-e478c4ef2eb1",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 500,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{coreSystemErrorRespJSON}}}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1742472031646,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : true,
+  "environmentName" : "rcbc-data",
+  "environmentId" : "67dbc950b7f9874e33e31c34",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : true,
+  "indexName" : "fund_transfer",
+  "deployed" : false,
+  "deleted" : false
+}
