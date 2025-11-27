@@ -1,0 +1,181 @@
+{
+  "id" : "69282e4ba5c1b657b10a88ae",
+  "cts" : 1764240971016,
+  "createdUserName" : "vidya.wiz vidya.wiz",
+  "modifiedUserName" : "vidya.wiz vidya.wiz",
+  "mts" : 1764240971016,
+  "createdBy" : "6454a1d660f0577244784ac0",
+  "modifiedBy" : "6454a1d660f0577244784ac0",
+  "proxyId" : "69282e4ba5c1b657b10a88ad",
+  "revision" : 1,
+  "name" : "interim response test",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/v1/interimresponse",
+  "pathArray" : [ "v1", "interimresponse" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya.wiz vidya.wiz",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "fd92e3a6-c6fa-4cfa-b43d-d223cd90e9a4" : [ "v1" ],
+      "c2e153e7-44eb-4eac-96cb-0103c58d9d64" : [ "fd92e3a6-c6fa-4cfa-b43d-d223cd90e9a4" ],
+      "bbbfa3c6-ab77-40dd-a465-b49646b9238c" : [ "c2e153e7-44eb-4eac-96cb-0103c58d9d64" ]
+    },
+    "outbound" : {
+      "v1" : [ "fd92e3a6-c6fa-4cfa-b43d-d223cd90e9a4" ],
+      "fd92e3a6-c6fa-4cfa-b43d-d223cd90e9a4" : [ "c2e153e7-44eb-4eac-96cb-0103c58d9d64" ],
+      "c2e153e7-44eb-4eac-96cb-0103c58d9d64" : [ "bbbfa3c6-ab77-40dd-a465-b49646b9238c" ]
+    },
+    "allNeighbours" : [ "c2e153e7-44eb-4eac-96cb-0103c58d9d64", "bbbfa3c6-ab77-40dd-a465-b49646b9238c", "fd92e3a6-c6fa-4cfa-b43d-d223cd90e9a4", "v1" ]
+  },
+  "vertexHashMap" : {
+    "c2e153e7-44eb-4eac-96cb-0103c58d9d64" : {
+      "vertexId" : "c2e153e7-44eb-4eac-96cb-0103c58d9d64",
+      "vertexType" : "TARGET",
+      "name" : "postman get",
+      "target" : {
+        "name" : "postman get",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "payload",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "bbbfa3c6-ab77-40dd-a465-b49646b9238c" : {
+      "vertexId" : "bbbfa3c6-ab77-40dd-a465-b49646b9238c",
+      "vertexType" : "EXTRACTION",
+      "name" : "obj1",
+      "description" : "",
+      "extractionData" : {
+        "extractionDataOperationList" : [ {
+          "name" : "obj1",
+          "path" : "$",
+          "type" : "JSON",
+          "inputData" : "{{{payload}}}",
+          "targetVariable" : "obj1"
+        } ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "fd92e3a6-c6fa-4cfa-b43d-d223cd90e9a4" : {
+      "vertexId" : "fd92e3a6-c6fa-4cfa-b43d-d223cd90e9a4",
+      "vertexType" : "INTERIM_RESPONSE",
+      "name" : "interim response 1",
+      "description" : "",
+      "interimResponseData" : {
+        "response" : {
+          "statusCode" : 201,
+          "headers" : {
+            "status" : "in-background"
+          },
+          "body" : {
+            "data" : "test-ok, execution continues in background",
+            "type" : "json"
+          }
+        },
+        "skip" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1764240971016,
+    "lastModifiedBy" : "vidya.wiz vidya.wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
